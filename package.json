@@ -2,7 +2,7 @@
   "name": "@sanity/asset-utils",
   "version": "0.1.0",
   "author": "Sanity.io <hello@sanity.io>",
-  "module": "dist/asset.esm.js",
+  "module": "dist/asset-utils.esm.js",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -18,18 +18,23 @@
     "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
-    "coverage": "tsdx test --coverage"
+    "posttest": "npm run lint",
+    "prepublishOnly": "tsdx build && npm test",
+    "coverage": "tsdx test --coverage",
+    "docs": "node scripts/generateReadme.js"
   },
   "devDependencies": {
     "@types/jest": "^25.2.1",
-    "@typescript-eslint/eslint-plugin": "^2.29.0",
-    "@typescript-eslint/parser": "^2.29.0",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-sanity": "^1.149.0",
+    "gh-pages-deploy": "^0.5.1",
+    "outdent": "^0.7.1",
     "prettier": "^2.0.5",
     "tsdx": "^0.13.2",
     "tslib": "^1.11.1",
+    "typedoc": "^0.17.6",
     "typescript": "^3.8.3"
   },
   "peerDependencies": {},
@@ -83,5 +88,9 @@
         "diagnostics": false
       }
     }
+  },
+  "gh-pages-deploy": {
+    "staticpath": "docs",
+    "noprompt": true
   }
 }

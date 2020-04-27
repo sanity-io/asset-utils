@@ -1,0 +1,8 @@
+{
+  "mode": "file",
+  "inputFiles": ["./src/index.ts"],
+  "stripInternal": true,
+  "theme": "minimal",
+  "json": "./docs/docs.json",
+  "out": "./docs"
+}

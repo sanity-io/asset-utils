@@ -42,3 +42,6 @@ jspm_packages
 
 # Compiled output
 /dist
+
+# Generated docs
+/docs

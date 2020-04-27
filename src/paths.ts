@@ -146,6 +146,7 @@ export function getUrlPath(url: string): string {
 /**
  * See {@link getUrlPath}
  *
+ * @inheritFrom {@link getUrlPath}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
  */
 export const tryGetUrlPath = getForgivingResolver(getUrlPath)
@@ -172,6 +173,7 @@ export function getUrlFilename(url: string): string {
 /**
  * See {@link getUrlFilename}
  *
+ * @inheritFrom {@link getUrlFilename}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
  */
 export const tryGetUrlFilename = getForgivingResolver(getUrlFilename)

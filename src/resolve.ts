@@ -91,6 +91,7 @@ export function getImageDimensions(src: SanityImageSource): SanityImageDimension
 /**
  * See {@link getImageDimensions}
  *
+ * @inheritFrom {@link getImageDimensions}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
  */
 export const tryGetImageDimensions = getForgivingResolver(getImageDimensions)
@@ -113,6 +114,7 @@ export function getExtension(src: SanityAssetSource): string {
 /**
  * See {@link getExtension}
  *
+ * @inheritFrom {@link getExtension}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
  */
 export const tryGetExtension = getForgivingResolver(getExtension)
@@ -146,6 +148,7 @@ export function getImage(
 /**
  * See {@link getImage}
  *
+ * @inheritFrom {@link getImage}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
  */
 export const tryGetImage = getForgivingResolver(getImage)
@@ -198,6 +201,7 @@ export function getImageAsset(
 /**
  * See {@link getImageAsset}
  *
+ * @inheritFrom {@link getImageAsset}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
  */
 export const tryGetImageAsset = getForgivingResolver(getImageAsset)
@@ -222,6 +226,7 @@ export function getFile(src: SanityFileSource, project?: SanityProjectDetails): 
 /**
  * See {@link getFile}
  *
+ * @inheritFrom {@link getFile}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
  */
 export const tryGetFile = getForgivingResolver(getFile)
@@ -269,6 +274,7 @@ export function getFileAsset(
 /**
  * See {@link getFileAsset}
  *
+ * @inheritFrom {@link getFileAsset}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
  */
 export const tryGetFileAsset = getForgivingResolver(getFileAsset)
@@ -307,8 +313,9 @@ export function getAssetDocumentId(src: SanityAssetSource): string {
 }
 
 /**
- * See {@link getAssetDoucmentId}
+ * See {@link getAssetDocumentId}
  *
+ * @inheritFrom {@link getAssetDocumentId}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
  */
 export const tryGetAssetDocumentId = getForgivingResolver(getAssetDocumentId)
@@ -355,6 +362,7 @@ export function getIdFromString(str: string): string {
 /**
  * See {@link getIdFromString}
  *
+ * @inheritFrom {@link getIdFromString}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
  */
 export const tryGetIdFromString = getForgivingResolver(getIdFromString)
@@ -397,6 +405,7 @@ export function getProject(src: SanityImageSource): SanityProjectDetails {
 /**
  * See {@link getProject}
  *
+ * @inheritFrom {@link getProject}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
  */
 export const tryGetProject = getForgivingResolver(getProject)

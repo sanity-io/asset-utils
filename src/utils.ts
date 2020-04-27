@@ -1,7 +1,20 @@
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export type MethodReturnType<T> = T extends (...args: unknown[]) => infer R ? R : any
+/**
+ * @internal
+ */
+export type MethodReturnType<T> = T extends (...args: unknown[]) => infer R ? R : any // eslint-disable-line @typescript-eslint/no-explicit-any
+
+/**
+ * @internal
+ */
 export type ArgumentTypes<F extends Function> = F extends (...args: infer A) => unknown ? A : never
 
+/**
+ * Error type thrown when the library fails to resolve a value, such as an asset ID,
+ * filename or project ID/dataset information.
+ *
+ * The `input` property holds the value passed as the input, which failed to be
+ * resolved to something meaningful.
+ */
 export class UnresolvableError extends Error {
   unresolvable = true
 
@@ -14,9 +27,15 @@ export class UnresolvableError extends Error {
   }
 }
 
+/**
+ * Checks whether or not an error instance is of type UnresolvableError
+ *
+ * @param err - Error to check for unresolvable error type
+ * @returns True if the passed error instance appears to be an unresolveable error
+ */
 export function isUnresolvableError(err: Error): err is UnresolvableError {
   const error = err as UnresolvableError
-  return Boolean(error.input && error.unresolvable)
+  return Boolean(error.unresolvable && 'input' in error)
 }
 
 /**
@@ -25,6 +44,7 @@ export function isUnresolvableError(err: Error): err is UnresolvableError {
  *
  * @param method - Function to use as resolver
  * @returns Function that returns `undefined` if passed resolver throws UnresolvableAssetError
+ * @internal
  */
 export function getForgivingResolver<T extends Function>(method: T) {
   return function (...args: ArgumentTypes<T>): MethodReturnType<T> | undefined {
