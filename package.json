@@ -1,0 +1,79 @@
+{
+  "name": "@sanity/asset",
+  "version": "0.1.0",
+  "author": "Sanity.io <hello@sanity.io>",
+  "module": "dist/asset.esm.js",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "coverage": "tsdx test --coverage"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 100,
+    "bracketSpacing": false,
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true,
+      "browser": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "plugin:@typescript-eslint/recommended",
+      "prettier/@typescript-eslint",
+      "sanity",
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error",
+      "operator-linebreak": "off",
+      "no-use-before-define": "off",
+      "@typescript-eslint/no-use-before-define": "off"
+    },
+    "plugins": [
+      "@typescript-eslint",
+      "prettier"
+    ]
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "diagnostics": false
+      }
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-sanity": "^1.149.0",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "tsdx": "^0.13.2",
+    "tslib": "^1.11.1",
+    "typescript": "^3.8.3"
+  }
+}
