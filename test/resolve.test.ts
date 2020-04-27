@@ -1,6 +1,4 @@
 import {
-  buildImagePath,
-  buildImageUrl,
   DEFAULT_CROP,
   DEFAULT_HOTSPOT,
   getIdFromString,
@@ -20,6 +18,7 @@ import {
 } from '../src/resolve'
 import {expectedAsset, testProject, customCrop, customHotspot, expectedImage} from './fixtures'
 import {SanityImageSource, SanityFileSource} from '../src/types'
+import {buildImagePath, buildImageUrl} from '../src/paths'
 
 const imgId = 'image-abc123-320x240-png'
 const imgPath = 'images/a/b/abc123-320x240.png'
@@ -35,8 +34,8 @@ const validImgSources: [string, SanityImageSource][] = [
   ['object url stub', {asset: {url: imgUrl}}],
 ]
 
-const fileId = 'file-abc123-pdf'
-const filePath = 'files/a/b/abc123.pdf'
+const fileId = 'file-def987-pdf'
+const filePath = 'files/a/b/def987.pdf'
 const fileUrl = `https://cdn.sanity.io/${filePath}`
 const validFileSources: [string, SanityFileSource][] = [
   ['asset id', fileId],
@@ -65,7 +64,7 @@ test('constant DEFAULT_HOTSPOT matches expected value', () =>
 test('buildImagePath(): throws if no project id or dataset given', () => {
   expect(() =>
     buildImagePath({
-      assetId: 'assetId',
+      assetId: 'f00baa',
       extension: 'png',
       metadata: {dimensions: {height: 300, width: 500}},
     })
@@ -77,21 +76,21 @@ test('buildImagePath(): throws if no project id or dataset given', () => {
 test('buildImagePath(): builds image paths correctly', () => {
   const path = buildImagePath(
     {
-      assetId: 'assetId',
+      assetId: 'f00baa',
       extension: 'png',
       metadata: {dimensions: {height: 300, width: 500}},
     },
     {projectId: 'abc123', dataset: 'foo'}
   )
 
-  expect(path).toEqual('images/abc123/foo/assetId-500x300.png')
+  expect(path).toEqual('images/abc123/foo/f00baa-500x300.png')
 })
 
 // buildImageUrl()
 test('buildImageUrl(): throws if no project id or dataset given', () => {
   expect(() =>
     buildImageUrl({
-      assetId: 'assetId',
+      assetId: 'f00baa',
       extension: 'png',
       metadata: {dimensions: {height: 300, width: 500}},
     })
@@ -103,43 +102,43 @@ test('buildImageUrl(): throws if no project id or dataset given', () => {
 test('buildImageUrl(): builds image urls correctly', () => {
   const url = buildImageUrl(
     {
-      assetId: 'assetId',
+      assetId: 'f00baa',
       extension: 'png',
       metadata: {dimensions: {height: 300, width: 500}},
     },
     {projectId: 'abc123', dataset: 'foo'}
   )
 
-  expect(url).toEqual('https://cdn.sanity.io/images/abc123/foo/assetId-500x300.png')
+  expect(url).toEqual('https://cdn.sanity.io/images/abc123/foo/f00baa-500x300.png')
 })
 
 // getIdFromString()
 test('getIdFromString(): already an id', () => {
-  const id = 'image-assetId-320x240-png'
+  const id = 'image-f00baa-320x240-png'
   expect(getIdFromString(id)).toBe(id)
 })
 
 test('getIdFromString(): from URL', () => {
-  const id = 'image-assetId-320x240-png'
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png'
+  const id = 'image-f00baa-320x240-png'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png'
   expect(getIdFromString(url)).toBe(id)
 })
 
 test('getIdFromString(): from URL with query', () => {
-  const id = 'image-assetId-320x240-png'
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png?w=120&h=120'
+  const id = 'image-f00baa-320x240-png'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png?w=120&h=120'
   expect(getIdFromString(url)).toBe(id)
 })
 
 test('getIdFromString(): from path', () => {
-  const id = 'image-assetId-320x240-png'
-  const path = 'images/foo/bar/assetId-320x240.png'
+  const id = 'image-f00baa-320x240-png'
+  const path = 'images/foo/bar/f00baa-320x240.png'
   expect(getIdFromString(path)).toBe(id)
 })
 
 test('getIdFromString(): from filename', () => {
-  const id = 'image-assetId-320x240-png'
-  const path = 'assetId-320x240.png'
+  const id = 'image-f00baa-320x240-png'
+  const path = 'f00baa-320x240.png'
   expect(getIdFromString(path)).toBe(id)
 })
 
@@ -152,100 +151,100 @@ test('tryGetIdFromString(): no match', () => {
 })
 
 test('tryGetIdFromString(): match', () => {
-  const id = 'image-assetId-320x240-png'
-  const path = 'assetId-320x240.png'
+  const id = 'image-f00baa-320x240-png'
+  const path = 'f00baa-320x240.png'
   expect(tryGetIdFromString(path)).toBe(id)
 })
 
 // getAssetDocumentId()
 test('getAssetDocumentId(): already an id', () => {
-  const id = 'image-assetId-320x240-png'
+  const id = 'image-f00baa-320x240-png'
   expect(getAssetDocumentId(id)).toBe(id)
 })
 
 test('getAssetDocumentId(): from URL', () => {
-  const id = 'image-assetId-320x240-png'
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png'
+  const id = 'image-f00baa-320x240-png'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png'
   expect(getAssetDocumentId(url)).toBe(id)
 })
 
 test('getAssetDocumentId(): from URL with query', () => {
-  const id = 'image-assetId-320x240-png'
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png?w=120&h=120'
+  const id = 'image-f00baa-320x240-png'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png?w=120&h=120'
   expect(getAssetDocumentId(url)).toBe(id)
 })
 
 test('getAssetDocumentId(): from path', () => {
-  const id = 'image-assetId-320x240-png'
-  const path = 'images/foo/bar/assetId-320x240.png'
+  const id = 'image-f00baa-320x240-png'
+  const path = 'images/foo/bar/f00baa-320x240.png'
   expect(getAssetDocumentId(path)).toBe(id)
 })
 
 test('getAssetDocumentId(): from image filename', () => {
-  const id = 'image-assetId-320x240-png'
-  const path = 'assetId-320x240.png'
+  const id = 'image-f00baa-320x240-png'
+  const path = 'f00baa-320x240.png'
   expect(getAssetDocumentId(path)).toBe(id)
 })
 
 test('getAssetDocumentId(): from filename', () => {
-  const id = 'file-assetId-pdf'
-  const path = 'assetId.pdf'
+  const id = 'file-f00baa-pdf'
+  const path = 'f00baa.pdf'
   expect(getAssetDocumentId(path)).toBe(id)
 })
 
 test('getAssetDocumentId(): from reference', () => {
-  const id = 'image-assetId-320x240-png'
+  const id = 'image-f00baa-320x240-png'
   expect(getAssetDocumentId({_ref: id})).toBe(id)
 })
 
 test('getAssetDocumentId(): from asset stub (id)', () => {
-  const id = 'image-assetId-320x240-png'
+  const id = 'image-f00baa-320x240-png'
   expect(getAssetDocumentId({_id: id})).toBe(id)
 })
 
 test('getAssetDocumentId(): from asset stub (path)', () => {
-  const id = 'image-assetId-320x240-png'
-  const path = 'images/foo/bar/assetId-320x240.png'
+  const id = 'image-f00baa-320x240-png'
+  const path = 'images/foo/bar/f00baa-320x240.png'
   expect(getAssetDocumentId({path})).toBe(id)
 })
 
 test('getAssetDocumentId(): from asset stub (url)', () => {
-  const id = 'image-assetId-320x240-png'
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png'
+  const id = 'image-f00baa-320x240-png'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png'
   expect(getAssetDocumentId({url})).toBe(id)
 })
 
 test('getAssetDocumentId(): from asset stub (url with query)', () => {
-  const id = 'image-assetId-320x240-png'
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png?w=120&h=120'
+  const id = 'image-f00baa-320x240-png'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png?w=120&h=120'
   expect(getAssetDocumentId({url})).toBe(id)
 })
 
 test('getAssetDocumentId(): from deep reference', () => {
-  const id = 'image-assetId-320x240-png'
+  const id = 'image-f00baa-320x240-png'
   expect(getAssetDocumentId({asset: {_ref: id}})).toBe(id)
 })
 
 test('getAssetDocumentId(): from deep asset stub (id)', () => {
-  const id = 'image-assetId-320x240-png'
+  const id = 'image-f00baa-320x240-png'
   expect(getAssetDocumentId({asset: {_id: id}})).toBe(id)
 })
 
 test('getAssetDocumentId(): from deep asset stub (path)', () => {
-  const id = 'image-assetId-320x240-png'
-  const path = 'images/foo/bar/assetId-320x240.png'
+  const id = 'image-f00baa-320x240-png'
+  const path = 'images/foo/bar/f00baa-320x240.png'
   expect(getAssetDocumentId({asset: {path}})).toBe(id)
 })
 
 test('getAssetDocumentId(): from deep asset stub (url)', () => {
-  const id = 'image-assetId-320x240-png'
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png'
+  const id = 'image-f00baa-320x240-png'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png'
   expect(getAssetDocumentId({asset: {url}})).toBe(id)
 })
 
 test('getAssetDocumentId(): from deep asset stub (url with query)', () => {
-  const id = 'image-assetId-320x240-png'
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png?w=200'
+  const id = 'image-f00baa-320x240-png'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png?w=200'
   expect(getAssetDocumentId({asset: {url}})).toBe(id)
 })
 
@@ -258,129 +257,129 @@ test('tryGetAssetDocumentId(): no match', () => {
 })
 
 test('tryGetAssetDocumentId(): match', () => {
-  const id = 'image-assetId-320x240-png'
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png?w=200'
+  const id = 'image-f00baa-320x240-png'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png?w=200'
   expect(tryGetAssetDocumentId({asset: {url}})).toBe(id)
 })
 
 // getImageAsset()
 test('getImageAsset(): from ID', () => {
-  const id = 'image-assetId-320x240-png'
+  const id = 'image-f00baa-320x240-png'
   expect(getImageAsset(id, testProject)).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from URL', () => {
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png'
   expect(getImageAsset(url, testProject)).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from URL with query', () => {
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png?w=120&h=120'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png?w=120&h=120'
   expect(getImageAsset(url, testProject)).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from URL, inferred project', () => {
-  const url = 'https://cdn.sanity.io/images/a/b/assetId-320x240.png'
+  const url = 'https://cdn.sanity.io/images/a/b/f00baa-320x240.png'
   expect(getImageAsset(url)).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from URL with query, inferred project', () => {
-  const url = 'https://cdn.sanity.io/images/a/b/assetId-320x240.png?w=120&h=120'
+  const url = 'https://cdn.sanity.io/images/a/b/f00baa-320x240.png?w=120&h=120'
   expect(getImageAsset(url)).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from path', () => {
-  const path = 'images/foo/bar/assetId-320x240.png'
+  const path = 'images/foo/bar/f00baa-320x240.png'
   expect(getImageAsset(path, testProject)).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from path, inferred project', () => {
-  const path = 'images/a/b/assetId-320x240.png'
+  const path = 'images/a/b/f00baa-320x240.png'
   expect(getImageAsset(path)).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from filename', () => {
-  const path = 'assetId-320x240.png'
+  const path = 'f00baa-320x240.png'
   expect(getImageAsset(path, testProject)).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from reference', () => {
-  const id = 'image-assetId-320x240-png'
+  const id = 'image-f00baa-320x240-png'
   expect(getImageAsset({_ref: id}, testProject)).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from asset stub (id)', () => {
-  const id = 'image-assetId-320x240-png'
+  const id = 'image-f00baa-320x240-png'
   expect(getImageAsset({_id: id}, testProject)).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from asset stub (path)', () => {
-  const path = 'images/foo/bar/assetId-320x240.png'
+  const path = 'images/foo/bar/f00baa-320x240.png'
   expect(getImageAsset({path}, testProject)).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from asset stub (path), inferred project', () => {
-  const path = 'images/a/b/assetId-320x240.png'
+  const path = 'images/a/b/f00baa-320x240.png'
   expect(getImageAsset({path})).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from asset stub (url)', () => {
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png'
   expect(getImageAsset({url}, testProject)).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from asset stub (url), inferred project', () => {
-  const url = 'https://cdn.sanity.io/images/a/b/assetId-320x240.png'
+  const url = 'https://cdn.sanity.io/images/a/b/f00baa-320x240.png'
   expect(getImageAsset({url})).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from asset stub (url with query)', () => {
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png?w=120&h=120'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png?w=120&h=120'
   expect(getImageAsset({url}, testProject)).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from asset stub (url with query), inferred project', () => {
-  const url = 'https://cdn.sanity.io/images/a/b/assetId-320x240.png?w=120&h=120'
+  const url = 'https://cdn.sanity.io/images/a/b/f00baa-320x240.png?w=120&h=120'
   expect(getImageAsset({url})).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from deep reference', () => {
-  const id = 'image-assetId-320x240-png'
+  const id = 'image-f00baa-320x240-png'
   expect(getImageAsset({asset: {_ref: id}}, testProject)).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from deep asset stub (id)', () => {
-  const id = 'image-assetId-320x240-png'
+  const id = 'image-f00baa-320x240-png'
   expect(getImageAsset({asset: {_id: id}}, testProject)).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from deep asset stub (path)', () => {
-  const path = 'images/foo/bar/assetId-320x240.png'
+  const path = 'images/foo/bar/f00baa-320x240.png'
   expect(getImageAsset({asset: {path}}, testProject)).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from deep asset stub (path), inferred project', () => {
-  const path = 'images/a/b/assetId-320x240.png'
+  const path = 'images/a/b/f00baa-320x240.png'
   expect(getImageAsset({asset: {path}})).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from deep asset stub (url)', () => {
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png'
   expect(getImageAsset({asset: {url}}, testProject)).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from deep asset stub (url), inferred project', () => {
-  const url = 'https://cdn.sanity.io/images/a/b/assetId-320x240.png'
+  const url = 'https://cdn.sanity.io/images/a/b/f00baa-320x240.png'
   expect(getImageAsset({asset: {url}})).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from deep asset stub (url with query)', () => {
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png?w=200'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png?w=200'
   expect(getImageAsset({asset: {url}}, testProject)).toEqual(expectedAsset)
 })
 
 test('getImageAsset(): from deep asset stub (url with query), inferred project', () => {
-  const url = 'https://cdn.sanity.io/images/a/b/assetId-320x240.png?w=200'
+  const url = 'https://cdn.sanity.io/images/a/b/f00baa-320x240.png?w=200'
   expect(getImageAsset({asset: {url}})).toEqual(expectedAsset)
 })
 
@@ -393,7 +392,7 @@ test('tryGetImageAsset(): no match', () => {
 })
 
 test('tryGetImageAsset(): match', () => {
-  const url = 'https://cdn.sanity.io/images/a/b/assetId-320x240.png?w=200'
+  const url = 'https://cdn.sanity.io/images/a/b/f00baa-320x240.png?w=200'
   expect(tryGetImageAsset({asset: {url}})).toEqual(expectedAsset)
 })
 
@@ -414,92 +413,92 @@ test('getImageAsset(): requires projectId/dataset on invalid path', () => {
 
 // getImage()
 test('getImage(): from ID', () => {
-  const id = 'image-assetId-320x240-png'
+  const id = 'image-f00baa-320x240-png'
   expect(getImage(id, testProject)).toEqual(expectedImage)
 })
 
 test('getImage(): from URL', () => {
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png'
   expect(getImage(url, testProject)).toEqual(expectedImage)
 })
 
 test('getImage(): from URL with query', () => {
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png?w=120&h=120'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png?w=120&h=120'
   expect(getImage(url, testProject)).toEqual(expectedImage)
 })
 
 test('getImage(): from URL, inferred project', () => {
-  const url = 'https://cdn.sanity.io/images/a/b/assetId-320x240.png'
+  const url = 'https://cdn.sanity.io/images/a/b/f00baa-320x240.png'
   expect(getImage(url)).toEqual(expectedImage)
 })
 
 test('getImage(): from URL with query, inferred project', () => {
-  const url = 'https://cdn.sanity.io/images/a/b/assetId-320x240.png?w=120&h=120'
+  const url = 'https://cdn.sanity.io/images/a/b/f00baa-320x240.png?w=120&h=120'
   expect(getImage(url)).toEqual(expectedImage)
 })
 
 test('getImage(): from path', () => {
-  const path = 'images/foo/bar/assetId-320x240.png'
+  const path = 'images/foo/bar/f00baa-320x240.png'
   expect(getImage(path, testProject)).toEqual(expectedImage)
 })
 
 test('getImage(): from path, inferred project', () => {
-  const path = 'images/a/b/assetId-320x240.png'
+  const path = 'images/a/b/f00baa-320x240.png'
   expect(getImage(path)).toEqual(expectedImage)
 })
 
 test('getImage(): from filename', () => {
-  const path = 'assetId-320x240.png'
+  const path = 'f00baa-320x240.png'
   expect(getImage(path, testProject)).toEqual(expectedImage)
 })
 
 test('getImage(): from reference', () => {
-  const id = 'image-assetId-320x240-png'
+  const id = 'image-f00baa-320x240-png'
   expect(getImage({_ref: id}, testProject)).toEqual(expectedImage)
 })
 
 test('getImage(): from asset stub (id)', () => {
-  const id = 'image-assetId-320x240-png'
+  const id = 'image-f00baa-320x240-png'
   expect(getImage({_id: id}, testProject)).toEqual(expectedImage)
 })
 
 test('getImage(): from asset stub (path)', () => {
-  const path = 'images/foo/bar/assetId-320x240.png'
+  const path = 'images/foo/bar/f00baa-320x240.png'
   expect(getImage({path}, testProject)).toEqual(expectedImage)
 })
 
 test('getImage(): from asset stub (path), inferred project', () => {
-  const path = 'images/a/b/assetId-320x240.png'
+  const path = 'images/a/b/f00baa-320x240.png'
   expect(getImage({path})).toEqual(expectedImage)
 })
 
 test('getImage(): from asset stub (url)', () => {
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png'
   expect(getImage({url}, testProject)).toEqual(expectedImage)
 })
 
 test('getImage(): from asset stub (url), inferred project', () => {
-  const url = 'https://cdn.sanity.io/images/a/b/assetId-320x240.png'
+  const url = 'https://cdn.sanity.io/images/a/b/f00baa-320x240.png'
   expect(getImage({url})).toEqual(expectedImage)
 })
 
 test('getImage(): from asset stub (url with query)', () => {
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png?w=120&h=120'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png?w=120&h=120'
   expect(getImage({url}, testProject)).toEqual(expectedImage)
 })
 
 test('getImage(): from asset stub (url with query), inferred project', () => {
-  const url = 'https://cdn.sanity.io/images/a/b/assetId-320x240.png?w=120&h=120'
+  const url = 'https://cdn.sanity.io/images/a/b/f00baa-320x240.png?w=120&h=120'
   expect(getImage({url})).toEqual(expectedImage)
 })
 
 test('getImage(): from deep reference', () => {
-  const id = 'image-assetId-320x240-png'
+  const id = 'image-f00baa-320x240-png'
   expect(getImage({asset: {_ref: id}}, testProject)).toEqual(expectedImage)
 })
 
 test('getImage(): from deep reference, custom crop/hotspot', () => {
-  const id = 'image-assetId-320x240-png'
+  const id = 'image-f00baa-320x240-png'
   const custom = {crop: customCrop, hotspot: customHotspot}
   expect(getImage({asset: {_ref: id}, ...custom}, testProject)).toEqual({
     ...expectedImage,
@@ -508,12 +507,12 @@ test('getImage(): from deep reference, custom crop/hotspot', () => {
 })
 
 test('getImage(): from deep asset stub (id)', () => {
-  const id = 'image-assetId-320x240-png'
+  const id = 'image-f00baa-320x240-png'
   expect(getImage({asset: {_id: id}}, testProject)).toEqual(expectedImage)
 })
 
 test('getImage(): from deep asset stub (id), custom crop/hotspot', () => {
-  const id = 'image-assetId-320x240-png'
+  const id = 'image-f00baa-320x240-png'
   const custom = {crop: customCrop, hotspot: customHotspot}
   expect(getImage({asset: {_id: id}, ...custom}, testProject)).toEqual({
     ...expectedImage,
@@ -522,12 +521,12 @@ test('getImage(): from deep asset stub (id), custom crop/hotspot', () => {
 })
 
 test('getImage(): from deep asset stub (path)', () => {
-  const path = 'images/foo/bar/assetId-320x240.png'
+  const path = 'images/foo/bar/f00baa-320x240.png'
   expect(getImage({asset: {path}}, testProject)).toEqual(expectedImage)
 })
 
 test('getImage(): from deep asset stub (path), custom crop/hotspot', () => {
-  const path = 'images/foo/bar/assetId-320x240.png'
+  const path = 'images/foo/bar/f00baa-320x240.png'
   const custom = {crop: customCrop, hotspot: customHotspot}
   expect(getImage({asset: {path}, ...custom}, testProject)).toEqual({
     ...expectedImage,
@@ -536,23 +535,23 @@ test('getImage(): from deep asset stub (path), custom crop/hotspot', () => {
 })
 
 test('getImage(): from deep asset stub (path), inferred project', () => {
-  const path = 'images/a/b/assetId-320x240.png'
+  const path = 'images/a/b/f00baa-320x240.png'
   expect(getImage({asset: {path}})).toEqual(expectedImage)
 })
 
 test('getImage(): from deep asset stub (path), inferred project, custom crop/hotspot', () => {
-  const path = 'images/a/b/assetId-320x240.png'
+  const path = 'images/a/b/f00baa-320x240.png'
   const custom = {crop: customCrop, hotspot: customHotspot}
   expect(getImage({asset: {path}, ...custom})).toEqual({...expectedImage, ...custom})
 })
 
 test('getImage(): from deep asset stub (url)', () => {
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png'
   expect(getImage({asset: {url}}, testProject)).toEqual(expectedImage)
 })
 
 test('getImage(): from deep asset stub (url), custom crop/hotspot', () => {
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png'
   const custom = {crop: customCrop, hotspot: customHotspot}
   expect(getImage({asset: {url}, ...custom}, testProject)).toEqual({
     ...expectedImage,
@@ -561,23 +560,23 @@ test('getImage(): from deep asset stub (url), custom crop/hotspot', () => {
 })
 
 test('getImage(): from deep asset stub (url), inferred project', () => {
-  const url = 'https://cdn.sanity.io/images/a/b/assetId-320x240.png'
+  const url = 'https://cdn.sanity.io/images/a/b/f00baa-320x240.png'
   expect(getImage({asset: {url}})).toEqual(expectedImage)
 })
 
 test('getImage(): from deep asset stub (url), inferred project, custom crop/hotspot', () => {
-  const url = 'https://cdn.sanity.io/images/a/b/assetId-320x240.png'
+  const url = 'https://cdn.sanity.io/images/a/b/f00baa-320x240.png'
   const custom = {crop: customCrop, hotspot: customHotspot}
   expect(getImage({asset: {url}, ...custom})).toEqual({...expectedImage, ...custom})
 })
 
 test('getImage(): from deep asset stub (url with query)', () => {
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png?w=200'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png?w=200'
   expect(getImage({asset: {url}}, testProject)).toEqual(expectedImage)
 })
 
 test('getImage(): from deep asset stub (url with query), custom crop/hotspot', () => {
-  const url = 'https://cdn.sanity.io/images/foo/bar/assetId-320x240.png?w=200'
+  const url = 'https://cdn.sanity.io/images/foo/bar/f00baa-320x240.png?w=200'
   const custom = {crop: customCrop, hotspot: customHotspot}
   expect(getImage({asset: {url}, ...custom}, testProject)).toEqual({
     ...expectedImage,
@@ -586,12 +585,12 @@ test('getImage(): from deep asset stub (url with query), custom crop/hotspot', (
 })
 
 test('getImage(): from deep asset stub (url with query), inferred project', () => {
-  const url = 'https://cdn.sanity.io/images/a/b/assetId-320x240.png?w=200'
+  const url = 'https://cdn.sanity.io/images/a/b/f00baa-320x240.png?w=200'
   expect(getImage({asset: {url}})).toEqual(expectedImage)
 })
 
 test('getImage(): from deep asset stub (url with query), inferred project, custom crop/hotspot', () => {
-  const url = 'https://cdn.sanity.io/images/a/b/assetId-320x240.png?w=200'
+  const url = 'https://cdn.sanity.io/images/a/b/f00baa-320x240.png?w=200'
   const custom = {crop: customCrop, hotspot: customHotspot}
   expect(getImage({asset: {url}, ...custom})).toEqual({...expectedImage, ...custom})
 })
@@ -605,7 +604,7 @@ test('tryGetImage(): no match', () => {
 })
 
 test('tryGetImage(): match', () => {
-  const url = 'https://cdn.sanity.io/images/a/b/assetId-320x240.png?w=200'
+  const url = 'https://cdn.sanity.io/images/a/b/f00baa-320x240.png?w=200'
   expect(tryGetImage(url)).toEqual(expectedImage)
 })
 

@@ -141,12 +141,12 @@ export const portraitCropHotspotImage = {
 }
 
 export const expectedAsset = {
-  _id: 'image-assetId-320x240-png',
+  _id: 'image-f00baa-320x240-png',
   _type: 'sanity.imageAsset',
-  assetId: 'assetId',
+  assetId: 'f00baa',
   extension: 'png',
-  path: 'images/a/b/assetId-320x240.png',
-  url: 'https://cdn.sanity.io/images/a/b/assetId-320x240.png',
+  path: 'images/a/b/f00baa-320x240.png',
+  url: 'https://cdn.sanity.io/images/a/b/f00baa-320x240.png',
   metadata: {
     dimensions: {
       width: 320,

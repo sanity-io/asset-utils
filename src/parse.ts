@@ -1,11 +1,6 @@
-import {tryGetUrlFilename} from './resolve'
 import {SanityAssetIdParts, SanityFileAssetIdParts, SanityImageAssetIdParts} from './types'
-import {
-  fileAssetFilenamePattern,
-  fileAssetIdPattern,
-  imageAssetFilenamePattern,
-  imageAssetIdPattern,
-} from './patterns'
+import {fileAssetIdPattern, imageAssetFilenamePattern, imageAssetIdPattern} from './constants'
+import {tryGetUrlFilename, isValidFilename} from './paths'
 
 const exampleFileId = 'file-027401f31c3ac1e6d78c5d539ccd1beff72b9b11-pdf'
 const exampleImageId = 'image-027401f31c3ac1e6d78c5d539ccd1beff72b9b11-2000x3000-jpg'
@@ -85,14 +80,4 @@ export function parseAssetFilename(filename: string): SanityAssetIdParts {
   } catch (err) {
     throw new Error(`Invalid image/file asset filename: ${filename}`)
   }
-}
-
-/**
- * Checks whether or not a given filename matches the expected Sanity asset filename pattern
- *
- * @param filename - Filename to check for validity
- * @returns Whether or not the specified filename is valid
- */
-export function isValidFilename(filename: string): boolean {
-  return fileAssetFilenamePattern.test(filename) || imageAssetFilenamePattern.test(filename)
 }

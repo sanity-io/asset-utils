@@ -1,5 +1,3 @@
-import {getAssetDocumentId} from './resolve'
-
 export type SanityAssetIdParts = SanityFileAssetIdParts | SanityImageAssetIdParts
 
 export interface SanityFileAssetIdParts {
@@ -35,16 +33,6 @@ export type SanityImageSource =
   | SanityAssetUrlStub
   | SanityAssetPathStub
   | SanityImageObjectStub
-
-export function isFileSource(src: SanityAssetSource): src is SanityFileSource {
-  const assetId = getAssetDocumentId(src)
-  return assetId.startsWith('file-')
-}
-
-export function isImageSource(src: SanityAssetSource): src is SanityImageSource {
-  const assetId = getAssetDocumentId(src)
-  return assetId.startsWith('image-')
-}
 
 export type SanitySwatchName =
   | 'darkMuted'
@@ -249,26 +237,6 @@ export interface SanityImageFitResult {
   rect: Rectangle
 }
 
-export class UnresolvableError extends Error {
-  unresolvable = true
-  input?: SanityAssetSource
-
-  constructor(inputSource: SanityAssetSource, message = 'Failed to resolve asset ID from source') {
-    super(message)
-    this.input = inputSource
-  }
-}
-
-export function isUnresolvableError(err: Error): err is UnresolvableError {
-  const error = err as UnresolvableError
-  return Boolean(error.input && error.unresolvable)
-}
-
 export function isObject(obj: unknown): obj is object {
   return obj !== null && typeof obj === 'object'
 }
-
-// TypeScript helpers
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export type MethodReturnType<T> = T extends (...args: unknown[]) => infer R ? R : any
-export type ArgumentTypes<F extends Function> = F extends (...args: infer A) => unknown ? A : never

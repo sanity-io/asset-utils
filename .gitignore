@@ -39,3 +39,6 @@ jspm_packages
 # Editors / IDEs
 *.sublime-project
 *.sublime-workspace
+
+# Compiled output
+/dist

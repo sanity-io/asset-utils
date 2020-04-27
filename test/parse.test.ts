@@ -58,9 +58,9 @@ test('parseAssetFilename(): returns object of named image properties if image fi
 })
 
 test('parseAssetFilename(): returns object of named image properties if file filename', () => {
-  expect(parseAssetFilename('xyz987.pdf')).toMatchInlineSnapshot(`
+  expect(parseAssetFilename('f00baa.pdf')).toMatchInlineSnapshot(`
     Object {
-      "assetId": "xyz987",
+      "assetId": "f00baa",
       "extension": "pdf",
       "type": "file",
     }
