@@ -1,5 +1,5 @@
 {
-  "name": "@sanity/asset",
+  "name": "@sanity/asset-utils",
   "version": "0.1.0",
   "author": "Sanity.io <hello@sanity.io>",
   "module": "dist/asset.esm.js",
@@ -21,12 +21,32 @@
     "prepare": "tsdx build",
     "coverage": "tsdx test --coverage"
   },
-  "peerDependencies": {},
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-sanity": "^1.149.0",
+    "prettier": "^2.0.5",
+    "tsdx": "^0.13.2",
+    "tslib": "^1.11.1",
+    "typescript": "^3.8.3"
   },
+  "peerDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sanity-io/asset-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sanity-io/asset-utils/issues"
+  },
+  "homepage": "https://github.com/sanity-io/asset-utils#readme",
+  "keywords": [
+    "sanity",
+    "sanity.io",
+    "asset",
+    "utility"
+  ],
   "prettier": {
     "semi": false,
     "printWidth": 100,
@@ -63,17 +83,5 @@
         "diagnostics": false
       }
     }
-  },
-  "devDependencies": {
-    "@types/jest": "^25.2.1",
-    "@typescript-eslint/eslint-plugin": "^2.29.0",
-    "@typescript-eslint/parser": "^2.29.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-config-sanity": "^1.149.0",
-    "husky": "^4.2.5",
-    "prettier": "^2.0.5",
-    "tsdx": "^0.13.2",
-    "tslib": "^1.11.1",
-    "typescript": "^3.8.3"
   }
 }
