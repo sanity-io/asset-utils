@@ -22,7 +22,7 @@ const {someUtilityFunction} = require('@sanity/asset-utils')
 
 ## Documentation
 
-An [HTML version](docs/index.html) is also available, which also includes interface definitions, constants and such.### Functions
+An [HTML version](https://sanity-io.github.io/asset-utils/) is also available, which also includes interface definitions, constants and more.### Functions
 
 - [buildFilePath](README.md#buildfilepath)
 - [buildFileUrl](README.md#buildfileurl)

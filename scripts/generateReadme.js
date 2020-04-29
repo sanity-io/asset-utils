@@ -367,15 +367,21 @@ function prettify() {
 }
 
 function commit() {
-  childProcess.spawnSync('git', ['add', 'README.md'], {cwd: path.resolve(__dirname, '..')})
+  childProcess.spawnSync('git', ['add', 'README.md'], {
+    cwd: path.resolve(__dirname, '..'),
+    stdio: 'inherit',
+  })
+
   childProcess.spawnSync('git', ['commit', '-m', 'Updated README'], {
     cwd: path.resolve(__dirname, '..'),
+    stdio: 'inherit',
   })
 }
 
 function generateHtmlDocs() {
   childProcess.spawnSync(path.join(__dirname, '..', 'node_modules', '.bin', 'typedoc'), {
     cwd: path.resolve(__dirname, '..'),
+    stdio: 'inherit',
   })
 }
 
