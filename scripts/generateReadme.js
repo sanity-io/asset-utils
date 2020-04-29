@@ -10,8 +10,12 @@ const childProcess = require('child_process')
 const cheerio = require('cheerio')
 const pkg = require('../package.json')
 
-const hashLocation = process.argv.indexOf('--git-hash')
-const gitHash = hashLocation === -1 ? 'master' : process.argv[hashLocation + 1]
+const basePath = path.resolve(__dirname, '..')
+const gitHash = childProcess
+  .execSync('git rev-parse --short HEAD', {cwd: basePath, encoding: 'utf8'})
+  .trim()
+
+const doCommit = process.argv.includes('--commit')
 const ghUrl = pkg.homepage.replace(/#.*/, '').replace(/\/+$/, '')
 const slugRe = /[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,./:;<=>?@[\]^`{|}~]/g
 
@@ -29,7 +33,10 @@ readJsonDocs()
 extractFunctions()
 createMarkdownDocs()
 prettify()
-commit()
+
+if (doCommit) {
+  commit()
+}
 
 /**
  * Utilities
@@ -368,19 +375,19 @@ function prettify() {
 
 function commit() {
   childProcess.spawnSync('git', ['add', 'README.md'], {
-    cwd: path.resolve(__dirname, '..'),
+    cwd: basePath,
     stdio: 'inherit',
   })
 
   childProcess.spawnSync('git', ['commit', '-m', 'Updated README'], {
-    cwd: path.resolve(__dirname, '..'),
+    cwd: basePath,
     stdio: 'inherit',
   })
 }
 
 function generateHtmlDocs() {
   childProcess.spawnSync(path.join(__dirname, '..', 'node_modules', '.bin', 'typedoc'), {
-    cwd: path.resolve(__dirname, '..'),
+    cwd: basePath,
     stdio: 'inherit',
   })
 }
