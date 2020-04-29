@@ -175,7 +175,7 @@ function createMarkdownBody() {
   const header = outdent`
   ## Documentation
 
-  An [HTML version](docs/index.html) is also available, which also includes interface definitions, constants and such.
+  An [HTML version](https://sanity-io.github.io/asset-utils/) is also available, which also includes interface definitions, constants and more.
   `
   const toc = createMarkdownToc()
   const fns = functions.map((child) => createMarkdownSegment('Function', child)).join('\n\n')
