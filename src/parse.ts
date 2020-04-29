@@ -2,7 +2,14 @@ import {SanityAssetIdParts, SanityFileAssetIdParts, SanityImageAssetIdParts} fro
 import {fileAssetIdPattern, imageAssetFilenamePattern, imageAssetIdPattern} from './constants'
 import {tryGetUrlFilename, isValidFilename} from './paths'
 
+/**
+ * @internal
+ */
 const exampleFileId = 'file-027401f31c3ac1e6d78c5d539ccd1beff72b9b11-pdf'
+
+/**
+ * @internal
+ */
 const exampleImageId = 'image-027401f31c3ac1e6d78c5d539ccd1beff72b9b11-2000x3000-jpg'
 
 /**

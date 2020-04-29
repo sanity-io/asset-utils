@@ -7,6 +7,7 @@ const fs = require('fs')
 const path = require('path')
 const outdent = require('outdent')
 const childProcess = require('child_process')
+const cheerio = require('cheerio')
 const pkg = require('../package.json')
 
 const hashLocation = process.argv.indexOf('--git-hash')
@@ -23,6 +24,7 @@ const mdTemplate = fs.readFileSync(path.join(__dirname, '..', 'README.template.m
 const mdBase = `<!-- This file is AUTO-GENERATED, edit README.template.md or tweak scripts/generateReadme.js -->\n${mdTemplate}`
 
 generateHtmlDocs()
+modifyHtmlDocs()
 readJsonDocs()
 extractFunctions()
 createMarkdownDocs()
@@ -375,4 +377,98 @@ function generateHtmlDocs() {
   childProcess.spawnSync(path.join(__dirname, '..', 'node_modules', '.bin', 'typedoc'), {
     cwd: path.resolve(__dirname, '..'),
   })
+}
+
+function modifyHtmlDocs() {
+  const htmlPath = path.join(__dirname, '..', 'docs', 'index.html')
+  const $ = cheerio.load(fs.readFileSync(htmlPath))
+
+  // Get constants that start with `try` and treat them as functions
+  $('.tsd-kind-variable > a[href*="#try"]')
+    .parent()
+    .removeClass('tsd-kind-variable')
+    .addClass('tsd-kind-function')
+
+  // Move constants that are functions from the constants blocks to the functions block
+  const fnsInConstIndex = $('.tsd-index-section h3:contains("Variables")')
+    .closest('section')
+    .find('.tsd-kind-function')
+
+  // Move the functions to the top of the index
+  const fnsIndexSection = $('.tsd-index-section h3:contains("Functions")').closest('section')
+  fnsIndexSection.parent().prepend(fnsIndexSection)
+
+  const fnsListSection = $('.tsd-member-group h2:contains("Functions")').closest(
+    '.tsd-member-group'
+  )
+  fnsListSection.parent().find('.tsd-index-group').after(fnsListSection)
+
+  // Move constants that are functions from the variables list to the functions list
+  const fnsInList = $('.tsd-member-group h2:contains("Variables")')
+    .closest('section')
+    .find('a[name^="try"]')
+    .closest('.tsd-member')
+    .removeClass('tsd-kind-variable')
+    .addClass('tsd-kind-function')
+    .appendTo(fnsListSection)
+
+  // Find all "const" flags in the functions list, and remove them
+  fnsListSection.find('.ts-flagConst').remove()
+  fnsInList.find('a[name^="try"]').each(function () {
+    const a = $(this)
+    const target = a.attr('name').replace(/^try/, '')
+    const section = a.closest('section')
+    const parent = a.closest('.tsd-member-group').find(`a[name="${target}"]`).closest('section')
+    const parentSig = parent.find('.tsd-signatures')
+    const signature = parentSig.clone()
+    signature
+      .find('.tsd-signature')
+      .append(
+        '<span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>'
+      )
+
+    section.find('.tsd-signature').replaceWith(signature)
+  })
+
+  // Move classes to the top of the index
+  const classesIndexSection = $('.tsd-index-section h3:contains("Classes")').closest('section')
+  classesIndexSection.parent().append(classesIndexSection)
+
+  // Append the "try" functions (previously constants) to the functions list
+  fnsIndexSection.find('ul').append(fnsInConstIndex)
+
+  // Move the functions to the top of the navigation
+  const nav = $('.tsd-navigation ul')
+  const fns = orderNodesByName(nav.find('.tsd-kind-function'))
+  nav.prepend(fns)
+
+  // Don't reference "globals.html", use index!
+  $('a[href^="globals.html"]').each(function () {
+    const el = $(this)
+    el.attr('href', el.attr('href').replace('globals.html', 'index.html'))
+  })
+
+  // If encountering (broken) @link tags - throw
+  $(':contains("@link")').each(function () {
+    const html = $(this).html()
+    html.replace(/{@link (.*?)}/g, (match, target) => {
+      throw new Error(`Found BROKEN @link reference to "${target}"`)
+    })
+  })
+
+  // Remove filters, as they are noops in our case
+  $('#tsd-widgets').remove()
+
+  fs.writeFileSync(htmlPath, $.html())
+}
+
+function orderNodesByName(nodes) {
+  return nodes
+    .toArray()
+    .slice()
+    .sort((a, b) => {
+      const aName = cheerio(a).text().trim()
+      const bName = cheerio(b).text().trim()
+      return aName.localeCompare(bName)
+    })
 }

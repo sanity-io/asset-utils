@@ -4,5 +4,7 @@
   "stripInternal": true,
   "theme": "minimal",
   "json": "./docs/docs.json",
-  "out": "./docs"
+  "out": "./docs",
+  "readme": "./README.template.md",
+  "hideGenerator": true
 }

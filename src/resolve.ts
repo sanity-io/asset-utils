@@ -78,7 +78,7 @@ const getDefaultHotspot = (): SanityImageHotspot => ({...DEFAULT_HOTSPOT})
  * @param src - Input source (image object, asset, reference, id, url, path)
  * @returns Object with width, height and aspect ratio properties
  *
- * @throws {@link UnresolvableAssetError}
+ * @throws {@link UnresolvableError}
  * Throws if passed image source could not be resolved to an asset ID
  */
 export function getImageDimensions(src: SanityImageSource): SanityImageDimensions {
@@ -102,7 +102,7 @@ export const tryGetImageDimensions = getForgivingResolver(getImageDimensions)
  * @param src - Input source (file/image object, asset, reference, id, url, path)
  * @returns The file extension, if resolvable (no `.` included)
  *
- * @throws {@link UnresolvableAssetError}
+ * @throws {@link UnresolvableError}
  * Throws if passed asset source could not be resolved to an asset ID
  */
 export function getExtension(src: SanityAssetSource): string {
@@ -127,7 +127,7 @@ export const tryGetExtension = getForgivingResolver(getExtension)
  * @param project Project ID and dataset the image belongs to
  * @returns Image object
  *
- * @throws {@link UnresolvableAssetError}
+ * @throws {@link UnresolvableError}
  * Throws if passed image source could not be resolved to an asset ID
  */
 export function getImage(
@@ -161,7 +161,7 @@ export const tryGetImage = getForgivingResolver(getImage)
  * @param project - Project ID and dataset the image belongs to
  * @returns Image asset document
  *
- * @throws {@link UnresolvableAssetError}
+ * @throws {@link UnresolvableError}
  * Throws if passed image source could not be resolved to an asset ID
  */
 export function getImageAsset(
@@ -214,7 +214,7 @@ export const tryGetImageAsset = getForgivingResolver(getImageAsset)
  * @param project Project ID and dataset the file belongs to
  * @returns File object
  *
- * @throws {@link UnresolvableAssetError}
+ * @throws {@link UnresolvableError}
  * Throws if passed file source could not be resolved to an asset ID
  */
 export function getFile(src: SanityFileSource, project?: SanityProjectDetails): ResolvedSanityFile {
@@ -239,7 +239,7 @@ export const tryGetFile = getForgivingResolver(getFile)
  * @param project - Project ID and dataset the file belongs to
  * @returns File asset document
  *
- * @throws {@link UnresolvableAssetError}
+ * @throws {@link UnresolvableError}
  * Throws if passed file source could not be resolved to an asset ID
  */
 export function getFileAsset(
@@ -285,7 +285,7 @@ export const tryGetFileAsset = getForgivingResolver(getFileAsset)
  * @param src - Input source (image/file object, asset, reference, id, url, path)
  * @returns The asset document ID
  *
- * @throws {@link UnresolvableAssetError}
+ * @throws {@link UnresolvableError}
  * Throws if passed asset source could not be resolved to an asset document ID
  */
 export function getAssetDocumentId(src: SanityAssetSource): string {
@@ -327,7 +327,7 @@ export const tryGetAssetDocumentId = getForgivingResolver(getAssetDocumentId)
  * @returns string
  *
  *
- * @throws {@link UnresolvableAssetError}
+ * @throws {@link UnresolvableError}
  * Throws if passed image source could not be resolved to an asset ID
  */
 export function getIdFromString(str: string): string {
@@ -385,7 +385,7 @@ function idFromUrl(url: string): string {
  * @param source - Image URL or path
  * @returns object | undefined
  *
- * @throws {@link UnresolvableAssetError}
+ * @throws {@link UnresolvableError}
  * Throws if passed image source could not be resolved to an asset ID
  */
 export function getProject(src: SanityImageSource): SanityProjectDetails {

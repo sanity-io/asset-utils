@@ -40,10 +40,10 @@ export function isUnresolvableError(err: Error): err is UnresolvableError {
 
 /**
  * Returns a getter which returns `undefined` instead of throwing,
- * if encountering an `UnresolvableAssetError`
+ * if encountering an `UnresolvableError`
  *
  * @param method - Function to use as resolver
- * @returns Function that returns `undefined` if passed resolver throws UnresolvableAssetError
+ * @returns Function that returns `undefined` if passed resolver throws UnresolvableError
  * @internal
  */
 export function getForgivingResolver<T extends Function>(method: T) {
