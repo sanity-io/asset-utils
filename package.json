@@ -17,9 +17,10 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test",
-    "lint": "tsdx lint",
+    "lint": "tsdx lint src",
     "posttest": "npm run lint",
     "prepublishOnly": "tsdx build && npm test",
+    "postpublish": "npm run docs && gh-pages-deploy",
     "coverage": "tsdx test --coverage",
     "docs": "node scripts/generateReadme.js"
   },
