@@ -4,6 +4,7 @@
   "author": "Sanity.io <hello@sanity.io>",
   "module": "dist/asset-utils.esm.js",
   "license": "MIT",
+  "sideEffects": false,
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
