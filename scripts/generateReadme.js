@@ -115,15 +115,6 @@ function mergeComments(original, override, options = {isTryFn: false}) {
   }
 }
 
-function untriedName(triedName) {
-  if (!triedName.startsWith('try')) {
-    return triedName
-  }
-
-  const base = triedName.replace(/^try/, '')
-  return `${base[0].toLowerCase()}${base.slice(1)}`
-}
-
 function groupByKind(items) {
   const kinds = {}
   for (const item of items) {
@@ -134,15 +125,7 @@ function groupByKind(items) {
 
   for (const group of Object.values(kinds)) {
     // Sort mutates in place, which is why this works
-    group.sort((a, b) => {
-      const aName = untriedName(a.name)
-      const bName = untriedName(b.name)
-      if (aName === bName) {
-        return a.name.startsWith('try') ? 1 : -1
-      }
-
-      return aName.localeCompare(bName)
-    })
+    group.sort((a, b) => a.name.localeCompare(b.name))
   }
 
   return kinds
