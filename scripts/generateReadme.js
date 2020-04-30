@@ -18,6 +18,7 @@ const gitHash = childProcess
 const doCommit = process.argv.includes('--commit')
 const ghUrl = pkg.homepage.replace(/#.*/, '').replace(/\/+$/, '')
 const slugRe = /[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,./:;<=>?@[\]^`{|}~]/g
+const htmlDocsUrl = `https://sanity-io.github.io/asset-utils/`
 
 let docs
 let allNodes
@@ -240,12 +241,32 @@ function sortUnionTypes(types) {
   return sorted.concat(undef)
 }
 
+function getUrlForNode(node) {
+  const isFunction = node.kindString === 'Function'
+  const slug = slugify(node.name)
+  if (isFunction) {
+    return `${mdFilename}#${slug}`
+  }
+
+  if (node.kindString === 'Interface') {
+    return `${htmlDocsUrl}/interfaces/${slug}.html`
+  }
+
+  if (node.kingString === 'Class') {
+    return `${htmlDocsUrl}/classes/${slug}.html`
+  }
+
+  return `${htmlDocsUrl}/index.html#${slug}`
+}
+
 function formatMarkdownRef(thing) {
-  if (
+  const refNode =
     thing.type === 'reference' &&
     allNodes.find((node) => (thing.id ? node.id === thing.id : node.name === thing.name))
-  ) {
-    return `[${thing.name}](${mdFilename}#${slugify(thing.name)})`
+
+  if (refNode) {
+    const url = getUrlForNode(refNode)
+    return `[${thing.name}](${url})`
   }
 
   if (thing.type === 'reference' || thing.type === 'intrinsic') {
