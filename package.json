@@ -20,7 +20,7 @@
     "lint": "tsdx lint src",
     "posttest": "npm run lint",
     "prepublishOnly": "tsdx build && npm test",
-    "postpublish": "node scripts/generateReadme.md --commit && gh-pages-deploy",
+    "postpublish": "node scripts/generateReadme.js --commit && gh-pages-deploy",
     "coverage": "tsdx test --coverage",
     "docs": "node scripts/generateReadme.js"
   },
