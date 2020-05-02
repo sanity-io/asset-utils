@@ -16,6 +16,12 @@ export const url =
 export const urlWithQuery =
   'https://cdn.sanity.io/images/abc123/blog/734d6889e614ff0c6788105c88cfe071aa3146e5-4240x2832.jpg?w=320&h=240'
 
+export const urlWithCustomFilename =
+  'https://cdn.sanity.io/images/abc123/blog/734d6889e614ff0c6788105c88cfe071aa3146e5-4240x2832.jpg/kokos.jpg'
+
+export const urlWithCustomFilenameAndQuery =
+  'https://cdn.sanity.io/images/abc123/blog/734d6889e614ff0c6788105c88cfe071aa3146e5-4240x2832.jpg/kokos.jpg?w=320&h=240'
+
 export const crop = {
   _type: 'sanity.imageCrop',
   bottom: 0.03748125937031466,
