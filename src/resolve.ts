@@ -440,11 +440,23 @@ export function isAssetFilename(filename: string): boolean {
   return isImageAssetFilename(filename) || isFileAssetFilename(filename)
 }
 
+/**
+ * Return whether or not the passed source is a file source
+ *
+ * @param src - Source to check
+ * @returns Whether or not the given source is a file source
+ */
 export function isFileSource(src: SanityAssetSource): src is SanityFileSource {
   const assetId = getAssetDocumentId(src)
   return assetId.startsWith('file-')
 }
 
+/**
+ * Return whether or not the passed source is an image source
+ *
+ * @param src - Source to check
+ * @returns Whether or not the given source is an image source
+ */
 export function isImageSource(src: SanityAssetSource): src is SanityImageSource {
   const assetId = getAssetDocumentId(src)
   return assetId.startsWith('image-')
