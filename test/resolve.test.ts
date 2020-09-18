@@ -1,6 +1,4 @@
 import {
-  DEFAULT_CROP,
-  DEFAULT_HOTSPOT,
   getIdFromString,
   tryGetIdFromString,
   getImage,
@@ -59,18 +57,6 @@ const validFileSources: [string, SanityFileSource][] = [
   ['object path stub (pretty filename)', {asset: {path: filePathPretty}}],
   ['object url stub (pretty filename)', {asset: {url: fileUrlPretty}}],
 ]
-
-// constants
-test('constant DEFAULT_CROP matches expected value', () =>
-  expect(DEFAULT_CROP).toEqual({left: 0, top: 0, bottom: 0, right: 0}))
-
-test('constant DEFAULT_HOTSPOT matches expected value', () =>
-  expect(DEFAULT_HOTSPOT).toEqual({
-    x: 0.5,
-    y: 0.5,
-    height: 1,
-    width: 1,
-  }))
 
 // buildImagePath()
 test('buildImagePath(): throws if no project id or dataset given', () => {

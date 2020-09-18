@@ -1,4 +1,4 @@
-import {DEFAULT_CROP, DEFAULT_HOTSPOT} from '../src/resolve'
+import {DEFAULT_CROP, DEFAULT_HOTSPOT} from '../src/hotspotCrop'
 
 export const projectId = 'abc123'
 export const dataset = 'blog'

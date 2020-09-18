@@ -1,3 +1,4 @@
+import {getDefaultCrop, getDefaultHotspot} from './hotspotCrop'
 import {getForgivingResolver, UnresolvableError} from './utils'
 import {parseImageAssetId, parseFileAssetId} from './parse'
 import {
@@ -13,9 +14,7 @@ import {
   SanityFileObjectStub,
   SanityFileSource,
   SanityImageAsset,
-  SanityImageCrop,
   SanityImageDimensions,
-  SanityImageHotspot,
   SanityImageObjectStub,
   SanityImageSource,
   SanityProjectDetails,
@@ -36,40 +35,6 @@ import {
   getUrlPath,
   tryGetAssetPath,
 } from './paths'
-
-/**
- * Default crop (equals to "whole image")
- */
-export const DEFAULT_CROP: Readonly<SanityImageCrop> = Object.freeze({
-  left: 0,
-  top: 0,
-  bottom: 0,
-  right: 0,
-})
-
-/**
- * Default hotspot (equals to horizontal/vertical center, full size of image)
- */
-export const DEFAULT_HOTSPOT: Readonly<SanityImageHotspot> = Object.freeze({
-  x: 0.5,
-  y: 0.5,
-  height: 1,
-  width: 1,
-})
-
-/**
- * Returns cloned version of the default crop (prevents accidental mutations)
- *
- * @returns Default image crop object
- */
-const getDefaultCrop = (): SanityImageCrop => ({...DEFAULT_CROP})
-
-/**
- * Returns cloned version of the default hotspot (prevents accidental mutations)
- *
- * @returns Default image hotspot object
- */
-const getDefaultHotspot = (): SanityImageHotspot => ({...DEFAULT_HOTSPOT})
 
 /**
  * Returns the width, height and aspect ratio of a passed image asset, from any
@@ -182,8 +147,8 @@ export function getImageAsset(
     assetId,
     extension,
     metadata: {
-      dimensions: {width, height, aspectRatio},
       ...metadata,
+      dimensions: {width, height, aspectRatio},
     },
 
     // Placeholders, overwritten below
