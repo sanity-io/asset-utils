@@ -57,10 +57,33 @@ test('parseAssetFilename(): returns object of named image properties if image fi
   `)
 })
 
+test('parseAssetFilename(): returns object of named image properties if legacy image filename', () => {
+  expect(parseAssetFilename('LA5zSofUOP0i_iQwi4B2dEbzHQseitcuORm4n-600x578.png'))
+    .toMatchInlineSnapshot(`
+    Object {
+      "assetId": "LA5zSofUOP0i_iQwi4B2dEbzHQseitcuORm4n",
+      "extension": "png",
+      "height": 578,
+      "type": "image",
+      "width": 600,
+    }
+  `)
+})
+
 test('parseAssetFilename(): returns object of named image properties if file filename', () => {
   expect(parseAssetFilename('f00baa.pdf')).toMatchInlineSnapshot(`
     Object {
       "assetId": "f00baa",
+      "extension": "pdf",
+      "type": "file",
+    }
+  `)
+})
+
+test('parseAssetFilename(): returns object of named image properties if legacy file filename', () => {
+  expect(parseAssetFilename('LA5zSofUOP0i_iQwi4B2dEbzHQseitcuORm4n.pdf')).toMatchInlineSnapshot(`
+    Object {
+      "assetId": "LA5zSofUOP0i_iQwi4B2dEbzHQseitcuORm4n",
       "extension": "pdf",
       "type": "file",
     }
