@@ -38,6 +38,26 @@ const validImgSources: [string, SanityImageSource][] = [
   ['object url stub (pretty filename)', {asset: {url: imgUrlPretty}}],
 ]
 
+const imgLegacyId = 'image-LA5zSofUOP0i_iQwi4B2dEbzHQseitcuORm4n-600x578-png'
+const imgLegacyPath = 'images/a/b/LA5zSofUOP0i_iQwi4B2dEbzHQseitcuORm4n-600x578.png'
+const imgLegacyUrl = `https://cdn.sanity.io/${imgLegacyPath}`
+const imgLegacyPathPretty = `${imgLegacyPath}/pretty.png`
+const imgLegacyUrlPretty = `${imgLegacyUrl}/pretty.png`
+const validLegacyImgSources: [string, SanityImageSource][] = [
+  ['asset id', imgLegacyId],
+  ['reference', {_ref: imgLegacyId}],
+  ['path stub', {path: imgLegacyPath}],
+  ['url stub', {url: imgLegacyUrl}],
+  ['object reference stub', {asset: {_ref: imgLegacyId}}],
+  ['object id stub', {asset: {_id: imgLegacyId}}],
+  ['object path stub', {asset: {path: imgLegacyPath}}],
+  ['object url stub', {asset: {url: imgLegacyUrl}}],
+  ['path stub (pretty filename)', {path: imgLegacyPathPretty}],
+  ['url stub (pretty filename)', {url: imgLegacyUrlPretty}],
+  ['object path stub (pretty filename)', {asset: {path: imgLegacyPathPretty}}],
+  ['object url stub (pretty filename)', {asset: {url: imgLegacyUrlPretty}}],
+]
+
 const fileId = 'file-def987-pdf'
 const filePath = 'files/a/b/def987.pdf'
 const fileUrl = `https://cdn.sanity.io/${filePath}`
@@ -708,6 +728,10 @@ test.each(validImgSources)('getImageDimensions() can resolve from %s', (_, sourc
   expect(getImageDimensions(source)).toEqual({width: 320, height: 240, aspectRatio: 320 / 240})
 })
 
+test.each(validLegacyImgSources)('getImageDimensions() can resolve from legacy %s', (_, source) => {
+  expect(getImageDimensions(source)).toEqual({width: 600, height: 578, aspectRatio: 600 / 578})
+})
+
 test('getImageDimensions(): throws on invalid source', () => {
   expect(() => getImageDimensions('whatever')).toThrowErrorMatchingInlineSnapshot(
     `"Failed to resolve asset ID from source"`
@@ -722,8 +746,19 @@ test.each(validImgSources)('tryGetImageDimensions() can resolve from %s', (_, so
   expect(tryGetImageDimensions(source)).toEqual({width: 320, height: 240, aspectRatio: 320 / 240})
 })
 
+test.each(validLegacyImgSources)(
+  'tryGetImageDimensions() can resolve from legacy %s',
+  (_, source) => {
+    expect(tryGetImageDimensions(source)).toEqual({width: 600, height: 578, aspectRatio: 600 / 578})
+  }
+)
+
 // getExtension()
 test.each(validImgSources)('getExtension() can resolve from image %s', (_, source) => {
+  expect(getExtension(source)).toEqual('png')
+})
+
+test.each(validLegacyImgSources)('getExtension() can resolve from legacy %s', (_, source) => {
   expect(getExtension(source)).toEqual('png')
 })
 
