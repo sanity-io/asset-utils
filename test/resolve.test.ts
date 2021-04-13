@@ -16,7 +16,7 @@ import {
 } from '../src/resolve'
 import {expectedAsset, testProject, customCrop, customHotspot, expectedImage} from './fixtures'
 import {SanityImageSource, SanityFileSource} from '../src/types'
-import {buildImagePath, buildImageUrl} from '../src/paths'
+import {buildImagePath, buildImageUrl, buildFilePath, buildFileUrl} from '../src/paths'
 
 const imgId = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
 const imgPath = 'images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
@@ -98,11 +98,25 @@ test('buildImagePath(): builds image paths correctly', () => {
       extension: 'png',
       metadata: {dimensions: {height: 300, width: 500}},
     },
-    {projectId: 'f00baaf00baaf00baaf00baaf00baaf00baaf00b', dataset: 'foo'}
+    {projectId: 'abc123', dataset: 'foo'}
+  )
+
+  expect(path).toEqual('images/abc123/foo/f00baaf00baaf00baaf00baaf00baaf00baaf00b-500x300.png')
+})
+
+test('buildImagePath(): builds image path with vanity filename correctly', () => {
+  const path = buildImagePath(
+    {
+      assetId: 'f00baaf00baaf00baaf00baaf00baaf00baaf00b',
+      extension: 'png',
+      metadata: {dimensions: {height: 300, width: 500}},
+      vanityFilename: 'so-pretty.png',
+    },
+    {projectId: 'abc123', dataset: 'foo'}
   )
 
   expect(path).toEqual(
-    'images/f00baaf00baaf00baaf00baaf00baaf00baaf00b/foo/f00baaf00baaf00baaf00baaf00baaf00baaf00b-500x300.png'
+    'images/abc123/foo/f00baaf00baaf00baaf00baaf00baaf00baaf00b-500x300.png/so-pretty.png'
   )
 })
 
@@ -126,11 +140,109 @@ test('buildImageUrl(): builds image urls correctly', () => {
       extension: 'png',
       metadata: {dimensions: {height: 300, width: 500}},
     },
-    {projectId: 'f00baaf00baaf00baaf00baaf00baaf00baaf00b', dataset: 'foo'}
+    {projectId: 'abc123', dataset: 'foo'}
   )
 
   expect(url).toEqual(
-    'https://cdn.sanity.io/images/f00baaf00baaf00baaf00baaf00baaf00baaf00b/foo/f00baaf00baaf00baaf00baaf00baaf00baaf00b-500x300.png'
+    'https://cdn.sanity.io/images/abc123/foo/f00baaf00baaf00baaf00baaf00baaf00baaf00b-500x300.png'
+  )
+})
+
+test('buildImageUrl(): builds image urls correctly', () => {
+  const url = buildImageUrl(
+    {
+      assetId: 'f00baaf00baaf00baaf00baaf00baaf00baaf00b',
+      extension: 'png',
+      metadata: {dimensions: {height: 300, width: 500}},
+      originalFilename: 'pretty.png',
+      vanityFilename: 'prettier.png',
+    },
+    {projectId: 'abc123', dataset: 'foo'}
+  )
+
+  expect(url).toEqual(
+    'https://cdn.sanity.io/images/abc123/foo/f00baaf00baaf00baaf00baaf00baaf00baaf00b-500x300.png/prettier.png'
+  )
+})
+
+// buildFilePath()
+test('buildFilePath(): throws if no project id or dataset given', () => {
+  expect(() =>
+    buildFilePath({
+      assetId: 'f00baaf00baaf00baaf00baaf00baaf00baaf00b',
+      extension: 'pdf',
+    })
+  ).toThrowErrorMatchingInlineSnapshot(
+    `"Project details (projectId and dataset) required to resolve path for file"`
+  )
+})
+
+test('buildFilePath(): builds file paths correctly', () => {
+  const path = buildFilePath(
+    {
+      assetId: 'f00baaf00baaf00baaf00baaf00baaf00baaf00b',
+      extension: 'txt',
+    },
+    {projectId: 'abc123', dataset: 'foo'}
+  )
+
+  expect(path).toEqual('files/abc123/foo/f00baaf00baaf00baaf00baaf00baaf00baaf00b.txt')
+})
+
+test('buildFilePath(): builds file path with vanity filename correctly', () => {
+  const path = buildFilePath(
+    {
+      assetId: 'f00baaf00baaf00baaf00baaf00baaf00baaf00b',
+      extension: 'mp4',
+      vanityFilename: 'kokos-zoomies.mp4',
+    },
+    {projectId: 'abc123', dataset: 'foo'}
+  )
+
+  expect(path).toEqual(
+    'files/abc123/foo/f00baaf00baaf00baaf00baaf00baaf00baaf00b.mp4/kokos-zoomies.mp4'
+  )
+})
+
+// buildFileUrl()
+test('buildFileUrl(): throws if no project id or dataset given', () => {
+  expect(() =>
+    buildFileUrl({
+      assetId: 'f00baaf00baaf00baaf00baaf00baaf00baaf00b',
+      extension: 'mp4',
+    })
+  ).toThrowErrorMatchingInlineSnapshot(
+    `"Project details (projectId and dataset) required to resolve path for file"`
+  )
+})
+
+test('buildFileUrl(): builds file urls correctly', () => {
+  const url = buildFileUrl(
+    {
+      assetId: 'f00baaf00baaf00baaf00baaf00baaf00baaf00b',
+      extension: 'mov',
+    },
+    {projectId: 'abc123', dataset: 'foo'}
+  )
+
+  expect(url).toEqual(
+    'https://cdn.sanity.io/files/abc123/foo/f00baaf00baaf00baaf00baaf00baaf00baaf00b.mov'
+  )
+})
+
+test('buildFileUrl(): builds file urls correctly', () => {
+  const url = buildFileUrl(
+    {
+      assetId: 'f00baaf00baaf00baaf00baaf00baaf00baaf00b',
+      extension: 'mp3',
+      originalFilename: 'episode-1.mp3',
+      vanityFilename: 's01e01-the-one-with-assets.mp3',
+    },
+    {projectId: 'abc123', dataset: 'foo'}
+  )
+
+  expect(url).toEqual(
+    'https://cdn.sanity.io/files/abc123/foo/f00baaf00baaf00baaf00baaf00baaf00baaf00b.mp3/s01e01-the-one-with-assets.mp3'
   )
 })
 

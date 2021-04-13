@@ -71,11 +71,19 @@ export interface ImageUrlBuilderOptions {
       height: number
     }
   }
+
+  // Serves of aliases of eachother, prefers `vanityFilename` if both are set
+  originalFilename?: string
+  vanityFilename?: string
 }
 
 export interface FileUrlBuilderOptions {
   assetId: string
   extension: string
+
+  // Serves of aliases of eachother, prefers `vanityFilename` if both are set
+  originalFilename?: string
+  vanityFilename?: string
 }
 
 export interface SanityReference {

@@ -27,10 +27,13 @@ export function buildImagePath(
   }
 
   const {projectId, dataset} = project
-  const {assetId, extension, metadata} = asset
+  const {assetId, extension, metadata, originalFilename, vanityFilename} = asset
   const {width, height} = metadata.dimensions
 
-  return `images/${projectId}/${dataset}/${assetId}-${width}x${height}.${extension}`
+  let vanity = vanityFilename || originalFilename
+  vanity = vanity ? `/${vanity}` : ''
+
+  return `images/${projectId}/${dataset}/${assetId}-${width}x${height}.${extension}${vanity}`
 }
 
 /**
@@ -63,9 +66,12 @@ export function buildFilePath(
   }
 
   const {projectId, dataset} = project
-  const {assetId, extension} = asset
+  const {assetId, extension, vanityFilename, originalFilename} = asset
 
-  return `files/${projectId}/${dataset}/${assetId}.${extension}`
+  let vanity = vanityFilename || originalFilename
+  vanity = vanity ? `/${vanity}` : ''
+
+  return `files/${projectId}/${dataset}/${assetId}.${extension}${vanity}`
 }
 
 /**
