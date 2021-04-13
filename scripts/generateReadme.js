@@ -383,7 +383,7 @@ function commit() {
     stdio: 'inherit',
   })
 
-  childProcess.spawnSync('git', ['commit', '-m', 'Updated README'], {
+  childProcess.spawnSync('git', ['commit', '-m', 'docs(readme): generate new readme from source'], {
     cwd: basePath,
     stdio: 'inherit',
   })
