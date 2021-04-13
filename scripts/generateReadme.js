@@ -155,7 +155,7 @@ function createMarkdownDocs() {
 function createMarkdownToc() {
   return outdent`
     ### Functions
-    
+
     ${functions
       .map((child) => `- [${child.name}](${mdFilename}#${slugify(child.name)})`)
       .join('\n')}
@@ -170,7 +170,7 @@ function createMarkdownBody() {
   `
   const toc = createMarkdownToc()
   const fns = functions.map((child) => createMarkdownSegment('Function', child)).join('\n\n')
-  return `${header}${toc}\n\n${fns}`
+  return `${header}\n\n${toc}\n\n${fns}`
 }
 
 function createMarkdownSegment(kind, node) {
@@ -220,7 +220,7 @@ function createMarkdownConstDoc(node) {
     ### ${node.name}
     ${description}
     • ${bold(node.name)}: ${createMarkdownReturnValue(node)} = ${defaultValue}
-    
+
     ${em(`Defined in ${srcLink(node.sources[0])}`)}
   `
 }
@@ -337,7 +337,7 @@ function createMarkdownFnDoc(fn) {
   ### ${fn.name}
 
   ${fn.signatures.map(createMarkdownFnSignature).join('\n')}
-  
+
   ${fn.sources.map((src) => em(`Defined in ${srcLink(src)}`)).join('\n')}
   `
 }
