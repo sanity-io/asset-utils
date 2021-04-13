@@ -46,9 +46,10 @@ test('parseAssetFilename(): throws on invalid asset filenames', () => {
 })
 
 test('parseAssetFilename(): returns object of named image properties if image filename', () => {
-  expect(parseAssetFilename('abc123-200x500.png')).toMatchInlineSnapshot(`
+  expect(parseAssetFilename('eca53d85ec83704801ead6c8be368fd377f8aaef-200x500.png'))
+    .toMatchInlineSnapshot(`
     Object {
-      "assetId": "abc123",
+      "assetId": "eca53d85ec83704801ead6c8be368fd377f8aaef",
       "extension": "png",
       "height": 500,
       "type": "image",
@@ -71,9 +72,9 @@ test('parseAssetFilename(): returns object of named image properties if legacy i
 })
 
 test('parseAssetFilename(): returns object of named image properties if file filename', () => {
-  expect(parseAssetFilename('f00baa.pdf')).toMatchInlineSnapshot(`
+  expect(parseAssetFilename('ae0ef9f916843d32fef3faffb9a675d4cce046f0.pdf')).toMatchInlineSnapshot(`
     Object {
-      "assetId": "f00baa",
+      "assetId": "ae0ef9f916843d32fef3faffb9a675d4cce046f0",
       "extension": "pdf",
       "type": "file",
     }
