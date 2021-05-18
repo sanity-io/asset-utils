@@ -81,6 +81,16 @@ test('parseAssetFilename(): returns object of named image properties if file fil
   `)
 })
 
+test('parseAssetFilename(): returns object of named image properties if file filename with numbers', () => {
+  expect(parseAssetFilename('ae0ef9f916843d32fef3faffb9a675d4cce046f0.mp4')).toMatchInlineSnapshot(`
+    Object {
+      "assetId": "ae0ef9f916843d32fef3faffb9a675d4cce046f0",
+      "extension": "mp4",
+      "type": "file",
+    }
+  `)
+})
+
 test('parseAssetFilename(): returns object of named image properties if legacy file filename', () => {
   expect(parseAssetFilename('LA5zSofUOP0i_iQwi4B2dEbzHQseitcuORm4n.pdf')).toMatchInlineSnapshot(`
     Object {

@@ -82,7 +82,7 @@ export function parseAssetFilename(filename: string): SanityAssetIdParts {
 
   try {
     const type = imageAssetFilenamePattern.test(file) ? 'image' : 'file'
-    const assetId = file.replace(/\.([a-z+]+)$/i, '-$1')
+    const assetId = file.replace(/\.([a-z0-9+]+)$/i, '-$1')
     return parseAssetId(`${type}-${assetId}`)
   } catch (err) {
     throw new Error(`Invalid image/file asset filename: ${filename}`)
