@@ -31,7 +31,7 @@ export const assetFilenamePattern = /^([a-zA-Z0-9_]+\.[a-z0-9]+|[a-zA-Z0-9_]+-\d
 /**
  * @internal
  */
-export const pathPattern = /^(?:images|files)\/([a-z0-9]+)\/([a-z0-9][-\w]*)\//
+export const pathPattern = /^(images|files)\/([a-z0-9]+)\/([a-z0-9][-\w]*)\//
 
 /**
  * @internal

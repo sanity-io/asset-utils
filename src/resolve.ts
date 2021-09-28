@@ -359,7 +359,7 @@ export function getProject(src: SanityImageSource): SanityProjectDetails {
     throw new UnresolvableError(src, 'Failed to resolve project ID and dataset from source')
   }
 
-  const [, projectId, dataset] = path.match(pathPattern) || ([] as string[])
+  const [, , projectId, dataset] = path.match(pathPattern) || []
   if (!projectId || !dataset) {
     throw new UnresolvableError(src, 'Failed to resolve project ID and dataset from source')
   }

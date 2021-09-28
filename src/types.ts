@@ -1,4 +1,37 @@
+export interface SanityProjectDetails {
+  projectId: string
+  dataset: string
+}
+
 export type SanityAssetIdParts = SanityFileAssetIdParts | SanityImageAssetIdParts
+export type SanityAssetUrlParts = SanityFileUrlParts | SanityImageUrlParts
+
+export interface SanityImageAssetIdParts {
+  type: 'image'
+  assetId: string
+  extension: string
+  width: number
+  height: number
+}
+
+export interface SanityImageUrlParts extends SanityProjectDetails, SanityImageAssetIdParts {
+  vanityFilename?: string
+}
+
+export interface ImageUrlBuilderOptions extends Partial<SanityProjectDetails> {
+  assetId: string
+  extension: string
+  metadata: {
+    dimensions: {
+      width: number
+      height: number
+    }
+  }
+
+  // Serves of aliases of eachother, prefers `vanityFilename` if both are set
+  originalFilename?: string
+  vanityFilename?: string
+}
 
 export interface SanityFileAssetIdParts {
   type: 'file'
@@ -6,12 +39,17 @@ export interface SanityFileAssetIdParts {
   extension: string
 }
 
-export type SanityImageAssetIdParts = {
-  type: 'image'
+export interface SanityFileUrlParts extends SanityProjectDetails, SanityFileAssetIdParts {
+  vanityFilename?: string
+}
+
+export interface FileUrlBuilderOptions extends Partial<SanityProjectDetails> {
   assetId: string
   extension: string
-  width: number
-  height: number
+
+  // Serves of aliases of eachother, prefers `vanityFilename` if both are set
+  originalFilename?: string
+  vanityFilename?: string
 }
 
 export type SanityAssetSource = SanityFileSource | SanityImageSource
@@ -55,35 +93,6 @@ export interface AbsoluteRectangle {
   left: number
   right: number
   bottom: number
-}
-
-export interface SanityProjectDetails {
-  projectId: string
-  dataset: string
-}
-
-export interface ImageUrlBuilderOptions {
-  assetId: string
-  extension: string
-  metadata: {
-    dimensions: {
-      width: number
-      height: number
-    }
-  }
-
-  // Serves of aliases of eachother, prefers `vanityFilename` if both are set
-  originalFilename?: string
-  vanityFilename?: string
-}
-
-export interface FileUrlBuilderOptions {
-  assetId: string
-  extension: string
-
-  // Serves of aliases of eachother, prefers `vanityFilename` if both are set
-  originalFilename?: string
-  vanityFilename?: string
 }
 
 export interface SanityReference {

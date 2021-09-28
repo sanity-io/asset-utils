@@ -1,5 +1,16 @@
-import {SanityAssetIdParts, SanityFileAssetIdParts, SanityImageAssetIdParts} from './types'
-import {fileAssetIdPattern, imageAssetFilenamePattern, imageAssetIdPattern} from './constants'
+import type {
+  SanityAssetIdParts,
+  SanityFileAssetIdParts,
+  SanityImageAssetIdParts,
+  SanityAssetUrlParts,
+} from './types'
+import {
+  cdnUrl,
+  fileAssetIdPattern,
+  imageAssetFilenamePattern,
+  imageAssetIdPattern,
+  pathPattern,
+} from './constants'
 import {tryGetUrlFilename, isValidFilename} from './paths'
 
 /**
@@ -86,5 +97,35 @@ export function parseAssetFilename(filename: string): SanityAssetIdParts {
     return parseAssetId(`${type}-${assetId}`)
   } catch (err) {
     throw new Error(`Invalid image/file asset filename: ${filename}`)
+  }
+}
+
+/**
+ * Parses a full Sanity CDN asset URL into individual parts
+ * (type, project ID, dataset, id, extension, width, height)
+ *
+ * @param url - Full URL to parse into named parts
+ * @returns Object of named properties
+ * @throws If URL is invalid or not a Sanity asset URL
+ */
+export function parseAssetUrl(url: string): SanityAssetUrlParts {
+  if (!url.startsWith(cdnUrl)) {
+    throw new Error(`URL is not a valid Sanity asset URL: ${url}`)
+  }
+
+  const path = url.slice(cdnUrl.length).replace(/^\/+/, '')
+  const [projectPath, , projectId, dataset] = path.match(pathPattern) || []
+  if (!projectId || !dataset) {
+    throw new Error(`URL is not a valid Sanity asset URL: ${url}`)
+  }
+
+  const [filename, vanityFilename] = path.slice(projectPath.length).split('/')
+  const parsed = parseAssetFilename(filename)
+
+  return {
+    ...parsed,
+    projectId,
+    dataset,
+    vanityFilename,
   }
 }
