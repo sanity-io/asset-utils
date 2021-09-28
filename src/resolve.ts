@@ -1,12 +1,4 @@
-import {getDefaultCrop, getDefaultHotspot} from './hotspotCrop'
-import {getForgivingResolver, UnresolvableError} from './utils'
-import {parseImageAssetId, parseFileAssetId} from './parse'
-import {
-  isAssetIdStub,
-  isAssetObjectStub,
-  isAssetPathStub,
-  isAssetUrlStub,
-  isReference,
+import type {
   ResolvedSanityFile,
   ResolvedSanityImage,
   SanityAssetSource,
@@ -19,6 +11,16 @@ import {
   SanityImageSource,
   SanityProjectDetails,
 } from './types'
+import {getDefaultCrop, getDefaultHotspot} from './hotspotCrop'
+import {getForgivingResolver, UnresolvableError} from './utils'
+import {parseImageAssetId, parseFileAssetId} from './parse'
+import {
+  isAssetIdStub,
+  isAssetObjectStub,
+  isAssetPathStub,
+  isAssetUrlStub,
+  isReference,
+} from './asserters'
 import {
   cdnUrl,
   dummyProject,

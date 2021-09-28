@@ -1,4 +1,4 @@
-import {SanityImageCrop, SanityImageHotspot} from './types'
+import type {SanityImageCrop, SanityImageHotspot} from './types'
 
 /**
  * Default crop (equals to "whole image")

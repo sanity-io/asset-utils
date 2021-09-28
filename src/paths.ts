@@ -1,17 +1,14 @@
-import {pathPattern, fileAssetFilenamePattern, imageAssetFilenamePattern, cdnUrl} from './constants'
-import {getForgivingResolver, UnresolvableError} from './utils'
-import {
+import type {
   FileUrlBuilderOptions,
   ImageUrlBuilderOptions,
-  isAssetObjectStub,
-  isAssetPathStub,
-  isAssetUrlStub,
-  isReference,
   SanityAssetSource,
   SanityFileUrlParts,
   SanityImageUrlParts,
   SanityProjectDetails,
 } from './types'
+import {pathPattern, fileAssetFilenamePattern, imageAssetFilenamePattern, cdnUrl} from './constants'
+import {isAssetObjectStub, isAssetPathStub, isAssetUrlStub, isReference} from './asserters'
+import {getForgivingResolver, UnresolvableError} from './utils'
 
 /**
  * Builds the base image path from the minimal set of parts required to assemble it
