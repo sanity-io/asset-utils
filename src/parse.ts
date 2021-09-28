@@ -165,3 +165,18 @@ export function parseFileAssetUrl(url: string): SanityFileUrlParts {
 
   return parsed
 }
+
+/**
+ * Validates that a given URL is a Sanity asset URL, and returns the asset type if valid.
+ *
+ * @param url URL to extract asset type from
+ * @returns Asset type if valid URL, false otherwise
+ * @internal
+ */
+export function getAssetUrlType(url: string): 'image' | 'file' | false {
+  try {
+    return parseAssetUrl(url).type
+  } catch (err) {
+    return false
+  }
+}
