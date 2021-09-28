@@ -1,14 +1,16 @@
 import {pathPattern, fileAssetFilenamePattern, imageAssetFilenamePattern, cdnUrl} from './constants'
 import {getForgivingResolver, UnresolvableError} from './utils'
 import {
-  ImageUrlBuilderOptions,
-  SanityProjectDetails,
   FileUrlBuilderOptions,
-  SanityAssetSource,
+  ImageUrlBuilderOptions,
   isAssetObjectStub,
-  isReference,
   isAssetPathStub,
   isAssetUrlStub,
+  isReference,
+  SanityAssetSource,
+  SanityFileUrlParts,
+  SanityImageUrlParts,
+  SanityProjectDetails,
 } from './types'
 
 /**
@@ -19,16 +21,20 @@ import {
  * @return string
  */
 export function buildImagePath(
-  asset: ImageUrlBuilderOptions,
+  asset: ImageUrlBuilderOptions | SanityImageUrlParts,
   project?: SanityProjectDetails
 ): string {
-  if (!project) {
+  const projectId = project?.projectId || asset.projectId
+  const dataset = project?.dataset || asset.dataset
+  if (!projectId || !dataset) {
     throw new Error('Project details (projectId and dataset) required to resolve path for image')
   }
 
-  const {projectId, dataset} = project
-  const {assetId, extension, metadata, originalFilename, vanityFilename} = asset
-  const {width, height} = metadata.dimensions
+  const dimensions =
+    'metadata' in asset ? asset.metadata.dimensions : {width: asset.width, height: asset.height}
+  const originalFilename = 'originalFilename' in asset ? asset.originalFilename : undefined
+  const {assetId, extension, vanityFilename} = asset
+  const {width, height} = dimensions
 
   let vanity = vanityFilename || originalFilename
   vanity = vanity ? `/${vanity}` : ''
@@ -44,7 +50,7 @@ export function buildImagePath(
  * @return string
  */
 export function buildImageUrl(
-  asset: ImageUrlBuilderOptions,
+  asset: ImageUrlBuilderOptions | SanityImageUrlParts,
   project?: SanityProjectDetails
 ): string {
   return `${cdnUrl}/${buildImagePath(asset, project)}`
@@ -58,15 +64,17 @@ export function buildImageUrl(
  * @return string
  */
 export function buildFilePath(
-  asset: FileUrlBuilderOptions,
+  asset: FileUrlBuilderOptions | SanityFileUrlParts,
   project?: SanityProjectDetails
 ): string {
-  if (!project) {
+  const projectId = project?.projectId || asset.projectId
+  const dataset = project?.dataset || asset.dataset
+  if (!projectId || !dataset) {
     throw new Error('Project details (projectId and dataset) required to resolve path for file')
   }
 
-  const {projectId, dataset} = project
-  const {assetId, extension, vanityFilename, originalFilename} = asset
+  const originalFilename = 'originalFilename' in asset ? asset.originalFilename : undefined
+  const {assetId, extension, vanityFilename} = asset
 
   let vanity = vanityFilename || originalFilename
   vanity = vanity ? `/${vanity}` : ''

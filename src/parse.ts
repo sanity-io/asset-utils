@@ -3,6 +3,8 @@ import type {
   SanityFileAssetIdParts,
   SanityImageAssetIdParts,
   SanityAssetUrlParts,
+  SanityFileUrlParts,
+  SanityImageUrlParts,
 } from './types'
 import {
   cdnUrl,
@@ -101,7 +103,7 @@ export function parseAssetFilename(filename: string): SanityAssetIdParts {
 }
 
 /**
- * Parses a full Sanity CDN asset URL into individual parts
+ * Parses a full Sanity asset URL into individual parts
  * (type, project ID, dataset, id, extension, width, height)
  *
  * @param url - Full URL to parse into named parts
@@ -128,4 +130,38 @@ export function parseAssetUrl(url: string): SanityAssetUrlParts {
     dataset,
     vanityFilename,
   }
+}
+
+/**
+ * Parses a full Sanity image asset URL into individual parts
+ * (type, project ID, dataset, id, extension, width, height)
+ *
+ * @param url - Full URL to parse into named parts
+ * @returns Object of named properties
+ * @throws If URL is invalid or not a Sanity image asset URL
+ */
+export function parseImageAssetUrl(url: string): SanityImageUrlParts {
+  const parsed = parseAssetUrl(url)
+  if (parsed.type !== 'image') {
+    throw new Error(`URL is not a valid Sanity image asset URL: ${url}`)
+  }
+
+  return parsed
+}
+
+/**
+ * Parses a full Sanity file asset URL into individual parts
+ * (type, project ID, dataset, id, extension, width, height)
+ *
+ * @param url - Full URL to parse into named parts
+ * @returns Object of named properties
+ * @throws If URL is invalid or not a Sanity file asset URL
+ */
+export function parseFileAssetUrl(url: string): SanityFileUrlParts {
+  const parsed = parseAssetUrl(url)
+  if (parsed.type !== 'file') {
+    throw new Error(`URL is not a valid Sanity file asset URL: ${url}`)
+  }
+
+  return parsed
 }

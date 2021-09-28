@@ -17,6 +17,7 @@ import {
 import {expectedAsset, testProject, customCrop, customHotspot, expectedImage} from './fixtures'
 import {SanityImageSource, SanityFileSource} from '../src/types'
 import {buildImagePath, buildImageUrl, buildFilePath, buildFileUrl} from '../src/paths'
+import {parseImageAssetUrl, parseFileAssetUrl} from '../src/parse'
 
 const imgId = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
 const imgPath = 'images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
@@ -148,6 +149,28 @@ test('buildImageUrl(): builds image urls correctly', () => {
   )
 })
 
+test('buildImageUrl(): builds image urls correctly with project in asset', () => {
+  const url = buildImageUrl({
+    assetId: 'f00baaf00baaf00baaf00baaf00baaf00baaf00b',
+    extension: 'png',
+    metadata: {dimensions: {height: 300, width: 500}},
+    projectId: 'abc123',
+    dataset: 'foo',
+  })
+
+  expect(url).toEqual(
+    'https://cdn.sanity.io/images/abc123/foo/f00baaf00baaf00baaf00baaf00baaf00baaf00b-500x300.png'
+  )
+})
+
+test('buildImageUrl(): builds image urls correctly with parsed asset url', () => {
+  const input =
+    'https://cdn.sanity.io/images/abc123/foo/f00baaf00baaf00baaf00baaf00baaf00baaf00b-500x300.png/vanity.png'
+  const output = buildImageUrl(parseImageAssetUrl(input))
+
+  expect(input).toEqual(output)
+})
+
 test('buildImageUrl(): builds image urls correctly', () => {
   const url = buildImageUrl(
     {
@@ -185,6 +208,17 @@ test('buildFilePath(): builds file paths correctly', () => {
     },
     {projectId: 'abc123', dataset: 'foo'}
   )
+
+  expect(path).toEqual('files/abc123/foo/f00baaf00baaf00baaf00baaf00baaf00baaf00b.txt')
+})
+
+test('buildFilePath(): builds file paths correctly with project in asset', () => {
+  const path = buildFilePath({
+    assetId: 'f00baaf00baaf00baaf00baaf00baaf00baaf00b',
+    extension: 'txt',
+    projectId: 'abc123',
+    dataset: 'foo',
+  })
 
   expect(path).toEqual('files/abc123/foo/f00baaf00baaf00baaf00baaf00baaf00baaf00b.txt')
 })
@@ -228,6 +262,27 @@ test('buildFileUrl(): builds file urls correctly', () => {
   expect(url).toEqual(
     'https://cdn.sanity.io/files/abc123/foo/f00baaf00baaf00baaf00baaf00baaf00baaf00b.mov'
   )
+})
+
+test('buildFileUrl(): builds file urls correctly with project in asset', () => {
+  const url = buildFileUrl({
+    assetId: 'f00baaf00baaf00baaf00baaf00baaf00baaf00b',
+    extension: 'mov',
+    projectId: 'abc123',
+    dataset: 'foo',
+  })
+
+  expect(url).toEqual(
+    'https://cdn.sanity.io/files/abc123/foo/f00baaf00baaf00baaf00baaf00baaf00baaf00b.mov'
+  )
+})
+
+test('buildFileUrl(): builds file urls correctly with parsed asset url', () => {
+  const input =
+    'https://cdn.sanity.io/files/abc123/foo/f00baaf00baaf00baaf00baaf00baaf00baaf00b.mov/vanity.mov'
+  const output = buildFileUrl(parseFileAssetUrl(input))
+
+  expect(input).toEqual(output)
 })
 
 test('buildFileUrl(): builds file urls correctly', () => {
