@@ -135,6 +135,7 @@ export type SanityFileAsset = SanityAsset & {
 export interface SanityImageMetadata {
   dimensions: SanityImageDimensions
   lqip?: string
+  blurHash?: string
   palette?: SanityImagePalette
   [key: string]: unknown
 }
