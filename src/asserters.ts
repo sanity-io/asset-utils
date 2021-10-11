@@ -4,6 +4,7 @@ import type {
   SanityAssetPathStub,
   SanityAssetUrlStub,
   SanityFileAsset,
+  SanityImageAsset,
   SanityReference,
 } from './types'
 
@@ -60,6 +61,17 @@ export function isAssetUrlStub(stub: unknown): stub is SanityAssetUrlStub {
  */
 export function isSanityFileAsset(src: unknown): src is SanityFileAsset {
   return isObject(src) && (src as SanityFileAsset)._type === 'sanity.fileAsset'
+}
+
+/**
+ * Checks whether or not the given source is a (partial) sanity image asset document.
+ * Only checks the `_type` property, all other properties _may_ be missing
+ *
+ * @param src - Source to check
+ * @returns Whether or not the given source is a file asset
+ */
+export function isSanityImageAsset(src: unknown): src is SanityImageAsset {
+  return isObject(src) && (src as SanityImageAsset)._type === 'sanity.imageAsset'
 }
 
 /**

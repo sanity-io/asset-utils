@@ -622,6 +622,11 @@ test('getImageAsset(): from asset stub (url with query), inferred project', () =
   expect(getImageAsset({url})).toEqual(expectedAsset)
 })
 
+test('getImageAsset(): from full asset document', () => {
+  const inferFrom = {...expectedAsset, originalFilename: 'mootools.png'}
+  expect(getImageAsset(inferFrom)).toEqual(inferFrom)
+})
+
 test('getImageAsset(): from deep reference', () => {
   const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
   expect(getImageAsset({asset: {_ref: id}}, testProject)).toEqual(expectedAsset)

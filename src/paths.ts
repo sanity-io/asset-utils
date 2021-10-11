@@ -1,10 +1,10 @@
 import type {
   FileUrlBuilderOptions,
   ImageUrlBuilderOptions,
+  PathBuilderOptions,
   SanityAssetSource,
   SanityFileUrlParts,
   SanityImageUrlParts,
-  SanityProjectDetails,
 } from './types'
 import {pathPattern, fileAssetFilenamePattern, imageAssetFilenamePattern, cdnUrl} from './constants'
 import {isAssetObjectStub, isAssetPathStub, isAssetUrlStub, isReference} from './asserters'
@@ -14,15 +14,15 @@ import {getForgivingResolver, UnresolvableError} from './utils'
  * Builds the base image path from the minimal set of parts required to assemble it
  *
  * @param asset - An asset-like shape defining ID, dimensions and extension
- * @param project - Project ID and dataset the image belongs to
+ * @param options - Project ID and dataset the image belongs to, along with other options
  * @return string
  */
 export function buildImagePath(
   asset: ImageUrlBuilderOptions | SanityImageUrlParts,
-  project?: SanityProjectDetails
+  options?: PathBuilderOptions
 ): string {
-  const projectId = project?.projectId || asset.projectId
-  const dataset = project?.dataset || asset.dataset
+  const projectId = options?.projectId || asset.projectId
+  const dataset = options?.dataset || asset.dataset
   if (!projectId || !dataset) {
     throw new Error('Project details (projectId and dataset) required to resolve path for image')
   }
@@ -32,9 +32,7 @@ export function buildImagePath(
   const originalFilename = 'originalFilename' in asset ? asset.originalFilename : undefined
   const {assetId, extension, vanityFilename} = asset
   const {width, height} = dimensions
-
-  let vanity = vanityFilename || originalFilename
-  vanity = vanity ? `/${vanity}` : ''
+  const vanity = getVanityStub(originalFilename, vanityFilename, options)
 
   return `images/${projectId}/${dataset}/${assetId}-${width}x${height}.${extension}${vanity}`
 }
@@ -43,38 +41,36 @@ export function buildImagePath(
  * Builds the base image URL from the minimal set of parts required to assemble it
  *
  * @param asset - An asset-like shape defining ID, dimensions and extension
- * @param project - Project ID and dataset the image belongs to
+ * @param options - Project ID and dataset the image belongs to
  * @return string
  */
 export function buildImageUrl(
   asset: ImageUrlBuilderOptions | SanityImageUrlParts,
-  project?: SanityProjectDetails
+  options?: PathBuilderOptions
 ): string {
-  return `${cdnUrl}/${buildImagePath(asset, project)}`
+  return `${cdnUrl}/${buildImagePath(asset, options)}`
 }
 
 /**
  * Builds the base file path from the minimal set of parts required to assemble it
  *
  * @param asset - An asset-like shape defining ID, dimensions and extension
- * @param project - Project ID and dataset the file belongs to
+ * @param options - Project ID and dataset the file belongs to, along with other options
  * @return string
  */
 export function buildFilePath(
   asset: FileUrlBuilderOptions | SanityFileUrlParts,
-  project?: SanityProjectDetails
+  options?: PathBuilderOptions
 ): string {
-  const projectId = project?.projectId || asset.projectId
-  const dataset = project?.dataset || asset.dataset
+  const projectId = options?.projectId || asset.projectId
+  const dataset = options?.dataset || asset.dataset
   if (!projectId || !dataset) {
     throw new Error('Project details (projectId and dataset) required to resolve path for file')
   }
 
   const originalFilename = 'originalFilename' in asset ? asset.originalFilename : undefined
   const {assetId, extension, vanityFilename} = asset
-
-  let vanity = vanityFilename || originalFilename
-  vanity = vanity ? `/${vanity}` : ''
+  const vanity = getVanityStub(originalFilename, vanityFilename, options)
 
   return `files/${projectId}/${dataset}/${assetId}.${extension}${vanity}`
 }
@@ -83,10 +79,10 @@ export function buildFilePath(
  * Builds the base file URL from the minimal set of parts required to assemble it
  *
  * @param asset - An asset-like shape defining ID and extension
- * @param project - Project ID and dataset the file belongs to
+ * @param options - Project ID and dataset the file belongs to, along with other options
  * @return string
  */
-export function buildFileUrl(asset: FileUrlBuilderOptions, project?: SanityProjectDetails): string {
+export function buildFileUrl(asset: FileUrlBuilderOptions, project?: PathBuilderOptions): string {
   return `${cdnUrl}/${buildFilePath(asset, project)}`
 }
 
@@ -197,4 +193,16 @@ export const tryGetUrlFilename = getForgivingResolver(getUrlFilename)
  */
 export function isValidFilename(filename: string): boolean {
   return fileAssetFilenamePattern.test(filename) || imageAssetFilenamePattern.test(filename)
+}
+
+/**
+ * Get the "path stub" at the end of the path, if the user hasn't explicitly opted out of this behavior
+ */
+function getVanityStub(
+  originalFilename: string | undefined,
+  vanityFilename: string | undefined,
+  options?: PathBuilderOptions
+): string {
+  const vanity = vanityFilename || originalFilename
+  return options?.useVanityName === false || !vanity ? '' : `/${vanity}`
 }

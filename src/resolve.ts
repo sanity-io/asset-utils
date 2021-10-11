@@ -1,4 +1,5 @@
 import type {
+  PathBuilderOptions,
   ResolvedSanityFile,
   ResolvedSanityImage,
   SanityAssetSource,
@@ -20,6 +21,7 @@ import {
   isAssetPathStub,
   isAssetUrlStub,
   isReference,
+  isSanityImageAsset,
 } from './asserters'
 import {
   cdnUrl,
@@ -37,6 +39,7 @@ import {
   getUrlPath,
   tryGetAssetPath,
 } from './paths'
+import {isSanityFileAsset} from '.'
 
 /**
  * Returns the width, height and aspect ratio of a passed image asset, from any
@@ -136,6 +139,7 @@ export function getImageAsset(
   project?: SanityProjectDetails
 ): SanityImageAsset {
   const projectDetails = project || getProject(src)
+  const pathOptions: PathBuilderOptions = {...projectDetails, useVanityName: false}
 
   const _id = getAssetDocumentId(src)
   const sourceObj = src as SanityImageObjectStub
@@ -144,6 +148,7 @@ export function getImageAsset(
   const {assetId, width, height, extension} = parseImageAssetId(_id)
   const aspectRatio = width / height
   const baseAsset: SanityImageAsset = {
+    ...(isSanityImageAsset(src) ? src : {}),
     _id,
     _type: 'sanity.imageAsset',
     assetId,
@@ -160,8 +165,8 @@ export function getImageAsset(
 
   return {
     ...baseAsset,
-    path: buildImagePath(baseAsset, projectDetails),
-    url: buildImageUrl(baseAsset, projectDetails),
+    path: buildImagePath(baseAsset, pathOptions),
+    url: buildImageUrl(baseAsset, pathOptions),
   }
 }
 
@@ -203,23 +208,21 @@ export const tryGetFile = getForgivingResolver(getFile)
  * from any inferrable structure (id, url, path, file object etc)
  *
  * @param src - Input source (file object, asset, reference, id, url, path)
- * @param project - Project ID and dataset the file belongs to
+ * @param options - Project ID and dataset the file belongs to, along with other options
  * @returns File asset document
  *
  * @throws {@link UnresolvableError}
  * Throws if passed file source could not be resolved to an asset ID
  */
-export function getFileAsset(
-  src: SanityFileSource,
-  project?: SanityProjectDetails
-): SanityFileAsset {
-  const projectDetails = project || getProject(src)
+export function getFileAsset(src: SanityFileSource, options?: PathBuilderOptions): SanityFileAsset {
+  const projectDetails: PathBuilderOptions = {...(options || getProject(src)), useVanityName: false}
 
   const _id = getAssetDocumentId(src)
   const sourceObj = src as SanityFileObjectStub
   const source = (sourceObj.asset || src) as SanityFileAsset
   const {assetId, extension} = parseFileAssetId(_id)
   const baseAsset: SanityFileAsset = {
+    ...(isSanityFileAsset(src) ? src : {}),
     _id,
     _type: 'sanity.fileAsset',
     assetId,

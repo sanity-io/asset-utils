@@ -3,6 +3,10 @@ export interface SanityProjectDetails {
   dataset: string
 }
 
+export interface PathBuilderOptions extends Partial<SanityProjectDetails> {
+  useVanityName?: boolean
+}
+
 export type SanityAssetIdParts = SanityFileAssetIdParts | SanityImageAssetIdParts
 export type SanityAssetUrlParts = SanityFileUrlParts | SanityImageUrlParts
 
