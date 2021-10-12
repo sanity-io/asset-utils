@@ -1,0 +1,7809 @@
+{
+	"id": 0,
+	"name": "@sanity/asset-utils",
+	"kind": 0,
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 212,
+			"name": "UnresolvableError",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"comment": {
+				"shortText": "Error type thrown when the library fails to resolve a value, such as an asset ID,\nfilename or project ID/dataset information.",
+				"text": "The `input` property holds the value passed as the input, which failed to be\nresolved to something meaningful.\n"
+			},
+			"children": [
+				{
+					"id": 215,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 216,
+							"name": "new UnresolvableError",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 217,
+									"name": "inputSource",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								},
+								{
+									"id": 218,
+									"name": "message",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"Failed to resolve asset ID from source\""
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 212,
+								"name": "UnresolvableError"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/utils.ts",
+							"line": 22,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 214,
+					"name": "input",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/utils.ts",
+							"line": 22,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "unknown"
+					}
+				},
+				{
+					"id": 220,
+					"name": "message",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+							"line": 974,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 220,
+						"name": "Error.message"
+					}
+				},
+				{
+					"id": 219,
+					"name": "name",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+							"line": 973,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 219,
+						"name": "Error.name"
+					}
+				},
+				{
+					"id": 221,
+					"name": "stack",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+							"line": 975,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 221,
+						"name": "Error.stack"
+					}
+				},
+				{
+					"id": 213,
+					"name": "unresolvable",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/utils.ts",
+							"line": 19,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"defaultValue": "true"
+				},
+				{
+					"id": 222,
+					"name": "Error",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isStatic": true,
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+							"line": 984,
+							"character": 17
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "ErrorConstructor"
+					},
+					"extendedBy": [
+						{
+							"type": "reference",
+							"id": 212,
+							"name": "UnresolvableError"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						215
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						214,
+						220,
+						219,
+						221,
+						213,
+						222
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/utils.ts",
+					"line": 18,
+					"character": 30
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"id": 222,
+					"name": "Error"
+				}
+			]
+		},
+		{
+			"id": 56,
+			"name": "AbsoluteRectangle",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 60,
+					"name": "bottom",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 99,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 58,
+					"name": "left",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 97,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 59,
+					"name": "right",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 98,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 57,
+					"name": "top",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 96,
+							"character": 5
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						60,
+						58,
+						59,
+						57
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 95,
+					"character": 34
+				}
+			]
+		},
+		{
+			"id": 45,
+			"name": "FileUrlBuilderOptions",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 46,
+					"name": "assetId",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 51,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 47,
+					"name": "extension",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 52,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 48,
+					"name": "originalFilename",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 55,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 49,
+					"name": "vanityFilename",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 56,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						46,
+						47,
+						48,
+						49
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 50,
+					"character": 38
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reflection",
+					"declaration": {
+						"id": 50,
+						"name": "__type",
+						"kind": 65536,
+						"kindString": "Type literal",
+						"flags": {
+							"isExported": true
+						},
+						"sources": [
+							{
+								"fileName": "src/types.ts",
+								"line": 50,
+								"character": 46
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": 22,
+			"name": "ImageUrlBuilderOptions",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 23,
+					"name": "assetId",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 26,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 24,
+					"name": "extension",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 27,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 25,
+					"name": "metadata",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 28,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 26,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExported": true
+							},
+							"children": [
+								{
+									"id": 27,
+									"name": "dimensions",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {
+										"isExported": true
+									},
+									"sources": [
+										{
+											"fileName": "src/types.ts",
+											"line": 29,
+											"character": 14
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 28,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {
+												"isExported": true
+											},
+											"children": [
+												{
+													"id": 30,
+													"name": "height",
+													"kind": 32,
+													"kindString": "Variable",
+													"flags": {
+														"isExported": true
+													},
+													"sources": [
+														{
+															"fileName": "src/types.ts",
+															"line": 31,
+															"character": 12
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 29,
+													"name": "width",
+													"kind": 32,
+													"kindString": "Variable",
+													"flags": {
+														"isExported": true
+													},
+													"sources": [
+														{
+															"fileName": "src/types.ts",
+															"line": 30,
+															"character": 11
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Variables",
+													"kind": 32,
+													"children": [
+														30,
+														29
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/types.ts",
+													"line": 29,
+													"character": 15
+												}
+											]
+										}
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Variables",
+									"kind": 32,
+									"children": [
+										27
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/types.ts",
+									"line": 28,
+									"character": 11
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 31,
+					"name": "originalFilename",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 36,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 32,
+					"name": "vanityFilename",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 37,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						23,
+						24,
+						25,
+						31,
+						32
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 25,
+					"character": 39
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reflection",
+					"declaration": {
+						"id": 33,
+						"name": "__type",
+						"kind": 65536,
+						"kindString": "Type literal",
+						"flags": {
+							"isExported": true
+						},
+						"sources": [
+							{
+								"fileName": "src/types.ts",
+								"line": 25,
+								"character": 47
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "PathBuilderOptions",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 5,
+					"name": "useVanityName",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 7,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "false"
+							},
+							{
+								"type": "intrinsic",
+								"name": "true"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						5
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 6,
+					"character": 35
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reflection",
+					"declaration": {
+						"id": 6,
+						"name": "__type",
+						"kind": 65536,
+						"kindString": "Type literal",
+						"flags": {
+							"isExported": true
+						},
+						"sources": [
+							{
+								"fileName": "src/types.ts",
+								"line": 6,
+								"character": 43
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": 51,
+			"name": "Rectangle",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 55,
+					"name": "height",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 92,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 54,
+					"name": "width",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 91,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 52,
+					"name": "x",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 89,
+							"character": 3
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 53,
+					"name": "y",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 90,
+							"character": 3
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						55,
+						54,
+						52,
+						53
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 88,
+					"character": 26
+				}
+			]
+		},
+		{
+			"id": 119,
+			"name": "ResolvedSanityFile",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"indexSignature": [
+				{
+					"id": 122,
+					"name": "__index",
+					"kind": 8192,
+					"kindString": "Index signature",
+					"flags": {
+						"isExported": true
+					},
+					"parameters": [
+						{
+							"id": 123,
+							"name": "key",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "unknown"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 120,
+					"name": "_type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 205,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 121,
+					"name": "asset",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 206,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 154,
+						"name": "SanityFileAsset"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						120,
+						121
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 204,
+					"character": 35
+				}
+			]
+		},
+		{
+			"id": 112,
+			"name": "ResolvedSanityImage",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"indexSignature": [
+				{
+					"id": 117,
+					"name": "__index",
+					"kind": 8192,
+					"kindString": "Index signature",
+					"flags": {
+						"isExported": true
+					},
+					"parameters": [
+						{
+							"id": 118,
+							"name": "key",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "unknown"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 113,
+					"name": "_type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 197,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 114,
+					"name": "asset",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 198,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 150,
+						"name": "SanityImageAsset"
+					}
+				},
+				{
+					"id": 115,
+					"name": "crop",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 199,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 88,
+						"name": "SanityImageCrop"
+					}
+				},
+				{
+					"id": 116,
+					"name": "hotspot",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 200,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 94,
+						"name": "SanityImageHotspot"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						113,
+						114,
+						115,
+						116
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 196,
+					"character": 36
+				}
+			]
+		},
+		{
+			"id": 70,
+			"name": "SanityAsset",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 71,
+					"name": "_id",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 120,
+							"character": 5
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 72,
+					"name": "_type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 121,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 75,
+					"name": "assetId",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 124,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 76,
+					"name": "extension",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 125,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 77,
+					"name": "originalFilename",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 126,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 74,
+					"name": "path",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 123,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 73,
+					"name": "url",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 122,
+							"character": 5
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						71,
+						72,
+						75,
+						76,
+						77,
+						74,
+						73
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 119,
+					"character": 28
+				}
+			]
+		},
+		{
+			"id": 64,
+			"name": "SanityAssetIdStub",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 65,
+					"name": "_id",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 108,
+							"character": 5
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						65
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 107,
+					"character": 34
+				}
+			]
+		},
+		{
+			"id": 66,
+			"name": "SanityAssetPathStub",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 67,
+					"name": "path",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 112,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						67
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 111,
+					"character": 36
+				}
+			]
+		},
+		{
+			"id": 68,
+			"name": "SanityAssetUrlStub",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 69,
+					"name": "url",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 116,
+							"character": 5
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						69
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 115,
+					"character": 35
+				}
+			]
+		},
+		{
+			"id": 34,
+			"name": "SanityFileAssetIdParts",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 36,
+					"name": "assetId",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 42,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 37,
+					"name": "extension",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 43,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 35,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 41,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "stringLiteral",
+						"value": "file"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						36,
+						37,
+						35
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 40,
+					"character": 39
+				}
+			],
+			"extendedBy": [
+				{
+					"type": "reference",
+					"id": 38,
+					"name": "SanityFileUrlParts"
+				}
+			]
+		},
+		{
+			"id": 100,
+			"name": "SanityFileObjectStub",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"indexSignature": [
+				{
+					"id": 103,
+					"name": "__index",
+					"kind": 8192,
+					"kindString": "Index signature",
+					"flags": {
+						"isExported": true
+					},
+					"parameters": [
+						{
+							"id": 104,
+							"name": "key",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "unknown"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 101,
+					"name": "_type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 173,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 102,
+					"name": "asset",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 174,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"id": 61,
+								"name": "SanityReference"
+							},
+							{
+								"type": "reference",
+								"id": 154,
+								"name": "SanityFileAsset"
+							},
+							{
+								"type": "reference",
+								"id": 64,
+								"name": "SanityAssetIdStub"
+							},
+							{
+								"type": "reference",
+								"id": 66,
+								"name": "SanityAssetPathStub"
+							},
+							{
+								"type": "reference",
+								"id": 68,
+								"name": "SanityAssetUrlStub"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						101,
+						102
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 172,
+					"character": 37
+				}
+			]
+		},
+		{
+			"id": 38,
+			"name": "SanityFileUrlParts",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 43,
+					"name": "assetId",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 42,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 36,
+						"name": "SanityFileAssetIdParts.assetId"
+					}
+				},
+				{
+					"id": 41,
+					"name": "dataset",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 3,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 3,
+						"name": "SanityProjectDetails.dataset"
+					}
+				},
+				{
+					"id": 44,
+					"name": "extension",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 43,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 37,
+						"name": "SanityFileAssetIdParts.extension"
+					}
+				},
+				{
+					"id": 40,
+					"name": "projectId",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 2,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 2,
+						"name": "SanityProjectDetails.projectId"
+					}
+				},
+				{
+					"id": 42,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 41,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "stringLiteral",
+						"value": "file"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 35,
+						"name": "SanityFileAssetIdParts.type"
+					}
+				},
+				{
+					"id": 39,
+					"name": "vanityFilename",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 47,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						43,
+						41,
+						44,
+						40,
+						42,
+						39
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 46,
+					"character": 35
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"id": 1,
+					"name": "SanityProjectDetails"
+				},
+				{
+					"type": "reference",
+					"id": 34,
+					"name": "SanityFileAssetIdParts"
+				}
+			]
+		},
+		{
+			"id": 7,
+			"name": "SanityImageAssetIdParts",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 9,
+					"name": "assetId",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 15,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 10,
+					"name": "extension",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 16,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 12,
+					"name": "height",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 18,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 8,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 14,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "stringLiteral",
+						"value": "image"
+					}
+				},
+				{
+					"id": 11,
+					"name": "width",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 17,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						9,
+						10,
+						12,
+						8,
+						11
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 13,
+					"character": 40
+				}
+			],
+			"extendedBy": [
+				{
+					"type": "reference",
+					"id": 13,
+					"name": "SanityImageUrlParts"
+				}
+			]
+		},
+		{
+			"id": 88,
+			"name": "SanityImageCrop",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 89,
+					"name": "_type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 157,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 91,
+					"name": "bottom",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 159,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 90,
+					"name": "left",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 158,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 92,
+					"name": "right",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 160,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 93,
+					"name": "top",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 161,
+							"character": 5
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						89,
+						91,
+						90,
+						92,
+						93
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 156,
+					"character": 32
+				}
+			]
+		},
+		{
+			"id": 140,
+			"name": "SanityImageFitResult",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 142,
+					"name": "height",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 233,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "number"
+							}
+						]
+					}
+				},
+				{
+					"id": 143,
+					"name": "rect",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 234,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 51,
+						"name": "Rectangle"
+					}
+				},
+				{
+					"id": 141,
+					"name": "width",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 232,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "number"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						142,
+						143,
+						141
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 231,
+					"character": 37
+				}
+			]
+		},
+		{
+			"id": 94,
+			"name": "SanityImageHotspot",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 95,
+					"name": "_type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 165,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 97,
+					"name": "height",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 167,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 96,
+					"name": "width",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 166,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 98,
+					"name": "x",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 168,
+							"character": 3
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 99,
+					"name": "y",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 169,
+							"character": 3
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						95,
+						97,
+						96,
+						98,
+						99
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 164,
+					"character": 35
+				}
+			]
+		},
+		{
+			"id": 78,
+			"name": "SanityImageMetadata",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"indexSignature": [
+				{
+					"id": 83,
+					"name": "__index",
+					"kind": 8192,
+					"kindString": "Index signature",
+					"flags": {
+						"isExported": true
+					},
+					"parameters": [
+						{
+							"id": 84,
+							"name": "key",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "unknown"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 81,
+					"name": "blurHash",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 142,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 79,
+					"name": "dimensions",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 140,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 161,
+						"name": "SanityImageDimensions"
+					}
+				},
+				{
+					"id": 80,
+					"name": "lqip",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 141,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 82,
+					"name": "palette",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 143,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 124,
+						"name": "SanityImagePalette"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						81,
+						79,
+						80,
+						82
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 139,
+					"character": 36
+				}
+			]
+		},
+		{
+			"id": 105,
+			"name": "SanityImageObjectStub",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"indexSignature": [
+				{
+					"id": 110,
+					"name": "__index",
+					"kind": 8192,
+					"kindString": "Index signature",
+					"flags": {
+						"isExported": true
+					},
+					"parameters": [
+						{
+							"id": 111,
+							"name": "key",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "unknown"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 106,
+					"name": "_type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 184,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 107,
+					"name": "asset",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 185,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"id": 61,
+								"name": "SanityReference"
+							},
+							{
+								"type": "reference",
+								"id": 150,
+								"name": "SanityImageAsset"
+							},
+							{
+								"type": "reference",
+								"id": 64,
+								"name": "SanityAssetIdStub"
+							},
+							{
+								"type": "reference",
+								"id": 66,
+								"name": "SanityAssetPathStub"
+							},
+							{
+								"type": "reference",
+								"id": 68,
+								"name": "SanityAssetUrlStub"
+							}
+						]
+					}
+				},
+				{
+					"id": 108,
+					"name": "crop",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 191,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 88,
+						"name": "SanityImageCrop"
+					}
+				},
+				{
+					"id": 109,
+					"name": "hotspot",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 192,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 94,
+						"name": "SanityImageHotspot"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						106,
+						107,
+						108,
+						109
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 183,
+					"character": 38
+				}
+			]
+		},
+		{
+			"id": 124,
+			"name": "SanityImagePalette",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"indexSignature": [
+				{
+					"id": 133,
+					"name": "__index",
+					"kind": 8192,
+					"kindString": "Index signature",
+					"flags": {
+						"isExported": true
+					},
+					"parameters": [
+						{
+							"id": 134,
+							"name": "key",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "unknown"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 125,
+					"name": "_type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 213,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 126,
+					"name": "darkMuted",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 214,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 135,
+						"name": "SanityImageSwatch"
+					}
+				},
+				{
+					"id": 127,
+					"name": "darkVibrant",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 215,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 135,
+						"name": "SanityImageSwatch"
+					}
+				},
+				{
+					"id": 128,
+					"name": "dominant",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 216,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 135,
+						"name": "SanityImageSwatch"
+					}
+				},
+				{
+					"id": 129,
+					"name": "lightMuted",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 217,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 135,
+						"name": "SanityImageSwatch"
+					}
+				},
+				{
+					"id": 130,
+					"name": "lightVibrant",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 218,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 135,
+						"name": "SanityImageSwatch"
+					}
+				},
+				{
+					"id": 131,
+					"name": "muted",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 219,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 135,
+						"name": "SanityImageSwatch"
+					}
+				},
+				{
+					"id": 132,
+					"name": "vibrant",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 220,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 135,
+						"name": "SanityImageSwatch"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						125,
+						126,
+						127,
+						128,
+						129,
+						130,
+						131,
+						132
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 212,
+					"character": 35
+				}
+			]
+		},
+		{
+			"id": 85,
+			"name": "SanityImageSize",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 86,
+					"name": "height",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 148,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 87,
+					"name": "width",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 149,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						86,
+						87
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 147,
+					"character": 32
+				}
+			]
+		},
+		{
+			"id": 135,
+			"name": "SanityImageSwatch",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 136,
+					"name": "background",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 225,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 137,
+					"name": "foreground",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 226,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 138,
+					"name": "population",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 227,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 139,
+					"name": "title",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 228,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						136,
+						137,
+						138,
+						139
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 224,
+					"character": 34
+				}
+			]
+		},
+		{
+			"id": 13,
+			"name": "SanityImageUrlParts",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 18,
+					"name": "assetId",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 15,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 9,
+						"name": "SanityImageAssetIdParts.assetId"
+					}
+				},
+				{
+					"id": 16,
+					"name": "dataset",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 3,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 3,
+						"name": "SanityProjectDetails.dataset"
+					}
+				},
+				{
+					"id": 19,
+					"name": "extension",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 16,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 10,
+						"name": "SanityImageAssetIdParts.extension"
+					}
+				},
+				{
+					"id": 21,
+					"name": "height",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 18,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 12,
+						"name": "SanityImageAssetIdParts.height"
+					}
+				},
+				{
+					"id": 15,
+					"name": "projectId",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 2,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 2,
+						"name": "SanityProjectDetails.projectId"
+					}
+				},
+				{
+					"id": 17,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 14,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "stringLiteral",
+						"value": "image"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 8,
+						"name": "SanityImageAssetIdParts.type"
+					}
+				},
+				{
+					"id": 14,
+					"name": "vanityFilename",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 22,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 20,
+					"name": "width",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 17,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 11,
+						"name": "SanityImageAssetIdParts.width"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						18,
+						16,
+						19,
+						21,
+						15,
+						17,
+						14,
+						20
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 21,
+					"character": 36
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"id": 1,
+					"name": "SanityProjectDetails"
+				},
+				{
+					"type": "reference",
+					"id": 7,
+					"name": "SanityImageAssetIdParts"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "SanityProjectDetails",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 3,
+					"name": "dataset",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 3,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 2,
+					"name": "projectId",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 2,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						3,
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 1,
+					"character": 37
+				}
+			],
+			"extendedBy": [
+				{
+					"type": "reference",
+					"id": 13,
+					"name": "SanityImageUrlParts"
+				},
+				{
+					"type": "reference",
+					"id": 38,
+					"name": "SanityFileUrlParts"
+				}
+			]
+		},
+		{
+			"id": 61,
+			"name": "SanityReference",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 62,
+					"name": "_ref",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 103,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 63,
+					"name": "_weak",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 104,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "false"
+							},
+							{
+								"type": "intrinsic",
+								"name": "true"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						62,
+						63
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 102,
+					"character": 32
+				}
+			]
+		},
+		{
+			"id": 144,
+			"name": "SanityAssetIdParts",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 10,
+					"character": 30
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reference",
+						"id": 34,
+						"name": "SanityFileAssetIdParts"
+					},
+					{
+						"type": "reference",
+						"id": 7,
+						"name": "SanityImageAssetIdParts"
+					}
+				]
+			}
+		},
+		{
+			"id": 164,
+			"name": "SanityAssetObjectStub",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 210,
+					"character": 33
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reference",
+						"id": 100,
+						"name": "SanityFileObjectStub"
+					},
+					{
+						"type": "reference",
+						"id": 105,
+						"name": "SanityImageObjectStub"
+					}
+				]
+			}
+		},
+		{
+			"id": 146,
+			"name": "SanityAssetSource",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 59,
+					"character": 29
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reference",
+						"id": 147,
+						"name": "SanityFileSource"
+					},
+					{
+						"type": "reference",
+						"id": 148,
+						"name": "SanityImageSource"
+					}
+				]
+			}
+		},
+		{
+			"id": 145,
+			"name": "SanityAssetUrlParts",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 11,
+					"character": 31
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reference",
+						"id": 38,
+						"name": "SanityFileUrlParts"
+					},
+					{
+						"type": "reference",
+						"id": 13,
+						"name": "SanityImageUrlParts"
+					}
+				]
+			}
+		},
+		{
+			"id": 154,
+			"name": "SanityFileAsset",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 134,
+					"character": 27
+				}
+			],
+			"type": {
+				"type": "intersection",
+				"types": [
+					{
+						"type": "reference",
+						"id": 70,
+						"name": "SanityAsset"
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 155,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExported": true
+							},
+							"children": [
+								{
+									"id": 156,
+									"name": "_type",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {
+										"isExported": true
+									},
+									"sources": [
+										{
+											"fileName": "src/types.ts",
+											"line": 135,
+											"character": 7
+										}
+									],
+									"type": {
+										"type": "stringLiteral",
+										"value": "sanity.fileAsset"
+									}
+								},
+								{
+									"id": 157,
+									"name": "metadata",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {
+										"isExported": true
+									},
+									"sources": [
+										{
+											"fileName": "src/types.ts",
+											"line": 136,
+											"character": 10
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 158,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {
+												"isExported": true
+											},
+											"indexSignature": [
+												{
+													"id": 159,
+													"name": "__index",
+													"kind": 8192,
+													"kindString": "Index signature",
+													"flags": {
+														"isExported": true
+													},
+													"parameters": [
+														{
+															"id": 160,
+															"name": "key",
+															"kind": 32768,
+															"kindString": "Parameter",
+															"flags": {
+																"isExported": true
+															},
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "unknown"
+													}
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/types.ts",
+													"line": 136,
+													"character": 11
+												}
+											]
+										}
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Variables",
+									"kind": 32,
+									"children": [
+										156,
+										157
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/types.ts",
+									"line": 134,
+									"character": 43
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": 147,
+			"name": "SanityFileSource",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 61,
+					"character": 28
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "intrinsic",
+						"name": "string"
+					},
+					{
+						"type": "reference",
+						"id": 61,
+						"name": "SanityReference"
+					},
+					{
+						"type": "reference",
+						"id": 154,
+						"name": "SanityFileAsset"
+					},
+					{
+						"type": "reference",
+						"id": 64,
+						"name": "SanityAssetIdStub"
+					},
+					{
+						"type": "reference",
+						"id": 68,
+						"name": "SanityAssetUrlStub"
+					},
+					{
+						"type": "reference",
+						"id": 66,
+						"name": "SanityAssetPathStub"
+					},
+					{
+						"type": "reference",
+						"id": 100,
+						"name": "SanityFileObjectStub"
+					}
+				]
+			}
+		},
+		{
+			"id": 150,
+			"name": "SanityImageAsset",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 129,
+					"character": 28
+				}
+			],
+			"type": {
+				"type": "intersection",
+				"types": [
+					{
+						"type": "reference",
+						"id": 70,
+						"name": "SanityAsset"
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 151,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExported": true
+							},
+							"children": [
+								{
+									"id": 152,
+									"name": "_type",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {
+										"isExported": true
+									},
+									"sources": [
+										{
+											"fileName": "src/types.ts",
+											"line": 130,
+											"character": 7
+										}
+									],
+									"type": {
+										"type": "stringLiteral",
+										"value": "sanity.imageAsset"
+									}
+								},
+								{
+									"id": 153,
+									"name": "metadata",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {
+										"isExported": true
+									},
+									"sources": [
+										{
+											"fileName": "src/types.ts",
+											"line": 131,
+											"character": 10
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 78,
+										"name": "SanityImageMetadata"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Variables",
+									"kind": 32,
+									"children": [
+										152,
+										153
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/types.ts",
+									"line": 129,
+									"character": 44
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": 161,
+			"name": "SanityImageDimensions",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 152,
+					"character": 33
+				}
+			],
+			"type": {
+				"type": "intersection",
+				"types": [
+					{
+						"type": "reference",
+						"id": 85,
+						"name": "SanityImageSize"
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 162,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExported": true
+							},
+							"children": [
+								{
+									"id": 163,
+									"name": "aspectRatio",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {
+										"isExported": true
+									},
+									"sources": [
+										{
+											"fileName": "src/types.ts",
+											"line": 153,
+											"character": 13
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Variables",
+									"kind": 32,
+									"children": [
+										163
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/types.ts",
+									"line": 152,
+									"character": 53
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": 148,
+			"name": "SanityImageSource",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 70,
+					"character": 29
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "intrinsic",
+						"name": "string"
+					},
+					{
+						"type": "reference",
+						"id": 61,
+						"name": "SanityReference"
+					},
+					{
+						"type": "reference",
+						"id": 150,
+						"name": "SanityImageAsset"
+					},
+					{
+						"type": "reference",
+						"id": 64,
+						"name": "SanityAssetIdStub"
+					},
+					{
+						"type": "reference",
+						"id": 68,
+						"name": "SanityAssetUrlStub"
+					},
+					{
+						"type": "reference",
+						"id": 66,
+						"name": "SanityAssetPathStub"
+					},
+					{
+						"type": "reference",
+						"id": 105,
+						"name": "SanityImageObjectStub"
+					}
+				]
+			}
+		},
+		{
+			"id": 149,
+			"name": "SanitySwatchName",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 79,
+					"character": 28
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "stringLiteral",
+						"value": "darkMuted"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "darkVibrant"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "dominant"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "lightMuted"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "lightVibrant"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "muted"
+					},
+					{
+						"type": "stringLiteral",
+						"value": "vibrant"
+					}
+				]
+			}
+		},
+		{
+			"id": 200,
+			"name": "DEFAULT_CROP",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "Default crop (equals to \"whole image\")"
+			},
+			"sources": [
+				{
+					"fileName": "src/hotspotCrop.ts",
+					"line": 6,
+					"character": 25
+				}
+			],
+			"type": {
+				"type": "reference",
+				"typeArguments": [
+					{
+						"type": "reference",
+						"id": 88,
+						"name": "SanityImageCrop"
+					}
+				],
+				"name": "Readonly"
+			},
+			"defaultValue": "Object.freeze({\n  left: 0,\n  top: 0,\n  bottom: 0,\n  right: 0,\n})"
+		},
+		{
+			"id": 201,
+			"name": "DEFAULT_HOTSPOT",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "Default hotspot (equals to horizontal/vertical center, full size of image)"
+			},
+			"sources": [
+				{
+					"fileName": "src/hotspotCrop.ts",
+					"line": 16,
+					"character": 28
+				}
+			],
+			"type": {
+				"type": "reference",
+				"typeArguments": [
+					{
+						"type": "reference",
+						"id": 94,
+						"name": "SanityImageHotspot"
+					}
+				],
+				"name": "Readonly"
+			},
+			"defaultValue": "Object.freeze({\n  x: 0.5,\n  y: 0.5,\n  height: 1,\n  width: 1,\n})"
+		},
+		{
+			"id": 335,
+			"name": "tryGetAssetDocumentId",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "See {@link getAssetDocumentId}",
+				"tags": [
+					{
+						"tag": "inheritfrom",
+						"text": "{@link getAssetDocumentId}"
+					},
+					{
+						"tag": "returns",
+						"text": "Returns `undefined` instead of throwing if a value cannot be resolved\n"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 291,
+					"character": 34
+				}
+			],
+			"type": {
+				"type": "reference",
+				"name": "(Anonymous function)"
+			},
+			"defaultValue": "getForgivingResolver(getAssetDocumentId)"
+		},
+		{
+			"id": 311,
+			"name": "tryGetExtension",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "See {@link getExtension}",
+				"tags": [
+					{
+						"tag": "inheritfrom",
+						"text": "{@link getExtension}"
+					},
+					{
+						"tag": "returns",
+						"text": "Returns `undefined` instead of throwing if a value cannot be resolved\n"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 90,
+					"character": 28
+				}
+			],
+			"type": {
+				"type": "reference",
+				"name": "(Anonymous function)"
+			},
+			"defaultValue": "getForgivingResolver(getExtension)"
+		},
+		{
+			"id": 326,
+			"name": "tryGetFile",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "See {@link getFile}",
+				"tags": [
+					{
+						"tag": "inheritfrom",
+						"text": "{@link getFile}"
+					},
+					{
+						"tag": "returns",
+						"text": "Returns `undefined` instead of throwing if a value cannot be resolved\n"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 204,
+					"character": 23
+				}
+			],
+			"type": {
+				"type": "reference",
+				"name": "(Anonymous function)"
+			},
+			"defaultValue": "getForgivingResolver(getFile)"
+		},
+		{
+			"id": 331,
+			"name": "tryGetFileAsset",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "See {@link getFileAsset}",
+				"tags": [
+					{
+						"tag": "inheritfrom",
+						"text": "{@link getFileAsset}"
+					},
+					{
+						"tag": "returns",
+						"text": "Returns `undefined` instead of throwing if a value cannot be resolved\n"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 250,
+					"character": 28
+				}
+			],
+			"type": {
+				"type": "reference",
+				"name": "(Anonymous function)"
+			},
+			"defaultValue": "getForgivingResolver(getFileAsset)"
+		},
+		{
+			"id": 339,
+			"name": "tryGetIdFromString",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "See {@link getIdFromString}",
+				"tags": [
+					{
+						"tag": "inheritfrom",
+						"text": "{@link getIdFromString}"
+					},
+					{
+						"tag": "returns",
+						"text": "Returns `undefined` instead of throwing if a value cannot be resolved\n"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 338,
+					"character": 31
+				}
+			],
+			"type": {
+				"type": "reference",
+				"name": "(Anonymous function)"
+			},
+			"defaultValue": "getForgivingResolver(getIdFromString)"
+		},
+		{
+			"id": 316,
+			"name": "tryGetImage",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "See {@link getImage}",
+				"tags": [
+					{
+						"tag": "inheritfrom",
+						"text": "{@link getImage}"
+					},
+					{
+						"tag": "returns",
+						"text": "Returns `undefined` instead of throwing if a value cannot be resolved\n"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 124,
+					"character": 24
+				}
+			],
+			"type": {
+				"type": "reference",
+				"name": "(Anonymous function)"
+			},
+			"defaultValue": "getForgivingResolver(getImage)"
+		},
+		{
+			"id": 321,
+			"name": "tryGetImageAsset",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "See {@link getImageAsset}",
+				"tags": [
+					{
+						"tag": "inheritfrom",
+						"text": "{@link getImageAsset}"
+					},
+					{
+						"tag": "returns",
+						"text": "Returns `undefined` instead of throwing if a value cannot be resolved\n"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 179,
+					"character": 29
+				}
+			],
+			"type": {
+				"type": "reference",
+				"name": "(Anonymous function)"
+			},
+			"defaultValue": "getForgivingResolver(getImageAsset)"
+		},
+		{
+			"id": 307,
+			"name": "tryGetImageDimensions",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "See {@link getImageDimensions}",
+				"tags": [
+					{
+						"tag": "inheritfrom",
+						"text": "{@link getImageDimensions}"
+					},
+					{
+						"tag": "returns",
+						"text": "Returns `undefined` instead of throwing if a value cannot be resolved\n"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 67,
+					"character": 34
+				}
+			],
+			"type": {
+				"type": "reference",
+				"name": "(Anonymous function)"
+			},
+			"defaultValue": "getForgivingResolver(getImageDimensions)"
+		},
+		{
+			"id": 346,
+			"name": "tryGetProject",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "See {@link getProject}",
+				"tags": [
+					{
+						"tag": "inheritfrom",
+						"text": "{@link getProject}"
+					},
+					{
+						"tag": "returns",
+						"text": "Returns `undefined` instead of throwing if a value cannot be resolved\n"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 381,
+					"character": 26
+				}
+			],
+			"type": {
+				"type": "reference",
+				"name": "(Anonymous function)"
+			},
+			"defaultValue": "getForgivingResolver(getProject)"
+		},
+		{
+			"id": 269,
+			"name": "tryGetUrlFilename",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "See {@link getUrlFilename}",
+				"tags": [
+					{
+						"tag": "inheritfrom",
+						"text": "{@link getUrlFilename}"
+					},
+					{
+						"tag": "returns",
+						"text": "Returns `undefined` instead of throwing if a value cannot be resolved\n"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/paths.ts",
+					"line": 186,
+					"character": 30
+				}
+			],
+			"type": {
+				"type": "reference",
+				"name": "(Anonymous function)"
+			},
+			"defaultValue": "getForgivingResolver(getUrlFilename)"
+		},
+		{
+			"id": 265,
+			"name": "tryGetUrlPath",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "See {@link getUrlPath}",
+				"tags": [
+					{
+						"tag": "inheritfrom",
+						"text": "{@link getUrlPath}"
+					},
+					{
+						"tag": "returns",
+						"text": "Returns `undefined` instead of throwing if a value cannot be resolved\n"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/paths.ts",
+					"line": 159,
+					"character": 26
+				}
+			],
+			"type": {
+				"type": "reference",
+				"name": "(Anonymous function)"
+			},
+			"defaultValue": "getForgivingResolver(getUrlPath)"
+		},
+		{
+			"id": 248,
+			"name": "buildFilePath",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 249,
+					"name": "buildFilePath",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Builds the base file path from the minimal set of parts required to assemble it",
+						"returns": "string\n"
+					},
+					"parameters": [
+						{
+							"id": 250,
+							"name": "asset",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "An asset-like shape defining ID, dimensions and extension"
+							},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"id": 45,
+										"name": "FileUrlBuilderOptions"
+									},
+									{
+										"type": "reference",
+										"id": 38,
+										"name": "SanityFileUrlParts"
+									}
+								]
+							}
+						},
+						{
+							"id": 251,
+							"name": "options",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"comment": {
+								"text": "Project ID and dataset the file belongs to, along with other options"
+							},
+							"type": {
+								"type": "reference",
+								"id": 4,
+								"name": "PathBuilderOptions"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/paths.ts",
+					"line": 61,
+					"character": 29
+				}
+			]
+		},
+		{
+			"id": 252,
+			"name": "buildFileUrl",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 253,
+					"name": "buildFileUrl",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Builds the base file URL from the minimal set of parts required to assemble it",
+						"returns": "string\n"
+					},
+					"parameters": [
+						{
+							"id": 254,
+							"name": "asset",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "An asset-like shape defining ID and extension"
+							},
+							"type": {
+								"type": "reference",
+								"id": 45,
+								"name": "FileUrlBuilderOptions"
+							}
+						},
+						{
+							"id": 255,
+							"name": "project",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"type": {
+								"type": "reference",
+								"id": 4,
+								"name": "PathBuilderOptions"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/paths.ts",
+					"line": 85,
+					"character": 28
+				}
+			]
+		},
+		{
+			"id": 240,
+			"name": "buildImagePath",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 241,
+					"name": "buildImagePath",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Builds the base image path from the minimal set of parts required to assemble it",
+						"returns": "string\n"
+					},
+					"parameters": [
+						{
+							"id": 242,
+							"name": "asset",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "An asset-like shape defining ID, dimensions and extension"
+							},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"id": 22,
+										"name": "ImageUrlBuilderOptions"
+									},
+									{
+										"type": "reference",
+										"id": 13,
+										"name": "SanityImageUrlParts"
+									}
+								]
+							}
+						},
+						{
+							"id": 243,
+							"name": "options",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"comment": {
+								"text": "Project ID and dataset the image belongs to, along with other options"
+							},
+							"type": {
+								"type": "reference",
+								"id": 4,
+								"name": "PathBuilderOptions"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/paths.ts",
+					"line": 20,
+					"character": 30
+				}
+			]
+		},
+		{
+			"id": 244,
+			"name": "buildImageUrl",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 245,
+					"name": "buildImageUrl",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Builds the base image URL from the minimal set of parts required to assemble it",
+						"returns": "string\n"
+					},
+					"parameters": [
+						{
+							"id": 246,
+							"name": "asset",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "An asset-like shape defining ID, dimensions and extension"
+							},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"id": 22,
+										"name": "ImageUrlBuilderOptions"
+									},
+									{
+										"type": "reference",
+										"id": 13,
+										"name": "SanityImageUrlParts"
+									}
+								]
+							}
+						},
+						{
+							"id": 247,
+							"name": "options",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"comment": {
+								"text": "Project ID and dataset the image belongs to"
+							},
+							"type": {
+								"type": "reference",
+								"id": 4,
+								"name": "PathBuilderOptions"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/paths.ts",
+					"line": 47,
+					"character": 29
+				}
+			]
+		},
+		{
+			"id": 332,
+			"name": "getAssetDocumentId",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 333,
+					"name": "getAssetDocumentId",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Tries to resolve the asset document ID from any inferrable structure",
+						"returns": "The asset document ID\n",
+						"tags": [
+							{
+								"tag": "throws",
+								"text": "{@link UnresolvableError}\nThrows if passed asset source could not be resolved to an asset document ID\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 334,
+							"name": "src",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Input source (image/file object, asset, reference, id, url, path)"
+							},
+							"type": {
+								"type": "reference",
+								"id": 146,
+								"name": "SanityAssetSource"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 261,
+					"character": 34
+				}
+			]
+		},
+		{
+			"id": 202,
+			"name": "getDefaultCrop",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "Returns cloned version of the default crop (prevents accidental mutations)",
+				"returns": "Default image crop object\n"
+			},
+			"signatures": [
+				{
+					"id": 203,
+					"name": "getDefaultCrop",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Returns cloned version of the default crop (prevents accidental mutations)",
+						"returns": "Default image crop object\n"
+					},
+					"type": {
+						"type": "reference",
+						"id": 88,
+						"name": "SanityImageCrop"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/hotspotCrop.ts",
+					"line": 28,
+					"character": 27
+				}
+			]
+		},
+		{
+			"id": 204,
+			"name": "getDefaultHotspot",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "Returns cloned version of the default hotspot (prevents accidental mutations)",
+				"returns": "Default image hotspot object\n"
+			},
+			"signatures": [
+				{
+					"id": 205,
+					"name": "getDefaultHotspot",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Returns cloned version of the default hotspot (prevents accidental mutations)",
+						"returns": "Default image hotspot object\n"
+					},
+					"type": {
+						"type": "reference",
+						"id": 94,
+						"name": "SanityImageHotspot"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/hotspotCrop.ts",
+					"line": 35,
+					"character": 30
+				}
+			]
+		},
+		{
+			"id": 308,
+			"name": "getExtension",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 309,
+					"name": "getExtension",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Returns the file extension for a given asset",
+						"returns": "The file extension, if resolvable (no `.` included)\n",
+						"tags": [
+							{
+								"tag": "throws",
+								"text": "{@link UnresolvableError}\nThrows if passed asset source could not be resolved to an asset ID\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 310,
+							"name": "src",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Input source (file/image object, asset, reference, id, url, path)"
+							},
+							"type": {
+								"type": "reference",
+								"id": 146,
+								"name": "SanityAssetSource"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 78,
+					"character": 28
+				}
+			]
+		},
+		{
+			"id": 322,
+			"name": "getFile",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 323,
+					"name": "getFile",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Tries to resolve an file object with as much information as possible,\nfrom any inferrable structure (id, url, path, file object etc)",
+						"returns": "File object\n",
+						"tags": [
+							{
+								"tag": "throws",
+								"text": "{@link UnresolvableError}\nThrows if passed file source could not be resolved to an asset ID\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 324,
+							"name": "src",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Input source (file object, asset, reference, id, url, path)"
+							},
+							"type": {
+								"type": "reference",
+								"id": 147,
+								"name": "SanityFileSource"
+							}
+						},
+						{
+							"id": 325,
+							"name": "project",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"comment": {
+								"text": "Project ID and dataset the file belongs to"
+							},
+							"type": {
+								"type": "reference",
+								"id": 1,
+								"name": "SanityProjectDetails"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 119,
+						"name": "ResolvedSanityFile"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 192,
+					"character": 23
+				}
+			]
+		},
+		{
+			"id": 327,
+			"name": "getFileAsset",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 328,
+					"name": "getFileAsset",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Tries to resolve a (partial) file asset document with as much information as possible,\nfrom any inferrable structure (id, url, path, file object etc)",
+						"returns": "File asset document\n",
+						"tags": [
+							{
+								"tag": "throws",
+								"text": "{@link UnresolvableError}\nThrows if passed file source could not be resolved to an asset ID\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 329,
+							"name": "src",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Input source (file object, asset, reference, id, url, path)"
+							},
+							"type": {
+								"type": "reference",
+								"id": 147,
+								"name": "SanityFileSource"
+							}
+						},
+						{
+							"id": 330,
+							"name": "options",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"comment": {
+								"text": "Project ID and dataset the file belongs to, along with other options"
+							},
+							"type": {
+								"type": "reference",
+								"id": 4,
+								"name": "PathBuilderOptions"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 154,
+						"name": "SanityFileAsset"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 217,
+					"character": 28
+				}
+			]
+		},
+		{
+			"id": 336,
+			"name": "getIdFromString",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 337,
+					"name": "getIdFromString",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Tries to cooerce a string (ID, URL or path) to an image asset ID",
+						"returns": "string\n\n",
+						"tags": [
+							{
+								"tag": "throws",
+								"text": "{@link UnresolvableError}\nThrows if passed image source could not be resolved to an asset ID\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 338,
+							"name": "str",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Input string (ID, URL or path)"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 303,
+					"character": 31
+				}
+			]
+		},
+		{
+			"id": 312,
+			"name": "getImage",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 313,
+					"name": "getImage",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Tries to resolve an image object with as much information as possible,\nfrom any inferrable structure (id, url, path, image object etc)",
+						"returns": "Image object\n",
+						"tags": [
+							{
+								"tag": "throws",
+								"text": "{@link UnresolvableError}\nThrows if passed image source could not be resolved to an asset ID\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 314,
+							"name": "src",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Input source (image object, asset, reference, id, url, path)"
+							},
+							"type": {
+								"type": "reference",
+								"id": 148,
+								"name": "SanityImageSource"
+							}
+						},
+						{
+							"id": 315,
+							"name": "project",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"comment": {
+								"text": "Project ID and dataset the image belongs to"
+							},
+							"type": {
+								"type": "reference",
+								"id": 1,
+								"name": "SanityProjectDetails"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 112,
+						"name": "ResolvedSanityImage"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 103,
+					"character": 24
+				}
+			]
+		},
+		{
+			"id": 317,
+			"name": "getImageAsset",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 318,
+					"name": "getImageAsset",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Tries to resolve a (partial) image asset document with as much information as possible,\nfrom any inferrable structure (id, url, path, image object etc)",
+						"returns": "Image asset document\n",
+						"tags": [
+							{
+								"tag": "throws",
+								"text": "{@link UnresolvableError}\nThrows if passed image source could not be resolved to an asset ID\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 319,
+							"name": "src",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Input source (image object, asset, reference, id, url, path)"
+							},
+							"type": {
+								"type": "reference",
+								"id": 148,
+								"name": "SanityImageSource"
+							}
+						},
+						{
+							"id": 320,
+							"name": "project",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"comment": {
+								"text": "Project ID and dataset the image belongs to"
+							},
+							"type": {
+								"type": "reference",
+								"id": 1,
+								"name": "SanityProjectDetails"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 150,
+						"name": "SanityImageAsset"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 137,
+					"character": 29
+				}
+			]
+		},
+		{
+			"id": 304,
+			"name": "getImageDimensions",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 305,
+					"name": "getImageDimensions",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Returns the width, height and aspect ratio of a passed image asset, from any\ninferrable structure (id, url, path, asset document, image object etc)",
+						"returns": "Object with width, height and aspect ratio properties\n",
+						"tags": [
+							{
+								"tag": "throws",
+								"text": "{@link UnresolvableError}\nThrows if passed image source could not be resolved to an asset ID\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 306,
+							"name": "src",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Input source (image object, asset, reference, id, url, path)"
+							},
+							"type": {
+								"type": "reference",
+								"id": 148,
+								"name": "SanityImageSource"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 161,
+						"name": "SanityImageDimensions"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 54,
+					"character": 34
+				}
+			]
+		},
+		{
+			"id": 343,
+			"name": "getProject",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 344,
+					"name": "getProject",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Resolves project ID and dataset the image belongs to, based on full URL or path",
+						"returns": "object | undefined\n",
+						"tags": [
+							{
+								"tag": "throws",
+								"text": "{@link UnresolvableError}\nThrows if passed image source could not be resolved to an asset ID\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 345,
+							"name": "src",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "reference",
+								"id": 148,
+								"name": "SanityImageSource"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 1,
+						"name": "SanityProjectDetails"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 361,
+					"character": 26
+				}
+			]
+		},
+		{
+			"id": 266,
+			"name": "getUrlFilename",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 267,
+					"name": "getUrlFilename",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Strips the CDN URL, path and query params from a URL, eg:\n`https://cdn.sanity.io/images/project/dataset/filename-200x200.jpg?foo=bar` =>\n`filename-200x200.jpg`",
+						"returns": "The filename of an URL, if URL matches the CDN URL",
+						"tags": [
+							{
+								"tag": "throws",
+								"text": "If URL is not a valid Sanity asset URL\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 268,
+							"name": "url",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "URL to get filename from"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/paths.ts",
+					"line": 170,
+					"character": 30
+				}
+			]
+		},
+		{
+			"id": 262,
+			"name": "getUrlPath",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 263,
+					"name": "getUrlPath",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Strips the CDN URL and query params from a URL, eg:\n`https://cdn.sanity.io/images/project/dataset/filename-200x200.jpg?foo=bar` =>\n`images/project/dataset/filename-200x200.jpg`",
+						"returns": "The path of a CDN URL",
+						"tags": [
+							{
+								"tag": "throws",
+								"text": "If URL is not a valid Sanity asset URL\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 264,
+							"name": "url",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "URL to get path name from"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/paths.ts",
+					"line": 138,
+					"character": 26
+				}
+			]
+		},
+		{
+			"id": 273,
+			"name": "getVanityStub",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 274,
+					"name": "getVanityStub",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Get the \"path stub\" at the end of the path, if the user hasn't explicitly opted out of this behavior"
+					},
+					"parameters": [
+						{
+							"id": 275,
+							"name": "originalFilename",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									}
+								]
+							}
+						},
+						{
+							"id": 276,
+							"name": "vanityFilename",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									}
+								]
+							}
+						},
+						{
+							"id": 277,
+							"name": "options",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"type": {
+								"type": "reference",
+								"id": 4,
+								"name": "PathBuilderOptions"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/paths.ts",
+					"line": 201,
+					"character": 22
+				}
+			]
+		},
+		{
+			"id": 256,
+			"name": "hasPath",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 257,
+					"name": "hasPath",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Checks whether or not the given URL contains an asset path",
+						"returns": "Whether or not it contained an asset path\n"
+					},
+					"parameters": [
+						{
+							"id": 258,
+							"name": "urlOrPath",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/paths.ts",
+					"line": 95,
+					"character": 16
+				}
+			]
+		},
+		{
+			"id": 340,
+			"name": "idFromUrl",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 341,
+					"name": "idFromUrl",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Converts from a full asset URL to just the asset document ID",
+						"returns": "string\n"
+					},
+					"parameters": [
+						{
+							"id": 342,
+							"name": "url",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "A full asset URL to convert"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 346,
+					"character": 18
+				}
+			]
+		},
+		{
+			"id": 353,
+			"name": "isAssetFilename",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 354,
+					"name": "isAssetFilename",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Returns whether or not the passed filename is a valid file or image asset filename",
+						"returns": "Whether or not the filename is an asset filename\n"
+					},
+					"parameters": [
+						{
+							"id": 355,
+							"name": "filename",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Filename to validate"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 409,
+					"character": 31
+				}
+			]
+		},
+		{
+			"id": 168,
+			"name": "isAssetIdStub",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 169,
+					"name": "isAssetIdStub",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Checks whether or not the given source is an asset ID stub\n(an object containing an `_id` property)",
+						"returns": "Whether or not the passed object is an object id stub\n"
+					},
+					"parameters": [
+						{
+							"id": 170,
+							"name": "stub",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Possible asset id stub"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "stub",
+						"asserts": false,
+						"targetType": {
+							"type": "reference",
+							"name": "SanityAssetIdStub"
+						}
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/asserters.ts",
+					"line": 29,
+					"character": 29
+				}
+			]
+		},
+		{
+			"id": 183,
+			"name": "isAssetObjectStub",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 184,
+					"name": "isAssetObjectStub",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Checks whether or not the given source is an asset object stub",
+						"returns": "Whether or not the passed object is an object stub\n"
+					},
+					"parameters": [
+						{
+							"id": 185,
+							"name": "stub",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Possible asset object stub"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "stub",
+						"asserts": false,
+						"targetType": {
+							"type": "reference",
+							"name": "SanityAssetObjectStub"
+						}
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/asserters.ts",
+					"line": 83,
+					"character": 33
+				}
+			]
+		},
+		{
+			"id": 171,
+			"name": "isAssetPathStub",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 172,
+					"name": "isAssetPathStub",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Checks whether or not the given source is an asset path stub\n(an object containing a `path` property)",
+						"returns": "Whether or not the passed object is an object path stub\n"
+					},
+					"parameters": [
+						{
+							"id": 173,
+							"name": "stub",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Possible asset path stub"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "stub",
+						"asserts": false,
+						"targetType": {
+							"type": "reference",
+							"name": "SanityAssetPathStub"
+						}
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/asserters.ts",
+					"line": 40,
+					"character": 31
+				}
+			]
+		},
+		{
+			"id": 174,
+			"name": "isAssetUrlStub",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 175,
+					"name": "isAssetUrlStub",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Checks whether or not the given source is an asset URL stub\n(an object containing a `url` property)",
+						"returns": "Whether or not the passed object is an object url stub\n"
+					},
+					"parameters": [
+						{
+							"id": 176,
+							"name": "stub",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Possible asset url stub"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "stub",
+						"asserts": false,
+						"targetType": {
+							"type": "reference",
+							"name": "SanityAssetUrlStub"
+						}
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/asserters.ts",
+					"line": 51,
+					"character": 30
+				}
+			]
+		},
+		{
+			"id": 206,
+			"name": "isDefaultCrop",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "Returns whether or not the passed crop has the default values for a crop region",
+				"returns": "True if passed crop matches default, false otherwise\n"
+			},
+			"signatures": [
+				{
+					"id": 207,
+					"name": "isDefaultCrop",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Returns whether or not the passed crop has the default values for a crop region",
+						"returns": "True if passed crop matches default, false otherwise\n"
+					},
+					"parameters": [
+						{
+							"id": 208,
+							"name": "crop",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The crop to return whether or not is the default crop"
+							},
+							"type": {
+								"type": "reference",
+								"id": 88,
+								"name": "SanityImageCrop"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/hotspotCrop.ts",
+					"line": 43,
+					"character": 26
+				}
+			]
+		},
+		{
+			"id": 209,
+			"name": "isDefaultHotspot",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "Returns whether or not the passed hotspot has the default values for a hotspot region",
+				"returns": "True if passed hotspot matches default, false otherwise\n"
+			},
+			"signatures": [
+				{
+					"id": 210,
+					"name": "isDefaultHotspot",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Returns whether or not the passed hotspot has the default values for a hotspot region",
+						"returns": "True if passed hotspot matches default, false otherwise\n"
+					},
+					"parameters": [
+						{
+							"id": 211,
+							"name": "hotspot",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The hotspot to return whether or not is the default hotspot"
+							},
+							"type": {
+								"type": "reference",
+								"id": 94,
+								"name": "SanityImageHotspot"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/hotspotCrop.ts",
+					"line": 63,
+					"character": 29
+				}
+			]
+		},
+		{
+			"id": 350,
+			"name": "isFileAssetFilename",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 351,
+					"name": "isFileAssetFilename",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Returns whether or not the passed filename is a valid file asset filename",
+						"returns": "Whether or not the filename is a file asset filename\n"
+					},
+					"parameters": [
+						{
+							"id": 352,
+							"name": "filename",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Filename to validate"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 399,
+					"character": 35
+				}
+			]
+		},
+		{
+			"id": 356,
+			"name": "isFileSource",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 357,
+					"name": "isFileSource",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Return whether or not the passed source is a file source",
+						"returns": "Whether or not the given source is a file source\n"
+					},
+					"parameters": [
+						{
+							"id": 358,
+							"name": "src",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Source to check"
+							},
+							"type": {
+								"type": "reference",
+								"id": 146,
+								"name": "SanityAssetSource"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "src",
+						"asserts": false,
+						"targetType": {
+							"type": "reference",
+							"name": "SanityFileSource"
+						}
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 419,
+					"character": 28
+				}
+			]
+		},
+		{
+			"id": 347,
+			"name": "isImageAssetFilename",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 348,
+					"name": "isImageAssetFilename",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Returns whether or not the passed filename is a valid image asset filename",
+						"returns": "Whether or not the filename is an image asset filename\n"
+					},
+					"parameters": [
+						{
+							"id": 349,
+							"name": "filename",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Filename to validate"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 389,
+					"character": 36
+				}
+			]
+		},
+		{
+			"id": 359,
+			"name": "isImageSource",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 360,
+					"name": "isImageSource",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Return whether or not the passed source is an image source",
+						"returns": "Whether or not the given source is an image source\n"
+					},
+					"parameters": [
+						{
+							"id": 361,
+							"name": "src",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Source to check"
+							},
+							"type": {
+								"type": "reference",
+								"id": 146,
+								"name": "SanityAssetSource"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "src",
+						"asserts": false,
+						"targetType": {
+							"type": "reference",
+							"name": "SanityImageSource"
+						}
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/resolve.ts",
+					"line": 430,
+					"character": 29
+				}
+			]
+		},
+		{
+			"id": 165,
+			"name": "isReference",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 166,
+					"name": "isReference",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Checks whether or not the given source is a Sanity reference\n(an object containing _ref string key)",
+						"returns": "Whether or not the passed object is a reference\n"
+					},
+					"parameters": [
+						{
+							"id": 167,
+							"name": "ref",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Possible reference"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "ref",
+						"asserts": false,
+						"targetType": {
+							"type": "reference",
+							"name": "SanityReference"
+						}
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/asserters.ts",
+					"line": 18,
+					"character": 27
+				}
+			]
+		},
+		{
+			"id": 362,
+			"name": "isSanityAssetUrl",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 363,
+					"name": "isSanityAssetUrl",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Checks whether or not a given URL is a valid Sanity asset URL",
+						"returns": "True if url is a valid Sanity asset URL, false otherwise\n"
+					},
+					"parameters": [
+						{
+							"id": 364,
+							"name": "url",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "URL to test"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/urls.ts",
+					"line": 9,
+					"character": 32
+				}
+			]
+		},
+		{
+			"id": 177,
+			"name": "isSanityFileAsset",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 178,
+					"name": "isSanityFileAsset",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Checks whether or not the given source is a (partial) sanity file asset document.\nOnly checks the `_type` property, all other properties _may_ be missing",
+						"returns": "Whether or not the given source is a file asset\n"
+					},
+					"parameters": [
+						{
+							"id": 179,
+							"name": "src",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Source to check"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "src",
+						"asserts": false,
+						"targetType": {
+							"type": "reference",
+							"name": "SanityFileAsset"
+						}
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/asserters.ts",
+					"line": 62,
+					"character": 33
+				}
+			]
+		},
+		{
+			"id": 368,
+			"name": "isSanityFileUrl",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 369,
+					"name": "isSanityFileUrl",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Checks whether or not a given URL is a valid Sanity file asset URL",
+						"returns": "True if url is a valid Sanity file asset URL, false otherwise\n"
+					},
+					"parameters": [
+						{
+							"id": 370,
+							"name": "url",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "URL to test"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/urls.ts",
+					"line": 29,
+					"character": 31
+				}
+			]
+		},
+		{
+			"id": 180,
+			"name": "isSanityImageAsset",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 181,
+					"name": "isSanityImageAsset",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Checks whether or not the given source is a (partial) sanity image asset document.\nOnly checks the `_type` property, all other properties _may_ be missing",
+						"returns": "Whether or not the given source is a file asset\n"
+					},
+					"parameters": [
+						{
+							"id": 182,
+							"name": "src",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Source to check"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "src",
+						"asserts": false,
+						"targetType": {
+							"type": "reference",
+							"name": "SanityImageAsset"
+						}
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/asserters.ts",
+					"line": 73,
+					"character": 34
+				}
+			]
+		},
+		{
+			"id": 365,
+			"name": "isSanityImageUrl",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 366,
+					"name": "isSanityImageUrl",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Checks whether or not a given URL is a valid Sanity image asset URL",
+						"returns": "True if url is a valid Sanity image asset URL, false otherwise\n"
+					},
+					"parameters": [
+						{
+							"id": 367,
+							"name": "url",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "URL to test"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/urls.ts",
+					"line": 19,
+					"character": 32
+				}
+			]
+		},
+		{
+			"id": 233,
+			"name": "isUnresolvableError",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 234,
+					"name": "isUnresolvableError",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Checks whether or not an error instance is of type UnresolvableError",
+						"returns": "True if the passed error instance appears to be an unresolveable error\n"
+					},
+					"parameters": [
+						{
+							"id": 235,
+							"name": "err",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Error to check for unresolvable error type"
+							},
+							"type": {
+								"type": "reference",
+								"id": 222,
+								"name": "Error"
+							}
+						}
+					],
+					"type": {
+						"type": "predicate",
+						"name": "err",
+						"asserts": false,
+						"targetType": {
+							"type": "reference",
+							"name": "UnresolvableError"
+						}
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/utils.ts",
+					"line": 36,
+					"character": 35
+				}
+			]
+		},
+		{
+			"id": 270,
+			"name": "isValidFilename",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 271,
+					"name": "isValidFilename",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Checks whether or not a given filename matches the expected Sanity asset filename pattern",
+						"returns": "Whether or not the specified filename is valid\n"
+					},
+					"parameters": [
+						{
+							"id": 272,
+							"name": "filename",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Filename to check for validity"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/paths.ts",
+					"line": 194,
+					"character": 31
+				}
+			]
+		},
+		{
+			"id": 289,
+			"name": "parseAssetFilename",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 290,
+					"name": "parseAssetFilename",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Parses a Sanity asset filename into individual parts (type, id, extension, width, height)",
+						"returns": "Object of named properties",
+						"tags": [
+							{
+								"tag": "throws",
+								"text": "If image/filename is invalid\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 291,
+							"name": "filename",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Filename to parse into named parts"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 144,
+						"name": "SanityAssetIdParts"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/parse.ts",
+					"line": 90,
+					"character": 34
+				}
+			]
+		},
+		{
+			"id": 280,
+			"name": "parseAssetId",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 281,
+					"name": "parseAssetId",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Parses a Sanity asset document ID into individual parts (type, id, extension, width/height etc)",
+						"returns": "Object of named properties",
+						"tags": [
+							{
+								"tag": "throws",
+								"text": "If document ID is invalid\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 282,
+							"name": "documentId",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Document ID to parse into named parts"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 144,
+						"name": "SanityAssetIdParts"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/parse.ts",
+					"line": 35,
+					"character": 28
+				}
+			]
+		},
+		{
+			"id": 292,
+			"name": "parseAssetUrl",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 293,
+					"name": "parseAssetUrl",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Parses a full Sanity asset URL into individual parts\n(type, project ID, dataset, id, extension, width, height)",
+						"returns": "Object of named properties",
+						"tags": [
+							{
+								"tag": "throws",
+								"text": "If URL is invalid or not a Sanity asset URL\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 294,
+							"name": "url",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Full URL to parse into named parts"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 145,
+						"name": "SanityAssetUrlParts"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/parse.ts",
+					"line": 113,
+					"character": 29
+				}
+			]
+		},
+		{
+			"id": 283,
+			"name": "parseFileAssetId",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 284,
+					"name": "parseFileAssetId",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Parses a Sanity file asset document ID into individual parts (type, id, extension)",
+						"returns": "Object of named properties",
+						"tags": [
+							{
+								"tag": "throws",
+								"text": "If document ID invalid\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 285,
+							"name": "documentId",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "File asset document ID to parse into named parts"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 34,
+						"name": "SanityFileAssetIdParts"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/parse.ts",
+					"line": 54,
+					"character": 32
+				}
+			]
+		},
+		{
+			"id": 298,
+			"name": "parseFileAssetUrl",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 299,
+					"name": "parseFileAssetUrl",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Parses a full Sanity file asset URL into individual parts\n(type, project ID, dataset, id, extension, width, height)",
+						"returns": "Object of named properties",
+						"tags": [
+							{
+								"tag": "throws",
+								"text": "If URL is invalid or not a Sanity file asset URL\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 300,
+							"name": "url",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Full URL to parse into named parts"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 38,
+						"name": "SanityFileUrlParts"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/parse.ts",
+					"line": 160,
+					"character": 33
+				}
+			]
+		},
+		{
+			"id": 286,
+			"name": "parseImageAssetId",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 287,
+					"name": "parseImageAssetId",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Parses a Sanity image asset document ID into individual parts (type, id, extension, width, height)",
+						"returns": "Object of named properties",
+						"tags": [
+							{
+								"tag": "throws",
+								"text": "If document ID invalid\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 288,
+							"name": "documentId",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Image asset document ID to parse into named parts"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 7,
+						"name": "SanityImageAssetIdParts"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/parse.ts",
+					"line": 72,
+					"character": 33
+				}
+			]
+		},
+		{
+			"id": 295,
+			"name": "parseImageAssetUrl",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 296,
+					"name": "parseImageAssetUrl",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Parses a full Sanity image asset URL into individual parts\n(type, project ID, dataset, id, extension, width, height)",
+						"returns": "Object of named properties",
+						"tags": [
+							{
+								"tag": "throws",
+								"text": "If URL is invalid or not a Sanity image asset URL\n"
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 297,
+							"name": "url",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Full URL to parse into named parts"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 13,
+						"name": "SanityImageUrlParts"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/parse.ts",
+					"line": 143,
+					"character": 34
+				}
+			]
+		},
+		{
+			"id": 259,
+			"name": "tryGetAssetPath",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 260,
+					"name": "tryGetAssetPath",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Tries to get the asset path from a given asset source",
+						"returns": "A path if resolvable, undefined otherwise\n"
+					},
+					"parameters": [
+						{
+							"id": 261,
+							"name": "src",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "The source image to infer an asset path from"
+							},
+							"type": {
+								"type": "reference",
+								"id": 146,
+								"name": "SanityAssetSource"
+							}
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							},
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							}
+						]
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/paths.ts",
+					"line": 105,
+					"character": 31
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Classes",
+			"kind": 128,
+			"children": [
+				212
+			]
+		},
+		{
+			"title": "Interfaces",
+			"kind": 256,
+			"children": [
+				56,
+				45,
+				22,
+				4,
+				51,
+				119,
+				112,
+				70,
+				64,
+				66,
+				68,
+				34,
+				100,
+				38,
+				7,
+				88,
+				140,
+				94,
+				78,
+				105,
+				124,
+				85,
+				135,
+				13,
+				1,
+				61
+			]
+		},
+		{
+			"title": "Type aliases",
+			"kind": 4194304,
+			"children": [
+				144,
+				164,
+				146,
+				145,
+				154,
+				147,
+				150,
+				161,
+				148,
+				149
+			]
+		},
+		{
+			"title": "Variables",
+			"kind": 32,
+			"children": [
+				200,
+				201,
+				335,
+				311,
+				326,
+				331,
+				339,
+				316,
+				321,
+				307,
+				346,
+				269,
+				265
+			]
+		},
+		{
+			"title": "Functions",
+			"kind": 64,
+			"children": [
+				248,
+				252,
+				240,
+				244,
+				332,
+				202,
+				204,
+				308,
+				322,
+				327,
+				336,
+				312,
+				317,
+				304,
+				343,
+				266,
+				262,
+				273,
+				256,
+				340,
+				353,
+				168,
+				183,
+				171,
+				174,
+				206,
+				209,
+				350,
+				356,
+				347,
+				359,
+				165,
+				362,
+				177,
+				368,
+				180,
+				365,
+				233,
+				270,
+				289,
+				280,
+				292,
+				283,
+				298,
+				286,
+				295,
+				259
+			]
+		}
+	]
+}
