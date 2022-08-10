@@ -33,7 +33,7 @@ export class UnresolvableError extends Error {
  * @param err - Error to check for unresolvable error type
  * @returns True if the passed error instance appears to be an unresolveable error
  */
-export function isUnresolvableError(err: Error): err is UnresolvableError {
+export function isUnresolvableError(err: unknown): err is UnresolvableError {
   const error = err as UnresolvableError
   return Boolean(error.unresolvable && 'input' in error)
 }
@@ -50,7 +50,7 @@ export function getForgivingResolver<T extends Function>(method: T) {
   return function (...args: ArgumentTypes<T>): MethodReturnType<T> | undefined {
     try {
       return method(...args)
-    } catch (err) {
+    } catch (err: unknown) {
       if (isUnresolvableError(err)) {
         return undefined
       }
