@@ -456,7 +456,7 @@ function modifyHtmlDocs() {
 
   // Move the functions to the top of the navigation
   const nav = $('.tsd-navigation ul')
-  const fns = orderNodesByName(nav.find('.tsd-kind-function'))
+  const fns = orderNodesByName(nav.find('.tsd-kind-function'), $)
   nav.prepend(fns)
 
   // Don't reference "globals.html", use index!
@@ -484,13 +484,13 @@ function modifyHtmlDocs() {
   fs.writeFileSync(htmlPath, $.html())
 }
 
-function orderNodesByName(nodes) {
+function orderNodesByName(nodes, $) {
   return nodes
     .toArray()
     .slice()
     .sort((a, b) => {
-      const aName = cheerio(a).text().trim()
-      const bName = cheerio(b).text().trim()
+      const aName = $(a).text().trim()
+      const bName = $(b).text().trim()
       return aName.localeCompare(bName)
     })
 }
