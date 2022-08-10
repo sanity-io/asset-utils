@@ -21,12 +21,11 @@
     "lint": "tsdx lint src",
     "posttest": "npm run lint",
     "prepublishOnly": "tsdx build && npm test",
-    "postpublish": "node scripts/generateReadme.js --commit && gh-pages-deploy",
+    "postpublish": "node scripts/generateReadme.js --commit",
     "coverage": "tsdx test --coverage",
     "docs": "node scripts/generateReadme.js"
   },
   "devDependencies": {
-    "@rexxars/gh-pages-deploy": "^0.5.3",
     "@types/jest": "^25.2.1",
     "@typescript-eslint/eslint-plugin": "^2.30.0",
     "@typescript-eslint/parser": "^2.30.0",
@@ -84,10 +83,5 @@
         "diagnostics": false
       }
     }
-  },
-  "gh-pages-deploy": {
-    "staticpath": "docs",
-    "noprompt": true,
-    "mainBranch": "main"
   }
 }
