@@ -50,7 +50,7 @@ export function getForgivingResolver<T extends Function>(method: T) {
   return function (...args: ArgumentTypes<T>): MethodReturnType<T> | undefined {
     try {
       return method(...args)
-    } catch (err: unknown) {
+    } catch (err) {
       if (isUnresolvableError(err)) {
         return undefined
       }
