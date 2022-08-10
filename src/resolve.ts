@@ -21,6 +21,7 @@ import {
   isAssetPathStub,
   isAssetUrlStub,
   isReference,
+  isSanityFileAsset,
   isSanityImageAsset,
 } from './asserters'
 import {
@@ -39,7 +40,6 @@ import {
   getUrlPath,
   tryGetAssetPath,
 } from './paths'
-import {isSanityFileAsset} from '.'
 
 /**
  * Returns the width, height and aspect ratio of a passed image asset, from any
@@ -258,7 +258,7 @@ export const tryGetFileAsset = getForgivingResolver(getFileAsset)
  * @throws {@link UnresolvableError}
  * Throws if passed asset source could not be resolved to an asset document ID
  */
-export function getAssetDocumentId(src: SanityAssetSource): string {
+export function getAssetDocumentId(src: unknown): string {
   const source = isAssetObjectStub(src) ? src.asset : src
 
   let id = ''
@@ -416,9 +416,9 @@ export function isAssetFilename(filename: string): boolean {
  * @param src - Source to check
  * @returns Whether or not the given source is a file source
  */
-export function isFileSource(src: SanityAssetSource): src is SanityFileSource {
-  const assetId = getAssetDocumentId(src)
-  return assetId.startsWith('file-')
+export function isFileSource(src: unknown): src is SanityFileSource {
+  const assetId = tryGetAssetDocumentId(src)
+  return assetId ? assetId.startsWith('file-') : false
 }
 
 /**
@@ -427,7 +427,7 @@ export function isFileSource(src: SanityAssetSource): src is SanityFileSource {
  * @param src - Source to check
  * @returns Whether or not the given source is an image source
  */
-export function isImageSource(src: SanityAssetSource): src is SanityImageSource {
-  const assetId = getAssetDocumentId(src)
-  return assetId.startsWith('image-')
+export function isImageSource(src: unknown): src is SanityImageSource {
+  const assetId = tryGetAssetDocumentId(src)
+  return assetId ? assetId.startsWith('image-') : false
 }
