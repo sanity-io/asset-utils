@@ -80,6 +80,33 @@
 					]
 				},
 				{
+					"id": 223,
+					"name": "cause",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/typescript/lib/lib.es2022.error.d.ts",
+							"line": 26,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 222,
+						"name": "Error"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 223,
+						"name": "Error.cause"
+					}
+				},
+				{
 					"id": 214,
 					"name": "input",
 					"kind": 1024,
@@ -111,7 +138,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
-							"line": 974,
+							"line": 1029,
 							"character": 11
 						}
 					],
@@ -136,7 +163,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
-							"line": 973,
+							"line": 1028,
 							"character": 8
 						}
 					],
@@ -162,7 +189,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
-							"line": 975,
+							"line": 1030,
 							"character": 9
 						}
 					],
@@ -218,7 +245,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
-							"line": 984,
+							"line": 1039,
 							"character": 17
 						}
 					],
@@ -247,6 +274,7 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
+						223,
 						214,
 						220,
 						219,
@@ -4410,7 +4438,7 @@
 			"defaultValue": "Object.freeze({\n  x: 0.5,\n  y: 0.5,\n  height: 1,\n  width: 1,\n})"
 		},
 		{
-			"id": 335,
+			"id": 336,
 			"name": "tryGetAssetDocumentId",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4445,7 +4473,7 @@
 			"defaultValue": "getForgivingResolver(getAssetDocumentId)"
 		},
 		{
-			"id": 311,
+			"id": 312,
 			"name": "tryGetExtension",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4480,7 +4508,7 @@
 			"defaultValue": "getForgivingResolver(getExtension)"
 		},
 		{
-			"id": 326,
+			"id": 327,
 			"name": "tryGetFile",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4515,7 +4543,7 @@
 			"defaultValue": "getForgivingResolver(getFile)"
 		},
 		{
-			"id": 331,
+			"id": 332,
 			"name": "tryGetFileAsset",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4550,7 +4578,7 @@
 			"defaultValue": "getForgivingResolver(getFileAsset)"
 		},
 		{
-			"id": 339,
+			"id": 340,
 			"name": "tryGetIdFromString",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4585,7 +4613,7 @@
 			"defaultValue": "getForgivingResolver(getIdFromString)"
 		},
 		{
-			"id": 316,
+			"id": 317,
 			"name": "tryGetImage",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4620,7 +4648,7 @@
 			"defaultValue": "getForgivingResolver(getImage)"
 		},
 		{
-			"id": 321,
+			"id": 322,
 			"name": "tryGetImageAsset",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4655,7 +4683,7 @@
 			"defaultValue": "getForgivingResolver(getImageAsset)"
 		},
 		{
-			"id": 307,
+			"id": 308,
 			"name": "tryGetImageDimensions",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4690,7 +4718,7 @@
 			"defaultValue": "getForgivingResolver(getImageDimensions)"
 		},
 		{
-			"id": 346,
+			"id": 347,
 			"name": "tryGetProject",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4725,7 +4753,7 @@
 			"defaultValue": "getForgivingResolver(getProject)"
 		},
 		{
-			"id": 269,
+			"id": 270,
 			"name": "tryGetUrlFilename",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4760,7 +4788,7 @@
 			"defaultValue": "getForgivingResolver(getUrlFilename)"
 		},
 		{
-			"id": 265,
+			"id": 266,
 			"name": "tryGetUrlPath",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4795,7 +4823,7 @@
 			"defaultValue": "getForgivingResolver(getUrlPath)"
 		},
 		{
-			"id": 248,
+			"id": 249,
 			"name": "buildFilePath",
 			"kind": 64,
 			"kindString": "Function",
@@ -4804,7 +4832,7 @@
 			},
 			"signatures": [
 				{
-					"id": 249,
+					"id": 250,
 					"name": "buildFilePath",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -4817,7 +4845,7 @@
 					},
 					"parameters": [
 						{
-							"id": 250,
+							"id": 251,
 							"name": "asset",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -4844,7 +4872,7 @@
 							}
 						},
 						{
-							"id": 251,
+							"id": 252,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -4877,7 +4905,7 @@
 			]
 		},
 		{
-			"id": 252,
+			"id": 253,
 			"name": "buildFileUrl",
 			"kind": 64,
 			"kindString": "Function",
@@ -4886,7 +4914,7 @@
 			},
 			"signatures": [
 				{
-					"id": 253,
+					"id": 254,
 					"name": "buildFileUrl",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -4899,7 +4927,7 @@
 					},
 					"parameters": [
 						{
-							"id": 254,
+							"id": 255,
 							"name": "asset",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -4916,7 +4944,7 @@
 							}
 						},
 						{
-							"id": 255,
+							"id": 256,
 							"name": "project",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -4946,7 +4974,7 @@
 			]
 		},
 		{
-			"id": 240,
+			"id": 241,
 			"name": "buildImagePath",
 			"kind": 64,
 			"kindString": "Function",
@@ -4955,7 +4983,7 @@
 			},
 			"signatures": [
 				{
-					"id": 241,
+					"id": 242,
 					"name": "buildImagePath",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -4968,7 +4996,7 @@
 					},
 					"parameters": [
 						{
-							"id": 242,
+							"id": 243,
 							"name": "asset",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -4995,7 +5023,7 @@
 							}
 						},
 						{
-							"id": 243,
+							"id": 244,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5028,7 +5056,7 @@
 			]
 		},
 		{
-			"id": 244,
+			"id": 245,
 			"name": "buildImageUrl",
 			"kind": 64,
 			"kindString": "Function",
@@ -5037,7 +5065,7 @@
 			},
 			"signatures": [
 				{
-					"id": 245,
+					"id": 246,
 					"name": "buildImageUrl",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5050,7 +5078,7 @@
 					},
 					"parameters": [
 						{
-							"id": 246,
+							"id": 247,
 							"name": "asset",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5077,7 +5105,7 @@
 							}
 						},
 						{
-							"id": 247,
+							"id": 248,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5110,7 +5138,7 @@
 			]
 		},
 		{
-			"id": 332,
+			"id": 333,
 			"name": "getAssetDocumentId",
 			"kind": 64,
 			"kindString": "Function",
@@ -5119,7 +5147,7 @@
 			},
 			"signatures": [
 				{
-					"id": 333,
+					"id": 334,
 					"name": "getAssetDocumentId",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5138,7 +5166,7 @@
 					},
 					"parameters": [
 						{
-							"id": 334,
+							"id": 335,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5149,9 +5177,8 @@
 								"text": "Input source (image/file object, asset, reference, id, url, path)"
 							},
 							"type": {
-								"type": "reference",
-								"id": 146,
-								"name": "SanityAssetSource"
+								"type": "intrinsic",
+								"name": "unknown"
 							}
 						}
 					],
@@ -5252,7 +5279,7 @@
 			]
 		},
 		{
-			"id": 308,
+			"id": 309,
 			"name": "getExtension",
 			"kind": 64,
 			"kindString": "Function",
@@ -5261,7 +5288,7 @@
 			},
 			"signatures": [
 				{
-					"id": 309,
+					"id": 310,
 					"name": "getExtension",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5280,7 +5307,7 @@
 					},
 					"parameters": [
 						{
-							"id": 310,
+							"id": 311,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5312,7 +5339,7 @@
 			]
 		},
 		{
-			"id": 322,
+			"id": 323,
 			"name": "getFile",
 			"kind": 64,
 			"kindString": "Function",
@@ -5321,7 +5348,7 @@
 			},
 			"signatures": [
 				{
-					"id": 323,
+					"id": 324,
 					"name": "getFile",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5340,7 +5367,7 @@
 					},
 					"parameters": [
 						{
-							"id": 324,
+							"id": 325,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5357,7 +5384,7 @@
 							}
 						},
 						{
-							"id": 325,
+							"id": 326,
 							"name": "project",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5391,7 +5418,7 @@
 			]
 		},
 		{
-			"id": 327,
+			"id": 328,
 			"name": "getFileAsset",
 			"kind": 64,
 			"kindString": "Function",
@@ -5400,7 +5427,7 @@
 			},
 			"signatures": [
 				{
-					"id": 328,
+					"id": 329,
 					"name": "getFileAsset",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5419,7 +5446,7 @@
 					},
 					"parameters": [
 						{
-							"id": 329,
+							"id": 330,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5436,7 +5463,7 @@
 							}
 						},
 						{
-							"id": 330,
+							"id": 331,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5470,7 +5497,7 @@
 			]
 		},
 		{
-			"id": 336,
+			"id": 337,
 			"name": "getIdFromString",
 			"kind": 64,
 			"kindString": "Function",
@@ -5479,7 +5506,7 @@
 			},
 			"signatures": [
 				{
-					"id": 337,
+					"id": 338,
 					"name": "getIdFromString",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5498,7 +5525,7 @@
 					},
 					"parameters": [
 						{
-							"id": 338,
+							"id": 339,
 							"name": "str",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5529,7 +5556,7 @@
 			]
 		},
 		{
-			"id": 312,
+			"id": 313,
 			"name": "getImage",
 			"kind": 64,
 			"kindString": "Function",
@@ -5538,7 +5565,7 @@
 			},
 			"signatures": [
 				{
-					"id": 313,
+					"id": 314,
 					"name": "getImage",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5557,7 +5584,7 @@
 					},
 					"parameters": [
 						{
-							"id": 314,
+							"id": 315,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5574,7 +5601,7 @@
 							}
 						},
 						{
-							"id": 315,
+							"id": 316,
 							"name": "project",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5608,7 +5635,7 @@
 			]
 		},
 		{
-			"id": 317,
+			"id": 318,
 			"name": "getImageAsset",
 			"kind": 64,
 			"kindString": "Function",
@@ -5617,7 +5644,7 @@
 			},
 			"signatures": [
 				{
-					"id": 318,
+					"id": 319,
 					"name": "getImageAsset",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5636,7 +5663,7 @@
 					},
 					"parameters": [
 						{
-							"id": 319,
+							"id": 320,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5653,7 +5680,7 @@
 							}
 						},
 						{
-							"id": 320,
+							"id": 321,
 							"name": "project",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5687,7 +5714,7 @@
 			]
 		},
 		{
-			"id": 304,
+			"id": 305,
 			"name": "getImageDimensions",
 			"kind": 64,
 			"kindString": "Function",
@@ -5696,7 +5723,7 @@
 			},
 			"signatures": [
 				{
-					"id": 305,
+					"id": 306,
 					"name": "getImageDimensions",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5715,7 +5742,7 @@
 					},
 					"parameters": [
 						{
-							"id": 306,
+							"id": 307,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5748,7 +5775,7 @@
 			]
 		},
 		{
-			"id": 343,
+			"id": 344,
 			"name": "getProject",
 			"kind": 64,
 			"kindString": "Function",
@@ -5757,7 +5784,7 @@
 			},
 			"signatures": [
 				{
-					"id": 344,
+					"id": 345,
 					"name": "getProject",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5776,7 +5803,7 @@
 					},
 					"parameters": [
 						{
-							"id": 345,
+							"id": 346,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5806,7 +5833,7 @@
 			]
 		},
 		{
-			"id": 266,
+			"id": 267,
 			"name": "getUrlFilename",
 			"kind": 64,
 			"kindString": "Function",
@@ -5815,7 +5842,7 @@
 			},
 			"signatures": [
 				{
-					"id": 267,
+					"id": 268,
 					"name": "getUrlFilename",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5834,7 +5861,7 @@
 					},
 					"parameters": [
 						{
-							"id": 268,
+							"id": 269,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5865,7 +5892,7 @@
 			]
 		},
 		{
-			"id": 262,
+			"id": 263,
 			"name": "getUrlPath",
 			"kind": 64,
 			"kindString": "Function",
@@ -5874,7 +5901,7 @@
 			},
 			"signatures": [
 				{
-					"id": 263,
+					"id": 264,
 					"name": "getUrlPath",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5893,7 +5920,7 @@
 					},
 					"parameters": [
 						{
-							"id": 264,
+							"id": 265,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5924,7 +5951,7 @@
 			]
 		},
 		{
-			"id": 273,
+			"id": 274,
 			"name": "getVanityStub",
 			"kind": 64,
 			"kindString": "Function",
@@ -5933,7 +5960,7 @@
 			},
 			"signatures": [
 				{
-					"id": 274,
+					"id": 275,
 					"name": "getVanityStub",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5945,7 +5972,7 @@
 					},
 					"parameters": [
 						{
-							"id": 275,
+							"id": 276,
 							"name": "originalFilename",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5967,7 +5994,7 @@
 							}
 						},
 						{
-							"id": 276,
+							"id": 277,
 							"name": "vanityFilename",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5989,7 +6016,7 @@
 							}
 						},
 						{
-							"id": 277,
+							"id": 278,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6019,7 +6046,7 @@
 			]
 		},
 		{
-			"id": 256,
+			"id": 257,
 			"name": "hasPath",
 			"kind": 64,
 			"kindString": "Function",
@@ -6028,7 +6055,7 @@
 			},
 			"signatures": [
 				{
-					"id": 257,
+					"id": 258,
 					"name": "hasPath",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6041,7 +6068,7 @@
 					},
 					"parameters": [
 						{
-							"id": 258,
+							"id": 259,
 							"name": "urlOrPath",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6069,7 +6096,7 @@
 			]
 		},
 		{
-			"id": 340,
+			"id": 341,
 			"name": "idFromUrl",
 			"kind": 64,
 			"kindString": "Function",
@@ -6078,7 +6105,7 @@
 			},
 			"signatures": [
 				{
-					"id": 341,
+					"id": 342,
 					"name": "idFromUrl",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6091,7 +6118,7 @@
 					},
 					"parameters": [
 						{
-							"id": 342,
+							"id": 343,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6122,7 +6149,7 @@
 			]
 		},
 		{
-			"id": 353,
+			"id": 354,
 			"name": "isAssetFilename",
 			"kind": 64,
 			"kindString": "Function",
@@ -6131,7 +6158,7 @@
 			},
 			"signatures": [
 				{
-					"id": 354,
+					"id": 355,
 					"name": "isAssetFilename",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6144,7 +6171,7 @@
 					},
 					"parameters": [
 						{
-							"id": 355,
+							"id": 356,
 							"name": "filename",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6525,7 +6552,7 @@
 			]
 		},
 		{
-			"id": 350,
+			"id": 351,
 			"name": "isFileAssetFilename",
 			"kind": 64,
 			"kindString": "Function",
@@ -6534,7 +6561,7 @@
 			},
 			"signatures": [
 				{
-					"id": 351,
+					"id": 352,
 					"name": "isFileAssetFilename",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6547,7 +6574,7 @@
 					},
 					"parameters": [
 						{
-							"id": 352,
+							"id": 353,
 							"name": "filename",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6578,7 +6605,7 @@
 			]
 		},
 		{
-			"id": 356,
+			"id": 357,
 			"name": "isFileSource",
 			"kind": 64,
 			"kindString": "Function",
@@ -6587,7 +6614,7 @@
 			},
 			"signatures": [
 				{
-					"id": 357,
+					"id": 358,
 					"name": "isFileSource",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6600,7 +6627,7 @@
 					},
 					"parameters": [
 						{
-							"id": 358,
+							"id": 359,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6611,9 +6638,8 @@
 								"text": "Source to check"
 							},
 							"type": {
-								"type": "reference",
-								"id": 146,
-								"name": "SanityAssetSource"
+								"type": "intrinsic",
+								"name": "unknown"
 							}
 						}
 					],
@@ -6637,7 +6663,7 @@
 			]
 		},
 		{
-			"id": 347,
+			"id": 348,
 			"name": "isImageAssetFilename",
 			"kind": 64,
 			"kindString": "Function",
@@ -6646,7 +6672,7 @@
 			},
 			"signatures": [
 				{
-					"id": 348,
+					"id": 349,
 					"name": "isImageAssetFilename",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6659,7 +6685,7 @@
 					},
 					"parameters": [
 						{
-							"id": 349,
+							"id": 350,
 							"name": "filename",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6690,7 +6716,7 @@
 			]
 		},
 		{
-			"id": 359,
+			"id": 360,
 			"name": "isImageSource",
 			"kind": 64,
 			"kindString": "Function",
@@ -6699,7 +6725,7 @@
 			},
 			"signatures": [
 				{
-					"id": 360,
+					"id": 361,
 					"name": "isImageSource",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6712,7 +6738,7 @@
 					},
 					"parameters": [
 						{
-							"id": 361,
+							"id": 362,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6723,9 +6749,8 @@
 								"text": "Source to check"
 							},
 							"type": {
-								"type": "reference",
-								"id": 146,
-								"name": "SanityAssetSource"
+								"type": "intrinsic",
+								"name": "unknown"
 							}
 						}
 					],
@@ -6807,7 +6832,7 @@
 			]
 		},
 		{
-			"id": 362,
+			"id": 363,
 			"name": "isSanityAssetUrl",
 			"kind": 64,
 			"kindString": "Function",
@@ -6816,7 +6841,7 @@
 			},
 			"signatures": [
 				{
-					"id": 363,
+					"id": 364,
 					"name": "isSanityAssetUrl",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6829,7 +6854,7 @@
 					},
 					"parameters": [
 						{
-							"id": 364,
+							"id": 365,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6918,7 +6943,7 @@
 			]
 		},
 		{
-			"id": 368,
+			"id": 369,
 			"name": "isSanityFileUrl",
 			"kind": 64,
 			"kindString": "Function",
@@ -6927,7 +6952,7 @@
 			},
 			"signatures": [
 				{
-					"id": 369,
+					"id": 370,
 					"name": "isSanityFileUrl",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6940,7 +6965,7 @@
 					},
 					"parameters": [
 						{
-							"id": 370,
+							"id": 371,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7029,7 +7054,7 @@
 			]
 		},
 		{
-			"id": 365,
+			"id": 366,
 			"name": "isSanityImageUrl",
 			"kind": 64,
 			"kindString": "Function",
@@ -7038,7 +7063,7 @@
 			},
 			"signatures": [
 				{
-					"id": 366,
+					"id": 367,
 					"name": "isSanityImageUrl",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7051,7 +7076,7 @@
 					},
 					"parameters": [
 						{
-							"id": 367,
+							"id": 368,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7082,7 +7107,7 @@
 			]
 		},
 		{
-			"id": 233,
+			"id": 234,
 			"name": "isUnresolvableError",
 			"kind": 64,
 			"kindString": "Function",
@@ -7091,7 +7116,7 @@
 			},
 			"signatures": [
 				{
-					"id": 234,
+					"id": 235,
 					"name": "isUnresolvableError",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7104,7 +7129,7 @@
 					},
 					"parameters": [
 						{
-							"id": 235,
+							"id": 236,
 							"name": "err",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7115,9 +7140,8 @@
 								"text": "Error to check for unresolvable error type"
 							},
 							"type": {
-								"type": "reference",
-								"id": 222,
-								"name": "Error"
+								"type": "intrinsic",
+								"name": "unknown"
 							}
 						}
 					],
@@ -7141,7 +7165,7 @@
 			]
 		},
 		{
-			"id": 270,
+			"id": 271,
 			"name": "isValidFilename",
 			"kind": 64,
 			"kindString": "Function",
@@ -7150,7 +7174,7 @@
 			},
 			"signatures": [
 				{
-					"id": 271,
+					"id": 272,
 					"name": "isValidFilename",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7163,7 +7187,7 @@
 					},
 					"parameters": [
 						{
-							"id": 272,
+							"id": 273,
 							"name": "filename",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7194,7 +7218,7 @@
 			]
 		},
 		{
-			"id": 289,
+			"id": 290,
 			"name": "parseAssetFilename",
 			"kind": 64,
 			"kindString": "Function",
@@ -7203,7 +7227,7 @@
 			},
 			"signatures": [
 				{
-					"id": 290,
+					"id": 291,
 					"name": "parseAssetFilename",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7222,7 +7246,7 @@
 					},
 					"parameters": [
 						{
-							"id": 291,
+							"id": 292,
 							"name": "filename",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7254,7 +7278,7 @@
 			]
 		},
 		{
-			"id": 280,
+			"id": 281,
 			"name": "parseAssetId",
 			"kind": 64,
 			"kindString": "Function",
@@ -7263,7 +7287,7 @@
 			},
 			"signatures": [
 				{
-					"id": 281,
+					"id": 282,
 					"name": "parseAssetId",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7282,7 +7306,7 @@
 					},
 					"parameters": [
 						{
-							"id": 282,
+							"id": 283,
 							"name": "documentId",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7314,7 +7338,7 @@
 			]
 		},
 		{
-			"id": 292,
+			"id": 293,
 			"name": "parseAssetUrl",
 			"kind": 64,
 			"kindString": "Function",
@@ -7323,7 +7347,7 @@
 			},
 			"signatures": [
 				{
-					"id": 293,
+					"id": 294,
 					"name": "parseAssetUrl",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7342,7 +7366,7 @@
 					},
 					"parameters": [
 						{
-							"id": 294,
+							"id": 295,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7374,7 +7398,7 @@
 			]
 		},
 		{
-			"id": 283,
+			"id": 284,
 			"name": "parseFileAssetId",
 			"kind": 64,
 			"kindString": "Function",
@@ -7383,7 +7407,7 @@
 			},
 			"signatures": [
 				{
-					"id": 284,
+					"id": 285,
 					"name": "parseFileAssetId",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7402,7 +7426,7 @@
 					},
 					"parameters": [
 						{
-							"id": 285,
+							"id": 286,
 							"name": "documentId",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7434,7 +7458,7 @@
 			]
 		},
 		{
-			"id": 298,
+			"id": 299,
 			"name": "parseFileAssetUrl",
 			"kind": 64,
 			"kindString": "Function",
@@ -7443,7 +7467,7 @@
 			},
 			"signatures": [
 				{
-					"id": 299,
+					"id": 300,
 					"name": "parseFileAssetUrl",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7462,7 +7486,7 @@
 					},
 					"parameters": [
 						{
-							"id": 300,
+							"id": 301,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7494,7 +7518,7 @@
 			]
 		},
 		{
-			"id": 286,
+			"id": 287,
 			"name": "parseImageAssetId",
 			"kind": 64,
 			"kindString": "Function",
@@ -7503,7 +7527,7 @@
 			},
 			"signatures": [
 				{
-					"id": 287,
+					"id": 288,
 					"name": "parseImageAssetId",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7522,7 +7546,7 @@
 					},
 					"parameters": [
 						{
-							"id": 288,
+							"id": 289,
 							"name": "documentId",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7554,7 +7578,7 @@
 			]
 		},
 		{
-			"id": 295,
+			"id": 296,
 			"name": "parseImageAssetUrl",
 			"kind": 64,
 			"kindString": "Function",
@@ -7563,7 +7587,7 @@
 			},
 			"signatures": [
 				{
-					"id": 296,
+					"id": 297,
 					"name": "parseImageAssetUrl",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7582,7 +7606,7 @@
 					},
 					"parameters": [
 						{
-							"id": 297,
+							"id": 298,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7614,7 +7638,7 @@
 			]
 		},
 		{
-			"id": 259,
+			"id": 260,
 			"name": "tryGetAssetPath",
 			"kind": 64,
 			"kindString": "Function",
@@ -7623,7 +7647,7 @@
 			},
 			"signatures": [
 				{
-					"id": 260,
+					"id": 261,
 					"name": "tryGetAssetPath",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7636,7 +7660,7 @@
 					},
 					"parameters": [
 						{
-							"id": 261,
+							"id": 262,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7739,70 +7763,70 @@
 			"children": [
 				200,
 				201,
-				335,
-				311,
-				326,
-				331,
-				339,
-				316,
-				321,
-				307,
-				346,
-				269,
-				265
+				336,
+				312,
+				327,
+				332,
+				340,
+				317,
+				322,
+				308,
+				347,
+				270,
+				266
 			]
 		},
 		{
 			"title": "Functions",
 			"kind": 64,
 			"children": [
-				248,
-				252,
-				240,
-				244,
-				332,
+				249,
+				253,
+				241,
+				245,
+				333,
 				202,
 				204,
-				308,
-				322,
-				327,
-				336,
-				312,
-				317,
-				304,
-				343,
-				266,
-				262,
-				273,
-				256,
-				340,
-				353,
+				309,
+				323,
+				328,
+				337,
+				313,
+				318,
+				305,
+				344,
+				267,
+				263,
+				274,
+				257,
+				341,
+				354,
 				168,
 				183,
 				171,
 				174,
 				206,
 				209,
-				350,
-				356,
-				347,
-				359,
+				351,
+				357,
+				348,
+				360,
 				165,
-				362,
+				363,
 				177,
-				368,
+				369,
 				180,
-				365,
-				233,
-				270,
-				289,
-				280,
-				292,
-				283,
-				298,
-				286,
-				295,
-				259
+				366,
+				234,
+				271,
+				290,
+				281,
+				293,
+				284,
+				299,
+				287,
+				296,
+				260
 			]
 		}
 	]
