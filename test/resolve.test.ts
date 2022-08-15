@@ -59,8 +59,8 @@ const validLegacyImgSources: [string, SanityImageSource][] = [
   ['object url stub (pretty filename)', {asset: {url: imgLegacyUrlPretty}}],
 ]
 
-const fileId = 'file-def987-pdf'
-const filePath = 'files/a/b/def987.pdf'
+const fileId = 'file-def987abc12345678909877654321abcdef98765-pdf'
+const filePath = 'files/a/b/def987abc12345678909877654321abcdef98765.pdf'
 const fileUrl = `https://cdn.sanity.io/${filePath}`
 const filePathPretty = `${filePath}/pretty.pdf`
 const fileUrlPretty = `${fileUrl}/pretty.pdf`

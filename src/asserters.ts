@@ -1,3 +1,4 @@
+import {fileAssetIdPattern, imageAssetIdPattern} from './constants'
 import type {
   SanityAssetIdStub,
   SanityAssetObjectStub,
@@ -72,6 +73,36 @@ export function isSanityFileAsset(src: unknown): src is SanityFileAsset {
  */
 export function isSanityImageAsset(src: unknown): src is SanityImageAsset {
   return isObject(src) && (src as SanityImageAsset)._type === 'sanity.imageAsset'
+}
+
+/**
+ * Checks whether or not the given document ID is a valid Sanity image asset document ID
+ *
+ * @param documentId - Document ID to check
+ * @returns Whether or not the given document ID is a Sanity image asset document ID
+ */
+export function isImageAssetId(documentId: string): boolean {
+  return imageAssetIdPattern.test(documentId)
+}
+
+/**
+ * Checks whether or not the given document ID is a valid Sanity file asset document ID
+ *
+ * @param documentId - Document ID to check
+ * @returns Whether or not the given document ID is a Sanity file asset document ID
+ */
+export function isFileAssetId(documentId: string): boolean {
+  return fileAssetIdPattern.test(documentId)
+}
+
+/**
+ * Checks whether or not the given document ID is a valid Sanity asset document ID (file or image)
+ *
+ * @param documentId - Document ID to check
+ * @returns Whether or not the given document ID is a Sanity asset document ID (file or image)
+ */
+export function isAssetId(documentId: string): boolean {
+  return isImageAssetId(documentId) || isFileAssetId(documentId)
 }
 
 /**
