@@ -6,7 +6,7 @@
 	"originalName": "",
 	"children": [
 		{
-			"id": 212,
+			"id": 221,
 			"name": "UnresolvableError",
 			"kind": 128,
 			"kindString": "Class",
@@ -19,7 +19,7 @@
 			},
 			"children": [
 				{
-					"id": 215,
+					"id": 224,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -28,7 +28,7 @@
 					},
 					"signatures": [
 						{
-							"id": 216,
+							"id": 225,
 							"name": "new UnresolvableError",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -37,7 +37,7 @@
 							},
 							"parameters": [
 								{
-									"id": 217,
+									"id": 226,
 									"name": "inputSource",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -50,7 +50,7 @@
 									}
 								},
 								{
-									"id": 218,
+									"id": 227,
 									"name": "message",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -66,7 +66,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 212,
+								"id": 221,
 								"name": "UnresolvableError"
 							}
 						}
@@ -80,7 +80,7 @@
 					]
 				},
 				{
-					"id": 223,
+					"id": 232,
 					"name": "cause",
 					"kind": 1024,
 					"kindString": "Property",
@@ -97,17 +97,17 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 222,
+						"id": 231,
 						"name": "Error"
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 223,
+						"id": 232,
 						"name": "Error.cause"
 					}
 				},
 				{
-					"id": 214,
+					"id": 223,
 					"name": "input",
 					"kind": 1024,
 					"kindString": "Property",
@@ -128,7 +128,7 @@
 					}
 				},
 				{
-					"id": 220,
+					"id": 229,
 					"name": "message",
 					"kind": 1024,
 					"kindString": "Property",
@@ -148,12 +148,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 220,
+						"id": 229,
 						"name": "Error.message"
 					}
 				},
 				{
-					"id": 219,
+					"id": 228,
 					"name": "name",
 					"kind": 1024,
 					"kindString": "Property",
@@ -173,12 +173,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 219,
+						"id": 228,
 						"name": "Error.name"
 					}
 				},
 				{
-					"id": 221,
+					"id": 230,
 					"name": "stack",
 					"kind": 1024,
 					"kindString": "Property",
@@ -208,12 +208,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 221,
+						"id": 230,
 						"name": "Error.stack"
 					}
 				},
 				{
-					"id": 213,
+					"id": 222,
 					"name": "unresolvable",
 					"kind": 1024,
 					"kindString": "Property",
@@ -234,7 +234,7 @@
 					"defaultValue": "true"
 				},
 				{
-					"id": 222,
+					"id": 231,
 					"name": "Error",
 					"kind": 1024,
 					"kindString": "Property",
@@ -256,7 +256,7 @@
 					"extendedBy": [
 						{
 							"type": "reference",
-							"id": 212,
+							"id": 221,
 							"name": "UnresolvableError"
 						}
 					]
@@ -267,20 +267,20 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						215
+						224
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
+						232,
 						223,
-						214,
-						220,
-						219,
-						221,
-						213,
-						222
+						229,
+						228,
+						230,
+						222,
+						231
 					]
 				}
 			],
@@ -294,13 +294,13 @@
 			"extendedTypes": [
 				{
 					"type": "reference",
-					"id": 222,
+					"id": 231,
 					"name": "Error"
 				}
 			]
 		},
 		{
-			"id": 56,
+			"id": 67,
 			"name": "AbsoluteRectangle",
 			"kind": 256,
 			"kindString": "Interface",
@@ -309,7 +309,7 @@
 			},
 			"children": [
 				{
-					"id": 60,
+					"id": 71,
 					"name": "bottom",
 					"kind": 1024,
 					"kindString": "Property",
@@ -329,7 +329,7 @@
 					}
 				},
 				{
-					"id": 58,
+					"id": 69,
 					"name": "left",
 					"kind": 1024,
 					"kindString": "Property",
@@ -349,7 +349,7 @@
 					}
 				},
 				{
-					"id": 59,
+					"id": 70,
 					"name": "right",
 					"kind": 1024,
 					"kindString": "Property",
@@ -369,7 +369,7 @@
 					}
 				},
 				{
-					"id": 57,
+					"id": 68,
 					"name": "top",
 					"kind": 1024,
 					"kindString": "Property",
@@ -394,10 +394,10 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						60,
-						58,
-						59,
-						57
+						71,
+						69,
+						70,
+						68
 					]
 				}
 			],
@@ -410,7 +410,7 @@
 			]
 		},
 		{
-			"id": 45,
+			"id": 56,
 			"name": "FileUrlBuilderOptions",
 			"kind": 256,
 			"kindString": "Interface",
@@ -419,7 +419,7 @@
 			},
 			"children": [
 				{
-					"id": 46,
+					"id": 57,
 					"name": "assetId",
 					"kind": 1024,
 					"kindString": "Property",
@@ -439,7 +439,7 @@
 					}
 				},
 				{
-					"id": 47,
+					"id": 58,
 					"name": "extension",
 					"kind": 1024,
 					"kindString": "Property",
@@ -459,7 +459,7 @@
 					}
 				},
 				{
-					"id": 48,
+					"id": 59,
 					"name": "originalFilename",
 					"kind": 1024,
 					"kindString": "Property",
@@ -489,7 +489,7 @@
 					}
 				},
 				{
-					"id": 49,
+					"id": 60,
 					"name": "vanityFilename",
 					"kind": 1024,
 					"kindString": "Property",
@@ -524,10 +524,10 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						46,
-						47,
-						48,
-						49
+						57,
+						58,
+						59,
+						60
 					]
 				}
 			],
@@ -542,7 +542,7 @@
 				{
 					"type": "reflection",
 					"declaration": {
-						"id": 50,
+						"id": 61,
 						"name": "__type",
 						"kind": 65536,
 						"kindString": "Type literal",
@@ -561,7 +561,7 @@
 			]
 		},
 		{
-			"id": 22,
+			"id": 33,
 			"name": "ImageUrlBuilderOptions",
 			"kind": 256,
 			"kindString": "Interface",
@@ -570,7 +570,7 @@
 			},
 			"children": [
 				{
-					"id": 23,
+					"id": 34,
 					"name": "assetId",
 					"kind": 1024,
 					"kindString": "Property",
@@ -590,7 +590,7 @@
 					}
 				},
 				{
-					"id": 24,
+					"id": 35,
 					"name": "extension",
 					"kind": 1024,
 					"kindString": "Property",
@@ -610,7 +610,7 @@
 					}
 				},
 				{
-					"id": 25,
+					"id": 36,
 					"name": "metadata",
 					"kind": 1024,
 					"kindString": "Property",
@@ -627,7 +627,7 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 26,
+							"id": 37,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
@@ -636,7 +636,7 @@
 							},
 							"children": [
 								{
-									"id": 27,
+									"id": 38,
 									"name": "dimensions",
 									"kind": 32,
 									"kindString": "Variable",
@@ -653,7 +653,7 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 28,
+											"id": 39,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
@@ -662,7 +662,7 @@
 											},
 											"children": [
 												{
-													"id": 30,
+													"id": 41,
 													"name": "height",
 													"kind": 32,
 													"kindString": "Variable",
@@ -682,7 +682,7 @@
 													}
 												},
 												{
-													"id": 29,
+													"id": 40,
 													"name": "width",
 													"kind": 32,
 													"kindString": "Variable",
@@ -707,8 +707,8 @@
 													"title": "Variables",
 													"kind": 32,
 													"children": [
-														30,
-														29
+														41,
+														40
 													]
 												}
 											],
@@ -728,7 +728,7 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										27
+										38
 									]
 								}
 							],
@@ -743,7 +743,7 @@
 					}
 				},
 				{
-					"id": 31,
+					"id": 42,
 					"name": "originalFilename",
 					"kind": 1024,
 					"kindString": "Property",
@@ -773,7 +773,7 @@
 					}
 				},
 				{
-					"id": 32,
+					"id": 43,
 					"name": "vanityFilename",
 					"kind": 1024,
 					"kindString": "Property",
@@ -808,11 +808,11 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						23,
-						24,
-						25,
-						31,
-						32
+						34,
+						35,
+						36,
+						42,
+						43
 					]
 				}
 			],
@@ -827,7 +827,7 @@
 				{
 					"type": "reflection",
 					"declaration": {
-						"id": 33,
+						"id": 44,
 						"name": "__type",
 						"kind": 65536,
 						"kindString": "Type literal",
@@ -846,7 +846,7 @@
 			]
 		},
 		{
-			"id": 4,
+			"id": 15,
 			"name": "PathBuilderOptions",
 			"kind": 256,
 			"kindString": "Interface",
@@ -855,7 +855,7 @@
 			},
 			"children": [
 				{
-					"id": 5,
+					"id": 16,
 					"name": "useVanityName",
 					"kind": 1024,
 					"kindString": "Property",
@@ -894,7 +894,7 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						5
+						16
 					]
 				}
 			],
@@ -909,7 +909,7 @@
 				{
 					"type": "reflection",
 					"declaration": {
-						"id": 6,
+						"id": 17,
 						"name": "__type",
 						"kind": 65536,
 						"kindString": "Type literal",
@@ -928,7 +928,7 @@
 			]
 		},
 		{
-			"id": 51,
+			"id": 62,
 			"name": "Rectangle",
 			"kind": 256,
 			"kindString": "Interface",
@@ -937,7 +937,7 @@
 			},
 			"children": [
 				{
-					"id": 55,
+					"id": 66,
 					"name": "height",
 					"kind": 1024,
 					"kindString": "Property",
@@ -957,7 +957,7 @@
 					}
 				},
 				{
-					"id": 54,
+					"id": 65,
 					"name": "width",
 					"kind": 1024,
 					"kindString": "Property",
@@ -977,7 +977,7 @@
 					}
 				},
 				{
-					"id": 52,
+					"id": 63,
 					"name": "x",
 					"kind": 1024,
 					"kindString": "Property",
@@ -997,7 +997,7 @@
 					}
 				},
 				{
-					"id": 53,
+					"id": 64,
 					"name": "y",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1022,10 +1022,10 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						55,
-						54,
-						52,
-						53
+						66,
+						65,
+						63,
+						64
 					]
 				}
 			],
@@ -1038,1896 +1038,8 @@
 			]
 		},
 		{
-			"id": 119,
+			"id": 130,
 			"name": "ResolvedSanityFile",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {
-				"isExported": true
-			},
-			"indexSignature": [
-				{
-					"id": 122,
-					"name": "__index",
-					"kind": 8192,
-					"kindString": "Index signature",
-					"flags": {
-						"isExported": true
-					},
-					"parameters": [
-						{
-							"id": 123,
-							"name": "key",
-							"kind": 32768,
-							"kindString": "Parameter",
-							"flags": {
-								"isExported": true
-							},
-							"type": {
-								"type": "intrinsic",
-								"name": "string"
-							}
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "unknown"
-					}
-				}
-			],
-			"children": [
-				{
-					"id": 120,
-					"name": "_type",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 205,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
-					}
-				},
-				{
-					"id": 121,
-					"name": "asset",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 206,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "reference",
-						"id": 154,
-						"name": "SanityFileAsset"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						120,
-						121
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/types.ts",
-					"line": 204,
-					"character": 35
-				}
-			]
-		},
-		{
-			"id": 112,
-			"name": "ResolvedSanityImage",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {
-				"isExported": true
-			},
-			"indexSignature": [
-				{
-					"id": 117,
-					"name": "__index",
-					"kind": 8192,
-					"kindString": "Index signature",
-					"flags": {
-						"isExported": true
-					},
-					"parameters": [
-						{
-							"id": 118,
-							"name": "key",
-							"kind": 32768,
-							"kindString": "Parameter",
-							"flags": {
-								"isExported": true
-							},
-							"type": {
-								"type": "intrinsic",
-								"name": "string"
-							}
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "unknown"
-					}
-				}
-			],
-			"children": [
-				{
-					"id": 113,
-					"name": "_type",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 197,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
-					}
-				},
-				{
-					"id": 114,
-					"name": "asset",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 198,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "reference",
-						"id": 150,
-						"name": "SanityImageAsset"
-					}
-				},
-				{
-					"id": 115,
-					"name": "crop",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 199,
-							"character": 6
-						}
-					],
-					"type": {
-						"type": "reference",
-						"id": 88,
-						"name": "SanityImageCrop"
-					}
-				},
-				{
-					"id": 116,
-					"name": "hotspot",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 200,
-							"character": 9
-						}
-					],
-					"type": {
-						"type": "reference",
-						"id": 94,
-						"name": "SanityImageHotspot"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						113,
-						114,
-						115,
-						116
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/types.ts",
-					"line": 196,
-					"character": 36
-				}
-			]
-		},
-		{
-			"id": 70,
-			"name": "SanityAsset",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {
-				"isExported": true
-			},
-			"children": [
-				{
-					"id": 71,
-					"name": "_id",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 120,
-							"character": 5
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 72,
-					"name": "_type",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 121,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 75,
-					"name": "assetId",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 124,
-							"character": 9
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 76,
-					"name": "extension",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 125,
-							"character": 11
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 77,
-					"name": "originalFilename",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 126,
-							"character": 18
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
-					}
-				},
-				{
-					"id": 74,
-					"name": "path",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 123,
-							"character": 6
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 73,
-					"name": "url",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 122,
-							"character": 5
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						71,
-						72,
-						75,
-						76,
-						77,
-						74,
-						73
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/types.ts",
-					"line": 119,
-					"character": 28
-				}
-			]
-		},
-		{
-			"id": 64,
-			"name": "SanityAssetIdStub",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {
-				"isExported": true
-			},
-			"children": [
-				{
-					"id": 65,
-					"name": "_id",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 108,
-							"character": 5
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						65
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/types.ts",
-					"line": 107,
-					"character": 34
-				}
-			]
-		},
-		{
-			"id": 66,
-			"name": "SanityAssetPathStub",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {
-				"isExported": true
-			},
-			"children": [
-				{
-					"id": 67,
-					"name": "path",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 112,
-							"character": 6
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						67
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/types.ts",
-					"line": 111,
-					"character": 36
-				}
-			]
-		},
-		{
-			"id": 68,
-			"name": "SanityAssetUrlStub",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {
-				"isExported": true
-			},
-			"children": [
-				{
-					"id": 69,
-					"name": "url",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 116,
-							"character": 5
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						69
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/types.ts",
-					"line": 115,
-					"character": 35
-				}
-			]
-		},
-		{
-			"id": 34,
-			"name": "SanityFileAssetIdParts",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {
-				"isExported": true
-			},
-			"children": [
-				{
-					"id": 36,
-					"name": "assetId",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 42,
-							"character": 9
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 37,
-					"name": "extension",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 43,
-							"character": 11
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 35,
-					"name": "type",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 41,
-							"character": 6
-						}
-					],
-					"type": {
-						"type": "stringLiteral",
-						"value": "file"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						36,
-						37,
-						35
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/types.ts",
-					"line": 40,
-					"character": 39
-				}
-			],
-			"extendedBy": [
-				{
-					"type": "reference",
-					"id": 38,
-					"name": "SanityFileUrlParts"
-				}
-			]
-		},
-		{
-			"id": 100,
-			"name": "SanityFileObjectStub",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {
-				"isExported": true
-			},
-			"indexSignature": [
-				{
-					"id": 103,
-					"name": "__index",
-					"kind": 8192,
-					"kindString": "Index signature",
-					"flags": {
-						"isExported": true
-					},
-					"parameters": [
-						{
-							"id": 104,
-							"name": "key",
-							"kind": 32768,
-							"kindString": "Parameter",
-							"flags": {
-								"isExported": true
-							},
-							"type": {
-								"type": "intrinsic",
-								"name": "string"
-							}
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "unknown"
-					}
-				}
-			],
-			"children": [
-				{
-					"id": 101,
-					"name": "_type",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 173,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
-					}
-				},
-				{
-					"id": 102,
-					"name": "asset",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 174,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "reference",
-								"id": 61,
-								"name": "SanityReference"
-							},
-							{
-								"type": "reference",
-								"id": 154,
-								"name": "SanityFileAsset"
-							},
-							{
-								"type": "reference",
-								"id": 64,
-								"name": "SanityAssetIdStub"
-							},
-							{
-								"type": "reference",
-								"id": 66,
-								"name": "SanityAssetPathStub"
-							},
-							{
-								"type": "reference",
-								"id": 68,
-								"name": "SanityAssetUrlStub"
-							}
-						]
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						101,
-						102
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/types.ts",
-					"line": 172,
-					"character": 37
-				}
-			]
-		},
-		{
-			"id": 38,
-			"name": "SanityFileUrlParts",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {
-				"isExported": true
-			},
-			"children": [
-				{
-					"id": 43,
-					"name": "assetId",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 42,
-							"character": 9
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 36,
-						"name": "SanityFileAssetIdParts.assetId"
-					}
-				},
-				{
-					"id": 41,
-					"name": "dataset",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 3,
-							"character": 9
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 3,
-						"name": "SanityProjectDetails.dataset"
-					}
-				},
-				{
-					"id": 44,
-					"name": "extension",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 43,
-							"character": 11
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 37,
-						"name": "SanityFileAssetIdParts.extension"
-					}
-				},
-				{
-					"id": 40,
-					"name": "projectId",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 2,
-							"character": 11
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 2,
-						"name": "SanityProjectDetails.projectId"
-					}
-				},
-				{
-					"id": 42,
-					"name": "type",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 41,
-							"character": 6
-						}
-					],
-					"type": {
-						"type": "stringLiteral",
-						"value": "file"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"id": 35,
-						"name": "SanityFileAssetIdParts.type"
-					}
-				},
-				{
-					"id": 39,
-					"name": "vanityFilename",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 47,
-							"character": 16
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						43,
-						41,
-						44,
-						40,
-						42,
-						39
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/types.ts",
-					"line": 46,
-					"character": 35
-				}
-			],
-			"extendedTypes": [
-				{
-					"type": "reference",
-					"id": 1,
-					"name": "SanityProjectDetails"
-				},
-				{
-					"type": "reference",
-					"id": 34,
-					"name": "SanityFileAssetIdParts"
-				}
-			]
-		},
-		{
-			"id": 7,
-			"name": "SanityImageAssetIdParts",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {
-				"isExported": true
-			},
-			"children": [
-				{
-					"id": 9,
-					"name": "assetId",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 15,
-							"character": 9
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 10,
-					"name": "extension",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 16,
-							"character": 11
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 12,
-					"name": "height",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 18,
-							"character": 8
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 8,
-					"name": "type",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 14,
-							"character": 6
-						}
-					],
-					"type": {
-						"type": "stringLiteral",
-						"value": "image"
-					}
-				},
-				{
-					"id": 11,
-					"name": "width",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 17,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						9,
-						10,
-						12,
-						8,
-						11
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/types.ts",
-					"line": 13,
-					"character": 40
-				}
-			],
-			"extendedBy": [
-				{
-					"type": "reference",
-					"id": 13,
-					"name": "SanityImageUrlParts"
-				}
-			]
-		},
-		{
-			"id": 88,
-			"name": "SanityImageCrop",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {
-				"isExported": true
-			},
-			"children": [
-				{
-					"id": 89,
-					"name": "_type",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 157,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
-					}
-				},
-				{
-					"id": 91,
-					"name": "bottom",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 159,
-							"character": 8
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 90,
-					"name": "left",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 158,
-							"character": 6
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 92,
-					"name": "right",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 160,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 93,
-					"name": "top",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 161,
-							"character": 5
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						89,
-						91,
-						90,
-						92,
-						93
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/types.ts",
-					"line": 156,
-					"character": 32
-				}
-			]
-		},
-		{
-			"id": 140,
-			"name": "SanityImageFitResult",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {
-				"isExported": true
-			},
-			"children": [
-				{
-					"id": 142,
-					"name": "height",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 233,
-							"character": 8
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "number"
-							}
-						]
-					}
-				},
-				{
-					"id": 143,
-					"name": "rect",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 234,
-							"character": 6
-						}
-					],
-					"type": {
-						"type": "reference",
-						"id": 51,
-						"name": "Rectangle"
-					}
-				},
-				{
-					"id": 141,
-					"name": "width",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 232,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "number"
-							}
-						]
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						142,
-						143,
-						141
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/types.ts",
-					"line": 231,
-					"character": 37
-				}
-			]
-		},
-		{
-			"id": 94,
-			"name": "SanityImageHotspot",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {
-				"isExported": true
-			},
-			"children": [
-				{
-					"id": 95,
-					"name": "_type",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 165,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
-					}
-				},
-				{
-					"id": 97,
-					"name": "height",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 167,
-							"character": 8
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 96,
-					"name": "width",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 166,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 98,
-					"name": "x",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 168,
-							"character": 3
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 99,
-					"name": "y",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 169,
-							"character": 3
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						95,
-						97,
-						96,
-						98,
-						99
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/types.ts",
-					"line": 164,
-					"character": 35
-				}
-			]
-		},
-		{
-			"id": 78,
-			"name": "SanityImageMetadata",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {
-				"isExported": true
-			},
-			"indexSignature": [
-				{
-					"id": 83,
-					"name": "__index",
-					"kind": 8192,
-					"kindString": "Index signature",
-					"flags": {
-						"isExported": true
-					},
-					"parameters": [
-						{
-							"id": 84,
-							"name": "key",
-							"kind": 32768,
-							"kindString": "Parameter",
-							"flags": {
-								"isExported": true
-							},
-							"type": {
-								"type": "intrinsic",
-								"name": "string"
-							}
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "unknown"
-					}
-				}
-			],
-			"children": [
-				{
-					"id": 81,
-					"name": "blurHash",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 142,
-							"character": 10
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
-					}
-				},
-				{
-					"id": 79,
-					"name": "dimensions",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 140,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "reference",
-						"id": 161,
-						"name": "SanityImageDimensions"
-					}
-				},
-				{
-					"id": 80,
-					"name": "lqip",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 141,
-							"character": 6
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
-					}
-				},
-				{
-					"id": 82,
-					"name": "palette",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 143,
-							"character": 9
-						}
-					],
-					"type": {
-						"type": "reference",
-						"id": 124,
-						"name": "SanityImagePalette"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						81,
-						79,
-						80,
-						82
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/types.ts",
-					"line": 139,
-					"character": 36
-				}
-			]
-		},
-		{
-			"id": 105,
-			"name": "SanityImageObjectStub",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {
-				"isExported": true
-			},
-			"indexSignature": [
-				{
-					"id": 110,
-					"name": "__index",
-					"kind": 8192,
-					"kindString": "Index signature",
-					"flags": {
-						"isExported": true
-					},
-					"parameters": [
-						{
-							"id": 111,
-							"name": "key",
-							"kind": 32768,
-							"kindString": "Parameter",
-							"flags": {
-								"isExported": true
-							},
-							"type": {
-								"type": "intrinsic",
-								"name": "string"
-							}
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "unknown"
-					}
-				}
-			],
-			"children": [
-				{
-					"id": 106,
-					"name": "_type",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 184,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
-					}
-				},
-				{
-					"id": 107,
-					"name": "asset",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 185,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "reference",
-								"id": 61,
-								"name": "SanityReference"
-							},
-							{
-								"type": "reference",
-								"id": 150,
-								"name": "SanityImageAsset"
-							},
-							{
-								"type": "reference",
-								"id": 64,
-								"name": "SanityAssetIdStub"
-							},
-							{
-								"type": "reference",
-								"id": 66,
-								"name": "SanityAssetPathStub"
-							},
-							{
-								"type": "reference",
-								"id": 68,
-								"name": "SanityAssetUrlStub"
-							}
-						]
-					}
-				},
-				{
-					"id": 108,
-					"name": "crop",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 191,
-							"character": 6
-						}
-					],
-					"type": {
-						"type": "reference",
-						"id": 88,
-						"name": "SanityImageCrop"
-					}
-				},
-				{
-					"id": 109,
-					"name": "hotspot",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/types.ts",
-							"line": 192,
-							"character": 9
-						}
-					],
-					"type": {
-						"type": "reference",
-						"id": 94,
-						"name": "SanityImageHotspot"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						106,
-						107,
-						108,
-						109
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/types.ts",
-					"line": 183,
-					"character": 38
-				}
-			]
-		},
-		{
-			"id": 124,
-			"name": "SanityImagePalette",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {
@@ -2965,7 +1077,1895 @@
 			],
 			"children": [
 				{
+					"id": 131,
+					"name": "_type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 205,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 132,
+					"name": "asset",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 206,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 165,
+						"name": "SanityFileAsset"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						131,
+						132
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 204,
+					"character": 35
+				}
+			]
+		},
+		{
+			"id": 123,
+			"name": "ResolvedSanityImage",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"indexSignature": [
+				{
+					"id": 128,
+					"name": "__index",
+					"kind": 8192,
+					"kindString": "Index signature",
+					"flags": {
+						"isExported": true
+					},
+					"parameters": [
+						{
+							"id": 129,
+							"name": "key",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "unknown"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 124,
+					"name": "_type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 197,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
 					"id": 125,
+					"name": "asset",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 198,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 161,
+						"name": "SanityImageAsset"
+					}
+				},
+				{
+					"id": 126,
+					"name": "crop",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 199,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 99,
+						"name": "SanityImageCrop"
+					}
+				},
+				{
+					"id": 127,
+					"name": "hotspot",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 200,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 105,
+						"name": "SanityImageHotspot"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						124,
+						125,
+						126,
+						127
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 196,
+					"character": 36
+				}
+			]
+		},
+		{
+			"id": 81,
+			"name": "SanityAsset",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 82,
+					"name": "_id",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 120,
+							"character": 5
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 83,
+					"name": "_type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 121,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 86,
+					"name": "assetId",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 124,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 87,
+					"name": "extension",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 125,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 88,
+					"name": "originalFilename",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 126,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 85,
+					"name": "path",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 123,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 84,
+					"name": "url",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 122,
+							"character": 5
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						82,
+						83,
+						86,
+						87,
+						88,
+						85,
+						84
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 119,
+					"character": 28
+				}
+			]
+		},
+		{
+			"id": 75,
+			"name": "SanityAssetIdStub",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 76,
+					"name": "_id",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 108,
+							"character": 5
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						76
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 107,
+					"character": 34
+				}
+			]
+		},
+		{
+			"id": 77,
+			"name": "SanityAssetPathStub",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 78,
+					"name": "path",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 112,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						78
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 111,
+					"character": 36
+				}
+			]
+		},
+		{
+			"id": 79,
+			"name": "SanityAssetUrlStub",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 80,
+					"name": "url",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 116,
+							"character": 5
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						80
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 115,
+					"character": 35
+				}
+			]
+		},
+		{
+			"id": 45,
+			"name": "SanityFileAssetIdParts",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 47,
+					"name": "assetId",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 42,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 48,
+					"name": "extension",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 43,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 46,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 41,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "stringLiteral",
+						"value": "file"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						47,
+						48,
+						46
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 40,
+					"character": 39
+				}
+			],
+			"extendedBy": [
+				{
+					"type": "reference",
+					"id": 49,
+					"name": "SanityFileUrlParts"
+				}
+			]
+		},
+		{
+			"id": 111,
+			"name": "SanityFileObjectStub",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"indexSignature": [
+				{
+					"id": 114,
+					"name": "__index",
+					"kind": 8192,
+					"kindString": "Index signature",
+					"flags": {
+						"isExported": true
+					},
+					"parameters": [
+						{
+							"id": 115,
+							"name": "key",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "unknown"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 112,
+					"name": "_type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 173,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 113,
+					"name": "asset",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 174,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"id": 72,
+								"name": "SanityReference"
+							},
+							{
+								"type": "reference",
+								"id": 165,
+								"name": "SanityFileAsset"
+							},
+							{
+								"type": "reference",
+								"id": 75,
+								"name": "SanityAssetIdStub"
+							},
+							{
+								"type": "reference",
+								"id": 77,
+								"name": "SanityAssetPathStub"
+							},
+							{
+								"type": "reference",
+								"id": 79,
+								"name": "SanityAssetUrlStub"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						112,
+						113
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 172,
+					"character": 37
+				}
+			]
+		},
+		{
+			"id": 49,
+			"name": "SanityFileUrlParts",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 54,
+					"name": "assetId",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 42,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 47,
+						"name": "SanityFileAssetIdParts.assetId"
+					}
+				},
+				{
+					"id": 52,
+					"name": "dataset",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 3,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 14,
+						"name": "SanityProjectDetails.dataset"
+					}
+				},
+				{
+					"id": 55,
+					"name": "extension",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 43,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 48,
+						"name": "SanityFileAssetIdParts.extension"
+					}
+				},
+				{
+					"id": 51,
+					"name": "projectId",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 2,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 13,
+						"name": "SanityProjectDetails.projectId"
+					}
+				},
+				{
+					"id": 53,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 41,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "stringLiteral",
+						"value": "file"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 46,
+						"name": "SanityFileAssetIdParts.type"
+					}
+				},
+				{
+					"id": 50,
+					"name": "vanityFilename",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 47,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						54,
+						52,
+						55,
+						51,
+						53,
+						50
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 46,
+					"character": 35
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"id": 12,
+					"name": "SanityProjectDetails"
+				},
+				{
+					"type": "reference",
+					"id": 45,
+					"name": "SanityFileAssetIdParts"
+				}
+			]
+		},
+		{
+			"id": 18,
+			"name": "SanityImageAssetIdParts",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 20,
+					"name": "assetId",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 15,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 21,
+					"name": "extension",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 16,
+							"character": 11
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 23,
+					"name": "height",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 18,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 19,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 14,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "stringLiteral",
+						"value": "image"
+					}
+				},
+				{
+					"id": 22,
+					"name": "width",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 17,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						20,
+						21,
+						23,
+						19,
+						22
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 13,
+					"character": 40
+				}
+			],
+			"extendedBy": [
+				{
+					"type": "reference",
+					"id": 24,
+					"name": "SanityImageUrlParts"
+				}
+			]
+		},
+		{
+			"id": 99,
+			"name": "SanityImageCrop",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 100,
+					"name": "_type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 157,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 102,
+					"name": "bottom",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 159,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 101,
+					"name": "left",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 158,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 103,
+					"name": "right",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 160,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 104,
+					"name": "top",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 161,
+							"character": 5
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						100,
+						102,
+						101,
+						103,
+						104
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 156,
+					"character": 32
+				}
+			]
+		},
+		{
+			"id": 151,
+			"name": "SanityImageFitResult",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 153,
+					"name": "height",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 233,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "number"
+							}
+						]
+					}
+				},
+				{
+					"id": 154,
+					"name": "rect",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 234,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 62,
+						"name": "Rectangle"
+					}
+				},
+				{
+					"id": 152,
+					"name": "width",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 232,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "number"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						153,
+						154,
+						152
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 231,
+					"character": 37
+				}
+			]
+		},
+		{
+			"id": 105,
+			"name": "SanityImageHotspot",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 106,
+					"name": "_type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 165,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 108,
+					"name": "height",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 167,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 107,
+					"name": "width",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 166,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 109,
+					"name": "x",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 168,
+							"character": 3
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 110,
+					"name": "y",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 169,
+							"character": 3
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						106,
+						108,
+						107,
+						109,
+						110
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 164,
+					"character": 35
+				}
+			]
+		},
+		{
+			"id": 89,
+			"name": "SanityImageMetadata",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"indexSignature": [
+				{
+					"id": 94,
+					"name": "__index",
+					"kind": 8192,
+					"kindString": "Index signature",
+					"flags": {
+						"isExported": true
+					},
+					"parameters": [
+						{
+							"id": 95,
+							"name": "key",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "unknown"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 92,
+					"name": "blurHash",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 142,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 90,
+					"name": "dimensions",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 140,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 172,
+						"name": "SanityImageDimensions"
+					}
+				},
+				{
+					"id": 91,
+					"name": "lqip",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 141,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 93,
+					"name": "palette",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 143,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 135,
+						"name": "SanityImagePalette"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						92,
+						90,
+						91,
+						93
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 139,
+					"character": 36
+				}
+			]
+		},
+		{
+			"id": 116,
+			"name": "SanityImageObjectStub",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"indexSignature": [
+				{
+					"id": 121,
+					"name": "__index",
+					"kind": 8192,
+					"kindString": "Index signature",
+					"flags": {
+						"isExported": true
+					},
+					"parameters": [
+						{
+							"id": 122,
+							"name": "key",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "unknown"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 117,
+					"name": "_type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 184,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 118,
+					"name": "asset",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 185,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"id": 72,
+								"name": "SanityReference"
+							},
+							{
+								"type": "reference",
+								"id": 161,
+								"name": "SanityImageAsset"
+							},
+							{
+								"type": "reference",
+								"id": 75,
+								"name": "SanityAssetIdStub"
+							},
+							{
+								"type": "reference",
+								"id": 77,
+								"name": "SanityAssetPathStub"
+							},
+							{
+								"type": "reference",
+								"id": 79,
+								"name": "SanityAssetUrlStub"
+							}
+						]
+					}
+				},
+				{
+					"id": 119,
+					"name": "crop",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 191,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 99,
+						"name": "SanityImageCrop"
+					}
+				},
+				{
+					"id": 120,
+					"name": "hotspot",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 192,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 105,
+						"name": "SanityImageHotspot"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						117,
+						118,
+						119,
+						120
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 183,
+					"character": 38
+				}
+			]
+		},
+		{
+			"id": 135,
+			"name": "SanityImagePalette",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"indexSignature": [
+				{
+					"id": 144,
+					"name": "__index",
+					"kind": 8192,
+					"kindString": "Index signature",
+					"flags": {
+						"isExported": true
+					},
+					"parameters": [
+						{
+							"id": 145,
+							"name": "key",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "unknown"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 136,
 					"name": "_type",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2995,7 +2995,7 @@
 					}
 				},
 				{
-					"id": 126,
+					"id": 137,
 					"name": "darkMuted",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3012,12 +3012,12 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 135,
+						"id": 146,
 						"name": "SanityImageSwatch"
 					}
 				},
 				{
-					"id": 127,
+					"id": 138,
 					"name": "darkVibrant",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3034,12 +3034,12 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 135,
+						"id": 146,
 						"name": "SanityImageSwatch"
 					}
 				},
 				{
-					"id": 128,
+					"id": 139,
 					"name": "dominant",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3056,12 +3056,12 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 135,
+						"id": 146,
 						"name": "SanityImageSwatch"
 					}
 				},
 				{
-					"id": 129,
+					"id": 140,
 					"name": "lightMuted",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3078,12 +3078,12 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 135,
+						"id": 146,
 						"name": "SanityImageSwatch"
 					}
 				},
 				{
-					"id": 130,
+					"id": 141,
 					"name": "lightVibrant",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3100,12 +3100,12 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 135,
+						"id": 146,
 						"name": "SanityImageSwatch"
 					}
 				},
 				{
-					"id": 131,
+					"id": 142,
 					"name": "muted",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3122,12 +3122,12 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 135,
+						"id": 146,
 						"name": "SanityImageSwatch"
 					}
 				},
 				{
-					"id": 132,
+					"id": 143,
 					"name": "vibrant",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3144,7 +3144,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 135,
+						"id": 146,
 						"name": "SanityImageSwatch"
 					}
 				}
@@ -3154,14 +3154,14 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						125,
-						126,
-						127,
-						128,
-						129,
-						130,
-						131,
-						132
+						136,
+						137,
+						138,
+						139,
+						140,
+						141,
+						142,
+						143
 					]
 				}
 			],
@@ -3174,7 +3174,7 @@
 			]
 		},
 		{
-			"id": 85,
+			"id": 96,
 			"name": "SanityImageSize",
 			"kind": 256,
 			"kindString": "Interface",
@@ -3183,7 +3183,7 @@
 			},
 			"children": [
 				{
-					"id": 86,
+					"id": 97,
 					"name": "height",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3203,7 +3203,7 @@
 					}
 				},
 				{
-					"id": 87,
+					"id": 98,
 					"name": "width",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3228,8 +3228,8 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						86,
-						87
+						97,
+						98
 					]
 				}
 			],
@@ -3242,7 +3242,7 @@
 			]
 		},
 		{
-			"id": 135,
+			"id": 146,
 			"name": "SanityImageSwatch",
 			"kind": 256,
 			"kindString": "Interface",
@@ -3251,7 +3251,7 @@
 			},
 			"children": [
 				{
-					"id": 136,
+					"id": 147,
 					"name": "background",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3271,7 +3271,7 @@
 					}
 				},
 				{
-					"id": 137,
+					"id": 148,
 					"name": "foreground",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3291,7 +3291,7 @@
 					}
 				},
 				{
-					"id": 138,
+					"id": 149,
 					"name": "population",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3311,7 +3311,7 @@
 					}
 				},
 				{
-					"id": 139,
+					"id": 150,
 					"name": "title",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3346,10 +3346,10 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						136,
-						137,
-						138,
-						139
+						147,
+						148,
+						149,
+						150
 					]
 				}
 			],
@@ -3362,7 +3362,7 @@
 			]
 		},
 		{
-			"id": 13,
+			"id": 24,
 			"name": "SanityImageUrlParts",
 			"kind": 256,
 			"kindString": "Interface",
@@ -3371,7 +3371,7 @@
 			},
 			"children": [
 				{
-					"id": 18,
+					"id": 29,
 					"name": "assetId",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3391,12 +3391,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 9,
+						"id": 20,
 						"name": "SanityImageAssetIdParts.assetId"
 					}
 				},
 				{
-					"id": 16,
+					"id": 27,
 					"name": "dataset",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3416,12 +3416,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 3,
+						"id": 14,
 						"name": "SanityProjectDetails.dataset"
 					}
 				},
 				{
-					"id": 19,
+					"id": 30,
 					"name": "extension",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3441,12 +3441,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 10,
+						"id": 21,
 						"name": "SanityImageAssetIdParts.extension"
 					}
 				},
 				{
-					"id": 21,
+					"id": 32,
 					"name": "height",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3466,12 +3466,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 12,
+						"id": 23,
 						"name": "SanityImageAssetIdParts.height"
 					}
 				},
 				{
-					"id": 15,
+					"id": 26,
 					"name": "projectId",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3491,12 +3491,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 2,
+						"id": 13,
 						"name": "SanityProjectDetails.projectId"
 					}
 				},
 				{
-					"id": 17,
+					"id": 28,
 					"name": "type",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3516,12 +3516,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 8,
+						"id": 19,
 						"name": "SanityImageAssetIdParts.type"
 					}
 				},
 				{
-					"id": 14,
+					"id": 25,
 					"name": "vanityFilename",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3551,7 +3551,7 @@
 					}
 				},
 				{
-					"id": 20,
+					"id": 31,
 					"name": "width",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3571,7 +3571,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"id": 11,
+						"id": 22,
 						"name": "SanityImageAssetIdParts.width"
 					}
 				}
@@ -3581,14 +3581,14 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						18,
-						16,
-						19,
-						21,
-						15,
-						17,
-						14,
-						20
+						29,
+						27,
+						30,
+						32,
+						26,
+						28,
+						25,
+						31
 					]
 				}
 			],
@@ -3602,18 +3602,18 @@
 			"extendedTypes": [
 				{
 					"type": "reference",
-					"id": 1,
+					"id": 12,
 					"name": "SanityProjectDetails"
 				},
 				{
 					"type": "reference",
-					"id": 7,
+					"id": 18,
 					"name": "SanityImageAssetIdParts"
 				}
 			]
 		},
 		{
-			"id": 1,
+			"id": 12,
 			"name": "SanityProjectDetails",
 			"kind": 256,
 			"kindString": "Interface",
@@ -3622,7 +3622,7 @@
 			},
 			"children": [
 				{
-					"id": 3,
+					"id": 14,
 					"name": "dataset",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3642,7 +3642,7 @@
 					}
 				},
 				{
-					"id": 2,
+					"id": 13,
 					"name": "projectId",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3667,8 +3667,8 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						3,
-						2
+						14,
+						13
 					]
 				}
 			],
@@ -3682,18 +3682,18 @@
 			"extendedBy": [
 				{
 					"type": "reference",
-					"id": 13,
+					"id": 24,
 					"name": "SanityImageUrlParts"
 				},
 				{
 					"type": "reference",
-					"id": 38,
+					"id": 49,
 					"name": "SanityFileUrlParts"
 				}
 			]
 		},
 		{
-			"id": 61,
+			"id": 72,
 			"name": "SanityReference",
 			"kind": 256,
 			"kindString": "Interface",
@@ -3702,7 +3702,7 @@
 			},
 			"children": [
 				{
-					"id": 62,
+					"id": 73,
 					"name": "_ref",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3722,7 +3722,7 @@
 					}
 				},
 				{
-					"id": 63,
+					"id": 74,
 					"name": "_weak",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3761,8 +3761,8 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						62,
-						63
+						73,
+						74
 					]
 				}
 			],
@@ -3775,7 +3775,7 @@
 			]
 		},
 		{
-			"id": 144,
+			"id": 155,
 			"name": "SanityAssetIdParts",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -3794,19 +3794,19 @@
 				"types": [
 					{
 						"type": "reference",
-						"id": 34,
+						"id": 45,
 						"name": "SanityFileAssetIdParts"
 					},
 					{
 						"type": "reference",
-						"id": 7,
+						"id": 18,
 						"name": "SanityImageAssetIdParts"
 					}
 				]
 			}
 		},
 		{
-			"id": 164,
+			"id": 175,
 			"name": "SanityAssetObjectStub",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -3825,19 +3825,19 @@
 				"types": [
 					{
 						"type": "reference",
-						"id": 100,
+						"id": 111,
 						"name": "SanityFileObjectStub"
 					},
 					{
 						"type": "reference",
-						"id": 105,
+						"id": 116,
 						"name": "SanityImageObjectStub"
 					}
 				]
 			}
 		},
 		{
-			"id": 146,
+			"id": 157,
 			"name": "SanityAssetSource",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -3856,19 +3856,19 @@
 				"types": [
 					{
 						"type": "reference",
-						"id": 147,
+						"id": 158,
 						"name": "SanityFileSource"
 					},
 					{
 						"type": "reference",
-						"id": 148,
+						"id": 159,
 						"name": "SanityImageSource"
 					}
 				]
 			}
 		},
 		{
-			"id": 145,
+			"id": 156,
 			"name": "SanityAssetUrlParts",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -3887,19 +3887,19 @@
 				"types": [
 					{
 						"type": "reference",
-						"id": 38,
+						"id": 49,
 						"name": "SanityFileUrlParts"
 					},
 					{
 						"type": "reference",
-						"id": 13,
+						"id": 24,
 						"name": "SanityImageUrlParts"
 					}
 				]
 			}
 		},
 		{
-			"id": 154,
+			"id": 165,
 			"name": "SanityFileAsset",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -3918,13 +3918,13 @@
 				"types": [
 					{
 						"type": "reference",
-						"id": 70,
+						"id": 81,
 						"name": "SanityAsset"
 					},
 					{
 						"type": "reflection",
 						"declaration": {
-							"id": 155,
+							"id": 166,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
@@ -3933,7 +3933,7 @@
 							},
 							"children": [
 								{
-									"id": 156,
+									"id": 167,
 									"name": "_type",
 									"kind": 32,
 									"kindString": "Variable",
@@ -3953,7 +3953,7 @@
 									}
 								},
 								{
-									"id": 157,
+									"id": 168,
 									"name": "metadata",
 									"kind": 32,
 									"kindString": "Variable",
@@ -3970,7 +3970,7 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 158,
+											"id": 169,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
@@ -3979,7 +3979,7 @@
 											},
 											"indexSignature": [
 												{
-													"id": 159,
+													"id": 170,
 													"name": "__index",
 													"kind": 8192,
 													"kindString": "Index signature",
@@ -3988,7 +3988,7 @@
 													},
 													"parameters": [
 														{
-															"id": 160,
+															"id": 171,
 															"name": "key",
 															"kind": 32768,
 															"kindString": "Parameter",
@@ -4023,8 +4023,8 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										156,
-										157
+										167,
+										168
 									]
 								}
 							],
@@ -4041,7 +4041,7 @@
 			}
 		},
 		{
-			"id": 147,
+			"id": 158,
 			"name": "SanityFileSource",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -4064,39 +4064,39 @@
 					},
 					{
 						"type": "reference",
-						"id": 61,
+						"id": 72,
 						"name": "SanityReference"
 					},
 					{
 						"type": "reference",
-						"id": 154,
+						"id": 165,
 						"name": "SanityFileAsset"
 					},
 					{
 						"type": "reference",
-						"id": 64,
+						"id": 75,
 						"name": "SanityAssetIdStub"
 					},
 					{
 						"type": "reference",
-						"id": 68,
+						"id": 79,
 						"name": "SanityAssetUrlStub"
 					},
 					{
 						"type": "reference",
-						"id": 66,
+						"id": 77,
 						"name": "SanityAssetPathStub"
 					},
 					{
 						"type": "reference",
-						"id": 100,
+						"id": 111,
 						"name": "SanityFileObjectStub"
 					}
 				]
 			}
 		},
 		{
-			"id": 150,
+			"id": 161,
 			"name": "SanityImageAsset",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -4115,13 +4115,13 @@
 				"types": [
 					{
 						"type": "reference",
-						"id": 70,
+						"id": 81,
 						"name": "SanityAsset"
 					},
 					{
 						"type": "reflection",
 						"declaration": {
-							"id": 151,
+							"id": 162,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
@@ -4130,7 +4130,7 @@
 							},
 							"children": [
 								{
-									"id": 152,
+									"id": 163,
 									"name": "_type",
 									"kind": 32,
 									"kindString": "Variable",
@@ -4150,7 +4150,7 @@
 									}
 								},
 								{
-									"id": 153,
+									"id": 164,
 									"name": "metadata",
 									"kind": 32,
 									"kindString": "Variable",
@@ -4166,7 +4166,7 @@
 									],
 									"type": {
 										"type": "reference",
-										"id": 78,
+										"id": 89,
 										"name": "SanityImageMetadata"
 									}
 								}
@@ -4176,8 +4176,8 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										152,
-										153
+										163,
+										164
 									]
 								}
 							],
@@ -4194,7 +4194,7 @@
 			}
 		},
 		{
-			"id": 161,
+			"id": 172,
 			"name": "SanityImageDimensions",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -4213,13 +4213,13 @@
 				"types": [
 					{
 						"type": "reference",
-						"id": 85,
+						"id": 96,
 						"name": "SanityImageSize"
 					},
 					{
 						"type": "reflection",
 						"declaration": {
-							"id": 162,
+							"id": 173,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
@@ -4228,7 +4228,7 @@
 							},
 							"children": [
 								{
-									"id": 163,
+									"id": 174,
 									"name": "aspectRatio",
 									"kind": 32,
 									"kindString": "Variable",
@@ -4253,7 +4253,7 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										163
+										174
 									]
 								}
 							],
@@ -4270,7 +4270,7 @@
 			}
 		},
 		{
-			"id": 148,
+			"id": 159,
 			"name": "SanityImageSource",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -4293,39 +4293,39 @@
 					},
 					{
 						"type": "reference",
-						"id": 61,
+						"id": 72,
 						"name": "SanityReference"
 					},
 					{
 						"type": "reference",
-						"id": 150,
+						"id": 161,
 						"name": "SanityImageAsset"
 					},
 					{
 						"type": "reference",
-						"id": 64,
+						"id": 75,
 						"name": "SanityAssetIdStub"
 					},
 					{
 						"type": "reference",
-						"id": 68,
+						"id": 79,
 						"name": "SanityAssetUrlStub"
 					},
 					{
 						"type": "reference",
-						"id": 66,
+						"id": 77,
 						"name": "SanityAssetPathStub"
 					},
 					{
 						"type": "reference",
-						"id": 105,
+						"id": 116,
 						"name": "SanityImageObjectStub"
 					}
 				]
 			}
 		},
 		{
-			"id": 149,
+			"id": 160,
 			"name": "SanitySwatchName",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -4374,7 +4374,7 @@
 			}
 		},
 		{
-			"id": 200,
+			"id": 209,
 			"name": "DEFAULT_CROP",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4397,7 +4397,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 88,
+						"id": 99,
 						"name": "SanityImageCrop"
 					}
 				],
@@ -4406,7 +4406,7 @@
 			"defaultValue": "Object.freeze({\n  left: 0,\n  top: 0,\n  bottom: 0,\n  right: 0,\n})"
 		},
 		{
-			"id": 201,
+			"id": 210,
 			"name": "DEFAULT_HOTSPOT",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4429,7 +4429,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"id": 94,
+						"id": 105,
 						"name": "SanityImageHotspot"
 					}
 				],
@@ -4438,7 +4438,7 @@
 			"defaultValue": "Object.freeze({\n  x: 0.5,\n  y: 0.5,\n  height: 1,\n  width: 1,\n})"
 		},
 		{
-			"id": 336,
+			"id": 345,
 			"name": "tryGetAssetDocumentId",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4473,7 +4473,7 @@
 			"defaultValue": "getForgivingResolver(getAssetDocumentId)"
 		},
 		{
-			"id": 312,
+			"id": 321,
 			"name": "tryGetExtension",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4508,7 +4508,7 @@
 			"defaultValue": "getForgivingResolver(getExtension)"
 		},
 		{
-			"id": 327,
+			"id": 336,
 			"name": "tryGetFile",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4543,7 +4543,7 @@
 			"defaultValue": "getForgivingResolver(getFile)"
 		},
 		{
-			"id": 332,
+			"id": 341,
 			"name": "tryGetFileAsset",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4578,7 +4578,7 @@
 			"defaultValue": "getForgivingResolver(getFileAsset)"
 		},
 		{
-			"id": 340,
+			"id": 349,
 			"name": "tryGetIdFromString",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4613,7 +4613,7 @@
 			"defaultValue": "getForgivingResolver(getIdFromString)"
 		},
 		{
-			"id": 317,
+			"id": 326,
 			"name": "tryGetImage",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4648,7 +4648,7 @@
 			"defaultValue": "getForgivingResolver(getImage)"
 		},
 		{
-			"id": 322,
+			"id": 331,
 			"name": "tryGetImageAsset",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4683,7 +4683,7 @@
 			"defaultValue": "getForgivingResolver(getImageAsset)"
 		},
 		{
-			"id": 308,
+			"id": 317,
 			"name": "tryGetImageDimensions",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4718,7 +4718,7 @@
 			"defaultValue": "getForgivingResolver(getImageDimensions)"
 		},
 		{
-			"id": 347,
+			"id": 356,
 			"name": "tryGetProject",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4753,7 +4753,7 @@
 			"defaultValue": "getForgivingResolver(getProject)"
 		},
 		{
-			"id": 270,
+			"id": 279,
 			"name": "tryGetUrlFilename",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4788,7 +4788,7 @@
 			"defaultValue": "getForgivingResolver(getUrlFilename)"
 		},
 		{
-			"id": 266,
+			"id": 275,
 			"name": "tryGetUrlPath",
 			"kind": 32,
 			"kindString": "Variable",
@@ -4823,7 +4823,7 @@
 			"defaultValue": "getForgivingResolver(getUrlPath)"
 		},
 		{
-			"id": 249,
+			"id": 258,
 			"name": "buildFilePath",
 			"kind": 64,
 			"kindString": "Function",
@@ -4832,7 +4832,7 @@
 			},
 			"signatures": [
 				{
-					"id": 250,
+					"id": 259,
 					"name": "buildFilePath",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -4845,7 +4845,7 @@
 					},
 					"parameters": [
 						{
-							"id": 251,
+							"id": 260,
 							"name": "asset",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -4860,19 +4860,19 @@
 								"types": [
 									{
 										"type": "reference",
-										"id": 45,
+										"id": 56,
 										"name": "FileUrlBuilderOptions"
 									},
 									{
 										"type": "reference",
-										"id": 38,
+										"id": 49,
 										"name": "SanityFileUrlParts"
 									}
 								]
 							}
 						},
 						{
-							"id": 252,
+							"id": 261,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -4885,7 +4885,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 4,
+								"id": 15,
 								"name": "PathBuilderOptions"
 							}
 						}
@@ -4905,7 +4905,7 @@
 			]
 		},
 		{
-			"id": 253,
+			"id": 262,
 			"name": "buildFileUrl",
 			"kind": 64,
 			"kindString": "Function",
@@ -4914,7 +4914,7 @@
 			},
 			"signatures": [
 				{
-					"id": 254,
+					"id": 263,
 					"name": "buildFileUrl",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -4927,7 +4927,7 @@
 					},
 					"parameters": [
 						{
-							"id": 255,
+							"id": 264,
 							"name": "asset",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -4939,12 +4939,12 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 45,
+								"id": 56,
 								"name": "FileUrlBuilderOptions"
 							}
 						},
 						{
-							"id": 256,
+							"id": 265,
 							"name": "project",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -4954,7 +4954,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 4,
+								"id": 15,
 								"name": "PathBuilderOptions"
 							}
 						}
@@ -4974,7 +4974,7 @@
 			]
 		},
 		{
-			"id": 241,
+			"id": 250,
 			"name": "buildImagePath",
 			"kind": 64,
 			"kindString": "Function",
@@ -4983,7 +4983,7 @@
 			},
 			"signatures": [
 				{
-					"id": 242,
+					"id": 251,
 					"name": "buildImagePath",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -4996,7 +4996,7 @@
 					},
 					"parameters": [
 						{
-							"id": 243,
+							"id": 252,
 							"name": "asset",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5011,19 +5011,19 @@
 								"types": [
 									{
 										"type": "reference",
-										"id": 22,
+										"id": 33,
 										"name": "ImageUrlBuilderOptions"
 									},
 									{
 										"type": "reference",
-										"id": 13,
+										"id": 24,
 										"name": "SanityImageUrlParts"
 									}
 								]
 							}
 						},
 						{
-							"id": 244,
+							"id": 253,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5036,7 +5036,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 4,
+								"id": 15,
 								"name": "PathBuilderOptions"
 							}
 						}
@@ -5056,7 +5056,7 @@
 			]
 		},
 		{
-			"id": 245,
+			"id": 254,
 			"name": "buildImageUrl",
 			"kind": 64,
 			"kindString": "Function",
@@ -5065,7 +5065,7 @@
 			},
 			"signatures": [
 				{
-					"id": 246,
+					"id": 255,
 					"name": "buildImageUrl",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5078,7 +5078,7 @@
 					},
 					"parameters": [
 						{
-							"id": 247,
+							"id": 256,
 							"name": "asset",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5093,19 +5093,19 @@
 								"types": [
 									{
 										"type": "reference",
-										"id": 22,
+										"id": 33,
 										"name": "ImageUrlBuilderOptions"
 									},
 									{
 										"type": "reference",
-										"id": 13,
+										"id": 24,
 										"name": "SanityImageUrlParts"
 									}
 								]
 							}
 						},
 						{
-							"id": 248,
+							"id": 257,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5118,7 +5118,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 4,
+								"id": 15,
 								"name": "PathBuilderOptions"
 							}
 						}
@@ -5138,7 +5138,7 @@
 			]
 		},
 		{
-			"id": 333,
+			"id": 342,
 			"name": "getAssetDocumentId",
 			"kind": 64,
 			"kindString": "Function",
@@ -5147,7 +5147,7 @@
 			},
 			"signatures": [
 				{
-					"id": 334,
+					"id": 343,
 					"name": "getAssetDocumentId",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5166,7 +5166,7 @@
 					},
 					"parameters": [
 						{
-							"id": 335,
+							"id": 344,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5197,7 +5197,7 @@
 			]
 		},
 		{
-			"id": 202,
+			"id": 211,
 			"name": "getDefaultCrop",
 			"kind": 64,
 			"kindString": "Function",
@@ -5211,7 +5211,7 @@
 			},
 			"signatures": [
 				{
-					"id": 203,
+					"id": 212,
 					"name": "getDefaultCrop",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5224,7 +5224,7 @@
 					},
 					"type": {
 						"type": "reference",
-						"id": 88,
+						"id": 99,
 						"name": "SanityImageCrop"
 					}
 				}
@@ -5238,7 +5238,7 @@
 			]
 		},
 		{
-			"id": 204,
+			"id": 213,
 			"name": "getDefaultHotspot",
 			"kind": 64,
 			"kindString": "Function",
@@ -5252,7 +5252,7 @@
 			},
 			"signatures": [
 				{
-					"id": 205,
+					"id": 214,
 					"name": "getDefaultHotspot",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5265,7 +5265,7 @@
 					},
 					"type": {
 						"type": "reference",
-						"id": 94,
+						"id": 105,
 						"name": "SanityImageHotspot"
 					}
 				}
@@ -5279,7 +5279,7 @@
 			]
 		},
 		{
-			"id": 309,
+			"id": 318,
 			"name": "getExtension",
 			"kind": 64,
 			"kindString": "Function",
@@ -5288,7 +5288,7 @@
 			},
 			"signatures": [
 				{
-					"id": 310,
+					"id": 319,
 					"name": "getExtension",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5307,7 +5307,7 @@
 					},
 					"parameters": [
 						{
-							"id": 311,
+							"id": 320,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5319,7 +5319,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 146,
+								"id": 157,
 								"name": "SanityAssetSource"
 							}
 						}
@@ -5339,7 +5339,7 @@
 			]
 		},
 		{
-			"id": 323,
+			"id": 332,
 			"name": "getFile",
 			"kind": 64,
 			"kindString": "Function",
@@ -5348,7 +5348,7 @@
 			},
 			"signatures": [
 				{
-					"id": 324,
+					"id": 333,
 					"name": "getFile",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5367,7 +5367,7 @@
 					},
 					"parameters": [
 						{
-							"id": 325,
+							"id": 334,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5379,12 +5379,12 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 147,
+								"id": 158,
 								"name": "SanityFileSource"
 							}
 						},
 						{
-							"id": 326,
+							"id": 335,
 							"name": "project",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5397,14 +5397,14 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 1,
+								"id": 12,
 								"name": "SanityProjectDetails"
 							}
 						}
 					],
 					"type": {
 						"type": "reference",
-						"id": 119,
+						"id": 130,
 						"name": "ResolvedSanityFile"
 					}
 				}
@@ -5418,7 +5418,7 @@
 			]
 		},
 		{
-			"id": 328,
+			"id": 337,
 			"name": "getFileAsset",
 			"kind": 64,
 			"kindString": "Function",
@@ -5427,7 +5427,7 @@
 			},
 			"signatures": [
 				{
-					"id": 329,
+					"id": 338,
 					"name": "getFileAsset",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5446,7 +5446,7 @@
 					},
 					"parameters": [
 						{
-							"id": 330,
+							"id": 339,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5458,12 +5458,12 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 147,
+								"id": 158,
 								"name": "SanityFileSource"
 							}
 						},
 						{
-							"id": 331,
+							"id": 340,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5476,14 +5476,14 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 4,
+								"id": 15,
 								"name": "PathBuilderOptions"
 							}
 						}
 					],
 					"type": {
 						"type": "reference",
-						"id": 154,
+						"id": 165,
 						"name": "SanityFileAsset"
 					}
 				}
@@ -5497,7 +5497,7 @@
 			]
 		},
 		{
-			"id": 337,
+			"id": 346,
 			"name": "getIdFromString",
 			"kind": 64,
 			"kindString": "Function",
@@ -5506,7 +5506,7 @@
 			},
 			"signatures": [
 				{
-					"id": 338,
+					"id": 347,
 					"name": "getIdFromString",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5525,7 +5525,7 @@
 					},
 					"parameters": [
 						{
-							"id": 339,
+							"id": 348,
 							"name": "str",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5556,7 +5556,7 @@
 			]
 		},
 		{
-			"id": 313,
+			"id": 322,
 			"name": "getImage",
 			"kind": 64,
 			"kindString": "Function",
@@ -5565,7 +5565,7 @@
 			},
 			"signatures": [
 				{
-					"id": 314,
+					"id": 323,
 					"name": "getImage",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5584,7 +5584,7 @@
 					},
 					"parameters": [
 						{
-							"id": 315,
+							"id": 324,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5596,12 +5596,12 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 148,
+								"id": 159,
 								"name": "SanityImageSource"
 							}
 						},
 						{
-							"id": 316,
+							"id": 325,
 							"name": "project",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5614,14 +5614,14 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 1,
+								"id": 12,
 								"name": "SanityProjectDetails"
 							}
 						}
 					],
 					"type": {
 						"type": "reference",
-						"id": 112,
+						"id": 123,
 						"name": "ResolvedSanityImage"
 					}
 				}
@@ -5635,7 +5635,7 @@
 			]
 		},
 		{
-			"id": 318,
+			"id": 327,
 			"name": "getImageAsset",
 			"kind": 64,
 			"kindString": "Function",
@@ -5644,7 +5644,7 @@
 			},
 			"signatures": [
 				{
-					"id": 319,
+					"id": 328,
 					"name": "getImageAsset",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5663,7 +5663,7 @@
 					},
 					"parameters": [
 						{
-							"id": 320,
+							"id": 329,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5675,12 +5675,12 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 148,
+								"id": 159,
 								"name": "SanityImageSource"
 							}
 						},
 						{
-							"id": 321,
+							"id": 330,
 							"name": "project",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5693,14 +5693,14 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 1,
+								"id": 12,
 								"name": "SanityProjectDetails"
 							}
 						}
 					],
 					"type": {
 						"type": "reference",
-						"id": 150,
+						"id": 161,
 						"name": "SanityImageAsset"
 					}
 				}
@@ -5714,7 +5714,7 @@
 			]
 		},
 		{
-			"id": 305,
+			"id": 314,
 			"name": "getImageDimensions",
 			"kind": 64,
 			"kindString": "Function",
@@ -5723,7 +5723,7 @@
 			},
 			"signatures": [
 				{
-					"id": 306,
+					"id": 315,
 					"name": "getImageDimensions",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5742,7 +5742,7 @@
 					},
 					"parameters": [
 						{
-							"id": 307,
+							"id": 316,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5754,14 +5754,14 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 148,
+								"id": 159,
 								"name": "SanityImageSource"
 							}
 						}
 					],
 					"type": {
 						"type": "reference",
-						"id": 161,
+						"id": 172,
 						"name": "SanityImageDimensions"
 					}
 				}
@@ -5775,7 +5775,7 @@
 			]
 		},
 		{
-			"id": 344,
+			"id": 353,
 			"name": "getProject",
 			"kind": 64,
 			"kindString": "Function",
@@ -5784,7 +5784,7 @@
 			},
 			"signatures": [
 				{
-					"id": 345,
+					"id": 354,
 					"name": "getProject",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5803,7 +5803,7 @@
 					},
 					"parameters": [
 						{
-							"id": 346,
+							"id": 355,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5812,14 +5812,14 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 148,
+								"id": 159,
 								"name": "SanityImageSource"
 							}
 						}
 					],
 					"type": {
 						"type": "reference",
-						"id": 1,
+						"id": 12,
 						"name": "SanityProjectDetails"
 					}
 				}
@@ -5833,7 +5833,7 @@
 			]
 		},
 		{
-			"id": 267,
+			"id": 276,
 			"name": "getUrlFilename",
 			"kind": 64,
 			"kindString": "Function",
@@ -5842,7 +5842,7 @@
 			},
 			"signatures": [
 				{
-					"id": 268,
+					"id": 277,
 					"name": "getUrlFilename",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5861,7 +5861,7 @@
 					},
 					"parameters": [
 						{
-							"id": 269,
+							"id": 278,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5892,7 +5892,7 @@
 			]
 		},
 		{
-			"id": 263,
+			"id": 272,
 			"name": "getUrlPath",
 			"kind": 64,
 			"kindString": "Function",
@@ -5901,7 +5901,7 @@
 			},
 			"signatures": [
 				{
-					"id": 264,
+					"id": 273,
 					"name": "getUrlPath",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5920,7 +5920,7 @@
 					},
 					"parameters": [
 						{
-							"id": 265,
+							"id": 274,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5951,7 +5951,7 @@
 			]
 		},
 		{
-			"id": 274,
+			"id": 283,
 			"name": "getVanityStub",
 			"kind": 64,
 			"kindString": "Function",
@@ -5960,7 +5960,7 @@
 			},
 			"signatures": [
 				{
-					"id": 275,
+					"id": 284,
 					"name": "getVanityStub",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -5972,7 +5972,7 @@
 					},
 					"parameters": [
 						{
-							"id": 276,
+							"id": 285,
 							"name": "originalFilename",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -5994,7 +5994,7 @@
 							}
 						},
 						{
-							"id": 277,
+							"id": 286,
 							"name": "vanityFilename",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6016,7 +6016,7 @@
 							}
 						},
 						{
-							"id": 278,
+							"id": 287,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6026,7 +6026,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 4,
+								"id": 15,
 								"name": "PathBuilderOptions"
 							}
 						}
@@ -6046,7 +6046,7 @@
 			]
 		},
 		{
-			"id": 257,
+			"id": 266,
 			"name": "hasPath",
 			"kind": 64,
 			"kindString": "Function",
@@ -6055,7 +6055,7 @@
 			},
 			"signatures": [
 				{
-					"id": 258,
+					"id": 267,
 					"name": "hasPath",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6068,7 +6068,7 @@
 					},
 					"parameters": [
 						{
-							"id": 259,
+							"id": 268,
 							"name": "urlOrPath",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6096,7 +6096,7 @@
 			]
 		},
 		{
-			"id": 341,
+			"id": 350,
 			"name": "idFromUrl",
 			"kind": 64,
 			"kindString": "Function",
@@ -6105,7 +6105,7 @@
 			},
 			"signatures": [
 				{
-					"id": 342,
+					"id": 351,
 					"name": "idFromUrl",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6118,7 +6118,7 @@
 					},
 					"parameters": [
 						{
-							"id": 343,
+							"id": 352,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6149,7 +6149,7 @@
 			]
 		},
 		{
-			"id": 354,
+			"id": 363,
 			"name": "isAssetFilename",
 			"kind": 64,
 			"kindString": "Function",
@@ -6158,7 +6158,7 @@
 			},
 			"signatures": [
 				{
-					"id": 355,
+					"id": 364,
 					"name": "isAssetFilename",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6171,7 +6171,7 @@
 					},
 					"parameters": [
 						{
-							"id": 356,
+							"id": 365,
 							"name": "filename",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6202,7 +6202,60 @@
 			]
 		},
 		{
-			"id": 168,
+			"id": 200,
+			"name": "isAssetId",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 201,
+					"name": "isAssetId",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Checks whether or not the given document ID is a valid Sanity asset document ID (file or image)",
+						"returns": "Whether or not the given document ID is a Sanity asset document ID (file or image)\n"
+					},
+					"parameters": [
+						{
+							"id": 202,
+							"name": "documentId",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Document ID to check"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/asserters.ts",
+					"line": 104,
+					"character": 25
+				}
+			]
+		},
+		{
+			"id": 179,
 			"name": "isAssetIdStub",
 			"kind": 64,
 			"kindString": "Function",
@@ -6211,7 +6264,7 @@
 			},
 			"signatures": [
 				{
-					"id": 169,
+					"id": 180,
 					"name": "isAssetIdStub",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6224,7 +6277,7 @@
 					},
 					"parameters": [
 						{
-							"id": 170,
+							"id": 181,
 							"name": "stub",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6254,13 +6307,13 @@
 			"sources": [
 				{
 					"fileName": "src/asserters.ts",
-					"line": 29,
+					"line": 30,
 					"character": 29
 				}
 			]
 		},
 		{
-			"id": 183,
+			"id": 203,
 			"name": "isAssetObjectStub",
 			"kind": 64,
 			"kindString": "Function",
@@ -6269,7 +6322,7 @@
 			},
 			"signatures": [
 				{
-					"id": 184,
+					"id": 204,
 					"name": "isAssetObjectStub",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6282,7 +6335,7 @@
 					},
 					"parameters": [
 						{
-							"id": 185,
+							"id": 205,
 							"name": "stub",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6312,13 +6365,13 @@
 			"sources": [
 				{
 					"fileName": "src/asserters.ts",
-					"line": 83,
+					"line": 114,
 					"character": 33
 				}
 			]
 		},
 		{
-			"id": 171,
+			"id": 182,
 			"name": "isAssetPathStub",
 			"kind": 64,
 			"kindString": "Function",
@@ -6327,7 +6380,7 @@
 			},
 			"signatures": [
 				{
-					"id": 172,
+					"id": 183,
 					"name": "isAssetPathStub",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6340,7 +6393,7 @@
 					},
 					"parameters": [
 						{
-							"id": 173,
+							"id": 184,
 							"name": "stub",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6370,13 +6423,13 @@
 			"sources": [
 				{
 					"fileName": "src/asserters.ts",
-					"line": 40,
+					"line": 41,
 					"character": 31
 				}
 			]
 		},
 		{
-			"id": 174,
+			"id": 185,
 			"name": "isAssetUrlStub",
 			"kind": 64,
 			"kindString": "Function",
@@ -6385,7 +6438,7 @@
 			},
 			"signatures": [
 				{
-					"id": 175,
+					"id": 186,
 					"name": "isAssetUrlStub",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6398,7 +6451,7 @@
 					},
 					"parameters": [
 						{
-							"id": 176,
+							"id": 187,
 							"name": "stub",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6428,13 +6481,13 @@
 			"sources": [
 				{
 					"fileName": "src/asserters.ts",
-					"line": 51,
+					"line": 52,
 					"character": 30
 				}
 			]
 		},
 		{
-			"id": 206,
+			"id": 215,
 			"name": "isDefaultCrop",
 			"kind": 64,
 			"kindString": "Function",
@@ -6448,7 +6501,7 @@
 			},
 			"signatures": [
 				{
-					"id": 207,
+					"id": 216,
 					"name": "isDefaultCrop",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6461,7 +6514,7 @@
 					},
 					"parameters": [
 						{
-							"id": 208,
+							"id": 217,
 							"name": "crop",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6473,7 +6526,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 88,
+								"id": 99,
 								"name": "SanityImageCrop"
 							}
 						}
@@ -6493,7 +6546,7 @@
 			]
 		},
 		{
-			"id": 209,
+			"id": 218,
 			"name": "isDefaultHotspot",
 			"kind": 64,
 			"kindString": "Function",
@@ -6507,7 +6560,7 @@
 			},
 			"signatures": [
 				{
-					"id": 210,
+					"id": 219,
 					"name": "isDefaultHotspot",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6520,7 +6573,7 @@
 					},
 					"parameters": [
 						{
-							"id": 211,
+							"id": 220,
 							"name": "hotspot",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6532,7 +6585,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 94,
+								"id": 105,
 								"name": "SanityImageHotspot"
 							}
 						}
@@ -6552,7 +6605,7 @@
 			]
 		},
 		{
-			"id": 351,
+			"id": 360,
 			"name": "isFileAssetFilename",
 			"kind": 64,
 			"kindString": "Function",
@@ -6561,7 +6614,7 @@
 			},
 			"signatures": [
 				{
-					"id": 352,
+					"id": 361,
 					"name": "isFileAssetFilename",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6574,7 +6627,7 @@
 					},
 					"parameters": [
 						{
-							"id": 353,
+							"id": 362,
 							"name": "filename",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6605,7 +6658,60 @@
 			]
 		},
 		{
-			"id": 357,
+			"id": 197,
+			"name": "isFileAssetId",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 198,
+					"name": "isFileAssetId",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Checks whether or not the given document ID is a valid Sanity file asset document ID",
+						"returns": "Whether or not the given document ID is a Sanity file asset document ID\n"
+					},
+					"parameters": [
+						{
+							"id": 199,
+							"name": "documentId",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Document ID to check"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/asserters.ts",
+					"line": 94,
+					"character": 29
+				}
+			]
+		},
+		{
+			"id": 366,
 			"name": "isFileSource",
 			"kind": 64,
 			"kindString": "Function",
@@ -6614,7 +6720,7 @@
 			},
 			"signatures": [
 				{
-					"id": 358,
+					"id": 367,
 					"name": "isFileSource",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6627,7 +6733,7 @@
 					},
 					"parameters": [
 						{
-							"id": 359,
+							"id": 368,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6663,7 +6769,7 @@
 			]
 		},
 		{
-			"id": 348,
+			"id": 357,
 			"name": "isImageAssetFilename",
 			"kind": 64,
 			"kindString": "Function",
@@ -6672,7 +6778,7 @@
 			},
 			"signatures": [
 				{
-					"id": 349,
+					"id": 358,
 					"name": "isImageAssetFilename",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6685,7 +6791,7 @@
 					},
 					"parameters": [
 						{
-							"id": 350,
+							"id": 359,
 							"name": "filename",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6716,7 +6822,60 @@
 			]
 		},
 		{
-			"id": 360,
+			"id": 194,
+			"name": "isImageAssetId",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 195,
+					"name": "isImageAssetId",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Checks whether or not the given document ID is a valid Sanity image asset document ID",
+						"returns": "Whether or not the given document ID is a Sanity image asset document ID\n"
+					},
+					"parameters": [
+						{
+							"id": 196,
+							"name": "documentId",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"text": "Document ID to check"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/asserters.ts",
+					"line": 84,
+					"character": 30
+				}
+			]
+		},
+		{
+			"id": 369,
 			"name": "isImageSource",
 			"kind": 64,
 			"kindString": "Function",
@@ -6725,7 +6884,7 @@
 			},
 			"signatures": [
 				{
-					"id": 361,
+					"id": 370,
 					"name": "isImageSource",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6738,7 +6897,7 @@
 					},
 					"parameters": [
 						{
-							"id": 362,
+							"id": 371,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6774,7 +6933,7 @@
 			]
 		},
 		{
-			"id": 165,
+			"id": 176,
 			"name": "isReference",
 			"kind": 64,
 			"kindString": "Function",
@@ -6783,7 +6942,7 @@
 			},
 			"signatures": [
 				{
-					"id": 166,
+					"id": 177,
 					"name": "isReference",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6796,7 +6955,7 @@
 					},
 					"parameters": [
 						{
-							"id": 167,
+							"id": 178,
 							"name": "ref",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6826,13 +6985,13 @@
 			"sources": [
 				{
 					"fileName": "src/asserters.ts",
-					"line": 18,
+					"line": 19,
 					"character": 27
 				}
 			]
 		},
 		{
-			"id": 363,
+			"id": 372,
 			"name": "isSanityAssetUrl",
 			"kind": 64,
 			"kindString": "Function",
@@ -6841,7 +7000,7 @@
 			},
 			"signatures": [
 				{
-					"id": 364,
+					"id": 373,
 					"name": "isSanityAssetUrl",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6854,7 +7013,7 @@
 					},
 					"parameters": [
 						{
-							"id": 365,
+							"id": 374,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6885,7 +7044,7 @@
 			]
 		},
 		{
-			"id": 177,
+			"id": 188,
 			"name": "isSanityFileAsset",
 			"kind": 64,
 			"kindString": "Function",
@@ -6894,7 +7053,7 @@
 			},
 			"signatures": [
 				{
-					"id": 178,
+					"id": 189,
 					"name": "isSanityFileAsset",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6907,7 +7066,7 @@
 					},
 					"parameters": [
 						{
-							"id": 179,
+							"id": 190,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6937,13 +7096,13 @@
 			"sources": [
 				{
 					"fileName": "src/asserters.ts",
-					"line": 62,
+					"line": 63,
 					"character": 33
 				}
 			]
 		},
 		{
-			"id": 369,
+			"id": 378,
 			"name": "isSanityFileUrl",
 			"kind": 64,
 			"kindString": "Function",
@@ -6952,7 +7111,7 @@
 			},
 			"signatures": [
 				{
-					"id": 370,
+					"id": 379,
 					"name": "isSanityFileUrl",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -6965,7 +7124,7 @@
 					},
 					"parameters": [
 						{
-							"id": 371,
+							"id": 380,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -6996,7 +7155,7 @@
 			]
 		},
 		{
-			"id": 180,
+			"id": 191,
 			"name": "isSanityImageAsset",
 			"kind": 64,
 			"kindString": "Function",
@@ -7005,7 +7164,7 @@
 			},
 			"signatures": [
 				{
-					"id": 181,
+					"id": 192,
 					"name": "isSanityImageAsset",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7018,7 +7177,7 @@
 					},
 					"parameters": [
 						{
-							"id": 182,
+							"id": 193,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7048,13 +7207,13 @@
 			"sources": [
 				{
 					"fileName": "src/asserters.ts",
-					"line": 73,
+					"line": 74,
 					"character": 34
 				}
 			]
 		},
 		{
-			"id": 366,
+			"id": 375,
 			"name": "isSanityImageUrl",
 			"kind": 64,
 			"kindString": "Function",
@@ -7063,7 +7222,7 @@
 			},
 			"signatures": [
 				{
-					"id": 367,
+					"id": 376,
 					"name": "isSanityImageUrl",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7076,7 +7235,7 @@
 					},
 					"parameters": [
 						{
-							"id": 368,
+							"id": 377,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7107,7 +7266,7 @@
 			]
 		},
 		{
-			"id": 234,
+			"id": 243,
 			"name": "isUnresolvableError",
 			"kind": 64,
 			"kindString": "Function",
@@ -7116,7 +7275,7 @@
 			},
 			"signatures": [
 				{
-					"id": 235,
+					"id": 244,
 					"name": "isUnresolvableError",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7129,7 +7288,7 @@
 					},
 					"parameters": [
 						{
-							"id": 236,
+							"id": 245,
 							"name": "err",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7165,7 +7324,7 @@
 			]
 		},
 		{
-			"id": 271,
+			"id": 280,
 			"name": "isValidFilename",
 			"kind": 64,
 			"kindString": "Function",
@@ -7174,7 +7333,7 @@
 			},
 			"signatures": [
 				{
-					"id": 272,
+					"id": 281,
 					"name": "isValidFilename",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7187,7 +7346,7 @@
 					},
 					"parameters": [
 						{
-							"id": 273,
+							"id": 282,
 							"name": "filename",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7218,7 +7377,7 @@
 			]
 		},
 		{
-			"id": 290,
+			"id": 299,
 			"name": "parseAssetFilename",
 			"kind": 64,
 			"kindString": "Function",
@@ -7227,7 +7386,7 @@
 			},
 			"signatures": [
 				{
-					"id": 291,
+					"id": 300,
 					"name": "parseAssetFilename",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7246,7 +7405,7 @@
 					},
 					"parameters": [
 						{
-							"id": 292,
+							"id": 301,
 							"name": "filename",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7264,7 +7423,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 144,
+						"id": 155,
 						"name": "SanityAssetIdParts"
 					}
 				}
@@ -7278,7 +7437,7 @@
 			]
 		},
 		{
-			"id": 281,
+			"id": 290,
 			"name": "parseAssetId",
 			"kind": 64,
 			"kindString": "Function",
@@ -7287,7 +7446,7 @@
 			},
 			"signatures": [
 				{
-					"id": 282,
+					"id": 291,
 					"name": "parseAssetId",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7306,7 +7465,7 @@
 					},
 					"parameters": [
 						{
-							"id": 283,
+							"id": 292,
 							"name": "documentId",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7324,7 +7483,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 144,
+						"id": 155,
 						"name": "SanityAssetIdParts"
 					}
 				}
@@ -7338,7 +7497,7 @@
 			]
 		},
 		{
-			"id": 293,
+			"id": 302,
 			"name": "parseAssetUrl",
 			"kind": 64,
 			"kindString": "Function",
@@ -7347,7 +7506,7 @@
 			},
 			"signatures": [
 				{
-					"id": 294,
+					"id": 303,
 					"name": "parseAssetUrl",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7366,7 +7525,7 @@
 					},
 					"parameters": [
 						{
-							"id": 295,
+							"id": 304,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7384,7 +7543,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 145,
+						"id": 156,
 						"name": "SanityAssetUrlParts"
 					}
 				}
@@ -7398,7 +7557,7 @@
 			]
 		},
 		{
-			"id": 284,
+			"id": 293,
 			"name": "parseFileAssetId",
 			"kind": 64,
 			"kindString": "Function",
@@ -7407,7 +7566,7 @@
 			},
 			"signatures": [
 				{
-					"id": 285,
+					"id": 294,
 					"name": "parseFileAssetId",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7426,7 +7585,7 @@
 					},
 					"parameters": [
 						{
-							"id": 286,
+							"id": 295,
 							"name": "documentId",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7444,7 +7603,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 34,
+						"id": 45,
 						"name": "SanityFileAssetIdParts"
 					}
 				}
@@ -7458,7 +7617,7 @@
 			]
 		},
 		{
-			"id": 299,
+			"id": 308,
 			"name": "parseFileAssetUrl",
 			"kind": 64,
 			"kindString": "Function",
@@ -7467,7 +7626,7 @@
 			},
 			"signatures": [
 				{
-					"id": 300,
+					"id": 309,
 					"name": "parseFileAssetUrl",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7486,7 +7645,7 @@
 					},
 					"parameters": [
 						{
-							"id": 301,
+							"id": 310,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7504,7 +7663,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 38,
+						"id": 49,
 						"name": "SanityFileUrlParts"
 					}
 				}
@@ -7518,7 +7677,7 @@
 			]
 		},
 		{
-			"id": 287,
+			"id": 296,
 			"name": "parseImageAssetId",
 			"kind": 64,
 			"kindString": "Function",
@@ -7527,7 +7686,7 @@
 			},
 			"signatures": [
 				{
-					"id": 288,
+					"id": 297,
 					"name": "parseImageAssetId",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7546,7 +7705,7 @@
 					},
 					"parameters": [
 						{
-							"id": 289,
+							"id": 298,
 							"name": "documentId",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7564,7 +7723,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 7,
+						"id": 18,
 						"name": "SanityImageAssetIdParts"
 					}
 				}
@@ -7578,7 +7737,7 @@
 			]
 		},
 		{
-			"id": 296,
+			"id": 305,
 			"name": "parseImageAssetUrl",
 			"kind": 64,
 			"kindString": "Function",
@@ -7587,7 +7746,7 @@
 			},
 			"signatures": [
 				{
-					"id": 297,
+					"id": 306,
 					"name": "parseImageAssetUrl",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7606,7 +7765,7 @@
 					},
 					"parameters": [
 						{
-							"id": 298,
+							"id": 307,
 							"name": "url",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7624,7 +7783,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 13,
+						"id": 24,
 						"name": "SanityImageUrlParts"
 					}
 				}
@@ -7638,7 +7797,7 @@
 			]
 		},
 		{
-			"id": 260,
+			"id": 269,
 			"name": "tryGetAssetPath",
 			"kind": 64,
 			"kindString": "Function",
@@ -7647,7 +7806,7 @@
 			},
 			"signatures": [
 				{
-					"id": 261,
+					"id": 270,
 					"name": "tryGetAssetPath",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -7660,7 +7819,7 @@
 					},
 					"parameters": [
 						{
-							"id": 262,
+							"id": 271,
 							"name": "src",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -7672,7 +7831,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 146,
+								"id": 157,
 								"name": "SanityAssetSource"
 							}
 						}
@@ -7706,127 +7865,130 @@
 			"title": "Classes",
 			"kind": 128,
 			"children": [
-				212
+				221
 			]
 		},
 		{
 			"title": "Interfaces",
 			"kind": 256,
 			"children": [
+				67,
 				56,
+				33,
+				15,
+				62,
+				130,
+				123,
+				81,
+				75,
+				77,
+				79,
 				45,
-				22,
-				4,
-				51,
-				119,
-				112,
-				70,
-				64,
-				66,
-				68,
-				34,
-				100,
-				38,
-				7,
-				88,
-				140,
-				94,
-				78,
+				111,
+				49,
+				18,
+				99,
+				151,
 				105,
-				124,
-				85,
+				89,
+				116,
 				135,
-				13,
-				1,
-				61
+				96,
+				146,
+				24,
+				12,
+				72
 			]
 		},
 		{
 			"title": "Type aliases",
 			"kind": 4194304,
 			"children": [
-				144,
-				164,
-				146,
-				145,
-				154,
-				147,
-				150,
+				155,
+				175,
+				157,
+				156,
+				165,
+				158,
 				161,
-				148,
-				149
+				172,
+				159,
+				160
 			]
 		},
 		{
 			"title": "Variables",
 			"kind": 32,
 			"children": [
-				200,
-				201,
+				209,
+				210,
+				345,
+				321,
 				336,
-				312,
-				327,
-				332,
-				340,
+				341,
+				349,
+				326,
+				331,
 				317,
-				322,
-				308,
-				347,
-				270,
-				266
+				356,
+				279,
+				275
 			]
 		},
 		{
 			"title": "Functions",
 			"kind": 64,
 			"children": [
-				249,
-				253,
-				241,
-				245,
-				333,
-				202,
-				204,
-				309,
-				323,
-				328,
-				337,
-				313,
+				258,
+				262,
+				250,
+				254,
+				342,
+				211,
+				213,
 				318,
-				305,
-				344,
-				267,
-				263,
-				274,
-				257,
-				341,
-				354,
-				168,
-				183,
-				171,
-				174,
-				206,
-				209,
-				351,
-				357,
-				348,
-				360,
-				165,
+				332,
+				337,
+				346,
+				322,
+				327,
+				314,
+				353,
+				276,
+				272,
+				283,
+				266,
+				350,
 				363,
-				177,
-				369,
-				180,
+				200,
+				179,
+				203,
+				182,
+				185,
+				215,
+				218,
+				360,
+				197,
 				366,
-				234,
-				271,
-				290,
-				281,
-				293,
-				284,
+				357,
+				194,
+				369,
+				176,
+				372,
+				188,
+				378,
+				191,
+				375,
+				243,
+				280,
 				299,
-				287,
+				290,
+				302,
+				293,
+				308,
 				296,
-				260
+				305,
+				269
 			]
 		}
 	]
