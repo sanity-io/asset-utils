@@ -25,18 +25,18 @@
     "docs": "node scripts/generateReadme.js"
   },
   "devDependencies": {
-    "@types/jest": "^25.2.1",
-    "@typescript-eslint/eslint-plugin": "^2.30.0",
-    "@typescript-eslint/parser": "^2.30.0",
-    "cheerio": "^1.0.0-rc.3",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-config-sanity": "^1.150.1",
+    "@types/jest": "^25.2.3",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "cheerio": "^1.0.0-rc.12",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-config-sanity": "^1.150.8",
     "outdent": "^0.8.0",
-    "prettier": "^2.1.2",
+    "prettier": "^2.8.8",
     "tsdx": "^0.14.1",
-    "tslib": "^2.4.0",
-    "typedoc": "^0.17.6",
-    "typescript": "^4.7.4"
+    "tslib": "^2.6.2",
+    "typedoc": "^0.25.4",
+    "typescript": "^4.9.5"
   },
   "repository": {
     "type": "git",
