@@ -198,7 +198,7 @@ export function isValidFilename(filename: string): boolean {
 /**
  * Get the "path stub" at the end of the path, if the user hasn't explicitly opted out of this behavior
  */
-function getVanityStub(
+export function getVanityStub(
   originalFilename: string | undefined,
   vanityFilename: string | undefined,
   options?: PathBuilderOptions
