@@ -26,10 +26,10 @@
   },
   "devDependencies": {
     "@types/jest": "^25.2.3",
-    "@typescript-eslint/eslint-plugin": "^2.34.0",
-    "@typescript-eslint/parser": "^2.34.0",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
     "cheerio": "^1.0.0-rc.12",
-    "eslint-config-prettier": "^6.15.0",
+    "eslint-config-prettier": "^8.10.0",
     "eslint-config-sanity": "^1.150.8",
     "outdent": "^0.8.0",
     "prettier": "^2.8.8",
