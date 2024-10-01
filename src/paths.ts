@@ -5,16 +5,16 @@ import type {
   SanityAssetSource,
   SanityFileUrlParts,
   SanityImageUrlParts,
-} from './types'
+} from './types.js'
 import {
   cdnUrl,
   cdnUrlPattern,
   fileAssetFilenamePattern,
   imageAssetFilenamePattern,
   pathPattern,
-} from './constants'
-import {isAssetObjectStub, isAssetPathStub, isAssetUrlStub, isReference} from './asserters'
-import {getForgivingResolver, UnresolvableError} from './utils'
+} from './constants.js'
+import {isAssetObjectStub, isAssetPathStub, isAssetUrlStub, isReference} from './asserters.js'
+import {getForgivingResolver, UnresolvableError} from './utils.js'
 
 /**
  * Builds the base image path from the minimal set of parts required to assemble it

@@ -11,10 +11,10 @@ import type {
   SanityImageObjectStub,
   SanityImageSource,
   SanityProjectDetails,
-} from './types'
-import {getDefaultCrop, getDefaultHotspot} from './hotspotCrop'
-import {getForgivingResolver, UnresolvableError} from './utils'
-import {parseImageAssetId, parseFileAssetId} from './parse'
+} from './types.js'
+import {getDefaultCrop, getDefaultHotspot} from './hotspotCrop.js'
+import {getForgivingResolver, UnresolvableError} from './utils.js'
+import {parseImageAssetId, parseFileAssetId} from './parse.js'
 import {
   isAssetIdStub,
   isAssetObjectStub,
@@ -23,7 +23,7 @@ import {
   isReference,
   isSanityFileAsset,
   isSanityImageAsset,
-} from './asserters'
+} from './asserters.js'
 import {
   cdnUrl,
   cdnUrlPattern,
@@ -32,7 +32,7 @@ import {
   idPattern,
   imageAssetFilenamePattern,
   pathPattern,
-} from './constants'
+} from './constants.js'
 import {
   buildFilePath,
   buildFileUrl,
@@ -40,7 +40,7 @@ import {
   buildImageUrl,
   getUrlPath,
   tryGetAssetPath,
-} from './paths'
+} from './paths.js'
 
 /**
  * Returns the width, height and aspect ratio of a passed image asset, from any

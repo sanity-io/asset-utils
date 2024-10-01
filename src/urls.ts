@@ -1,4 +1,4 @@
-import {getAssetUrlType} from './parse'
+import {getAssetUrlType} from './parse.js'
 
 /**
  * Checks whether or not a given URL is a valid Sanity asset URL

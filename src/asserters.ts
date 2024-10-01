@@ -1,4 +1,4 @@
-import {fileAssetIdPattern, imageAssetIdPattern} from './constants'
+import {fileAssetIdPattern, imageAssetIdPattern} from './constants.js'
 import type {
   SanityAssetIdStub,
   SanityAssetObjectStub,
@@ -7,7 +7,7 @@ import type {
   SanityFileAsset,
   SanityImageAsset,
   SanityReference,
-} from './types'
+} from './types.js'
 
 /**
  * Checks whether or not the given source is a Sanity reference
