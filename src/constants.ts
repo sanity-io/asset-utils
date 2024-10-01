@@ -6,6 +6,11 @@ export const cdnUrl = 'https://cdn.sanity.io'
 /**
  * @internal
  */
+export const cdnUrlPattern = /^https:\/\/cdn\.sanity\./
+
+/**
+ * @internal
+ */
 export const fileAssetFilenamePattern = /^([a-zA-Z0-9_]{24,40}|[a-f0-9]{40})+\.[a-z0-9]+$/
 
 /**
