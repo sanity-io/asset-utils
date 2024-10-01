@@ -1,4 +1,5 @@
 import {fileAssetIdPattern, imageAssetIdPattern} from './constants.js'
+import {isObject} from './utils.js'
 import type {
   SanityAssetIdStub,
   SanityAssetObjectStub,
@@ -15,6 +16,7 @@ import type {
  *
  * @param ref - Possible reference
  * @returns Whether or not the passed object is a reference
+ * @public
  */
 export function isReference(ref: unknown): ref is SanityReference {
   return isObject(ref) && typeof (ref as SanityReference)._ref === 'string'
@@ -26,6 +28,7 @@ export function isReference(ref: unknown): ref is SanityReference {
  *
  * @param stub - Possible asset id stub
  * @returns Whether or not the passed object is an object id stub
+ * @public
  */
 export function isAssetIdStub(stub: unknown): stub is SanityAssetIdStub {
   return isObject(stub) && typeof (stub as SanityAssetIdStub)._id === 'string'
@@ -37,6 +40,7 @@ export function isAssetIdStub(stub: unknown): stub is SanityAssetIdStub {
  *
  * @param stub - Possible asset path stub
  * @returns Whether or not the passed object is an object path stub
+ * @public
  */
 export function isAssetPathStub(stub: unknown): stub is SanityAssetPathStub {
   return isObject(stub) && typeof (stub as SanityAssetPathStub).path === 'string'
@@ -48,6 +52,7 @@ export function isAssetPathStub(stub: unknown): stub is SanityAssetPathStub {
  *
  * @param stub - Possible asset url stub
  * @returns Whether or not the passed object is an object url stub
+ * @public
  */
 export function isAssetUrlStub(stub: unknown): stub is SanityAssetUrlStub {
   return isObject(stub) && typeof (stub as SanityAssetUrlStub).url === 'string'
@@ -59,6 +64,7 @@ export function isAssetUrlStub(stub: unknown): stub is SanityAssetUrlStub {
  *
  * @param src - Source to check
  * @returns Whether or not the given source is a file asset
+ * @public
  */
 export function isSanityFileAsset(src: unknown): src is SanityFileAsset {
   return isObject(src) && (src as SanityFileAsset)._type === 'sanity.fileAsset'
@@ -70,6 +76,7 @@ export function isSanityFileAsset(src: unknown): src is SanityFileAsset {
  *
  * @param src - Source to check
  * @returns Whether or not the given source is a file asset
+ * @public
  */
 export function isSanityImageAsset(src: unknown): src is SanityImageAsset {
   return isObject(src) && (src as SanityImageAsset)._type === 'sanity.imageAsset'
@@ -80,6 +87,7 @@ export function isSanityImageAsset(src: unknown): src is SanityImageAsset {
  *
  * @param documentId - Document ID to check
  * @returns Whether or not the given document ID is a Sanity image asset document ID
+ * @public
  */
 export function isImageAssetId(documentId: string): boolean {
   return imageAssetIdPattern.test(documentId)
@@ -90,6 +98,7 @@ export function isImageAssetId(documentId: string): boolean {
  *
  * @param documentId - Document ID to check
  * @returns Whether or not the given document ID is a Sanity file asset document ID
+ * @public
  */
 export function isFileAssetId(documentId: string): boolean {
   return fileAssetIdPattern.test(documentId)
@@ -100,6 +109,7 @@ export function isFileAssetId(documentId: string): boolean {
  *
  * @param documentId - Document ID to check
  * @returns Whether or not the given document ID is a Sanity asset document ID (file or image)
+ * @public
  */
 export function isAssetId(documentId: string): boolean {
   return isImageAssetId(documentId) || isFileAssetId(documentId)
@@ -110,19 +120,9 @@ export function isAssetId(documentId: string): boolean {
  *
  * @param stub - Possible asset object stub
  * @returns Whether or not the passed object is an object stub
+ * @public
  */
 export function isAssetObjectStub(stub: unknown): stub is SanityAssetObjectStub {
   const item = stub as SanityAssetObjectStub
   return isObject(item) && item.asset && typeof item.asset === 'object'
-}
-
-/**
- * Checks whether or not the passed object is an object (and not `null`)
- *
- * @param obj Item to check whether or not is an object
- * @returns Whether or not `obj` is an object
- * @internal
- */
-export function isObject(obj: unknown): obj is object {
-  return obj !== null && !Array.isArray(obj) && typeof obj === 'object'
 }

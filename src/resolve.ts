@@ -13,7 +13,7 @@ import type {
   SanityProjectDetails,
 } from './types.js'
 import {getDefaultCrop, getDefaultHotspot} from './hotspotCrop.js'
-import {getForgivingResolver, UnresolvableError} from './utils.js'
+import {getForgivingResolver} from './utils.js'
 import {parseImageAssetId, parseFileAssetId} from './parse.js'
 import {
   isAssetIdStub,
@@ -41,6 +41,7 @@ import {
   getUrlPath,
   tryGetAssetPath,
 } from './paths.js'
+import {UnresolvableError} from './errors.js'
 
 /**
  * Returns the width, height and aspect ratio of a passed image asset, from any
@@ -51,6 +52,7 @@ import {
  *
  * @throws {@link UnresolvableError}
  * Throws if passed image source could not be resolved to an asset ID
+ * @public
  */
 export function getImageDimensions(src: SanityImageSource): SanityImageDimensions {
   const imageId = getAssetDocumentId(src)
@@ -60,10 +62,9 @@ export function getImageDimensions(src: SanityImageSource): SanityImageDimension
 }
 
 /**
- * See {@link getImageDimensions}
- *
- * @inheritFrom {@link getImageDimensions}
+ * {@inheritDoc getImageDimensions}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
+ * @public
  */
 export const tryGetImageDimensions = getForgivingResolver(getImageDimensions)
 
@@ -75,6 +76,7 @@ export const tryGetImageDimensions = getForgivingResolver(getImageDimensions)
  *
  * @throws {@link UnresolvableError}
  * Throws if passed asset source could not be resolved to an asset ID
+ * @public
  */
 export function getExtension(src: SanityAssetSource): string {
   return isFileSource(src)
@@ -83,10 +85,9 @@ export function getExtension(src: SanityAssetSource): string {
 }
 
 /**
- * See {@link getExtension}
- *
- * @inheritFrom {@link getExtension}
+ * {@inheritDoc getExtension}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
+ * @public
  */
 export const tryGetExtension = getForgivingResolver(getExtension)
 
@@ -95,15 +96,16 @@ export const tryGetExtension = getForgivingResolver(getExtension)
  * from any inferrable structure (id, url, path, image object etc)
  *
  * @param src - Input source (image object, asset, reference, id, url, path)
- * @param project Project ID and dataset the image belongs to
+ * @param project - Project ID and dataset the image belongs to
  * @returns Image object
  *
  * @throws {@link UnresolvableError}
  * Throws if passed image source could not be resolved to an asset ID
+ * @public
  */
 export function getImage(
   src: SanityImageSource,
-  project?: SanityProjectDetails
+  project?: SanityProjectDetails,
 ): ResolvedSanityImage {
   const projectDetails = project || tryGetProject(src)
   const asset = getImageAsset(src, projectDetails)
@@ -117,10 +119,9 @@ export function getImage(
 }
 
 /**
- * See {@link getImage}
- *
- * @inheritFrom {@link getImage}
+ * {@inheritDoc getImage}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
+ * @public
  */
 export const tryGetImage = getForgivingResolver(getImage)
 
@@ -134,10 +135,11 @@ export const tryGetImage = getForgivingResolver(getImage)
  *
  * @throws {@link UnresolvableError}
  * Throws if passed image source could not be resolved to an asset ID
+ * @public
  */
 export function getImageAsset(
   src: SanityImageSource,
-  project?: SanityProjectDetails
+  project?: SanityProjectDetails,
 ): SanityImageAsset {
   const projectDetails = project || getProject(src)
   const pathOptions: PathBuilderOptions = {...projectDetails, useVanityName: false}
@@ -172,10 +174,9 @@ export function getImageAsset(
 }
 
 /**
- * See {@link getImageAsset}
- *
- * @inheritFrom {@link getImageAsset}
+ * {@inheritDoc getImageAsset}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
+ * @public
  */
 export const tryGetImageAsset = getForgivingResolver(getImageAsset)
 
@@ -184,11 +185,12 @@ export const tryGetImageAsset = getForgivingResolver(getImageAsset)
  * from any inferrable structure (id, url, path, file object etc)
  *
  * @param src - Input source (file object, asset, reference, id, url, path)
- * @param project Project ID and dataset the file belongs to
+ * @param project - Project ID and dataset the file belongs to
  * @returns File object
  *
  * @throws {@link UnresolvableError}
  * Throws if passed file source could not be resolved to an asset ID
+ * @public
  */
 export function getFile(src: SanityFileSource, project?: SanityProjectDetails): ResolvedSanityFile {
   const projectDetails = project || tryGetProject(src)
@@ -197,10 +199,9 @@ export function getFile(src: SanityFileSource, project?: SanityProjectDetails): 
 }
 
 /**
- * See {@link getFile}
- *
- * @inheritFrom {@link getFile}
+ * {@inheritDoc getFile}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
+ * @public
  */
 export const tryGetFile = getForgivingResolver(getFile)
 
@@ -214,6 +215,7 @@ export const tryGetFile = getForgivingResolver(getFile)
  *
  * @throws {@link UnresolvableError}
  * Throws if passed file source could not be resolved to an asset ID
+ * @public
  */
 export function getFileAsset(src: SanityFileSource, options?: PathBuilderOptions): SanityFileAsset {
   const projectDetails: PathBuilderOptions = {...(options || getProject(src)), useVanityName: false}
@@ -243,10 +245,9 @@ export function getFileAsset(src: SanityFileSource, options?: PathBuilderOptions
 }
 
 /**
- * See {@link getFileAsset}
- *
- * @inheritFrom {@link getFileAsset}
+ * {@inheritDoc getFileAsset}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
+ * @public
  */
 export const tryGetFileAsset = getForgivingResolver(getFileAsset)
 
@@ -258,6 +259,7 @@ export const tryGetFileAsset = getForgivingResolver(getFileAsset)
  *
  * @throws {@link UnresolvableError}
  * Throws if passed asset source could not be resolved to an asset document ID
+ * @public
  */
 export function getAssetDocumentId(src: unknown): string {
   const source = isAssetObjectStub(src) ? src.asset : src
@@ -284,10 +286,9 @@ export function getAssetDocumentId(src: unknown): string {
 }
 
 /**
- * See {@link getAssetDocumentId}
- *
- * @inheritFrom {@link getAssetDocumentId}
+ * {@inheritDoc getAssetDocumentId}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
+ * @public
  */
 export const tryGetAssetDocumentId = getForgivingResolver(getAssetDocumentId)
 
@@ -300,6 +301,7 @@ export const tryGetAssetDocumentId = getForgivingResolver(getAssetDocumentId)
  *
  * @throws {@link UnresolvableError}
  * Throws if passed image source could not be resolved to an asset ID
+ * @public
  */
 export function getIdFromString(str: string): string {
   if (idPattern.test(str)) {
@@ -334,10 +336,9 @@ export function getIdFromString(str: string): string {
 }
 
 /**
- * See {@link getIdFromString}
- *
- * @inheritFrom {@link getIdFromString}
+ * {@inheritDoc getIdFromString}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
+ * @public
  */
 export const tryGetIdFromString = getForgivingResolver(getIdFromString)
 
@@ -346,6 +347,7 @@ export const tryGetIdFromString = getForgivingResolver(getIdFromString)
  *
  * @param url - A full asset URL to convert
  * @returns string
+ * @public
  */
 function idFromUrl(url: string): string {
   const path = getUrlPath(url)
@@ -361,6 +363,7 @@ function idFromUrl(url: string): string {
  *
  * @throws {@link UnresolvableError}
  * Throws if passed image source could not be resolved to an asset ID
+ * @public
  */
 export function getProject(src: SanityImageSource): SanityProjectDetails {
   const path = tryGetAssetPath(src)
@@ -377,10 +380,9 @@ export function getProject(src: SanityImageSource): SanityProjectDetails {
 }
 
 /**
- * See {@link getProject}
- *
- * @inheritFrom {@link getProject}
+ * {@inheritDoc getProject}
  * @returns Returns `undefined` instead of throwing if a value cannot be resolved
+ * @public
  */
 export const tryGetProject = getForgivingResolver(getProject)
 
@@ -389,6 +391,7 @@ export const tryGetProject = getForgivingResolver(getProject)
  *
  * @param filename - Filename to validate
  * @returns Whether or not the filename is an image asset filename
+ * @public
  */
 export function isImageAssetFilename(filename: string): boolean {
   return imageAssetFilenamePattern.test(filename)
@@ -399,6 +402,7 @@ export function isImageAssetFilename(filename: string): boolean {
  *
  * @param filename - Filename to validate
  * @returns Whether or not the filename is a file asset filename
+ * @public
  */
 export function isFileAssetFilename(filename: string): boolean {
   return fileAssetFilenamePattern.test(filename)
@@ -409,6 +413,7 @@ export function isFileAssetFilename(filename: string): boolean {
  *
  * @param filename - Filename to validate
  * @returns Whether or not the filename is an asset filename
+ * @public
  */
 export function isAssetFilename(filename: string): boolean {
   return isImageAssetFilename(filename) || isFileAssetFilename(filename)
@@ -419,6 +424,7 @@ export function isAssetFilename(filename: string): boolean {
  *
  * @param src - Source to check
  * @returns Whether or not the given source is a file source
+ * @public
  */
 export function isFileSource(src: unknown): src is SanityFileSource {
   const assetId = tryGetAssetDocumentId(src)
@@ -430,6 +436,7 @@ export function isFileSource(src: unknown): src is SanityFileSource {
  *
  * @param src - Source to check
  * @returns Whether or not the given source is an image source
+ * @public
  */
 export function isImageSource(src: unknown): src is SanityImageSource {
   const assetId = tryGetAssetDocumentId(src)
