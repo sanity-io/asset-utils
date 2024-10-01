@@ -1,30 +1,34 @@
 {
-  "include": ["src", "types"],
+  "include": ["./src"],
   "compilerOptions": {
-    "module": "esnext",
-    "lib": ["dom", "esnext"],
-    "target": "ES5",
-    "importHelpers": true,
-    "declaration": true,
-    "sourceMap": true,
-    "rootDir": "./src",
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictPropertyInitialization": true,
-    "noImplicitThis": true,
+    "rootDir": ".",
+    "outDir": "./dist",
+
+    // Completeness
+    "skipLibCheck": true,
+
+    // Interop constraints
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+
+    // Language and environment
+    "target": "ES2020",
+
+    // Modules
+    "module": "ES2020",
+    "moduleResolution": "Node",
+
+    // Type checking
     "alwaysStrict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "moduleResolution": "node",
-    "baseUrl": "./",
-    "paths": {
-      "*": ["src/*", "node_modules/*"]
-    },
-    "jsx": "react",
-    "esModuleInterop": true
+    "strict": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true
   }
 }
