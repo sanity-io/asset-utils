@@ -5,15 +5,15 @@ import type {
   SanityAssetUrlParts,
   SanityFileUrlParts,
   SanityImageUrlParts,
-} from './types'
+} from './types.js'
 import {
   cdnUrlPattern,
   fileAssetIdPattern,
   imageAssetFilenamePattern,
   imageAssetIdPattern,
   pathPattern,
-} from './constants'
-import {tryGetUrlFilename, isValidFilename} from './paths'
+} from './constants.js'
+import {tryGetUrlFilename, isValidFilename} from './paths.js'
 
 /**
  * @internal

@@ -1,4 +1,4 @@
-import type {SanityImageCrop, SanityImageHotspot} from './types'
+import type {SanityImageCrop, SanityImageHotspot} from './types.js'
 
 /**
  * Default crop (equals to "whole image")
