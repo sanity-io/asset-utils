@@ -1,15 +1,31 @@
+/**
+ * @public
+ */
 export interface SanityProjectDetails {
   projectId: string
   dataset: string
 }
 
+/**
+ * @public
+ */
 export interface PathBuilderOptions extends Partial<SanityProjectDetails> {
   useVanityName?: boolean
 }
 
+/**
+ * @public
+ */
 export type SanityAssetIdParts = SanityFileAssetIdParts | SanityImageAssetIdParts
+
+/**
+ * @public
+ */
 export type SanityAssetUrlParts = SanityFileUrlParts | SanityImageUrlParts
 
+/**
+ * @public
+ */
 export interface SanityImageAssetIdParts {
   type: 'image'
   assetId: string
@@ -18,10 +34,16 @@ export interface SanityImageAssetIdParts {
   height: number
 }
 
+/**
+ * @public
+ */
 export interface SanityImageUrlParts extends SanityProjectDetails, SanityImageAssetIdParts {
   vanityFilename?: string
 }
 
+/**
+ * @public
+ */
 export interface ImageUrlBuilderOptions extends Partial<SanityProjectDetails> {
   assetId: string
   extension: string
@@ -37,16 +59,25 @@ export interface ImageUrlBuilderOptions extends Partial<SanityProjectDetails> {
   vanityFilename?: string
 }
 
+/**
+ * @public
+ */
 export interface SanityFileAssetIdParts {
   type: 'file'
   assetId: string
   extension: string
 }
 
+/**
+ * @public
+ */
 export interface SanityFileUrlParts extends SanityProjectDetails, SanityFileAssetIdParts {
   vanityFilename?: string
 }
 
+/**
+ * @public
+ */
 export interface FileUrlBuilderOptions extends Partial<SanityProjectDetails> {
   assetId: string
   extension: string
@@ -56,8 +87,14 @@ export interface FileUrlBuilderOptions extends Partial<SanityProjectDetails> {
   vanityFilename?: string
 }
 
+/**
+ * @public
+ */
 export type SanityAssetSource = SanityFileSource | SanityImageSource
 
+/**
+ * @public
+ */
 export type SanityFileSource =
   | string
   | SanityReference
@@ -67,6 +104,9 @@ export type SanityFileSource =
   | SanityAssetPathStub
   | SanityFileObjectStub
 
+/**
+ * @public
+ */
 export type SanityImageSource =
   | string
   | SanityReference
@@ -76,6 +116,9 @@ export type SanityImageSource =
   | SanityAssetPathStub
   | SanityImageObjectStub
 
+/**
+ * @public
+ */
 export type SanitySwatchName =
   | 'darkMuted'
   | 'darkVibrant'
@@ -85,6 +128,9 @@ export type SanitySwatchName =
   | 'muted'
   | 'vibrant'
 
+/**
+ * @public
+ */
 export interface Rectangle {
   x: number
   y: number
@@ -92,6 +138,9 @@ export interface Rectangle {
   height: number
 }
 
+/**
+ * @public
+ */
 export interface AbsoluteRectangle {
   top: number
   left: number
@@ -99,23 +148,38 @@ export interface AbsoluteRectangle {
   bottom: number
 }
 
+/**
+ * @public
+ */
 export interface SanityReference {
   _ref: string
   _weak?: boolean
 }
 
+/**
+ * @public
+ */
 export interface SanityAssetIdStub {
   _id: string
 }
 
+/**
+ * @public
+ */
 export interface SanityAssetPathStub {
   path: string
 }
 
+/**
+ * @public
+ */
 export interface SanityAssetUrlStub {
   url: string
 }
 
+/**
+ * @public
+ */
 export interface SanityAsset {
   _id: string
   _type: string
@@ -126,16 +190,25 @@ export interface SanityAsset {
   originalFilename?: string
 }
 
+/**
+ * @public
+ */
 export type SanityImageAsset = SanityAsset & {
   _type: 'sanity.imageAsset'
   metadata: SanityImageMetadata
 }
 
+/**
+ * @public
+ */
 export type SanityFileAsset = SanityAsset & {
   _type: 'sanity.fileAsset'
   metadata: {[key: string]: unknown}
 }
 
+/**
+ * @public
+ */
 export interface SanityImageMetadata {
   dimensions: SanityImageDimensions
   lqip?: string
@@ -144,15 +217,24 @@ export interface SanityImageMetadata {
   [key: string]: unknown
 }
 
+/**
+ * @public
+ */
 export interface SanityImageSize {
   height: number
   width: number
 }
 
+/**
+ * @public
+ */
 export type SanityImageDimensions = SanityImageSize & {
   aspectRatio: number
 }
 
+/**
+ * @public
+ */
 export interface SanityImageCrop {
   _type?: string
   left: number
@@ -161,6 +243,9 @@ export interface SanityImageCrop {
   top: number
 }
 
+/**
+ * @public
+ */
 export interface SanityImageHotspot {
   _type?: string
   width: number
@@ -169,6 +254,9 @@ export interface SanityImageHotspot {
   y: number
 }
 
+/**
+ * @public
+ */
 export interface SanityFileObjectStub {
   _type?: string
   asset:
@@ -180,6 +268,9 @@ export interface SanityFileObjectStub {
   [key: string]: unknown
 }
 
+/**
+ * @public
+ */
 export interface SanityImageObjectStub {
   _type?: string
   asset:
@@ -193,6 +284,9 @@ export interface SanityImageObjectStub {
   [key: string]: unknown
 }
 
+/**
+ * @public
+ */
 export interface ResolvedSanityImage {
   _type?: string
   asset: SanityImageAsset
@@ -201,14 +295,23 @@ export interface ResolvedSanityImage {
   [key: string]: unknown
 }
 
+/**
+ * @public
+ */
 export interface ResolvedSanityFile {
   _type?: string
   asset: SanityFileAsset
   [key: string]: unknown
 }
 
+/**
+ * @public
+ */
 export type SanityAssetObjectStub = SanityFileObjectStub | SanityImageObjectStub
 
+/**
+ * @public
+ */
 export interface SanityImagePalette {
   _type?: string
   darkMuted?: SanityImageSwatch
@@ -221,6 +324,9 @@ export interface SanityImagePalette {
   [key: string]: unknown
 }
 
+/**
+ * @public
+ */
 export interface SanityImageSwatch {
   background: string
   foreground: string
@@ -228,6 +334,9 @@ export interface SanityImageSwatch {
   title?: string
 }
 
+/**
+ * @public
+ */
 export interface SanityImageFitResult {
   width?: number
   height?: number

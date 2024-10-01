@@ -30,6 +30,7 @@ const exampleImageId = 'image-027401f31c3ac1e6d78c5d539ccd1beff72b9b11-2000x3000
  *
  * @param documentId - Document ID to parse into named parts
  * @returns Object of named properties
+ * @public
  * @throws If document ID is invalid
  */
 export function parseAssetId(documentId: string): SanityAssetIdParts {
@@ -49,12 +50,13 @@ export function parseAssetId(documentId: string): SanityAssetIdParts {
  *
  * @param documentId - File asset document ID to parse into named parts
  * @returns Object of named properties
+ * @public
  * @throws If document ID invalid
  */
 export function parseFileAssetId(documentId: string): SanityFileAssetIdParts {
   if (!fileAssetIdPattern.test(documentId)) {
     throw new Error(
-      `Malformed file asset ID '${documentId}'. Expected an id like "${exampleFileId}"`
+      `Malformed file asset ID '${documentId}'. Expected an id like "${exampleFileId}"`,
     )
   }
 
@@ -67,6 +69,7 @@ export function parseFileAssetId(documentId: string): SanityFileAssetIdParts {
  *
  * @param documentId - Image asset document ID to parse into named parts
  * @returns Object of named properties
+ * @public
  * @throws If document ID invalid
  */
 export function parseImageAssetId(documentId: string): SanityImageAssetIdParts {
@@ -85,6 +88,7 @@ export function parseImageAssetId(documentId: string): SanityImageAssetIdParts {
  *
  * @param filename - Filename to parse into named parts
  * @returns Object of named properties
+ * @public
  * @throws If image/filename is invalid
  */
 export function parseAssetFilename(filename: string): SanityAssetIdParts {
@@ -108,6 +112,7 @@ export function parseAssetFilename(filename: string): SanityAssetIdParts {
  *
  * @param url - Full URL to parse into named parts
  * @returns Object of named properties
+ * @public
  * @throws If URL is invalid or not a Sanity asset URL
  */
 export function parseAssetUrl(url: string): SanityAssetUrlParts {
@@ -138,6 +143,7 @@ export function parseAssetUrl(url: string): SanityAssetUrlParts {
  *
  * @param url - Full URL to parse into named parts
  * @returns Object of named properties
+ * @public
  * @throws If URL is invalid or not a Sanity image asset URL
  */
 export function parseImageAssetUrl(url: string): SanityImageUrlParts {
@@ -155,6 +161,7 @@ export function parseImageAssetUrl(url: string): SanityImageUrlParts {
  *
  * @param url - Full URL to parse into named parts
  * @returns Object of named properties
+ * @public
  * @throws If URL is invalid or not a Sanity file asset URL
  */
 export function parseFileAssetUrl(url: string): SanityFileUrlParts {
@@ -169,9 +176,9 @@ export function parseFileAssetUrl(url: string): SanityFileUrlParts {
 /**
  * Validates that a given URL is a Sanity asset URL, and returns the asset type if valid.
  *
- * @param url URL to extract asset type from
+ * @param url - URL to extract asset type from
  * @returns Asset type if valid URL, false otherwise
- * @internal
+ * @public
  */
 export function getAssetUrlType(url: string): 'image' | 'file' | false {
   try {

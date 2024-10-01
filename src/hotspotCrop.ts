@@ -2,6 +2,8 @@ import type {SanityImageCrop, SanityImageHotspot} from './types.js'
 
 /**
  * Default crop (equals to "whole image")
+ *
+ * @public
  */
 export const DEFAULT_CROP: Readonly<SanityImageCrop> = Object.freeze({
   left: 0,
@@ -12,6 +14,8 @@ export const DEFAULT_CROP: Readonly<SanityImageCrop> = Object.freeze({
 
 /**
  * Default hotspot (equals to horizontal/vertical center, full size of image)
+ *
+ * @public
  */
 export const DEFAULT_HOTSPOT: Readonly<SanityImageHotspot> = Object.freeze({
   x: 0.5,
@@ -24,6 +28,7 @@ export const DEFAULT_HOTSPOT: Readonly<SanityImageHotspot> = Object.freeze({
  * Returns cloned version of the default crop (prevents accidental mutations)
  *
  * @returns Default image crop object
+ * @public
  */
 export const getDefaultCrop = (): SanityImageCrop => ({...DEFAULT_CROP})
 
@@ -31,14 +36,16 @@ export const getDefaultCrop = (): SanityImageCrop => ({...DEFAULT_CROP})
  * Returns cloned version of the default hotspot (prevents accidental mutations)
  *
  * @returns Default image hotspot object
+ * @public
  */
 export const getDefaultHotspot = (): SanityImageHotspot => ({...DEFAULT_HOTSPOT})
 
 /**
  * Returns whether or not the passed crop has the default values for a crop region
  *
- * @param crop The crop to return whether or not is the default crop
+ * @param crop - The crop to return whether or not is the default crop
  * @returns True if passed crop matches default, false otherwise
+ * @public
  */
 export const isDefaultCrop = (crop: SanityImageCrop): boolean => {
   const {top, bottom, left, right} = crop
@@ -57,8 +64,9 @@ export const isDefaultCrop = (crop: SanityImageCrop): boolean => {
 /**
  * Returns whether or not the passed hotspot has the default values for a hotspot region
  *
- * @param hotspot The hotspot to return whether or not is the default hotspot
+ * @param hotspot - The hotspot to return whether or not is the default hotspot
  * @returns True if passed hotspot matches default, false otherwise
+ * @public
  */
 export const isDefaultHotspot = (hotspot: SanityImageHotspot): boolean => {
   const {x, y, width, height} = hotspot
