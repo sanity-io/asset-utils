@@ -1,3 +1,4 @@
+import {test, expect} from 'vitest'
 import {
   DEFAULT_CROP,
   DEFAULT_HOTSPOT,
@@ -5,7 +6,7 @@ import {
   isDefaultHotspot,
   getDefaultHotspot,
   getDefaultCrop,
-} from '../src/hotspotCrop'
+} from '../src/hotspotCrop.js'
 
 // constants
 test('constant DEFAULT_CROP matches expected value', () =>

@@ -1,4 +1,5 @@
-import * as exported from '../src'
+import {test, expect} from 'vitest'
+import * as exported from '../src/index.js'
 
 test('index: provides all exports', () => {
   expect(Object.keys(exported).sort()).toEqual(
@@ -65,6 +66,6 @@ test('index: provides all exports', () => {
       'tryGetProject',
       'tryGetUrlFilename',
       'tryGetUrlPath',
-    ].sort()
+    ].sort(),
   )
 })
