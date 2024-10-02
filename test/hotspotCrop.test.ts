@@ -1,11 +1,12 @@
-import {test, expect} from 'vitest'
+import {expect, test} from 'vitest'
+
 import {
   DEFAULT_CROP,
   DEFAULT_HOTSPOT,
+  getDefaultCrop,
+  getDefaultHotspot,
   isDefaultCrop,
   isDefaultHotspot,
-  getDefaultHotspot,
-  getDefaultCrop,
 } from '../src/hotspotCrop.js'
 
 // constants

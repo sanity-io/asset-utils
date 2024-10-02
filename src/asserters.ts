@@ -1,5 +1,4 @@
 import {fileAssetIdPattern, imageAssetIdPattern} from './constants.js'
-import {isObject} from './utils.js'
 import type {
   SanityAssetIdStub,
   SanityAssetObjectStub,
@@ -9,6 +8,7 @@ import type {
   SanityImageAsset,
   SanityReference,
 } from './types.js'
+import {isObject} from './utils.js'
 
 /**
  * Checks whether or not the given source is a Sanity reference

@@ -1,3 +1,12 @@
+import {isAssetObjectStub, isAssetPathStub, isAssetUrlStub, isReference} from './asserters.js'
+import {
+  cdnUrl,
+  cdnUrlPattern,
+  fileAssetFilenamePattern,
+  imageAssetFilenamePattern,
+  pathPattern,
+} from './constants.js'
+import {UnresolvableError} from './errors.js'
 import type {
   FileUrlBuilderOptions,
   ImageUrlBuilderOptions,
@@ -6,16 +15,7 @@ import type {
   SanityFileUrlParts,
   SanityImageUrlParts,
 } from './types.js'
-import {
-  cdnUrl,
-  cdnUrlPattern,
-  fileAssetFilenamePattern,
-  imageAssetFilenamePattern,
-  pathPattern,
-} from './constants.js'
-import {isAssetObjectStub, isAssetPathStub, isAssetUrlStub, isReference} from './asserters.js'
 import {getForgivingResolver} from './utils.js'
-import {UnresolvableError} from './errors.js'
 
 /**
  * Builds the base image path from the minimal set of parts required to assemble it
@@ -89,7 +89,7 @@ export function buildFilePath(
  * Builds the base file URL from the minimal set of parts required to assemble it
  *
  * @param asset - An asset-like shape defining ID and extension
- * @param options - Project ID and dataset the file belongs to, along with other options
+ * @param project - Project ID and dataset the file belongs to, along with other options
  * @returns The URL to the file
  * @public
  */

@@ -1,10 +1,11 @@
-import {test, expect} from 'vitest'
+import {expect, test} from 'vitest'
+
 import {
+  parseAssetFilename,
   parseAssetId,
+  parseAssetUrl,
   parseFileAssetId,
   parseImageAssetId,
-  parseAssetFilename,
-  parseAssetUrl,
 } from '../src/parse.js'
 
 test('parseAssetId(): throws on invalid document id (generic getter)', () => {

@@ -1,20 +1,3 @@
-import type {
-  PathBuilderOptions,
-  ResolvedSanityFile,
-  ResolvedSanityImage,
-  SanityAssetSource,
-  SanityFileAsset,
-  SanityFileObjectStub,
-  SanityFileSource,
-  SanityImageAsset,
-  SanityImageDimensions,
-  SanityImageObjectStub,
-  SanityImageSource,
-  SanityProjectDetails,
-} from './types.js'
-import {getDefaultCrop, getDefaultHotspot} from './hotspotCrop.js'
-import {getForgivingResolver} from './utils.js'
-import {parseImageAssetId, parseFileAssetId} from './parse.js'
 import {
   isAssetIdStub,
   isAssetObjectStub,
@@ -33,6 +16,9 @@ import {
   imageAssetFilenamePattern,
   pathPattern,
 } from './constants.js'
+import {UnresolvableError} from './errors.js'
+import {getDefaultCrop, getDefaultHotspot} from './hotspotCrop.js'
+import {parseFileAssetId, parseImageAssetId} from './parse.js'
 import {
   buildFilePath,
   buildFileUrl,
@@ -41,7 +27,21 @@ import {
   getUrlPath,
   tryGetAssetPath,
 } from './paths.js'
-import {UnresolvableError} from './errors.js'
+import type {
+  PathBuilderOptions,
+  ResolvedSanityFile,
+  ResolvedSanityImage,
+  SanityAssetSource,
+  SanityFileAsset,
+  SanityFileObjectStub,
+  SanityFileSource,
+  SanityImageAsset,
+  SanityImageDimensions,
+  SanityImageObjectStub,
+  SanityImageSource,
+  SanityProjectDetails,
+} from './types.js'
+import {getForgivingResolver} from './utils.js'
 
 /**
  * Returns the width, height and aspect ratio of a passed image asset, from any
@@ -358,7 +358,7 @@ function idFromUrl(url: string): string {
 
 /**
  * Resolves project ID and dataset the image belongs to, based on full URL or path
- * @param source - Image URL or path
+ * @param src - Image URL or path
  * @returns object | undefined
  *
  * @throws {@link UnresolvableError}
