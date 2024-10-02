@@ -1,24 +1,25 @@
-import {test, expect} from 'vitest'
+import {expect, test} from 'vitest'
+
+import {parseFileAssetUrl, parseImageAssetUrl} from '../src/parse.js'
+import {buildFilePath, buildFileUrl, buildImagePath, buildImageUrl} from '../src/paths.js'
 import {
-  getIdFromString,
-  tryGetIdFromString,
-  getImage,
-  tryGetImage,
-  getImageAsset,
-  tryGetImageAsset,
   getAssetDocumentId,
-  tryGetAssetDocumentId,
-  getImageDimensions,
-  tryGetImageDimensions,
   getExtension,
-  tryGetExtension,
+  getIdFromString,
+  getImage,
+  getImageAsset,
+  getImageDimensions,
   getProject,
   isAssetFilename,
+  tryGetAssetDocumentId,
+  tryGetExtension,
+  tryGetIdFromString,
+  tryGetImage,
+  tryGetImageAsset,
+  tryGetImageDimensions,
 } from '../src/resolve.js'
-import {expectedAsset, testProject, customCrop, customHotspot, expectedImage} from './fixtures.js'
-import {SanityImageSource, SanityFileSource} from '../src/types.js'
-import {buildImagePath, buildImageUrl, buildFilePath, buildFileUrl} from '../src/paths.js'
-import {parseImageAssetUrl, parseFileAssetUrl} from '../src/parse.js'
+import {SanityFileSource, SanityImageSource} from '../src/types.js'
+import {customCrop, customHotspot, expectedAsset, expectedImage, testProject} from './fixtures.js'
 
 const imgId = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
 const imgPath = 'images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
@@ -933,7 +934,9 @@ test('tryGetImageAsset(): match (pretty filename), staging', () => {
 test('getImageAsset(): requires projectId/dataset on just ID', () => {
   expect(() =>
     getImageAsset('image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'),
-  ).toThrowErrorMatchingInlineSnapshot(`[Error: Failed to resolve project ID and dataset from source]`)
+  ).toThrowErrorMatchingInlineSnapshot(
+    `[Error: Failed to resolve project ID and dataset from source]`,
+  )
 })
 
 test('getImageAsset(): requires projectId/dataset on invalid path', () => {
@@ -942,7 +945,9 @@ test('getImageAsset(): requires projectId/dataset on invalid path', () => {
       _id: 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png',
       path: '',
     }),
-  ).toThrowErrorMatchingInlineSnapshot(`[Error: Failed to resolve project ID and dataset from source]`)
+  ).toThrowErrorMatchingInlineSnapshot(
+    `[Error: Failed to resolve project ID and dataset from source]`,
+  )
 })
 
 // getImage()
@@ -1310,7 +1315,9 @@ test('tryGetImage(): match, staging', () => {
 test('getImage(): requires projectId/dataset on just ID', () => {
   expect(() =>
     getImage('image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'),
-  ).toThrowErrorMatchingInlineSnapshot(`[Error: Failed to resolve project ID and dataset from source]`)
+  ).toThrowErrorMatchingInlineSnapshot(
+    `[Error: Failed to resolve project ID and dataset from source]`,
+  )
 })
 
 test('getImage(): requires projectId/dataset on invalid path', () => {
@@ -1319,7 +1326,9 @@ test('getImage(): requires projectId/dataset on invalid path', () => {
       _id: 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png',
       path: '',
     }),
-  ).toThrowErrorMatchingInlineSnapshot(`[Error: Failed to resolve project ID and dataset from source]`)
+  ).toThrowErrorMatchingInlineSnapshot(
+    `[Error: Failed to resolve project ID and dataset from source]`,
+  )
 })
 
 // getImageDimensions()
@@ -1387,7 +1396,9 @@ test.each(validFileSources)('tryGetExtension() can resolve from file %s', (_, so
 test('getProject(): throws if passing a reference', () => {
   expect(() =>
     getProject({_ref: 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-200x300-png'}),
-  ).toThrowErrorMatchingInlineSnapshot(`[Error: Failed to resolve project ID and dataset from source]`)
+  ).toThrowErrorMatchingInlineSnapshot(
+    `[Error: Failed to resolve project ID and dataset from source]`,
+  )
 })
 
 // isAssetFilename()
