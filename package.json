@@ -46,6 +46,7 @@
     "outdent": "^0.8.0",
     "prettier": "^3.3.3",
     "rimraf": "^5.0.10",
+    "semantic-release": "^24.1.2",
     "tsx": "^4.19.1",
     "typedoc": "^0.26.7",
     "typescript": "^5.5.4",
@@ -87,6 +88,51 @@
     "plugins": [
       "@typescript-eslint",
       "prettier"
+    ]
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": "conventionalcommits",
+          "releaseRules": [
+            {
+              "type": "build",
+              "scope": "deps",
+              "release": "patch"
+            }
+          ]
+        }
+      ],
+      [
+        "@semantic-release/release-notes-generator",
+        {
+          "preset": "conventionalcommits",
+          "presetConfig": {
+            "types": [
+              {
+                "type": "feat",
+                "section": "Features"
+              },
+              {
+                "type": "fix",
+                "section": "Bug Fixes"
+              },
+              {
+                "type": "build",
+                "section": "Dependencies and Other Build Updates",
+                "hidden": false
+              }
+            ]
+          }
+        }
+      ],
+      "@semantic-release/npm",
+      "@semantic-release/github"
     ]
   }
 }
