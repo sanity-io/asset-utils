@@ -134,5 +134,6 @@
       "@semantic-release/npm",
       "@semantic-release/github"
     ]
-  }
+  },
+  "packageManager": "pnpm@9.11.0"
 }
