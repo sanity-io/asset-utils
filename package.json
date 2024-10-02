@@ -20,7 +20,7 @@
     "test": "tsdx test",
     "lint": "tsdx lint src",
     "posttest": "npm run lint",
-    "prepublishOnly": "tsdx build && npm test && node scripts/generateReadme.js --commit",
+    "prepublishOnly": "tsdx build && npm test",
     "coverage": "tsdx test --coverage",
     "docs": "node scripts/generateReadme.js"
   },
