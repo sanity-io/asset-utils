@@ -14,17 +14,18 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          cache: pnpm
+          node-version: 18
 
       - name: Install
-        run: npm install
+        run: pnpm install
 
       - name: Build
-        run: npm run docs
+        run: pnpm run docs
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@373f7f263a76c20808c831209c920827a82a2847 # v3
