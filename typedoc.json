@@ -1,8 +1,6 @@
 {
-  "mode": "file",
-  "inputFiles": ["./src/index.ts"],
-  "stripInternal": true,
-  "theme": "minimal",
+  "entryPoints": ["./src/index.ts"],
+  "theme": "default",
   "json": "./docs/docs.json",
   "out": "./docs",
   "readme": "./README.template.md",
