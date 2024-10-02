@@ -2,36 +2,39 @@
  * Yeah this isn't the prettiest code, but it's just a simple docs generator
  */
 
-/* eslint-disable no-process-exit, id-length, no-console, @typescript-eslint/no-var-requires, @typescript-eslint/explicit-function-return-type, no-sync */
-const fs = require('fs')
-const path = require('path')
-const outdent = require('outdent')
-const childProcess = require('child_process')
-const cheerio = require('cheerio')
-const pkg = require('../package.json')
+import * as cheerio from 'cheerio'
+import childProcess from 'child_process'
+import fs from 'fs'
+import outdent from 'outdent'
+import path from 'path'
+import {JSONOutput, ReflectionKind} from 'typedoc'
 
-const basePath = path.resolve(__dirname, '..')
+const basePath = path.resolve(import.meta.dirname, '..')
+
+const pkg = JSON.parse(fs.readFileSync(path.resolve(basePath, 'package.json'), 'utf8'))
+const ghUrl = pkg.homepage.replace(/#.*/, '').replace(/\/+$/, '')
+
 const gitHash = childProcess
   .execSync('git rev-parse --short HEAD', {cwd: basePath, encoding: 'utf8'})
   .trim()
 
 const doCommit = process.argv.includes('--commit')
-const ghUrl = pkg.homepage.replace(/#.*/, '').replace(/\/+$/, '')
 const slugRe = /[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,./:;<=>?@[\]^`{|}~]/g
-const htmlDocsUrl = `https://sanity-io.github.io/asset-utils/`
+const htmlDocsUrl = `https://sanity-io.github.io/asset-utils`
 
-let docs
-let allNodes
-let functions
+let docs: JSONOutput.ProjectReflection
+let allNodes: Array<JSONOutput.DeclarationReflection>
+let functions: Array<JSONOutput.DeclarationReflection>
 
 const mdFilename = 'README.md'
-const mdTemplate = fs.readFileSync(path.join(__dirname, '..', 'README.template.md'), 'utf8')
+const mdTemplate = fs.readFileSync(path.join(basePath, 'README.template.md'), 'utf8')
 const mdBase = `<!-- This file is AUTO-GENERATED, edit README.template.md or tweak scripts/generateReadme.js -->\n${mdTemplate}`
 
 generateHtmlDocs()
 modifyHtmlDocs()
 readJsonDocs()
 extractFunctions()
+rewriteTryFunctions()
 createMarkdownDocs()
 prettify()
 
@@ -44,95 +47,52 @@ if (doCommit) {
  */
 function readJsonDocs() {
   try {
-    docs = require('../docs/docs.json')
+    docs = JSON.parse(fs.readFileSync(path.resolve(basePath, 'docs', 'docs.json'), 'utf8'))
   } catch (err) {
-    console.error(`Failed to read ${path.resolve(__dirname, '..', 'docs', 'docs.json')}`)
+    console.error(`Failed to read ${path.resolve(basePath, 'docs', 'docs.json')}:`, err)
     process.exit(1)
   }
 }
 
 function extractFunctions() {
-  allNodes = docs.children.map(remapConstFunction)
-  functions = groupByKind(allNodes).Function
+  allNodes = docs.children || []
+  functions = (docs.children || []).filter(
+    (node) => node.variant === 'declaration' && node.kind === ReflectionKind.Function,
+  )
 }
 
-function remapConstFunction(item, index, siblings) {
-  const functionKind = siblings.find((sib) => sib.kindString === 'Function').kind
-  const {kindString, name, id, sources, flags = {}, comment} = item
-  if (
-    kindString !== 'Variable' ||
-    !flags.isExported ||
-    !flags.isConst ||
-    !comment ||
-    !comment.tags ||
-    !comment.tags.some((tag) => tag.tag === 'inheritfrom')
-  ) {
-    return item
-  }
-
-  const inheritsFrom = comment.tags
-    .find((tag) => tag.tag === 'inheritfrom')
-    .text.replace(/\{@link\s+(.*?)\}.*/, '$1')
-
-  const parent = siblings.find((sibling) => sibling.name === inheritsFrom)
-  if (!parent) {
-    throw new Error(`Failed to find referenced inheritsFrom: ${inheritsFrom}`)
-  }
-
-  const isTryFn = item.name.startsWith('try')
-  const {signatures: parentSignatures, flags: parentFlags} = parent
-  const signatures = parentSignatures.map((signature) => ({
-    ...signature,
-    name: item.name,
-    id: item.id,
-    comment: mergeComments(signature.comment, item.comment, {isTryFn}),
-  }))
-
-  return {
-    id,
-    name,
-    kind: functionKind,
-    kindString: 'Function',
-    flags: {...parentFlags},
-    signatures,
-    sources,
-  }
+function rewriteTryFunctions() {
+  functions = functions.map((fn) => (fn.name.startsWith('try') ? rewriteTryFunction(fn) : fn))
 }
 
-function mergeComments(original, override, options = {isTryFn: false}) {
-  if (!original || !options.isTryFn) {
-    return override
+function rewriteTryFunction(
+  fn: JSONOutput.DeclarationReflection,
+): JSONOutput.DeclarationReflection {
+  const srcName = fn.name.replace(/^try/, '').replace(/^[A-Z]/, (char) => char.toLowerCase())
+  const src = functions.find((node) => node.name === srcName)
+  if (!src) {
+    return fn
   }
 
-  const returns = original.returns || ''
-  const join = (base, add) => [base.replace(/[\s.]+$/, ''), add].join('. ')
+  const fnSignatures = fn.signatures || []
+  const srcSignatures = src.signatures || []
 
-  return {
-    ...original,
-    tags: (original.tags || []).filter((tag) => tag.tag !== 'throws' && tag.tag !== 'inheritfrom'),
-    returns:
-      returns &&
-      join(returns, `Returns \`undefined\` instead of throwing if a value cannot be resolved.`),
+  const sigs = Math.min(srcSignatures.length, fnSignatures.length)
+  for (let i = 0; i < sigs; i++) {
+    const fnSig = fnSignatures[i]
+    const srcSig = srcSignatures[i]
+    if (!fnSig.comment?.summary.length) {
+      fnSig.comment = {...fnSig.comment, summary: srcSig.comment?.summary || []}
+    }
+    if (fnSig.parameters?.length === 1 && fnSig.parameters[0].name === 'args') {
+      fnSig.parameters = srcSig.parameters
+    }
   }
+
+  return fn
 }
 
-function groupByKind(items) {
-  const kinds = {}
-  for (const item of items) {
-    const kind = item.kindString
-    kinds[kind] = kinds[kind] || []
-    kinds[kind].push(item)
-  }
-
-  for (const group of Object.values(kinds)) {
-    // Sort mutates in place, which is why this works
-    group.sort((a, b) => a.name.localeCompare(b.name))
-  }
-
-  return kinds
-}
-
-function slugify(str) {
+function slugify(str: string): string {
   if (typeof str !== 'string') {
     return ''
   }
@@ -148,8 +108,8 @@ function slugify(str) {
 }
 
 function createMarkdownDocs() {
-  const content = mdBase.trimLeft().replace(/## License/, `${createMarkdownBody()}\n\n## License`)
-  fs.writeFileSync(path.join(__dirname, '..', mdFilename), content)
+  const content = mdBase.trimStart().replace(/## License/, `${createMarkdownBody()}\n\n## License`)
+  fs.writeFileSync(path.join(basePath, mdFilename), content)
 }
 
 function createMarkdownToc() {
@@ -169,69 +129,20 @@ function createMarkdownBody() {
   An [HTML version](https://sanity-io.github.io/asset-utils/) is also available, which also includes interface definitions, constants and more.
   `
   const toc = createMarkdownToc()
-  const fns = functions.map((child) => createMarkdownSegment('Function', child)).join('\n\n')
+  const fns = functions.map((child) => createMarkdownFnDoc(child)).join('\n\n')
   return `${header}\n\n${toc}\n\n${fns}`
 }
 
-function createMarkdownSegment(kind, node) {
-  switch (kind) {
-    case 'Function':
-      return createMarkdownFnDoc(node)
-    case 'Variable':
-      return createMarkdownConstDoc(node)
-    case 'Interface':
-      return createInterfaceDoc(node)
-    default:
-      return ''
-  }
-}
-
-function createInterfaceDoc(node) {
-  if (!node.flags.isExported) {
-    return ''
-  }
-
-  const description = node.comment && node.comment.shortText ? `\n${node.comment.shortText}\n` : ''
-  const properties = node.children.filter((child) => child.kindString === 'Property')
-  const propTable =
-    (properties.length > 0 && `${bold('Properties:')}\n\n${generateParamsTable(properties)}`) || ''
-
-  return outdent`
-    ### ${node.name}
-    ${description}
-    ${propTable}
-
-    ${em(`Defined in ${srcLink(node.sources[0])}`)}
-  `
-}
-
-function createMarkdownConstDoc(node) {
-  if (!node.flags.isConst || !node.flags.isExported || node.name.toUpperCase() !== node.name) {
-    return ''
-  }
-
-  const defaultValue = node.defaultValue.includes('\n')
-    ? `\n${codeBlock(node.defaultValue)}`
-    : node.defaultValue
-
-  const description = node.comment && node.comment.shortText ? `\n${node.comment.shortText}\n` : ''
-
-  return outdent`
-    ### ${node.name}
-    ${description}
-    • ${bold(node.name)}: ${createMarkdownReturnValue(node)} = ${defaultValue}
-
-    ${em(`Defined in ${srcLink(node.sources[0])}`)}
-  `
-}
-
-function createMarkdownParameterSignature(param) {
+function createMarkdownParameterSignature(param: JSONOutput.ParameterReflection) {
   const type = formatMarkdownRef(param.type)
-  return `${code(param.name)}: ${type}`
+  const opt = param.flags?.isOptional ? '?' : ''
+  return `${code(param.name)}${opt}: ${type}`
 }
 
-function sortUnionTypes(types) {
-  const undefinedIndex = types.findIndex((type) => type.name === 'undefined')
+function sortUnionTypes(types: JSONOutput.SomeType[]) {
+  const undefinedIndex = types.findIndex(
+    (type) => type.type === 'intrinsic' && type.name === 'undefined',
+  )
   if (undefinedIndex === -1) {
     return types
   }
@@ -241,28 +152,32 @@ function sortUnionTypes(types) {
   return sorted.concat(undef)
 }
 
-function getUrlForNode(node) {
-  const isFunction = node.kindString === 'Function'
+function getUrlForNode(node: JSONOutput.DeclarationReflection) {
+  const isFunction = node.kind === ReflectionKind.Function
   const slug = slugify(node.name)
   if (isFunction) {
     return `${mdFilename}#${slug}`
   }
 
-  if (node.kindString === 'Interface') {
+  if (node.kind === ReflectionKind.Interface) {
     return `${htmlDocsUrl}/interfaces/${slug}.html`
   }
 
-  if (node.kingString === 'Class') {
+  if (node.kind === ReflectionKind.Class) {
     return `${htmlDocsUrl}/classes/${slug}.html`
   }
 
   return `${htmlDocsUrl}/index.html#${slug}`
 }
 
-function formatMarkdownRef(thing) {
+function formatMarkdownRef(thing: JSONOutput.ParameterReflection['type']): string {
+  if (!thing) {
+    return 'unknown'
+  }
+
   const refNode =
     thing.type === 'reference' &&
-    allNodes.find((node) => (thing.id ? node.id === thing.id : node.name === thing.name))
+    allNodes.find((node) => (thing.target ? node.id === thing.target : node.name === thing.name))
 
   if (refNode) {
     const url = getUrlForNode(refNode)
@@ -283,8 +198,16 @@ function formatMarkdownRef(thing) {
     return `${thing.name} is ${formatMarkdownRef(thing.targetType)}`
   }
 
-  if (thing.type === 'stringLiteral') {
+  if (thing.type === 'literal') {
     return JSON.stringify(thing.value, null, 2)
+  }
+
+  if (thing.type === 'tuple') {
+    return `[${(thing.elements || []).map(formatMarkdownRef).join(', ')}]`
+  }
+
+  if (thing.type === 'namedTupleMember') {
+    return `${thing.name}: ${formatMarkdownRef(thing.element)}`
   }
 
   if (thing.type === 'reflection') {
@@ -294,17 +217,20 @@ function formatMarkdownRef(thing) {
   throw new Error(`Unknown parameter type: ${JSON.stringify(thing, null, 2)}`)
 }
 
-function createMarkdownReturnValue(sig) {
+function createMarkdownReturnValue(sig: JSONOutput.SignatureReflection) {
   const returnType = formatMarkdownRef(sig.type)
   return em(returnType)
 }
 
-function createMarkdownFnSignature(sig) {
+function createMarkdownFnSignature(
+  sig: JSONOutput.SignatureReflection,
+  parent: JSONOutput.DeclarationReflection,
+) {
   const params = sig.parameters || []
-  const description = sig.comment && sig.comment.shortText ? `${sig.comment.shortText}` : ''
+  const description = getTextComment(sig.comment) || getTextComment(parent.comment)
   const paramsTable = generateParamsTable(params)
   const returns = `${bold('Returns:')} ${createMarkdownReturnValue(sig)}`
-  const signature = []
+  const signature = ['']
     .concat(`▸ ${bold(sig.name)}(`)
     .concat(params.map(createMarkdownParameterSignature).join(', '))
     .concat(`): ${createMarkdownReturnValue(sig)}`)
@@ -313,67 +239,89 @@ function createMarkdownFnSignature(sig) {
   return [signature].concat(description).concat(paramsTable).concat(returns).join('\n\n')
 }
 
-function generateParamsTable(params) {
-  const paramsHasDescription = params.some((param) => param.comment && param.comment.text)
+function getTextComment(comment: JSONOutput.Comment | undefined): string {
+  if (!comment || !comment.summary) {
+    return ''
+  }
+
+  return comment.summary
+    .map((node) => {
+      if (node.kind === 'text') {
+        return node.text
+      }
+      if (node.kind === 'code') {
+        return code(node.text)
+      }
+      if (node.kind === 'relative-link') {
+        return relativeLink(node)
+      }
+
+      return node.text
+    })
+    .join(' ')
+    .replace(/(?<!\n)\n(?!\n)/g, ' ')
+    .trim()
+}
+
+function generateParamsTable(params: Array<JSONOutput.ParameterReflection>): string {
+  const paramsHasDescription = params.some((param) =>
+    param.comment?.summary.some((node) => node.kind === 'text' && node.text.trim().length > 0),
+  )
   const headers = paramsHasDescription ? `| Name | Type | Description |` : '| Name | Type |'
   const separat = paramsHasDescription ? `| ---- | ---- | ----------- |` : '| ---- | ---- |'
   const rows = params.map((param) => {
     const type = formatMarkdownRef(param.type)
-    const description = paramsHasDescription
-      ? [param.comment ? param.comment.text || param.comment.shortText : '']
-      : []
+    const prefix = param.flags?.isOptional ? '(_Optional_) ' : ''
+    const stub: string[] = prefix ? [prefix] : []
+    const description = paramsHasDescription ? [prefix + getTextComment(param.comment)] : stub
 
     const parts = ['', code(param.name), type, ...description, ''].map((part) =>
-      part.replace(/\|/g, '\\|')
+      part.replace(/\|/g, '\\|'),
     )
     return parts.join(' | ').trim()
   })
 
-  return [headers, separat, ...rows].join('\n')
+  return rows.length > 0 ? [headers, separat, ...rows].join('\n') : ''
 }
 
-function createMarkdownFnDoc(fn) {
+function createMarkdownFnDoc(fn: JSONOutput.DeclarationReflection) {
   return outdent`
   ### ${fn.name}
 
-  ${fn.signatures.map(createMarkdownFnSignature).join('\n')}
+  ${(fn.signatures || []).map((sig) => createMarkdownFnSignature(sig, fn)).join('\n')}
 
-  ${fn.sources.map((src) => em(`Defined in ${srcLink(src)}`)).join('\n')}
+  ${(fn.sources || []).map((src) => em(`Defined in ${srcLink(src)}`)).join('\n')}
   `
 }
 
-function codeBlock(str, language = 'js') {
-  return outdent`
-    \`\`\`${language}
-    ${str}
-    \`\`\`
-  `
-}
-
-function code(str) {
+function code(str: string) {
   return `\`${str}\``
 }
 
-function em(str) {
+function em(str: string) {
   return `_${str}_`
 }
 
-function bold(str) {
+function bold(str: string) {
   return `**${str}**`
 }
 
-function srcLink(src) {
+function relativeLink(src: JSONOutput.RelativeLinkDisplayPart) {
+  return src.text
+}
+
+function srcLink(src: JSONOutput.SourceReference) {
   return `[${src.fileName}:${src.line}](${srcUrl(src)})`
 }
 
-function srcUrl(src) {
+function srcUrl(src: JSONOutput.SourceReference) {
   return `${ghUrl}/blob/${gitHash}/${src.fileName}#L${src.line}`
 }
 
 function prettify() {
-  childProcess.spawnSync(path.join(__dirname, '..', 'node_modules', '.bin', 'prettier'), [
+  childProcess.spawnSync(path.join(basePath, 'node_modules', '.bin', 'prettier'), [
     '--write',
-    path.join(__dirname, '..', 'README.md'),
+    path.join(basePath, 'README.md'),
   ])
 }
 
@@ -390,14 +338,14 @@ function commit() {
 }
 
 function generateHtmlDocs() {
-  childProcess.spawnSync(path.join(__dirname, '..', 'node_modules', '.bin', 'typedoc'), {
+  childProcess.spawnSync(path.join(basePath, 'node_modules', '.bin', 'typedoc'), {
     cwd: basePath,
     stdio: 'inherit',
   })
 }
 
 function modifyHtmlDocs() {
-  const htmlPath = path.join(__dirname, '..', 'docs', 'index.html')
+  const htmlPath = path.join(basePath, 'docs', 'index.html')
   const $ = cheerio.load(fs.readFileSync(htmlPath))
 
   // Get constants that start with `try` and treat them as functions
@@ -416,7 +364,7 @@ function modifyHtmlDocs() {
   fnsIndexSection.parent().prepend(fnsIndexSection)
 
   const fnsListSection = $('.tsd-member-group h2:contains("Functions")').closest(
-    '.tsd-member-group'
+    '.tsd-member-group',
   )
   fnsListSection.parent().find('.tsd-index-group').after(fnsListSection)
 
@@ -433,7 +381,7 @@ function modifyHtmlDocs() {
   fnsListSection.find('.ts-flagConst').remove()
   fnsInList.find('a[name^="try"]').each(function () {
     const a = $(this)
-    const target = a.attr('name').replace(/^try/, '')
+    const target = a.attr('name')?.replace(/^try/, '')
     const section = a.closest('section')
     const parent = a.closest('.tsd-member-group').find(`a[name="${target}"]`).closest('section')
     const parentSig = parent.find('.tsd-signatures')
@@ -441,7 +389,7 @@ function modifyHtmlDocs() {
     signature
       .find('.tsd-signature')
       .append(
-        '<span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>'
+        '<span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>',
       )
 
     section.find('.tsd-signature').replaceWith(signature)
@@ -462,13 +410,13 @@ function modifyHtmlDocs() {
   // Don't reference "globals.html", use index!
   $('a[href^="globals.html"]').each(function () {
     const el = $(this)
-    el.attr('href', el.attr('href').replace('globals.html', 'index.html'))
+    el.attr('href', el.attr('href')?.replace('globals.html', 'index.html'))
   })
 
   // If encountering (broken) @link tags - throw
   $(':contains("@link")').each(function () {
-    const html = $(this).html()
-    html.replace(/{@link (.*?)}/g, (match, target) => {
+    const html = $(this).html() || ''
+    html.replace(/{@link (.*?)}/g, (_, target) => {
       throw new Error(`Found BROKEN @link reference to "${target}"`)
     })
   })
@@ -484,7 +432,7 @@ function modifyHtmlDocs() {
   fs.writeFileSync(htmlPath, $.html())
 }
 
-function orderNodesByName(nodes, $) {
+function orderNodesByName(nodes: ReturnType<cheerio.CheerioAPI>, $: cheerio.CheerioAPI) {
   return nodes
     .toArray()
     .slice()
