@@ -7,7 +7,7 @@ import type {
   SanityImageUrlParts,
 } from './types'
 import {
-  cdnUrl,
+  cdnUrlPattern,
   fileAssetIdPattern,
   imageAssetFilenamePattern,
   imageAssetIdPattern,
@@ -111,13 +111,13 @@ export function parseAssetFilename(filename: string): SanityAssetIdParts {
  * @throws If URL is invalid or not a Sanity asset URL
  */
 export function parseAssetUrl(url: string): SanityAssetUrlParts {
-  if (!url.startsWith(cdnUrl)) {
+  if (!cdnUrlPattern.test(url)) {
     throw new Error(`URL is not a valid Sanity asset URL: ${url}`)
   }
 
-  const path = url.slice(cdnUrl.length).replace(/^\/+/, '')
+  const path = new URL(url).pathname.replace(/^\/+/, '')
   const [projectPath, , projectId, dataset] = path.match(pathPattern) || []
-  if (!projectId || !dataset) {
+  if (!projectPath || !projectId || !dataset) {
     throw new Error(`URL is not a valid Sanity asset URL: ${url}`)
   }
 

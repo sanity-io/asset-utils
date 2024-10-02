@@ -26,6 +26,7 @@ import {
 } from './asserters'
 import {
   cdnUrl,
+  cdnUrlPattern,
   dummyProject,
   fileAssetFilenamePattern,
   idPattern,
@@ -306,7 +307,10 @@ export function getIdFromString(str: string): string {
     return str
   }
 
-  if (str.indexOf(`${cdnUrl}/images`) === 0 || str.indexOf(`${cdnUrl}/files`) === 0) {
+  const isAbsoluteUrl = cdnUrlPattern.test(str)
+  const path = isAbsoluteUrl ? new URL(str).pathname : str
+
+  if (path.indexOf('/images') === 0 || path.indexOf('/files') === 0) {
     // Full URL
     return idFromUrl(str)
   }

@@ -16,10 +16,26 @@ test('isSanityAssetUrl(): returns true for image urls', () => {
   ).toBe(true)
 })
 
+test('isSanityAssetUrl(): returns true for image urls (staging)', () => {
+  expect(
+    isSanityAssetUrl(
+      'https://cdn.sanity.staging/images/espenhov/diary/756e4bd9c0a04ada3d3cc396cf81f1c433b07870-5760x3840.jpg'
+    )
+  ).toBe(true)
+})
+
 test('isSanityAssetUrl(): returns true for file urls', () => {
   expect(
     isSanityAssetUrl(
       'https://cdn.sanity.io/files/espenhov/diary/756e4bd9c0a04ada3d3cc396cf81f1c433b07870.pdf'
+    )
+  ).toBe(true)
+})
+
+test('isSanityAssetUrl(): returns true for file urls (staging)', () => {
+  expect(
+    isSanityAssetUrl(
+      'https://cdn.sanity.staging/files/espenhov/diary/756e4bd9c0a04ada3d3cc396cf81f1c433b07870.pdf'
     )
   ).toBe(true)
 })
@@ -37,10 +53,26 @@ test('isSanityFileUrl(): returns false for image urls', () => {
   ).toBe(false)
 })
 
+test('isSanityFileUrl(): returns false for image urls (staging)', () => {
+  expect(
+    isSanityFileUrl(
+      'https://cdn.sanity.staging/images/espenhov/diary/756e4bd9c0a04ada3d3cc396cf81f1c433b07870-5760x3840.jpg'
+    )
+  ).toBe(false)
+})
+
 test('isSanityFileUrl(): returns true for file urls', () => {
   expect(
     isSanityFileUrl(
       'https://cdn.sanity.io/files/espenhov/diary/756e4bd9c0a04ada3d3cc396cf81f1c433b07870.pdf'
+    )
+  ).toBe(true)
+})
+
+test('isSanityFileUrl(): returns true for file urls (staging)', () => {
+  expect(
+    isSanityFileUrl(
+      'https://cdn.sanity.staging/files/espenhov/diary/756e4bd9c0a04ada3d3cc396cf81f1c433b07870.pdf'
     )
   ).toBe(true)
 })
@@ -58,10 +90,26 @@ test('isSanityImageUrl(): returns true for image urls', () => {
   ).toBe(true)
 })
 
+test('isSanityImageUrl(): returns true for image urls (staging)', () => {
+  expect(
+    isSanityImageUrl(
+      'https://cdn.sanity.staging/images/espenhov/diary/756e4bd9c0a04ada3d3cc396cf81f1c433b07870-5760x3840.jpg'
+    )
+  ).toBe(true)
+})
+
 test('isSanityImageUrl(): returns false for file urls', () => {
   expect(
     isSanityImageUrl(
       'https://cdn.sanity.io/files/espenhov/diary/756e4bd9c0a04ada3d3cc396cf81f1c433b07870.pdf'
+    )
+  ).toBe(false)
+})
+
+test('isSanityImageUrl(): returns false for file urls (staging)', () => {
+  expect(
+    isSanityImageUrl(
+      'https://cdn.sanity.staging/files/espenhov/diary/756e4bd9c0a04ada3d3cc396cf81f1c433b07870.pdf'
     )
   ).toBe(false)
 })

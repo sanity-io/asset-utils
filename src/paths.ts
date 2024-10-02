@@ -6,7 +6,13 @@ import type {
   SanityFileUrlParts,
   SanityImageUrlParts,
 } from './types'
-import {pathPattern, fileAssetFilenamePattern, imageAssetFilenamePattern, cdnUrl} from './constants'
+import {
+  cdnUrl,
+  cdnUrlPattern,
+  fileAssetFilenamePattern,
+  imageAssetFilenamePattern,
+  pathPattern,
+} from './constants'
 import {isAssetObjectStub, isAssetPathStub, isAssetUrlStub, isReference} from './asserters'
 import {getForgivingResolver, UnresolvableError} from './utils'
 
@@ -141,13 +147,11 @@ export function getUrlPath(url: string): string {
     return url
   }
 
-  if (!url.startsWith(`${cdnUrl}/`)) {
+  if (!cdnUrlPattern.test(url)) {
     throw new UnresolvableError(`Failed to resolve path from URL "${url}"`)
   }
 
-  const qsPos = url.indexOf('?')
-  const toIndex = qsPos === -1 ? undefined : qsPos
-  return url.slice(cdnUrl.length + 1, toIndex)
+  return new URL(url).pathname.replace(/^\/+/, '')
 }
 
 /**

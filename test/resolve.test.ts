@@ -24,19 +24,25 @@ const imgPath = 'images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png
 const imgUrl = `https://cdn.sanity.io/${imgPath}`
 const imgPathPretty = `${imgPath}/pretty.png`
 const imgUrlPretty = `${imgUrl}/pretty.png`
+const stagingImgUrl = `https://cdn.sanity.staging/${imgPath}`
+const stagingImgUrlPretty = `${stagingImgUrl}/pretty.png`
 const validImgSources: [string, SanityImageSource][] = [
   ['asset id', imgId],
   ['reference', {_ref: imgId}],
   ['path stub', {path: imgPath}],
   ['url stub', {url: imgUrl}],
+  ['staging url stub', {url: imgUrl}],
   ['object reference stub', {asset: {_ref: imgId}}],
   ['object id stub', {asset: {_id: imgId}}],
   ['object path stub', {asset: {path: imgPath}}],
   ['object url stub', {asset: {url: imgUrl}}],
+  ['staging object url stub', {asset: {url: stagingImgUrl}}],
   ['path stub (pretty filename)', {path: imgPathPretty}],
   ['url stub (pretty filename)', {url: imgUrlPretty}],
+  ['staging url stub (pretty filename)', {url: stagingImgUrlPretty}],
   ['object path stub (pretty filename)', {asset: {path: imgPathPretty}}],
   ['object url stub (pretty filename)', {asset: {url: imgUrlPretty}}],
+  ['staging object url stub (pretty filename)', {asset: {url: stagingImgUrlPretty}}],
 ]
 
 const imgLegacyId = 'image-LA5zSofUOP0i_iQwi4B2dEbzHQseitcuORm4n-600x578-png'
@@ -44,19 +50,25 @@ const imgLegacyPath = 'images/a/b/LA5zSofUOP0i_iQwi4B2dEbzHQseitcuORm4n-600x578.
 const imgLegacyUrl = `https://cdn.sanity.io/${imgLegacyPath}`
 const imgLegacyPathPretty = `${imgLegacyPath}/pretty.png`
 const imgLegacyUrlPretty = `${imgLegacyUrl}/pretty.png`
+const stagingImgLegacyUrl = `https://cdn.sanity.io/${imgLegacyPath}`
+const stagingImgLegacyUrlPretty = `${stagingImgLegacyUrl}/pretty.png`
 const validLegacyImgSources: [string, SanityImageSource][] = [
   ['asset id', imgLegacyId],
   ['reference', {_ref: imgLegacyId}],
   ['path stub', {path: imgLegacyPath}],
   ['url stub', {url: imgLegacyUrl}],
+  ['staging url stub', {url: stagingImgLegacyUrl}],
   ['object reference stub', {asset: {_ref: imgLegacyId}}],
   ['object id stub', {asset: {_id: imgLegacyId}}],
   ['object path stub', {asset: {path: imgLegacyPath}}],
   ['object url stub', {asset: {url: imgLegacyUrl}}],
+  ['staging object url stub', {asset: {url: stagingImgLegacyUrl}}],
   ['path stub (pretty filename)', {path: imgLegacyPathPretty}],
   ['url stub (pretty filename)', {url: imgLegacyUrlPretty}],
+  ['staging url stub (pretty filename)', {url: stagingImgLegacyUrlPretty}],
   ['object path stub (pretty filename)', {asset: {path: imgLegacyPathPretty}}],
   ['object url stub (pretty filename)', {asset: {url: imgLegacyUrlPretty}}],
+  ['staging object url stub (pretty filename)', {asset: {url: stagingImgLegacyUrlPretty}}],
 ]
 
 const fileId = 'file-def987abc12345678909877654321abcdef98765-pdf'
@@ -64,19 +76,25 @@ const filePath = 'files/a/b/def987abc12345678909877654321abcdef98765.pdf'
 const fileUrl = `https://cdn.sanity.io/${filePath}`
 const filePathPretty = `${filePath}/pretty.pdf`
 const fileUrlPretty = `${fileUrl}/pretty.pdf`
+const stagingFileUrl = `https://cdn.sanity.staging/${filePath}`
+const stagingFileUrlPretty = `${stagingFileUrl}/pretty.pdf`
 const validFileSources: [string, SanityFileSource][] = [
   ['asset id', fileId],
   ['reference', {_ref: fileId}],
   ['path stub', {path: filePath}],
   ['url stub', {url: fileUrl}],
+  ['staging url stub', {url: stagingFileUrl}],
   ['object reference stub', {asset: {_ref: fileId}}],
   ['object id stub', {asset: {_id: fileId}}],
   ['object path stub', {asset: {path: filePath}}],
   ['object url stub', {asset: {url: fileUrl}}],
+  ['staging object url stub', {asset: {url: stagingFileUrl}}],
   ['path stub (pretty filename)', {path: filePathPretty}],
   ['url stub (pretty filename)', {url: fileUrlPretty}],
+  ['staging url stub (pretty filename)', {url: stagingFileUrlPretty}],
   ['object path stub (pretty filename)', {asset: {path: filePathPretty}}],
   ['object url stub (pretty filename)', {asset: {url: fileUrlPretty}}],
+  ['staging object url stub (pretty filename)', {asset: {url: stagingFileUrlPretty}}],
 ]
 
 // buildImagePath()
@@ -314,10 +332,24 @@ test('getIdFromString(): from URL', () => {
   expect(getIdFromString(url)).toBe(id)
 })
 
+test('getIdFromString(): from URL (staging)', () => {
+  const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  expect(getIdFromString(url)).toBe(id)
+})
+
 test('getIdFromString(): from URL with pretty filename', () => {
   const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
   const url =
     'https://cdn.sanity.io/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/pretty.png'
+  expect(getIdFromString(url)).toBe(id)
+})
+
+test('getIdFromString(): from URL with pretty filename (staging)', () => {
+  const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/pretty.png'
   expect(getIdFromString(url)).toBe(id)
 })
 
@@ -328,10 +360,24 @@ test('getIdFromString(): from URL with query', () => {
   expect(getIdFromString(url)).toBe(id)
 })
 
+test('getIdFromString(): from URL with query (staging)', () => {
+  const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
+  expect(getIdFromString(url)).toBe(id)
+})
+
 test('getIdFromString(): from URL with query + pretty filename', () => {
   const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
   const url =
     'https://cdn.sanity.io/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/pretty.png?w=120&h=120'
+  expect(getIdFromString(url)).toBe(id)
+})
+
+test('getIdFromString(): from URL with query + pretty filename (staging)', () => {
+  const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/pretty.png?w=120&h=120'
   expect(getIdFromString(url)).toBe(id)
 })
 
@@ -374,10 +420,24 @@ test('getAssetDocumentId(): from URL', () => {
   expect(getAssetDocumentId(url)).toBe(id)
 })
 
+test('getAssetDocumentId(): from URL (staging)', () => {
+  const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  expect(getAssetDocumentId(url)).toBe(id)
+})
+
 test('getAssetDocumentId(): from URL with pretty filename', () => {
   const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
   const url =
     'https://cdn.sanity.io/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/pretty.png'
+  expect(getAssetDocumentId(url)).toBe(id)
+})
+
+test('getAssetDocumentId(): from URL with pretty filename (staging)', () => {
+  const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/pretty.png'
   expect(getAssetDocumentId(url)).toBe(id)
 })
 
@@ -388,10 +448,24 @@ test('getAssetDocumentId(): from URL with query', () => {
   expect(getAssetDocumentId(url)).toBe(id)
 })
 
+test('getAssetDocumentId(): from URL with query (staging)', () => {
+  const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
+  expect(getAssetDocumentId(url)).toBe(id)
+})
+
 test('getAssetDocumentId(): from URL with query and pretty filename', () => {
   const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
   const url =
     'https://cdn.sanity.io/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/pretty.png?w=120&h=120'
+  expect(getAssetDocumentId(url)).toBe(id)
+})
+
+test('getAssetDocumentId(): from URL with query and pretty filename (staging)', () => {
+  const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/pretty.png?w=120&h=120'
   expect(getAssetDocumentId(url)).toBe(id)
 })
 
@@ -436,10 +510,24 @@ test('getAssetDocumentId(): from asset stub (url)', () => {
   expect(getAssetDocumentId({url})).toBe(id)
 })
 
+test('getAssetDocumentId(): from asset stub (url, stagin)', () => {
+  const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  expect(getAssetDocumentId({url})).toBe(id)
+})
+
 test('getAssetDocumentId(): from asset stub (url with query)', () => {
   const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
   const url =
     'https://cdn.sanity.io/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
+  expect(getAssetDocumentId({url})).toBe(id)
+})
+
+test('getAssetDocumentId(): from asset stub (url with query, staging)', () => {
+  const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
   expect(getAssetDocumentId({url})).toBe(id)
 })
 
@@ -450,10 +538,24 @@ test('getAssetDocumentId(): from asset stub (url + pretty filename)', () => {
   expect(getAssetDocumentId({url})).toBe(id)
 })
 
+test('getAssetDocumentId(): from asset stub (url + pretty filename, staging)', () => {
+  const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png'
+  expect(getAssetDocumentId({url})).toBe(id)
+})
+
 test('getAssetDocumentId(): from asset stub (url with query + pretty filename)', () => {
   const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
   const url =
     'https://cdn.sanity.io/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png?w=120&h=120'
+  expect(getAssetDocumentId({url})).toBe(id)
+})
+
+test('getAssetDocumentId(): from asset stub (url with query + pretty filename, staging)', () => {
+  const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png?w=120&h=120'
   expect(getAssetDocumentId({url})).toBe(id)
 })
 
@@ -480,6 +582,13 @@ test('getAssetDocumentId(): from deep asset stub (url)', () => {
   expect(getAssetDocumentId({asset: {url}})).toBe(id)
 })
 
+test('getAssetDocumentId(): from deep asset stub (url, staging)', () => {
+  const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  expect(getAssetDocumentId({asset: {url}})).toBe(id)
+})
+
 test('getAssetDocumentId(): from deep asset stub (url with query)', () => {
   const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
   const url =
@@ -487,10 +596,24 @@ test('getAssetDocumentId(): from deep asset stub (url with query)', () => {
   expect(getAssetDocumentId({asset: {url}})).toBe(id)
 })
 
+test('getAssetDocumentId(): from deep asset stub (url with query, staging)', () => {
+  const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=200'
+  expect(getAssetDocumentId({asset: {url}})).toBe(id)
+})
+
 test('getAssetDocumentId(): from deep asset stub (url with query + prettier filename)', () => {
   const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
   const url =
     'https://cdn.sanity.io/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png?w=200'
+  expect(getAssetDocumentId({asset: {url}})).toBe(id)
+})
+
+test('getAssetDocumentId(): from deep asset stub (url with query + prettier filename, staging)', () => {
+  const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png?w=200'
   expect(getAssetDocumentId({asset: {url}})).toBe(id)
 })
 
@@ -509,6 +632,13 @@ test('tryGetAssetDocumentId(): match', () => {
   expect(tryGetAssetDocumentId({asset: {url}})).toBe(id)
 })
 
+test('tryGetAssetDocumentId(): match, staging', () => {
+  const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=200'
+  expect(tryGetAssetDocumentId({asset: {url}})).toBe(id)
+})
+
 // getImageAsset()
 test('getImageAsset(): from ID', () => {
   const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
@@ -521,9 +651,21 @@ test('getImageAsset(): from URL', () => {
   expect(getImageAsset(url, testProject)).toEqual(expectedAsset)
 })
 
+test('getImageAsset(): from URL (staging)', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  expect(getImageAsset(url, testProject)).toEqual(expectedAsset)
+})
+
 test('getImageAsset(): from URL with query', () => {
   const url =
     'https://cdn.sanity.io/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
+  expect(getImageAsset(url, testProject)).toEqual(expectedAsset)
+})
+
+test('getImageAsset(): from URL with query (staging)', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
   expect(getImageAsset(url, testProject)).toEqual(expectedAsset)
 })
 
@@ -533,9 +675,21 @@ test('getImageAsset(): from URL, inferred project', () => {
   expect(getImageAsset(url)).toEqual(expectedAsset)
 })
 
+test('getImageAsset(): from URL, inferred project (staging)', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  expect(getImageAsset(url)).toEqual(expectedAsset)
+})
+
 test('getImageAsset(): from URL with query, inferred project', () => {
   const url =
     'https://cdn.sanity.io/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
+  expect(getImageAsset(url)).toEqual(expectedAsset)
+})
+
+test('getImageAsset(): from URL with query, inferred project (staging)', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
   expect(getImageAsset(url)).toEqual(expectedAsset)
 })
 
@@ -545,9 +699,21 @@ test('getImageAsset(): from URL with pretty filename', () => {
   expect(getImageAsset(url, testProject)).toEqual(expectedAsset)
 })
 
+test('getImageAsset(): from URL with pretty filename (staging)', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png'
+  expect(getImageAsset(url, testProject)).toEqual(expectedAsset)
+})
+
 test('getImageAsset(): from URL with query + prettier filename', () => {
   const url =
     'https://cdn.sanity.io/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/foo.png?w=120&h=120'
+  expect(getImageAsset(url, testProject)).toEqual(expectedAsset)
+})
+
+test('getImageAsset(): from URL with query + prettier filename (staging)', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/foo.png?w=120&h=120'
   expect(getImageAsset(url, testProject)).toEqual(expectedAsset)
 })
 
@@ -557,9 +723,21 @@ test('getImageAsset(): from URL, inferred project + prettier filename', () => {
   expect(getImageAsset(url)).toEqual(expectedAsset)
 })
 
+test('getImageAsset(): from URL, inferred project + prettier filename (staging)', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png'
+  expect(getImageAsset(url)).toEqual(expectedAsset)
+})
+
 test('getImageAsset(): from URL with query + prettier filename, inferred project', () => {
   const url =
     'https://cdn.sanity.io/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png?w=120&h=120'
+  expect(getImageAsset(url)).toEqual(expectedAsset)
+})
+
+test('getImageAsset(): from URL with query + prettier filename, inferred project (staging)', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png?w=120&h=120'
   expect(getImageAsset(url)).toEqual(expectedAsset)
 })
 
@@ -604,9 +782,21 @@ test('getImageAsset(): from asset stub (url)', () => {
   expect(getImageAsset({url}, testProject)).toEqual(expectedAsset)
 })
 
+test('getImageAsset(): from asset stub (url, staging)', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  expect(getImageAsset({url}, testProject)).toEqual(expectedAsset)
+})
+
 test('getImageAsset(): from asset stub (url), inferred project', () => {
   const url =
     'https://cdn.sanity.io/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  expect(getImageAsset({url})).toEqual(expectedAsset)
+})
+
+test('getImageAsset(): from asset stub (url), inferred project, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
   expect(getImageAsset({url})).toEqual(expectedAsset)
 })
 
@@ -616,9 +806,21 @@ test('getImageAsset(): from asset stub (url with query)', () => {
   expect(getImageAsset({url}, testProject)).toEqual(expectedAsset)
 })
 
+test('getImageAsset(): from asset stub (url with query), staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
+  expect(getImageAsset({url}, testProject)).toEqual(expectedAsset)
+})
+
 test('getImageAsset(): from asset stub (url with query), inferred project', () => {
   const url =
     'https://cdn.sanity.io/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
+  expect(getImageAsset({url})).toEqual(expectedAsset)
+})
+
+test('getImageAsset(): from asset stub (url with query), inferred project, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
   expect(getImageAsset({url})).toEqual(expectedAsset)
 })
 
@@ -653,9 +855,21 @@ test('getImageAsset(): from deep asset stub (url)', () => {
   expect(getImageAsset({asset: {url}}, testProject)).toEqual(expectedAsset)
 })
 
+test('getImageAsset(): from deep asset stub (url, staging)', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  expect(getImageAsset({asset: {url}}, testProject)).toEqual(expectedAsset)
+})
+
 test('getImageAsset(): from deep asset stub (url), inferred project', () => {
   const url =
     'https://cdn.sanity.io/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  expect(getImageAsset({asset: {url}})).toEqual(expectedAsset)
+})
+
+test('getImageAsset(): from deep asset stub (url), inferred project (staging)', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
   expect(getImageAsset({asset: {url}})).toEqual(expectedAsset)
 })
 
@@ -665,9 +879,21 @@ test('getImageAsset(): from deep asset stub (url with query)', () => {
   expect(getImageAsset({asset: {url}}, testProject)).toEqual(expectedAsset)
 })
 
+test('getImageAsset(): from deep asset stub (url with query, staging)', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=200'
+  expect(getImageAsset({asset: {url}}, testProject)).toEqual(expectedAsset)
+})
+
 test('getImageAsset(): from deep asset stub (url with query), inferred project', () => {
   const url =
     'https://cdn.sanity.io/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=200'
+  expect(getImageAsset({asset: {url}})).toEqual(expectedAsset)
+})
+
+test('getImageAsset(): from deep asset stub (url with query), inferred project, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=200'
   expect(getImageAsset({asset: {url}})).toEqual(expectedAsset)
 })
 
@@ -685,9 +911,21 @@ test('tryGetImageAsset(): match', () => {
   expect(tryGetImageAsset({asset: {url}})).toEqual(expectedAsset)
 })
 
+test('tryGetImageAsset(): match, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=200'
+  expect(tryGetImageAsset({asset: {url}})).toEqual(expectedAsset)
+})
+
 test('tryGetImageAsset(): match (pretty filename)', () => {
   const url =
     'https://cdn.sanity.io/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png?w=200'
+  expect(tryGetImageAsset({asset: {url}})).toEqual(expectedAsset)
+})
+
+test('tryGetImageAsset(): match (pretty filename), staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png?w=200'
   expect(tryGetImageAsset({asset: {url}})).toEqual(expectedAsset)
 })
 
@@ -718,9 +956,21 @@ test('getImage(): from URL', () => {
   expect(getImage(url, testProject)).toEqual(expectedImage)
 })
 
+test('getImage(): from URL, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  expect(getImage(url, testProject)).toEqual(expectedImage)
+})
+
 test('getImage(): from URL with prettier filename', () => {
   const url =
     'https://cdn.sanity.io/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png'
+  expect(getImage(url, testProject)).toEqual(expectedImage)
+})
+
+test('getImage(): from URL with prettier filename, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png'
   expect(getImage(url, testProject)).toEqual(expectedImage)
 })
 
@@ -730,9 +980,21 @@ test('getImage(): from URL with query', () => {
   expect(getImage(url, testProject)).toEqual(expectedImage)
 })
 
+test('getImage(): from URL with query, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
+  expect(getImage(url, testProject)).toEqual(expectedImage)
+})
+
 test('getImage(): from URL with query + prettier filename', () => {
   const url =
     'https://cdn.sanity.io/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png?w=120&h=120'
+  expect(getImage(url, testProject)).toEqual(expectedImage)
+})
+
+test('getImage(): from URL with query + prettier filename, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png?w=120&h=120'
   expect(getImage(url, testProject)).toEqual(expectedImage)
 })
 
@@ -742,15 +1004,33 @@ test('getImage(): from URL, inferred project', () => {
   expect(getImage(url)).toEqual(expectedImage)
 })
 
+test('getImage(): from URL, inferred project, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  expect(getImage(url)).toEqual(expectedImage)
+})
+
 test('getImage(): from URL + prettier filename, inferred project', () => {
   const url =
     'https://cdn.sanity.io/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png'
   expect(getImage(url)).toEqual(expectedImage)
 })
 
+test('getImage(): from URL + prettier filename, inferred project, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png'
+  expect(getImage(url)).toEqual(expectedImage)
+})
+
 test('getImage(): from URL with query, inferred project', () => {
   const url =
     'https://cdn.sanity.io/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
+  expect(getImage(url)).toEqual(expectedImage)
+})
+
+test('getImage(): from URL with query, inferred project, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
   expect(getImage(url)).toEqual(expectedImage)
 })
 
@@ -795,9 +1075,21 @@ test('getImage(): from asset stub (url)', () => {
   expect(getImage({url}, testProject)).toEqual(expectedImage)
 })
 
+test('getImage(): from asset stub (url, staging)', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  expect(getImage({url}, testProject)).toEqual(expectedImage)
+})
+
 test('getImage(): from asset stub (url), inferred project', () => {
   const url =
     'https://cdn.sanity.io/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  expect(getImage({url})).toEqual(expectedImage)
+})
+
+test('getImage(): from asset stub (url,), inferred project, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
   expect(getImage({url})).toEqual(expectedImage)
 })
 
@@ -807,9 +1099,21 @@ test('getImage(): from asset stub (url with query)', () => {
   expect(getImage({url}, testProject)).toEqual(expectedImage)
 })
 
+test('getImage(): from asset stub (url with query), staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
+  expect(getImage({url}, testProject)).toEqual(expectedImage)
+})
+
 test('getImage(): from asset stub (url with query), inferred project', () => {
   const url =
     'https://cdn.sanity.io/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
+  expect(getImage({url})).toEqual(expectedImage)
+})
+
+test('getImage(): from asset stub (url with query), inferred project, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
   expect(getImage({url})).toEqual(expectedImage)
 })
 
@@ -872,9 +1176,25 @@ test('getImage(): from deep asset stub (url)', () => {
   expect(getImage({asset: {url}}, testProject)).toEqual(expectedImage)
 })
 
+test('getImage(): from deep asset stub (url), staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  expect(getImage({asset: {url}}, testProject)).toEqual(expectedImage)
+})
+
 test('getImage(): from deep asset stub (url), custom crop/hotspot', () => {
   const url =
     'https://cdn.sanity.io/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  const custom = {crop: customCrop, hotspot: customHotspot}
+  expect(getImage({asset: {url}, ...custom}, testProject)).toEqual({
+    ...expectedImage,
+    ...custom,
+  })
+})
+
+test('getImage(): from deep asset stub (url), custom crop/hotspot, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
   const custom = {crop: customCrop, hotspot: customHotspot}
   expect(getImage({asset: {url}, ...custom}, testProject)).toEqual({
     ...expectedImage,
@@ -888,6 +1208,12 @@ test('getImage(): from deep asset stub (url), inferred project', () => {
   expect(getImage({asset: {url}})).toEqual(expectedImage)
 })
 
+test('getImage(): from deep asset stub (url), inferred project, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  expect(getImage({asset: {url}})).toEqual(expectedImage)
+})
+
 test('getImage(): from deep asset stub (url), inferred project, custom crop/hotspot', () => {
   const url =
     'https://cdn.sanity.io/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
@@ -895,9 +1221,22 @@ test('getImage(): from deep asset stub (url), inferred project, custom crop/hots
   expect(getImage({asset: {url}, ...custom})).toEqual({...expectedImage, ...custom})
 })
 
+test('getImage(): from deep asset stub (url), inferred project, custom crop/hotspot, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  const custom = {crop: customCrop, hotspot: customHotspot}
+  expect(getImage({asset: {url}, ...custom})).toEqual({...expectedImage, ...custom})
+})
+
 test('getImage(): from deep asset stub (url with query)', () => {
   const url =
     'https://cdn.sanity.io/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=200'
+  expect(getImage({asset: {url}}, testProject)).toEqual(expectedImage)
+})
+
+test('getImage(): from deep asset stub (url with query), staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=200'
   expect(getImage({asset: {url}}, testProject)).toEqual(expectedImage)
 })
 
@@ -911,15 +1250,38 @@ test('getImage(): from deep asset stub (url with query), custom crop/hotspot', (
   })
 })
 
+test('getImage(): from deep asset stub (url with query), custom crop/hotspot, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=200'
+  const custom = {crop: customCrop, hotspot: customHotspot}
+  expect(getImage({asset: {url}, ...custom}, testProject)).toEqual({
+    ...expectedImage,
+    ...custom,
+  })
+})
+
 test('getImage(): from deep asset stub (url with query), inferred project', () => {
   const url =
     'https://cdn.sanity.io/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=200'
   expect(getImage({asset: {url}})).toEqual(expectedImage)
 })
 
+test('getImage(): from deep asset stub (url with query), inferred project, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=200'
+  expect(getImage({asset: {url}})).toEqual(expectedImage)
+})
+
 test('getImage(): from deep asset stub (url with query), inferred project, custom crop/hotspot', () => {
   const url =
     'https://cdn.sanity.io/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=200'
+  const custom = {crop: customCrop, hotspot: customHotspot}
+  expect(getImage({asset: {url}, ...custom})).toEqual({...expectedImage, ...custom})
+})
+
+test('getImage(): from deep asset stub (url with query), inferred project, custom crop/hotspot, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=200'
   const custom = {crop: customCrop, hotspot: customHotspot}
   expect(getImage({asset: {url}, ...custom})).toEqual({...expectedImage, ...custom})
 })
@@ -935,6 +1297,12 @@ test('tryGetImage(): no match', () => {
 test('tryGetImage(): match', () => {
   const url =
     'https://cdn.sanity.io/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=200'
+  expect(tryGetImage(url)).toEqual(expectedImage)
+})
+
+test('tryGetImage(): match, staging', () => {
+  const url =
+    'https://cdn.sanity.staging/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=200'
   expect(tryGetImage(url)).toEqual(expectedImage)
 })
 
