@@ -122,9 +122,7 @@ function createMarkdownToc() {
   return outdent`
     ### Functions
 
-    ${functions
-      .map((child) => `- [${child.name}](${mdFilename}#${slugify(child.name)})`)
-      .join('\n')}
+    ${functions.map((child) => `- [${child.name}](#${slugify(child.name)})`).join('\n')}
   `
 }
 
