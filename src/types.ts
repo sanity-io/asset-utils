@@ -54,8 +54,14 @@ export interface ImageUrlBuilderOptions extends Partial<SanityProjectDetails> {
     }
   }
 
-  // Serves of aliases of eachother, prefers `vanityFilename` if both are set
+  /**
+   * Alias of `vanityFilename` - prefers `vanityFilename` if both are set
+   */
   originalFilename?: string
+
+  /**
+   * Alias of `originalFilename` - prefers `vanityFilename` if both are set
+   */
   vanityFilename?: string
 }
 
@@ -82,8 +88,14 @@ export interface FileUrlBuilderOptions extends Partial<SanityProjectDetails> {
   assetId: string
   extension: string
 
-  // Serves of aliases of eachother, prefers `vanityFilename` if both are set
+  /**
+   * Alias of `vanityFilename` - prefers `vanityFilename` if both are set
+   */
   originalFilename?: string
+
+  /**
+   * Alias of `originalFilename` - prefers `vanityFilename` if both are set
+   */
   vanityFilename?: string
 }
 

@@ -23,7 +23,7 @@ export class UnresolvableError extends Error {
  * Checks whether or not an error instance is of type UnresolvableError
  *
  * @param err - Error to check for unresolvable error type
- * @returns True if the passed error instance appears to be an unresolveable error
+ * @returns True if the passed error instance appears to be an unresolvable error
  * @public
  */
 export function isUnresolvableError(err: unknown): err is UnresolvableError {
