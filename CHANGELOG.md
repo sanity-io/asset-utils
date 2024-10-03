@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.3](https://github.com/sanity-io/asset-utils/compare/v2.0.2...v2.0.3) (2024-10-03)
+
+
+### Bug Fixes
+
+* remove unnecessary prepublish step ([fe1e393](https://github.com/sanity-io/asset-utils/commit/fe1e3936b37c5fd3fe91d9ad50807c98f7fca58b))
+
 ## [2.0.2](https://github.com/sanity-io/asset-utils/compare/v2.0.1...v2.0.2) (2024-10-03)
 
 
