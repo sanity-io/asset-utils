@@ -26,7 +26,7 @@
   },
   "scripts": {
     "build": "npm run clean && npm run pkg:build && npm run pkg:check",
-    "clean": "rimraf dist",
+    "clean": "rimraf dist docs",
     "pkg:build": "pkg build --strict",
     "pkg:check": "pkg check --strict",
     "prepublishOnly": "pnpm build",
