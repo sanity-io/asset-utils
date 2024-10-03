@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.4](https://github.com/sanity-io/asset-utils/compare/v2.0.3...v2.0.4) (2024-10-03)
+
+
+### Bug Fixes
+
+* include latest, generated readme in published module ([ddd3dfe](https://github.com/sanity-io/asset-utils/commit/ddd3dfef1912e1f0201fbe0092f4ea17e0fc7fd0))
+
 ## [2.0.3](https://github.com/sanity-io/asset-utils/compare/v2.0.2...v2.0.3) (2024-10-03)
 
 
