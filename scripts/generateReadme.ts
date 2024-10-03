@@ -367,5 +367,15 @@ function modifyHtmlDocs() {
     })
   })
 
+  // Replace [!IMPORTANT] and [!NOTE] blocks from GitHub flavored markdown
+  $('blockquote').each(function () {
+    const html = $(this).html() || ''
+    if (!html.includes('[!IMPORTANT]') && !html.includes('[!NOTE]')) {
+      return
+    }
+
+    $(this).html(html.replace(/\[!(IMPORTANT|NOTE)\]/g, '<strong>$1:</strong>'))
+  })
+
   fs.writeFileSync(htmlPath, $.html())
 }
