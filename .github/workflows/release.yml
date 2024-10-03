@@ -29,7 +29,7 @@ jobs:
           app-id: ${{ secrets.ECOSPARK_APP_ID }}
           private-key: ${{ secrets.ECOSPARK_APP_PRIVATE_KEY }}
       # This action will create a release PR when regular conventional commits are pushed to main, it'll also detect if a release PR is merged and npm publish should happen
-      - uses: google-github-actions/release-please-action@v4
+      - uses: googleapis/release-please-action@v4
         id: release
         with:
           release-type: node
@@ -60,7 +60,7 @@ jobs:
           NPM_CONFIG_PROVENANCE: true
       - name: Update readme documentation
         if: ${{ steps.release.outputs.release_created || github.event.inputs.publish == 'true' }}
-        run: tsx scripts/generateReadme.ts --commit && git push
+        run: tsx scripts/generateReadme.ts --commit --tag ${{steps.release.outputs.tag_name}} && git push
       - name: Update GitHub pages documentation
         uses: peaceiris/actions-gh-pages@373f7f263a76c20808c831209c920827a82a2847 # v3
         if: ${{ github.ref == 'refs/heads/main' && (steps.release.outputs.release_created || github.event.inputs.publish == 'true') }}
