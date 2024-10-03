@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.2](https://github.com/sanity-io/asset-utils/compare/v2.0.1...v2.0.2) (2024-10-03)
+
+
+### Bug Fixes
+
+* clarify that the module is synchronous, no async calls for information ([a8894c4](https://github.com/sanity-io/asset-utils/commit/a8894c42b95d48ce4dd2df765d0618a61d95689b))
+* prevent readme template from being published ([49c6feb](https://github.com/sanity-io/asset-utils/commit/49c6feb8fe8481236f2562038f5e9aee83df2990))
+
 ## [2.0.1](https://github.com/sanity-io/asset-utils/compare/v2.0.0...v2.0.1) (2024-10-03)
 
 
