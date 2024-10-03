@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.0.1](https://github.com/sanity-io/asset-utils/compare/v2.0.0...v2.0.1) (2024-10-03)
+
+
+### Bug Fixes
+
+* **docs:** correct links to html documentation ([a872adf](https://github.com/sanity-io/asset-utils/commit/a872adfb493e81c1be351f6888f39e9a2620452e))
+* **docs:** correct links to readme sections ([b946af2](https://github.com/sanity-io/asset-utils/commit/b946af2f009da613932d755bb3c3e4e08851ec75))
+* **docs:** sort members by kind - functions first ([a12ce9e](https://github.com/sanity-io/asset-utils/commit/a12ce9ef34644f9289cde0a4c33e5db9411852fc))
+
 ## [2.0.0](https://github.com/sanity-io/asset-utils/compare/v1.3.2...v2.0.0) (2024-10-03)
 
 
