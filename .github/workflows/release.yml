@@ -61,7 +61,10 @@ jobs:
           NPM_CONFIG_PROVENANCE: true
       - name: Update readme documentation
         if: ${{ steps.release.outputs.release_created || github.event.inputs.publish == 'true' }}
-        run: npx tsx scripts/generateReadme.ts --commit --tag ${{steps.release.outputs.tag_name}} && git push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          npx tsx scripts/generateReadme.ts --commit --tag ${{steps.release.outputs.tag_name}} && git push
       - name: Update GitHub pages documentation
         uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e # v4
         if: ${{ github.ref == 'refs/heads/main' && (steps.release.outputs.release_created || github.event.inputs.publish == 'true') }}
