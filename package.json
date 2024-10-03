@@ -29,7 +29,6 @@
     "clean": "rimraf dist docs",
     "pkg:build": "pkg build --strict",
     "pkg:check": "pkg check --strict",
-    "prepublishOnly": "pnpm build",
     "docs": "tsx scripts/generateReadme.ts",
     "test": "vitest"
   },
