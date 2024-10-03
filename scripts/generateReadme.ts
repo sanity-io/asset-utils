@@ -342,7 +342,12 @@ function commit() {
     stdio: 'inherit',
   })
 
-  childProcess.spawnSync('git', ['commit', '-m', 'docs(readme): generate new readme from source'], {
+  let message = 'docs: generate new readme from source'
+  if (flags.tag && /^v\d+\.\d+\.\d+\$/.test(flags.tag)) {
+    message = `docs: generate new readme for ${flags.tag}`
+  }
+
+  childProcess.spawnSync('git', ['commit', '-m', message], {
     cwd: basePath,
     stdio: 'inherit',
   })
