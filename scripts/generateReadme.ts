@@ -166,6 +166,14 @@ function getUrlForNode(node: JSONOutput.DeclarationReflection) {
     return `${htmlDocsUrl}/interfaces/${node.name}.html`
   }
 
+  if (node.kind === ReflectionKind.TypeAlias) {
+    return `${htmlDocsUrl}/types/${node.name}.html`
+  }
+
+  if (node.kind === ReflectionKind.Variable) {
+    return `${htmlDocsUrl}/variables/${node.name}.html`
+  }
+
   if (node.kind === ReflectionKind.Class) {
     return `${htmlDocsUrl}/classes/${node.name}.html`
   }

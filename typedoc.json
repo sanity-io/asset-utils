@@ -4,5 +4,32 @@
   "json": "./docs/docs.json",
   "out": "./docs",
   "readme": "./README.template.md",
-  "hideGenerator": true
+  "hideGenerator": true,
+  "groupOrder": ["Functions", "*"],
+  "sort": ["kind", "instance-first", "alphabetical"],
+  "kindSortOrder": [
+    "Function",
+    "Variable",
+    "Reference",
+    "Project",
+    "Module",
+    "Namespace",
+    "Enum",
+    "EnumMember",
+    "Class",
+    "Interface",
+    "TypeAlias",
+    "Constructor",
+    "Property",
+    "Accessor",
+    "Method",
+    "Parameter",
+    "TypeParameter",
+    "TypeLiteral",
+    "CallSignature",
+    "ConstructorSignature",
+    "IndexSignature",
+    "GetSignature",
+    "SetSignature"
+  ]
 }
