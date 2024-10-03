@@ -33,8 +33,8 @@ let allNodes: Array<JSONOutput.DeclarationReflection>
 let functions: Array<JSONOutput.DeclarationReflection>
 
 const mdFilename = 'README.md'
-const mdTemplate = fs.readFileSync(path.join(basePath, 'README.template.md'), 'utf8')
-const mdBase = `<!-- This file is AUTO-GENERATED, edit README.template.md or tweak scripts/generateReadme.js -->\n${mdTemplate}`
+const mdTemplate = fs.readFileSync(path.join(basePath, '_README.template.md'), 'utf8')
+const mdBase = `<!-- This file is AUTO-GENERATED, edit _README.template.md or tweak scripts/generateReadme.ts -->\n${mdTemplate}`
 
 generateHtmlDocs()
 modifyHtmlDocs()

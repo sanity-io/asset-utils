@@ -3,7 +3,7 @@
   "theme": "default",
   "json": "./docs/docs.json",
   "out": "./docs",
-  "readme": "./README.template.md",
+  "readme": "./_README.template.md",
   "hideGenerator": true,
   "groupOrder": ["Functions", "*"],
   "sort": ["kind", "instance-first", "alphabetical"],
