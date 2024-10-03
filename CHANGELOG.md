@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.6](https://github.com/sanity-io/asset-utils/compare/v2.0.5...v2.0.6) (2024-10-03)
+
+
+### Bug Fixes
+
+* rename docs script to be more precise ([3920c25](https://github.com/sanity-io/asset-utils/commit/3920c250e922112a04886d2e6afdac202ab796e5))
+
 ## [2.0.5](https://github.com/sanity-io/asset-utils/compare/v2.0.4...v2.0.5) (2024-10-03)
 
 
