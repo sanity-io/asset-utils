@@ -2,23 +2,29 @@
  * Yeah this isn't the prettiest code, but it's just a simple docs generator
  */
 
+import childProcess from 'node:child_process'
+import fs from 'node:fs'
+import path from 'node:path'
+import {parseArgs} from 'node:util'
+
 import * as cheerio from 'cheerio'
-import childProcess from 'child_process'
-import fs from 'fs'
 import outdent from 'outdent'
-import path from 'path'
 import {JSONOutput, ReflectionKind} from 'typedoc'
+
+const {values: flags} = parseArgs({
+  options: {commit: {type: 'boolean', default: false}, tag: {type: 'string'}},
+})
 
 const basePath = path.resolve(import.meta.dirname, '..')
 
 const pkg = JSON.parse(fs.readFileSync(path.resolve(basePath, 'package.json'), 'utf8'))
 const ghUrl = pkg.homepage.replace(/#.*/, '').replace(/\/+$/, '')
 
-const gitHash = childProcess
-  .execSync('git rev-parse --short HEAD', {cwd: basePath, encoding: 'utf8'})
-  .trim()
+const gitTarget =
+  flags.tag ||
+  childProcess.execSync('git rev-parse --short HEAD', {cwd: basePath, encoding: 'utf8'}).trim()
 
-const doCommit = process.argv.includes('--commit')
+const doCommit = flags.commit
 const slugRe = /[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,./:;<=>?@[\]^`{|}~]/g
 const htmlDocsUrl = `https://sanity-io.github.io/asset-utils`
 
@@ -315,7 +321,7 @@ function srcLink(src: JSONOutput.SourceReference) {
 }
 
 function srcUrl(src: JSONOutput.SourceReference) {
-  return `${ghUrl}/blob/${gitHash}/${src.fileName}#L${src.line}`
+  return `${ghUrl}/blob/${gitTarget}/${src.fileName}#L${src.line}`
 }
 
 function prettify() {
