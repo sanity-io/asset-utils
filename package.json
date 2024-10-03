@@ -29,7 +29,7 @@
     "clean": "rimraf dist docs",
     "pkg:build": "pkg build --strict",
     "pkg:check": "pkg check --strict",
-    "docs": "tsx scripts/generateReadme.ts",
+    "docs": "tsx scripts/generateDocs.ts",
     "test": "vitest"
   },
   "browserslist": "extends @sanity/browserslist-config",
