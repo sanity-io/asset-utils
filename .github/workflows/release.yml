@@ -43,7 +43,7 @@ jobs:
         if: ${{ steps.release.outputs.release_created || github.event.inputs.publish == 'true' }}
         with:
           cache: pnpm
-          node-version: lts/*
+          node-version: 20
           registry-url: 'https://registry.npmjs.org'
       - run: corepack enable && pnpm --version && pnpm install
         if: ${{ steps.release.outputs.release_created || github.event.inputs.publish == 'true' }}
