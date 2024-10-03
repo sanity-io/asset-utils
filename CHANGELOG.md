@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.5](https://github.com/sanity-io/asset-utils/compare/v2.0.4...v2.0.5) (2024-10-03)
+
+
+### Bug Fixes
+
+* (ci): use correct token for github pages ([8180702](https://github.com/sanity-io/asset-utils/commit/818070286a045aa8c3f964bafdc064e416c90279))
+* improve commit message for readme generation ([10fcede](https://github.com/sanity-io/asset-utils/commit/10fcede0f71ddc93ad94156aea37c657643b4018))
+
 ## [2.0.4](https://github.com/sanity-io/asset-utils/compare/v2.0.3...v2.0.4) (2024-10-03)
 
 
