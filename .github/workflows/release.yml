@@ -59,4 +59,5 @@ jobs:
         env:
           NPM_CONFIG_PROVENANCE: true
       - name: Update docs
+        if: ${{ steps.release.outputs.release_created || github.event.inputs.publish == 'true' }}
         run: tsx scripts/generateReadme.ts --commit && git push
