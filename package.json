@@ -36,6 +36,7 @@
   "browserslist": "extends @sanity/browserslist-config",
   "devDependencies": {
     "@sanity/pkg-utils": "^6.11.2",
+    "@types/node": "^20.16.10",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",
     "cheerio": "^1.0.0",
