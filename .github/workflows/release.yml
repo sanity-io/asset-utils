@@ -13,7 +13,7 @@ on:
         type: boolean
 
 permissions:
-  contents: read
+  contents: write # to push back readme changes to repo
   id-token: write # to enable use of OIDC for npm provenance
 
 jobs:
@@ -48,6 +48,13 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - run: corepack enable && pnpm --version && pnpm install
         if: ${{ steps.release.outputs.release_created || github.event.inputs.publish == 'true' }}
+      # Update docs with any changes, and do so pre-publish to ensure we include it in the tarball
+      - name: Update readme documentation
+        if: ${{ steps.release.outputs.release_created || github.event.inputs.publish == 'true' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          npx tsx scripts/generateReadme.ts --commit --tag ${{steps.release.outputs.tag_name}} && git push
       - name: Set publishing config
         run: pnpm config set '//registry.npmjs.org/:_authToken' "${NODE_AUTH_TOKEN}"
         if: ${{ steps.release.outputs.release_created || github.event.inputs.publish == 'true' }}
@@ -59,12 +66,6 @@ jobs:
         if: ${{ steps.release.outputs.release_created || github.event.inputs.publish == 'true' }}
         env:
           NPM_CONFIG_PROVENANCE: true
-      - name: Update readme documentation
-        if: ${{ steps.release.outputs.release_created || github.event.inputs.publish == 'true' }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          npx tsx scripts/generateReadme.ts --commit --tag ${{steps.release.outputs.tag_name}} && git push
       - name: Update GitHub pages documentation
         uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e # v4
         if: ${{ github.ref == 'refs/heads/main' && (steps.release.outputs.release_created || github.event.inputs.publish == 'true') }}
