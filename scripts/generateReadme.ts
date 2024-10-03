@@ -160,20 +160,19 @@ function sortUnionTypes(types: JSONOutput.SomeType[]) {
 
 function getUrlForNode(node: JSONOutput.DeclarationReflection) {
   const isFunction = node.kind === ReflectionKind.Function
-  const slug = slugify(node.name)
   if (isFunction) {
-    return `${mdFilename}#${slug}`
+    return `${mdFilename}#${node.name}`
   }
 
   if (node.kind === ReflectionKind.Interface) {
-    return `${htmlDocsUrl}/interfaces/${slug}.html`
+    return `${htmlDocsUrl}/interfaces/${node.name}.html`
   }
 
   if (node.kind === ReflectionKind.Class) {
-    return `${htmlDocsUrl}/classes/${slug}.html`
+    return `${htmlDocsUrl}/classes/${node.name}.html`
   }
 
-  return `${htmlDocsUrl}/index.html#${slug}`
+  return `${htmlDocsUrl}/index.html#${node.name}`
 }
 
 function formatMarkdownRef(thing: JSONOutput.ParameterReflection['type']): string {
