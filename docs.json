@@ -18,7 +18,7 @@
 					"fileName": "src/paths.ts",
 					"line": 71,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L71"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L71"
 				}
 			],
 			"signatures": [
@@ -54,7 +54,7 @@
 							"fileName": "src/paths.ts",
 							"line": 71,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L71"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L71"
 						}
 					],
 					"parameters": [
@@ -77,7 +77,7 @@
 								"types": [
 									{
 										"type": "reference",
-										"target": 283,
+										"target": 289,
 										"name": "SanityFileUrlParts",
 										"package": "@sanity/asset-utils"
 									},
@@ -134,7 +134,7 @@
 					"fileName": "src/paths.ts",
 					"line": 96,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L96"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L96"
 				}
 			],
 			"signatures": [
@@ -170,7 +170,7 @@
 							"fileName": "src/paths.ts",
 							"line": 96,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L96"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L96"
 						}
 					],
 					"parameters": [
@@ -239,7 +239,7 @@
 					"fileName": "src/paths.ts",
 					"line": 28,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L28"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L28"
 				}
 			],
 			"signatures": [
@@ -275,7 +275,7 @@
 							"fileName": "src/paths.ts",
 							"line": 28,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L28"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L28"
 						}
 					],
 					"parameters": [
@@ -298,7 +298,7 @@
 								"types": [
 									{
 										"type": "reference",
-										"target": 353,
+										"target": 359,
 										"name": "SanityImageUrlParts",
 										"package": "@sanity/asset-utils"
 									},
@@ -355,7 +355,7 @@
 					"fileName": "src/paths.ts",
 					"line": 56,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L56"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L56"
 				}
 			],
 			"signatures": [
@@ -391,7 +391,7 @@
 							"fileName": "src/paths.ts",
 							"line": 56,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L56"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L56"
 						}
 					],
 					"parameters": [
@@ -414,7 +414,7 @@
 								"types": [
 									{
 										"type": "reference",
-										"target": 353,
+										"target": 359,
 										"name": "SanityImageUrlParts",
 										"package": "@sanity/asset-utils"
 									},
@@ -471,7 +471,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 264,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L264"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L264"
 				}
 			],
 			"signatures": [
@@ -522,7 +522,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 264,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L264"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L264"
 						}
 					],
 					"parameters": [
@@ -566,7 +566,7 @@
 					"fileName": "src/parse.ts",
 					"line": 183,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/parse.ts#L183"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/parse.ts#L183"
 				}
 			],
 			"signatures": [
@@ -602,7 +602,7 @@
 							"fileName": "src/parse.ts",
 							"line": 183,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/parse.ts#L183"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/parse.ts#L183"
 						}
 					],
 					"parameters": [
@@ -667,7 +667,7 @@
 					"fileName": "src/hotspotCrop.ts",
 					"line": 33,
 					"character": 13,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/hotspotCrop.ts#L33"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/hotspotCrop.ts#L33"
 				}
 			],
 			"signatures": [
@@ -696,12 +696,12 @@
 							"fileName": "src/hotspotCrop.ts",
 							"line": 33,
 							"character": 30,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/hotspotCrop.ts#L33"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/hotspotCrop.ts#L33"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 300,
+						"target": 306,
 						"name": "SanityImageCrop",
 						"package": "@sanity/asset-utils"
 					}
@@ -729,7 +729,7 @@
 					"fileName": "src/hotspotCrop.ts",
 					"line": 41,
 					"character": 13,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/hotspotCrop.ts#L41"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/hotspotCrop.ts#L41"
 				}
 			],
 			"signatures": [
@@ -758,12 +758,12 @@
 							"fileName": "src/hotspotCrop.ts",
 							"line": 41,
 							"character": 33,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/hotspotCrop.ts#L41"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/hotspotCrop.ts#L41"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 313,
+						"target": 319,
 						"name": "SanityImageHotspot",
 						"package": "@sanity/asset-utils"
 					}
@@ -783,7 +783,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 81,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L81"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L81"
 				}
 			],
 			"signatures": [
@@ -842,7 +842,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 81,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L81"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L81"
 						}
 					],
 					"parameters": [
@@ -862,7 +862,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"target": 262,
+								"target": 268,
 								"name": "SanityAssetSource",
 								"package": "@sanity/asset-utils"
 							}
@@ -888,7 +888,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 195,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L195"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L195"
 				}
 			],
 			"signatures": [
@@ -939,7 +939,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 195,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L195"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L195"
 						}
 					],
 					"parameters": [
@@ -959,7 +959,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"target": 282,
+								"target": 288,
 								"name": "SanityFileSource",
 								"package": "@sanity/asset-utils"
 							}
@@ -982,7 +982,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"target": 362,
+								"target": 368,
 								"name": "SanityProjectDetails",
 								"package": "@sanity/asset-utils"
 							}
@@ -1010,7 +1010,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 220,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L220"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L220"
 				}
 			],
 			"signatures": [
@@ -1061,7 +1061,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 220,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L220"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L220"
 						}
 					],
 					"parameters": [
@@ -1081,7 +1081,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"target": 282,
+								"target": 288,
 								"name": "SanityFileSource",
 								"package": "@sanity/asset-utils"
 							}
@@ -1112,7 +1112,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"target": 266,
+						"target": 272,
 						"name": "SanityFileAsset",
 						"package": "@sanity/asset-utils"
 					}
@@ -1132,7 +1132,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 306,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L306"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L306"
 				}
 			],
 			"signatures": [
@@ -1183,7 +1183,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 306,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L306"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L306"
 						}
 					],
 					"parameters": [
@@ -1227,7 +1227,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 106,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L106"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L106"
 				}
 			],
 			"signatures": [
@@ -1278,7 +1278,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 106,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L106"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L106"
 						}
 					],
 					"parameters": [
@@ -1298,7 +1298,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"target": 347,
+								"target": 353,
 								"name": "SanityImageSource",
 								"package": "@sanity/asset-utils"
 							}
@@ -1321,7 +1321,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"target": 362,
+								"target": 368,
 								"name": "SanityProjectDetails",
 								"package": "@sanity/asset-utils"
 							}
@@ -1349,7 +1349,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 140,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L140"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L140"
 				}
 			],
 			"signatures": [
@@ -1400,7 +1400,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 140,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L140"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L140"
 						}
 					],
 					"parameters": [
@@ -1420,7 +1420,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"target": 347,
+								"target": 353,
 								"name": "SanityImageSource",
 								"package": "@sanity/asset-utils"
 							}
@@ -1443,7 +1443,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"target": 362,
+								"target": 368,
 								"name": "SanityProjectDetails",
 								"package": "@sanity/asset-utils"
 							}
@@ -1451,7 +1451,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"target": 290,
+						"target": 296,
 						"name": "SanityImageAsset",
 						"package": "@sanity/asset-utils"
 					}
@@ -1471,7 +1471,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 57,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L57"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L57"
 				}
 			],
 			"signatures": [
@@ -1522,7 +1522,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 57,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L57"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L57"
 						}
 					],
 					"parameters": [
@@ -1542,7 +1542,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"target": 347,
+								"target": 353,
 								"name": "SanityImageSource",
 								"package": "@sanity/asset-utils"
 							}
@@ -1550,7 +1550,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"target": 306,
+						"target": 312,
 						"name": "SanityImageDimensions",
 						"package": "@sanity/asset-utils"
 					}
@@ -1570,7 +1570,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 368,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L368"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L368"
 				}
 			],
 			"signatures": [
@@ -1621,7 +1621,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 368,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L368"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L368"
 						}
 					],
 					"parameters": [
@@ -1641,7 +1641,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"target": 347,
+								"target": 353,
 								"name": "SanityImageSource",
 								"package": "@sanity/asset-utils"
 							}
@@ -1649,7 +1649,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"target": 362,
+						"target": 368,
 						"name": "SanityProjectDetails",
 						"package": "@sanity/asset-utils"
 					}
@@ -1669,7 +1669,7 @@
 					"fileName": "src/paths.ts",
 					"line": 182,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L182"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L182"
 				}
 			],
 			"signatures": [
@@ -1726,7 +1726,7 @@
 							"fileName": "src/paths.ts",
 							"line": 182,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L182"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L182"
 						}
 					],
 					"parameters": [
@@ -1770,7 +1770,7 @@
 					"fileName": "src/paths.ts",
 					"line": 152,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L152"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L152"
 				}
 			],
 			"signatures": [
@@ -1827,7 +1827,7 @@
 							"fileName": "src/paths.ts",
 							"line": 152,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L152"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L152"
 						}
 					],
 					"parameters": [
@@ -1871,7 +1871,7 @@
 					"fileName": "src/paths.ts",
 					"line": 219,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L219"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L219"
 				}
 			],
 			"signatures": [
@@ -1907,7 +1907,7 @@
 							"fileName": "src/paths.ts",
 							"line": 219,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L219"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L219"
 						}
 					],
 					"parameters": [
@@ -2011,7 +2011,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 418,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L418"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L418"
 				}
 			],
 			"signatures": [
@@ -2047,7 +2047,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 418,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L418"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L418"
 						}
 					],
 					"parameters": [
@@ -2091,7 +2091,7 @@
 					"fileName": "src/asserters.ts",
 					"line": 114,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L114"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L114"
 				}
 			],
 			"signatures": [
@@ -2127,7 +2127,7 @@
 							"fileName": "src/asserters.ts",
 							"line": 114,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L114"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L114"
 						}
 					],
 					"parameters": [
@@ -2171,7 +2171,7 @@
 					"fileName": "src/asserters.ts",
 					"line": 33,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L33"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L33"
 				}
 			],
 			"signatures": [
@@ -2215,7 +2215,7 @@
 							"fileName": "src/asserters.ts",
 							"line": 33,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L33"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L33"
 						}
 					],
 					"parameters": [
@@ -2245,7 +2245,7 @@
 						"asserts": false,
 						"targetType": {
 							"type": "reference",
-							"target": 257,
+							"target": 263,
 							"name": "SanityAssetIdStub",
 							"package": "@sanity/asset-utils"
 						}
@@ -2266,7 +2266,7 @@
 					"fileName": "src/asserters.ts",
 					"line": 125,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L125"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L125"
 				}
 			],
 			"signatures": [
@@ -2302,7 +2302,7 @@
 							"fileName": "src/asserters.ts",
 							"line": 125,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L125"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L125"
 						}
 					],
 					"parameters": [
@@ -2332,7 +2332,7 @@
 						"asserts": false,
 						"targetType": {
 							"type": "reference",
-							"target": 259,
+							"target": 265,
 							"name": "SanityAssetObjectStub",
 							"package": "@sanity/asset-utils"
 						}
@@ -2353,7 +2353,7 @@
 					"fileName": "src/asserters.ts",
 					"line": 45,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L45"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L45"
 				}
 			],
 			"signatures": [
@@ -2397,7 +2397,7 @@
 							"fileName": "src/asserters.ts",
 							"line": 45,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L45"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L45"
 						}
 					],
 					"parameters": [
@@ -2427,7 +2427,7 @@
 						"asserts": false,
 						"targetType": {
 							"type": "reference",
-							"target": 260,
+							"target": 266,
 							"name": "SanityAssetPathStub",
 							"package": "@sanity/asset-utils"
 						}
@@ -2448,7 +2448,7 @@
 					"fileName": "src/asserters.ts",
 					"line": 57,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L57"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L57"
 				}
 			],
 			"signatures": [
@@ -2492,7 +2492,7 @@
 							"fileName": "src/asserters.ts",
 							"line": 57,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L57"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L57"
 						}
 					],
 					"parameters": [
@@ -2522,7 +2522,7 @@
 						"asserts": false,
 						"targetType": {
 							"type": "reference",
-							"target": 264,
+							"target": 270,
 							"name": "SanityAssetUrlStub",
 							"package": "@sanity/asset-utils"
 						}
@@ -2551,7 +2551,7 @@
 					"fileName": "src/hotspotCrop.ts",
 					"line": 50,
 					"character": 13,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/hotspotCrop.ts#L50"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/hotspotCrop.ts#L50"
 				}
 			],
 			"signatures": [
@@ -2580,7 +2580,7 @@
 							"fileName": "src/hotspotCrop.ts",
 							"line": 50,
 							"character": 29,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/hotspotCrop.ts#L50"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/hotspotCrop.ts#L50"
 						}
 					],
 					"parameters": [
@@ -2600,7 +2600,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"target": 300,
+								"target": 306,
 								"name": "SanityImageCrop",
 								"package": "@sanity/asset-utils"
 							}
@@ -2634,7 +2634,7 @@
 					"fileName": "src/hotspotCrop.ts",
 					"line": 71,
 					"character": 13,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/hotspotCrop.ts#L71"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/hotspotCrop.ts#L71"
 				}
 			],
 			"signatures": [
@@ -2663,7 +2663,7 @@
 							"fileName": "src/hotspotCrop.ts",
 							"line": 71,
 							"character": 32,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/hotspotCrop.ts#L71"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/hotspotCrop.ts#L71"
 						}
 					],
 					"parameters": [
@@ -2683,7 +2683,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"target": 313,
+								"target": 319,
 								"name": "SanityImageHotspot",
 								"package": "@sanity/asset-utils"
 							}
@@ -2709,7 +2709,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 407,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L407"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L407"
 				}
 			],
 			"signatures": [
@@ -2745,7 +2745,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 407,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L407"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L407"
 						}
 					],
 					"parameters": [
@@ -2789,7 +2789,7 @@
 					"fileName": "src/asserters.ts",
 					"line": 103,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L103"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L103"
 				}
 			],
 			"signatures": [
@@ -2825,7 +2825,7 @@
 							"fileName": "src/asserters.ts",
 							"line": 103,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L103"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L103"
 						}
 					],
 					"parameters": [
@@ -2869,7 +2869,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 429,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L429"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L429"
 				}
 			],
 			"signatures": [
@@ -2905,7 +2905,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 429,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L429"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L429"
 						}
 					],
 					"parameters": [
@@ -2935,7 +2935,7 @@
 						"asserts": false,
 						"targetType": {
 							"type": "reference",
-							"target": 282,
+							"target": 288,
 							"name": "SanityFileSource",
 							"package": "@sanity/asset-utils"
 						}
@@ -2956,7 +2956,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 396,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L396"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L396"
 				}
 			],
 			"signatures": [
@@ -2992,7 +2992,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 396,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L396"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L396"
 						}
 					],
 					"parameters": [
@@ -3036,7 +3036,7 @@
 					"fileName": "src/asserters.ts",
 					"line": 92,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L92"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L92"
 				}
 			],
 			"signatures": [
@@ -3072,7 +3072,7 @@
 							"fileName": "src/asserters.ts",
 							"line": 92,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L92"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L92"
 						}
 					],
 					"parameters": [
@@ -3116,7 +3116,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 441,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L441"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L441"
 				}
 			],
 			"signatures": [
@@ -3152,7 +3152,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 441,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L441"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L441"
 						}
 					],
 					"parameters": [
@@ -3182,7 +3182,7 @@
 						"asserts": false,
 						"targetType": {
 							"type": "reference",
-							"target": 347,
+							"target": 353,
 							"name": "SanityImageSource",
 							"package": "@sanity/asset-utils"
 						}
@@ -3203,7 +3203,7 @@
 					"fileName": "src/asserters.ts",
 					"line": 21,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L21"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L21"
 				}
 			],
 			"signatures": [
@@ -3239,7 +3239,7 @@
 							"fileName": "src/asserters.ts",
 							"line": 21,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L21"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L21"
 						}
 					],
 					"parameters": [
@@ -3269,7 +3269,7 @@
 						"asserts": false,
 						"targetType": {
 							"type": "reference",
-							"target": 365,
+							"target": 371,
 							"name": "SanityReference",
 							"package": "@sanity/asset-utils"
 						}
@@ -3278,7 +3278,7 @@
 			]
 		},
 		{
-			"id": 369,
+			"id": 375,
 			"name": "isSanityAssetUrl",
 			"variant": "declaration",
 			"kind": 64,
@@ -3290,12 +3290,12 @@
 					"fileName": "src/urls.ts",
 					"line": 10,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/urls.ts#L10"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/urls.ts#L10"
 				}
 			],
 			"signatures": [
 				{
-					"id": 370,
+					"id": 376,
 					"name": "isSanityAssetUrl",
 					"variant": "signature",
 					"kind": 4096,
@@ -3326,12 +3326,12 @@
 							"fileName": "src/urls.ts",
 							"line": 10,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/urls.ts#L10"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/urls.ts#L10"
 						}
 					],
 					"parameters": [
 						{
-							"id": 371,
+							"id": 377,
 							"name": "url",
 							"variant": "param",
 							"kind": 32768,
@@ -3370,7 +3370,7 @@
 					"fileName": "src/asserters.ts",
 					"line": 69,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L69"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L69"
 				}
 			],
 			"signatures": [
@@ -3414,7 +3414,7 @@
 							"fileName": "src/asserters.ts",
 							"line": 69,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L69"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L69"
 						}
 					],
 					"parameters": [
@@ -3444,7 +3444,7 @@
 						"asserts": false,
 						"targetType": {
 							"type": "reference",
-							"target": 266,
+							"target": 272,
 							"name": "SanityFileAsset",
 							"package": "@sanity/asset-utils"
 						}
@@ -3453,7 +3453,7 @@
 			]
 		},
 		{
-			"id": 372,
+			"id": 378,
 			"name": "isSanityFileUrl",
 			"variant": "declaration",
 			"kind": 64,
@@ -3465,12 +3465,12 @@
 					"fileName": "src/urls.ts",
 					"line": 32,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/urls.ts#L32"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/urls.ts#L32"
 				}
 			],
 			"signatures": [
 				{
-					"id": 373,
+					"id": 379,
 					"name": "isSanityFileUrl",
 					"variant": "signature",
 					"kind": 4096,
@@ -3501,12 +3501,12 @@
 							"fileName": "src/urls.ts",
 							"line": 32,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/urls.ts#L32"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/urls.ts#L32"
 						}
 					],
 					"parameters": [
 						{
-							"id": 374,
+							"id": 380,
 							"name": "url",
 							"variant": "param",
 							"kind": 32768,
@@ -3545,7 +3545,7 @@
 					"fileName": "src/asserters.ts",
 					"line": 81,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L81"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L81"
 				}
 			],
 			"signatures": [
@@ -3589,7 +3589,7 @@
 							"fileName": "src/asserters.ts",
 							"line": 81,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/asserters.ts#L81"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/asserters.ts#L81"
 						}
 					],
 					"parameters": [
@@ -3619,7 +3619,7 @@
 						"asserts": false,
 						"targetType": {
 							"type": "reference",
-							"target": 290,
+							"target": 296,
 							"name": "SanityImageAsset",
 							"package": "@sanity/asset-utils"
 						}
@@ -3628,7 +3628,7 @@
 			]
 		},
 		{
-			"id": 375,
+			"id": 381,
 			"name": "isSanityImageUrl",
 			"variant": "declaration",
 			"kind": 64,
@@ -3640,12 +3640,12 @@
 					"fileName": "src/urls.ts",
 					"line": 21,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/urls.ts#L21"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/urls.ts#L21"
 				}
 			],
 			"signatures": [
 				{
-					"id": 376,
+					"id": 382,
 					"name": "isSanityImageUrl",
 					"variant": "signature",
 					"kind": 4096,
@@ -3676,12 +3676,12 @@
 							"fileName": "src/urls.ts",
 							"line": 21,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/urls.ts#L21"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/urls.ts#L21"
 						}
 					],
 					"parameters": [
 						{
-							"id": 377,
+							"id": 383,
 							"name": "url",
 							"variant": "param",
 							"kind": 32768,
@@ -3720,7 +3720,7 @@
 					"fileName": "src/errors.ts",
 					"line": 29,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/errors.ts#L29"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/errors.ts#L29"
 				}
 			],
 			"signatures": [
@@ -3756,7 +3756,7 @@
 							"fileName": "src/errors.ts",
 							"line": 29,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/errors.ts#L29"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/errors.ts#L29"
 						}
 					],
 					"parameters": [
@@ -3807,7 +3807,7 @@
 					"fileName": "src/paths.ts",
 					"line": 206,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L206"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L206"
 				}
 			],
 			"signatures": [
@@ -3843,7 +3843,7 @@
 							"fileName": "src/paths.ts",
 							"line": 206,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L206"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L206"
 						}
 					],
 					"parameters": [
@@ -3887,7 +3887,7 @@
 					"fileName": "src/parse.ts",
 					"line": 94,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/parse.ts#L94"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/parse.ts#L94"
 				}
 			],
 			"signatures": [
@@ -3932,7 +3932,7 @@
 							"fileName": "src/parse.ts",
 							"line": 94,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/parse.ts#L94"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/parse.ts#L94"
 						}
 					],
 					"parameters": [
@@ -3958,7 +3958,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"target": 256,
+						"target": 262,
 						"name": "SanityAssetIdParts",
 						"package": "@sanity/asset-utils"
 					}
@@ -3978,7 +3978,7 @@
 					"fileName": "src/parse.ts",
 					"line": 36,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/parse.ts#L36"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/parse.ts#L36"
 				}
 			],
 			"signatures": [
@@ -4023,7 +4023,7 @@
 							"fileName": "src/parse.ts",
 							"line": 36,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/parse.ts#L36"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/parse.ts#L36"
 						}
 					],
 					"parameters": [
@@ -4049,7 +4049,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"target": 256,
+						"target": 262,
 						"name": "SanityAssetIdParts",
 						"package": "@sanity/asset-utils"
 					}
@@ -4069,7 +4069,7 @@
 					"fileName": "src/parse.ts",
 					"line": 118,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/parse.ts#L118"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/parse.ts#L118"
 				}
 			],
 			"signatures": [
@@ -4114,7 +4114,7 @@
 							"fileName": "src/parse.ts",
 							"line": 118,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/parse.ts#L118"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/parse.ts#L118"
 						}
 					],
 					"parameters": [
@@ -4140,7 +4140,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"target": 263,
+						"target": 269,
 						"name": "SanityAssetUrlParts",
 						"package": "@sanity/asset-utils"
 					}
@@ -4160,7 +4160,7 @@
 					"fileName": "src/parse.ts",
 					"line": 56,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/parse.ts#L56"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/parse.ts#L56"
 				}
 			],
 			"signatures": [
@@ -4205,7 +4205,7 @@
 							"fileName": "src/parse.ts",
 							"line": 56,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/parse.ts#L56"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/parse.ts#L56"
 						}
 					],
 					"parameters": [
@@ -4231,7 +4231,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"target": 273,
+						"target": 279,
 						"name": "SanityFileAssetIdParts",
 						"package": "@sanity/asset-utils"
 					}
@@ -4251,7 +4251,7 @@
 					"fileName": "src/parse.ts",
 					"line": 167,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/parse.ts#L167"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/parse.ts#L167"
 				}
 			],
 			"signatures": [
@@ -4296,7 +4296,7 @@
 							"fileName": "src/parse.ts",
 							"line": 167,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/parse.ts#L167"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/parse.ts#L167"
 						}
 					],
 					"parameters": [
@@ -4322,7 +4322,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"target": 283,
+						"target": 289,
 						"name": "SanityFileUrlParts",
 						"package": "@sanity/asset-utils"
 					}
@@ -4342,7 +4342,7 @@
 					"fileName": "src/parse.ts",
 					"line": 75,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/parse.ts#L75"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/parse.ts#L75"
 				}
 			],
 			"signatures": [
@@ -4387,7 +4387,7 @@
 							"fileName": "src/parse.ts",
 							"line": 75,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/parse.ts#L75"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/parse.ts#L75"
 						}
 					],
 					"parameters": [
@@ -4413,7 +4413,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"target": 294,
+						"target": 300,
 						"name": "SanityImageAssetIdParts",
 						"package": "@sanity/asset-utils"
 					}
@@ -4433,7 +4433,7 @@
 					"fileName": "src/parse.ts",
 					"line": 149,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/parse.ts#L149"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/parse.ts#L149"
 				}
 			],
 			"signatures": [
@@ -4478,7 +4478,7 @@
 							"fileName": "src/parse.ts",
 							"line": 149,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/parse.ts#L149"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/parse.ts#L149"
 						}
 					],
 					"parameters": [
@@ -4504,7 +4504,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"target": 353,
+						"target": 359,
 						"name": "SanityImageUrlParts",
 						"package": "@sanity/asset-utils"
 					}
@@ -4543,7 +4543,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 293,
 					"character": 13,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L293"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L293"
 				}
 			],
 			"signatures": [
@@ -4580,7 +4580,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 293,
 							"character": 13,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L293"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L293"
 						}
 					],
 					"parameters": [
@@ -4637,7 +4637,7 @@
 					"fileName": "src/paths.ts",
 					"line": 118,
 					"character": 16,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L118"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L118"
 				}
 			],
 			"signatures": [
@@ -4673,7 +4673,7 @@
 							"fileName": "src/paths.ts",
 							"line": 118,
 							"character": 16,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L118"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L118"
 						}
 					],
 					"parameters": [
@@ -4693,7 +4693,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"target": 262,
+								"target": 268,
 								"name": "SanityAssetSource",
 								"package": "@sanity/asset-utils"
 							}
@@ -4755,7 +4755,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 92,
 					"character": 13,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L92"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L92"
 				}
 			],
 			"signatures": [
@@ -4792,7 +4792,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 92,
 							"character": 13,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L92"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L92"
 						}
 					],
 					"parameters": [
@@ -4813,7 +4813,7 @@
 										"isOptional": false,
 										"element": {
 											"type": "reference",
-											"target": 262,
+											"target": 268,
 											"name": "SanityAssetSource",
 											"package": "@sanity/asset-utils"
 										}
@@ -4823,8 +4823,17 @@
 						}
 					],
 					"type": {
-						"type": "intrinsic",
-						"name": "any"
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
 					}
 				}
 			]
@@ -4861,7 +4870,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 206,
 					"character": 13,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L206"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L206"
 				}
 			],
 			"signatures": [
@@ -4898,7 +4907,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 206,
 							"character": 13,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L206"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L206"
 						}
 					],
 					"parameters": [
@@ -4919,7 +4928,7 @@
 										"isOptional": false,
 										"element": {
 											"type": "reference",
-											"target": 282,
+											"target": 288,
 											"name": "SanityFileSource",
 											"package": "@sanity/asset-utils"
 										}
@@ -4930,7 +4939,7 @@
 										"isOptional": true,
 										"element": {
 											"type": "reference",
-											"target": 362,
+											"target": 368,
 											"name": "SanityProjectDetails",
 											"package": "@sanity/asset-utils"
 										}
@@ -4940,8 +4949,19 @@
 						}
 					],
 					"type": {
-						"type": "intrinsic",
-						"name": "any"
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "reference",
+								"target": 236,
+								"name": "ResolvedSanityFile",
+								"package": "@sanity/asset-utils"
+							}
+						]
 					}
 				}
 			]
@@ -4978,7 +4998,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 252,
 					"character": 13,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L252"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L252"
 				}
 			],
 			"signatures": [
@@ -5015,7 +5035,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 252,
 							"character": 13,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L252"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L252"
 						}
 					],
 					"parameters": [
@@ -5036,7 +5056,7 @@
 										"isOptional": false,
 										"element": {
 											"type": "reference",
-											"target": 282,
+											"target": 288,
 											"name": "SanityFileSource",
 											"package": "@sanity/asset-utils"
 										}
@@ -5057,8 +5077,19 @@
 						}
 					],
 					"type": {
-						"type": "intrinsic",
-						"name": "any"
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "reference",
+								"target": 272,
+								"name": "SanityFileAsset",
+								"package": "@sanity/asset-utils"
+							}
+						]
 					}
 				}
 			]
@@ -5095,7 +5126,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 343,
 					"character": 13,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L343"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L343"
 				}
 			],
 			"signatures": [
@@ -5132,7 +5163,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 343,
 							"character": 13,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L343"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L343"
 						}
 					],
 					"parameters": [
@@ -5161,8 +5192,17 @@
 						}
 					],
 					"type": {
-						"type": "intrinsic",
-						"name": "any"
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
 					}
 				}
 			]
@@ -5199,7 +5239,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 126,
 					"character": 13,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L126"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L126"
 				}
 			],
 			"signatures": [
@@ -5236,7 +5276,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 126,
 							"character": 13,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L126"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L126"
 						}
 					],
 					"parameters": [
@@ -5257,7 +5297,7 @@
 										"isOptional": false,
 										"element": {
 											"type": "reference",
-											"target": 347,
+											"target": 353,
 											"name": "SanityImageSource",
 											"package": "@sanity/asset-utils"
 										}
@@ -5268,7 +5308,7 @@
 										"isOptional": true,
 										"element": {
 											"type": "reference",
-											"target": 362,
+											"target": 368,
 											"name": "SanityProjectDetails",
 											"package": "@sanity/asset-utils"
 										}
@@ -5278,8 +5318,19 @@
 						}
 					],
 					"type": {
-						"type": "intrinsic",
-						"name": "any"
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "reference",
+								"target": 241,
+								"name": "ResolvedSanityImage",
+								"package": "@sanity/asset-utils"
+							}
+						]
 					}
 				}
 			]
@@ -5316,7 +5367,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 181,
 					"character": 13,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L181"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L181"
 				}
 			],
 			"signatures": [
@@ -5353,7 +5404,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 181,
 							"character": 13,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L181"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L181"
 						}
 					],
 					"parameters": [
@@ -5374,7 +5425,7 @@
 										"isOptional": false,
 										"element": {
 											"type": "reference",
-											"target": 347,
+											"target": 353,
 											"name": "SanityImageSource",
 											"package": "@sanity/asset-utils"
 										}
@@ -5385,7 +5436,7 @@
 										"isOptional": true,
 										"element": {
 											"type": "reference",
-											"target": 362,
+											"target": 368,
 											"name": "SanityProjectDetails",
 											"package": "@sanity/asset-utils"
 										}
@@ -5395,8 +5446,19 @@
 						}
 					],
 					"type": {
-						"type": "intrinsic",
-						"name": "any"
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "reference",
+								"target": 296,
+								"name": "SanityImageAsset",
+								"package": "@sanity/asset-utils"
+							}
+						]
 					}
 				}
 			]
@@ -5433,7 +5495,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 69,
 					"character": 13,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L69"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L69"
 				}
 			],
 			"signatures": [
@@ -5470,7 +5532,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 69,
 							"character": 13,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L69"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L69"
 						}
 					],
 					"parameters": [
@@ -5491,7 +5553,7 @@
 										"isOptional": false,
 										"element": {
 											"type": "reference",
-											"target": 347,
+											"target": 353,
 											"name": "SanityImageSource",
 											"package": "@sanity/asset-utils"
 										}
@@ -5501,8 +5563,19 @@
 						}
 					],
 					"type": {
-						"type": "intrinsic",
-						"name": "any"
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "reference",
+								"target": 312,
+								"name": "SanityImageDimensions",
+								"package": "@sanity/asset-utils"
+							}
+						]
 					}
 				}
 			]
@@ -5539,7 +5612,7 @@
 					"fileName": "src/resolve.ts",
 					"line": 387,
 					"character": 13,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L387"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L387"
 				}
 			],
 			"signatures": [
@@ -5576,7 +5649,7 @@
 							"fileName": "src/resolve.ts",
 							"line": 387,
 							"character": 13,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/resolve.ts#L387"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/resolve.ts#L387"
 						}
 					],
 					"parameters": [
@@ -5597,7 +5670,7 @@
 										"isOptional": false,
 										"element": {
 											"type": "reference",
-											"target": 347,
+											"target": 353,
 											"name": "SanityImageSource",
 											"package": "@sanity/asset-utils"
 										}
@@ -5607,8 +5680,19 @@
 						}
 					],
 					"type": {
-						"type": "intrinsic",
-						"name": "any"
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "reference",
+								"target": 368,
+								"name": "SanityProjectDetails",
+								"package": "@sanity/asset-utils"
+							}
+						]
 					}
 				}
 			]
@@ -5657,7 +5741,7 @@
 					"fileName": "src/paths.ts",
 					"line": 197,
 					"character": 13,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L197"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L197"
 				}
 			],
 			"signatures": [
@@ -5694,7 +5778,7 @@
 							"fileName": "src/paths.ts",
 							"line": 197,
 							"character": 13,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L197"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L197"
 						}
 					],
 					"parameters": [
@@ -5723,8 +5807,17 @@
 						}
 					],
 					"type": {
-						"type": "intrinsic",
-						"name": "any"
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
 					}
 				}
 			]
@@ -5773,7 +5866,7 @@
 					"fileName": "src/paths.ts",
 					"line": 170,
 					"character": 13,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L170"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L170"
 				}
 			],
 			"signatures": [
@@ -5810,7 +5903,7 @@
 							"fileName": "src/paths.ts",
 							"line": 170,
 							"character": 13,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/paths.ts#L170"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/paths.ts#L170"
 						}
 					],
 					"parameters": [
@@ -5839,8 +5932,17 @@
 						}
 					],
 					"type": {
-						"type": "intrinsic",
-						"name": "any"
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
 					}
 				}
 			]
@@ -5867,7 +5969,7 @@
 					"fileName": "src/hotspotCrop.ts",
 					"line": 8,
 					"character": 13,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/hotspotCrop.ts#L8"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/hotspotCrop.ts#L8"
 				}
 			],
 			"type": {
@@ -5879,7 +5981,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"target": 300,
+						"target": 306,
 						"name": "SanityImageCrop",
 						"package": "@sanity/asset-utils"
 					}
@@ -5911,7 +6013,7 @@
 					"fileName": "src/hotspotCrop.ts",
 					"line": 20,
 					"character": 13,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/hotspotCrop.ts#L20"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/hotspotCrop.ts#L20"
 				}
 			],
 			"type": {
@@ -5923,7 +6025,7 @@
 				"typeArguments": [
 					{
 						"type": "reference",
-						"target": 313,
+						"target": 319,
 						"name": "SanityImageHotspot",
 						"package": "@sanity/asset-utils"
 					}
@@ -5969,7 +6071,7 @@
 							"fileName": "src/errors.ts",
 							"line": 16,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/errors.ts#L16"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/errors.ts#L16"
 						}
 					],
 					"signatures": [
@@ -5984,7 +6086,7 @@
 									"fileName": "src/errors.ts",
 									"line": 16,
 									"character": 2,
-									"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/errors.ts#L16"
+									"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/errors.ts#L16"
 								}
 							],
 							"parameters": [
@@ -6044,7 +6146,7 @@
 							"fileName": "src/errors.ts",
 							"line": 14,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/errors.ts#L14"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/errors.ts#L14"
 						}
 					],
 					"type": {
@@ -6142,7 +6244,7 @@
 							"fileName": "src/errors.ts",
 							"line": 11,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/errors.ts#L11"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/errors.ts#L11"
 						}
 					],
 					"type": {
@@ -6429,7 +6531,7 @@
 					"fileName": "src/errors.ts",
 					"line": 10,
 					"character": 13,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/errors.ts#L10"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/errors.ts#L10"
 				}
 			],
 			"extendedTypes": [
@@ -6464,7 +6566,7 @@
 							"fileName": "src/types.ts",
 							"line": 160,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L160"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L160"
 						}
 					],
 					"type": {
@@ -6483,7 +6585,7 @@
 							"fileName": "src/types.ts",
 							"line": 158,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L158"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L158"
 						}
 					],
 					"type": {
@@ -6502,7 +6604,7 @@
 							"fileName": "src/types.ts",
 							"line": 159,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L159"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L159"
 						}
 					],
 					"type": {
@@ -6521,7 +6623,7 @@
 							"fileName": "src/types.ts",
 							"line": 157,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L157"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L157"
 						}
 					],
 					"type": {
@@ -6546,7 +6648,7 @@
 					"fileName": "src/types.ts",
 					"line": 156,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L156"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L156"
 				}
 			]
 		},
@@ -6570,7 +6672,7 @@
 							"fileName": "src/types.ts",
 							"line": 88,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L88"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L88"
 						}
 					],
 					"type": {
@@ -6592,7 +6694,7 @@
 							"fileName": "src/types.ts",
 							"line": 6,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L6"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L6"
 						}
 					],
 					"type": {
@@ -6616,7 +6718,7 @@
 							"fileName": "src/types.ts",
 							"line": 89,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L89"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L89"
 						}
 					],
 					"type": {
@@ -6661,7 +6763,7 @@
 							"fileName": "src/types.ts",
 							"line": 94,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L94"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L94"
 						}
 					],
 					"type": {
@@ -6683,7 +6785,7 @@
 							"fileName": "src/types.ts",
 							"line": 5,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L5"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L5"
 						}
 					],
 					"type": {
@@ -6733,7 +6835,7 @@
 							"fileName": "src/types.ts",
 							"line": 99,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L99"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L99"
 						}
 					],
 					"type": {
@@ -6760,7 +6862,7 @@
 					"fileName": "src/types.ts",
 					"line": 87,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L87"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L87"
 				}
 			],
 			"extendedTypes": [
@@ -6773,7 +6875,7 @@
 					"typeArguments": [
 						{
 							"type": "reference",
-							"target": 362,
+							"target": 368,
 							"name": "SanityProjectDetails",
 							"package": "@sanity/asset-utils"
 						}
@@ -6803,7 +6905,7 @@
 							"fileName": "src/types.ts",
 							"line": 48,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L48"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L48"
 						}
 					],
 					"type": {
@@ -6825,7 +6927,7 @@
 							"fileName": "src/types.ts",
 							"line": 6,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L6"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L6"
 						}
 					],
 					"type": {
@@ -6849,7 +6951,7 @@
 							"fileName": "src/types.ts",
 							"line": 49,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L49"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L49"
 						}
 					],
 					"type": {
@@ -6868,7 +6970,7 @@
 							"fileName": "src/types.ts",
 							"line": 50,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L50"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L50"
 						}
 					],
 					"type": {
@@ -6891,7 +6993,7 @@
 											"fileName": "src/types.ts",
 											"line": 51,
 											"character": 4,
-											"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L51"
+											"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L51"
 										}
 									],
 									"type": {
@@ -6914,7 +7016,7 @@
 															"fileName": "src/types.ts",
 															"line": 53,
 															"character": 6,
-															"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L53"
+															"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L53"
 														}
 													],
 													"type": {
@@ -6933,7 +7035,7 @@
 															"fileName": "src/types.ts",
 															"line": 52,
 															"character": 6,
-															"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L52"
+															"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L52"
 														}
 													],
 													"type": {
@@ -6956,7 +7058,7 @@
 													"fileName": "src/types.ts",
 													"line": 51,
 													"character": 16,
-													"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L51"
+													"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L51"
 												}
 											]
 										}
@@ -6976,7 +7078,7 @@
 									"fileName": "src/types.ts",
 									"line": 50,
 									"character": 12,
-									"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L50"
+									"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L50"
 								}
 							]
 						}
@@ -7019,7 +7121,7 @@
 							"fileName": "src/types.ts",
 							"line": 60,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L60"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L60"
 						}
 					],
 					"type": {
@@ -7041,7 +7143,7 @@
 							"fileName": "src/types.ts",
 							"line": 5,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L5"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L5"
 						}
 					],
 					"type": {
@@ -7091,7 +7193,7 @@
 							"fileName": "src/types.ts",
 							"line": 65,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L65"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L65"
 						}
 					],
 					"type": {
@@ -7119,7 +7221,7 @@
 					"fileName": "src/types.ts",
 					"line": 47,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L47"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L47"
 				}
 			],
 			"extendedTypes": [
@@ -7132,7 +7234,7 @@
 					"typeArguments": [
 						{
 							"type": "reference",
-							"target": 362,
+							"target": 368,
 							"name": "SanityProjectDetails",
 							"package": "@sanity/asset-utils"
 						}
@@ -7165,7 +7267,7 @@
 							"fileName": "src/types.ts",
 							"line": 6,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L6"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L6"
 						}
 					],
 					"type": {
@@ -7192,7 +7294,7 @@
 							"fileName": "src/types.ts",
 							"line": 5,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L5"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L5"
 						}
 					],
 					"type": {
@@ -7218,7 +7320,7 @@
 							"fileName": "src/types.ts",
 							"line": 13,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L13"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L13"
 						}
 					],
 					"type": {
@@ -7242,7 +7344,7 @@
 					"fileName": "src/types.ts",
 					"line": 12,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L12"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L12"
 				}
 			],
 			"extendedTypes": [
@@ -7255,7 +7357,7 @@
 					"typeArguments": [
 						{
 							"type": "reference",
-							"target": 362,
+							"target": 368,
 							"name": "SanityProjectDetails",
 							"package": "@sanity/asset-utils"
 						}
@@ -7285,7 +7387,7 @@
 							"fileName": "src/types.ts",
 							"line": 150,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L150"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L150"
 						}
 					],
 					"type": {
@@ -7304,7 +7406,7 @@
 							"fileName": "src/types.ts",
 							"line": 149,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L149"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L149"
 						}
 					],
 					"type": {
@@ -7323,7 +7425,7 @@
 							"fileName": "src/types.ts",
 							"line": 147,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L147"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L147"
 						}
 					],
 					"type": {
@@ -7342,7 +7444,7 @@
 							"fileName": "src/types.ts",
 							"line": 148,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L148"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L148"
 						}
 					],
 					"type": {
@@ -7367,7 +7469,7 @@
 					"fileName": "src/types.ts",
 					"line": 146,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L146"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L146"
 				}
 			]
 		},
@@ -7393,7 +7495,7 @@
 							"fileName": "src/types.ts",
 							"line": 314,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L314"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L314"
 						}
 					],
 					"type": {
@@ -7412,12 +7514,12 @@
 							"fileName": "src/types.ts",
 							"line": 315,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L315"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L315"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 266,
+						"target": 272,
 						"name": "SanityFileAsset",
 						"package": "@sanity/asset-utils"
 					}
@@ -7437,7 +7539,7 @@
 					"fileName": "src/types.ts",
 					"line": 313,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L313"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L313"
 				}
 			],
 			"indexSignatures": [
@@ -7452,7 +7554,7 @@
 							"fileName": "src/types.ts",
 							"line": 316,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L316"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L316"
 						}
 					],
 					"parameters": [
@@ -7497,7 +7599,7 @@
 							"fileName": "src/types.ts",
 							"line": 303,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L303"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L303"
 						}
 					],
 					"type": {
@@ -7516,12 +7618,12 @@
 							"fileName": "src/types.ts",
 							"line": 304,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L304"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L304"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 290,
+						"target": 296,
 						"name": "SanityImageAsset",
 						"package": "@sanity/asset-utils"
 					}
@@ -7537,12 +7639,12 @@
 							"fileName": "src/types.ts",
 							"line": 305,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L305"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L305"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 300,
+						"target": 306,
 						"name": "SanityImageCrop",
 						"package": "@sanity/asset-utils"
 					}
@@ -7558,12 +7660,12 @@
 							"fileName": "src/types.ts",
 							"line": 306,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L306"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L306"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 313,
+						"target": 319,
 						"name": "SanityImageHotspot",
 						"package": "@sanity/asset-utils"
 					}
@@ -7585,7 +7687,7 @@
 					"fileName": "src/types.ts",
 					"line": 302,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L302"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L302"
 				}
 			],
 			"indexSignatures": [
@@ -7600,7 +7702,7 @@
 							"fileName": "src/types.ts",
 							"line": 307,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L307"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L307"
 						}
 					],
 					"parameters": [
@@ -7624,7 +7726,7 @@
 			]
 		},
 		{
-			"id": 248,
+			"id": 254,
 			"name": "SanityAsset",
 			"variant": "declaration",
 			"kind": 256,
@@ -7633,7 +7735,7 @@
 			},
 			"children": [
 				{
-					"id": 249,
+					"id": 255,
 					"name": "_id",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7643,7 +7745,7 @@
 							"fileName": "src/types.ts",
 							"line": 196,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L196"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L196"
 						}
 					],
 					"type": {
@@ -7652,7 +7754,7 @@
 					}
 				},
 				{
-					"id": 250,
+					"id": 256,
 					"name": "_type",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7662,7 +7764,7 @@
 							"fileName": "src/types.ts",
 							"line": 197,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L197"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L197"
 						}
 					],
 					"type": {
@@ -7671,7 +7773,7 @@
 					}
 				},
 				{
-					"id": 253,
+					"id": 259,
 					"name": "assetId",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7681,7 +7783,7 @@
 							"fileName": "src/types.ts",
 							"line": 200,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L200"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L200"
 						}
 					],
 					"type": {
@@ -7690,7 +7792,7 @@
 					}
 				},
 				{
-					"id": 254,
+					"id": 260,
 					"name": "extension",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7700,7 +7802,7 @@
 							"fileName": "src/types.ts",
 							"line": 201,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L201"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L201"
 						}
 					],
 					"type": {
@@ -7709,7 +7811,7 @@
 					}
 				},
 				{
-					"id": 255,
+					"id": 261,
 					"name": "originalFilename",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7721,7 +7823,7 @@
 							"fileName": "src/types.ts",
 							"line": 202,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L202"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L202"
 						}
 					],
 					"type": {
@@ -7730,7 +7832,7 @@
 					}
 				},
 				{
-					"id": 252,
+					"id": 258,
 					"name": "path",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7740,7 +7842,7 @@
 							"fileName": "src/types.ts",
 							"line": 199,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L199"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L199"
 						}
 					],
 					"type": {
@@ -7749,7 +7851,7 @@
 					}
 				},
 				{
-					"id": 251,
+					"id": 257,
 					"name": "url",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7759,7 +7861,7 @@
 							"fileName": "src/types.ts",
 							"line": 198,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L198"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L198"
 						}
 					],
 					"type": {
@@ -7772,13 +7874,13 @@
 				{
 					"title": "Properties",
 					"children": [
-						249,
-						250,
-						253,
-						254,
 						255,
-						252,
-						251
+						256,
+						259,
+						260,
+						261,
+						258,
+						257
 					]
 				}
 			],
@@ -7787,12 +7889,12 @@
 					"fileName": "src/types.ts",
 					"line": 195,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L195"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L195"
 				}
 			]
 		},
 		{
-			"id": 257,
+			"id": 263,
 			"name": "SanityAssetIdStub",
 			"variant": "declaration",
 			"kind": 256,
@@ -7801,7 +7903,7 @@
 			},
 			"children": [
 				{
-					"id": 258,
+					"id": 264,
 					"name": "_id",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7811,7 +7913,7 @@
 							"fileName": "src/types.ts",
 							"line": 175,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L175"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L175"
 						}
 					],
 					"type": {
@@ -7824,7 +7926,7 @@
 				{
 					"title": "Properties",
 					"children": [
-						258
+						264
 					]
 				}
 			],
@@ -7833,12 +7935,12 @@
 					"fileName": "src/types.ts",
 					"line": 174,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L174"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L174"
 				}
 			]
 		},
 		{
-			"id": 260,
+			"id": 266,
 			"name": "SanityAssetPathStub",
 			"variant": "declaration",
 			"kind": 256,
@@ -7847,7 +7949,7 @@
 			},
 			"children": [
 				{
-					"id": 261,
+					"id": 267,
 					"name": "path",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7857,7 +7959,7 @@
 							"fileName": "src/types.ts",
 							"line": 182,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L182"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L182"
 						}
 					],
 					"type": {
@@ -7870,7 +7972,7 @@
 				{
 					"title": "Properties",
 					"children": [
-						261
+						267
 					]
 				}
 			],
@@ -7879,12 +7981,12 @@
 					"fileName": "src/types.ts",
 					"line": 181,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L181"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L181"
 				}
 			]
 		},
 		{
-			"id": 264,
+			"id": 270,
 			"name": "SanityAssetUrlStub",
 			"variant": "declaration",
 			"kind": 256,
@@ -7893,7 +7995,7 @@
 			},
 			"children": [
 				{
-					"id": 265,
+					"id": 271,
 					"name": "url",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7903,7 +8005,7 @@
 							"fileName": "src/types.ts",
 							"line": 189,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L189"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L189"
 						}
 					],
 					"type": {
@@ -7916,7 +8018,7 @@
 				{
 					"title": "Properties",
 					"children": [
-						265
+						271
 					]
 				}
 			],
@@ -7925,12 +8027,12 @@
 					"fileName": "src/types.ts",
 					"line": 188,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L188"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L188"
 				}
 			]
 		},
 		{
-			"id": 273,
+			"id": 279,
 			"name": "SanityFileAssetIdParts",
 			"variant": "declaration",
 			"kind": 256,
@@ -7939,7 +8041,7 @@
 			},
 			"children": [
 				{
-					"id": 275,
+					"id": 281,
 					"name": "assetId",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7949,7 +8051,7 @@
 							"fileName": "src/types.ts",
 							"line": 73,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L73"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L73"
 						}
 					],
 					"type": {
@@ -7958,7 +8060,7 @@
 					}
 				},
 				{
-					"id": 276,
+					"id": 282,
 					"name": "extension",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7968,7 +8070,7 @@
 							"fileName": "src/types.ts",
 							"line": 74,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L74"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L74"
 						}
 					],
 					"type": {
@@ -7977,7 +8079,7 @@
 					}
 				},
 				{
-					"id": 274,
+					"id": 280,
 					"name": "type",
 					"variant": "declaration",
 					"kind": 1024,
@@ -7987,7 +8089,7 @@
 							"fileName": "src/types.ts",
 							"line": 72,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L72"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L72"
 						}
 					],
 					"type": {
@@ -8000,9 +8102,9 @@
 				{
 					"title": "Properties",
 					"children": [
-						275,
-						276,
-						274
+						281,
+						282,
+						280
 					]
 				}
 			],
@@ -8011,19 +8113,19 @@
 					"fileName": "src/types.ts",
 					"line": 71,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L71"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L71"
 				}
 			],
 			"extendedBy": [
 				{
 					"type": "reference",
-					"target": 283,
+					"target": 289,
 					"name": "SanityFileUrlParts"
 				}
 			]
 		},
 		{
-			"id": 277,
+			"id": 283,
 			"name": "SanityFileObjectStub",
 			"variant": "declaration",
 			"kind": 256,
@@ -8032,7 +8134,7 @@
 			},
 			"children": [
 				{
-					"id": 278,
+					"id": 284,
 					"name": "_type",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8044,7 +8146,7 @@
 							"fileName": "src/types.ts",
 							"line": 273,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L273"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L273"
 						}
 					],
 					"type": {
@@ -8053,7 +8155,7 @@
 					}
 				},
 				{
-					"id": 279,
+					"id": 285,
 					"name": "asset",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8063,7 +8165,7 @@
 							"fileName": "src/types.ts",
 							"line": 274,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L274"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L274"
 						}
 					],
 					"type": {
@@ -8071,31 +8173,31 @@
 						"types": [
 							{
 								"type": "reference",
-								"target": 365,
+								"target": 371,
 								"name": "SanityReference",
 								"package": "@sanity/asset-utils"
 							},
 							{
 								"type": "reference",
-								"target": 266,
+								"target": 272,
 								"name": "SanityFileAsset",
 								"package": "@sanity/asset-utils"
 							},
 							{
 								"type": "reference",
-								"target": 257,
+								"target": 263,
 								"name": "SanityAssetIdStub",
 								"package": "@sanity/asset-utils"
 							},
 							{
 								"type": "reference",
-								"target": 264,
+								"target": 270,
 								"name": "SanityAssetUrlStub",
 								"package": "@sanity/asset-utils"
 							},
 							{
 								"type": "reference",
-								"target": 260,
+								"target": 266,
 								"name": "SanityAssetPathStub",
 								"package": "@sanity/asset-utils"
 							}
@@ -8107,8 +8209,8 @@
 				{
 					"title": "Properties",
 					"children": [
-						278,
-						279
+						284,
+						285
 					]
 				}
 			],
@@ -8117,12 +8219,12 @@
 					"fileName": "src/types.ts",
 					"line": 272,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L272"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L272"
 				}
 			],
 			"indexSignatures": [
 				{
-					"id": 280,
+					"id": 286,
 					"name": "__index",
 					"variant": "signature",
 					"kind": 8192,
@@ -8132,12 +8234,12 @@
 							"fileName": "src/types.ts",
 							"line": 280,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L280"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L280"
 						}
 					],
 					"parameters": [
 						{
-							"id": 281,
+							"id": 287,
 							"name": "key",
 							"variant": "param",
 							"kind": 32768,
@@ -8156,7 +8258,7 @@
 			]
 		},
 		{
-			"id": 283,
+			"id": 289,
 			"name": "SanityFileUrlParts",
 			"variant": "declaration",
 			"kind": 256,
@@ -8165,7 +8267,7 @@
 			},
 			"children": [
 				{
-					"id": 288,
+					"id": 294,
 					"name": "assetId",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8177,7 +8279,7 @@
 							"fileName": "src/types.ts",
 							"line": 73,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L73"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L73"
 						}
 					],
 					"type": {
@@ -8186,12 +8288,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"target": 275,
+						"target": 281,
 						"name": "SanityFileAssetIdParts.assetId"
 					}
 				},
 				{
-					"id": 286,
+					"id": 292,
 					"name": "dataset",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8203,7 +8305,7 @@
 							"fileName": "src/types.ts",
 							"line": 6,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L6"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L6"
 						}
 					],
 					"type": {
@@ -8212,12 +8314,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"target": 364,
+						"target": 370,
 						"name": "SanityProjectDetails.dataset"
 					}
 				},
 				{
-					"id": 289,
+					"id": 295,
 					"name": "extension",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8229,7 +8331,7 @@
 							"fileName": "src/types.ts",
 							"line": 74,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L74"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L74"
 						}
 					],
 					"type": {
@@ -8238,12 +8340,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"target": 276,
+						"target": 282,
 						"name": "SanityFileAssetIdParts.extension"
 					}
 				},
 				{
-					"id": 285,
+					"id": 291,
 					"name": "projectId",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8255,7 +8357,7 @@
 							"fileName": "src/types.ts",
 							"line": 5,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L5"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L5"
 						}
 					],
 					"type": {
@@ -8264,12 +8366,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"target": 363,
+						"target": 369,
 						"name": "SanityProjectDetails.projectId"
 					}
 				},
 				{
-					"id": 287,
+					"id": 293,
 					"name": "type",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8281,7 +8383,7 @@
 							"fileName": "src/types.ts",
 							"line": 72,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L72"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L72"
 						}
 					],
 					"type": {
@@ -8290,12 +8392,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"target": 274,
+						"target": 280,
 						"name": "SanityFileAssetIdParts.type"
 					}
 				},
 				{
-					"id": 284,
+					"id": 290,
 					"name": "vanityFilename",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8307,7 +8409,7 @@
 							"fileName": "src/types.ts",
 							"line": 81,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L81"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L81"
 						}
 					],
 					"type": {
@@ -8320,12 +8422,12 @@
 				{
 					"title": "Properties",
 					"children": [
-						288,
-						286,
-						289,
-						285,
-						287,
-						284
+						294,
+						292,
+						295,
+						291,
+						293,
+						290
 					]
 				}
 			],
@@ -8334,26 +8436,26 @@
 					"fileName": "src/types.ts",
 					"line": 80,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L80"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L80"
 				}
 			],
 			"extendedTypes": [
 				{
 					"type": "reference",
-					"target": 362,
+					"target": 368,
 					"name": "SanityProjectDetails",
 					"package": "@sanity/asset-utils"
 				},
 				{
 					"type": "reference",
-					"target": 273,
+					"target": 279,
 					"name": "SanityFileAssetIdParts",
 					"package": "@sanity/asset-utils"
 				}
 			]
 		},
 		{
-			"id": 294,
+			"id": 300,
 			"name": "SanityImageAssetIdParts",
 			"variant": "declaration",
 			"kind": 256,
@@ -8362,7 +8464,7 @@
 			},
 			"children": [
 				{
-					"id": 296,
+					"id": 302,
 					"name": "assetId",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8372,7 +8474,7 @@
 							"fileName": "src/types.ts",
 							"line": 31,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L31"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L31"
 						}
 					],
 					"type": {
@@ -8381,7 +8483,7 @@
 					}
 				},
 				{
-					"id": 297,
+					"id": 303,
 					"name": "extension",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8391,7 +8493,7 @@
 							"fileName": "src/types.ts",
 							"line": 32,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L32"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L32"
 						}
 					],
 					"type": {
@@ -8400,7 +8502,7 @@
 					}
 				},
 				{
-					"id": 299,
+					"id": 305,
 					"name": "height",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8410,7 +8512,7 @@
 							"fileName": "src/types.ts",
 							"line": 34,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L34"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L34"
 						}
 					],
 					"type": {
@@ -8419,7 +8521,7 @@
 					}
 				},
 				{
-					"id": 295,
+					"id": 301,
 					"name": "type",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8429,7 +8531,7 @@
 							"fileName": "src/types.ts",
 							"line": 30,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L30"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L30"
 						}
 					],
 					"type": {
@@ -8438,7 +8540,7 @@
 					}
 				},
 				{
-					"id": 298,
+					"id": 304,
 					"name": "width",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8448,7 +8550,7 @@
 							"fileName": "src/types.ts",
 							"line": 33,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L33"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L33"
 						}
 					],
 					"type": {
@@ -8461,11 +8563,11 @@
 				{
 					"title": "Properties",
 					"children": [
-						296,
-						297,
-						299,
-						295,
-						298
+						302,
+						303,
+						305,
+						301,
+						304
 					]
 				}
 			],
@@ -8474,19 +8576,19 @@
 					"fileName": "src/types.ts",
 					"line": 29,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L29"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L29"
 				}
 			],
 			"extendedBy": [
 				{
 					"type": "reference",
-					"target": 353,
+					"target": 359,
 					"name": "SanityImageUrlParts"
 				}
 			]
 		},
 		{
-			"id": 300,
+			"id": 306,
 			"name": "SanityImageCrop",
 			"variant": "declaration",
 			"kind": 256,
@@ -8495,7 +8597,7 @@
 			},
 			"children": [
 				{
-					"id": 301,
+					"id": 307,
 					"name": "_type",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8507,7 +8609,7 @@
 							"fileName": "src/types.ts",
 							"line": 251,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L251"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L251"
 						}
 					],
 					"type": {
@@ -8516,7 +8618,7 @@
 					}
 				},
 				{
-					"id": 303,
+					"id": 309,
 					"name": "bottom",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8526,7 +8628,7 @@
 							"fileName": "src/types.ts",
 							"line": 253,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L253"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L253"
 						}
 					],
 					"type": {
@@ -8535,7 +8637,7 @@
 					}
 				},
 				{
-					"id": 302,
+					"id": 308,
 					"name": "left",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8545,7 +8647,7 @@
 							"fileName": "src/types.ts",
 							"line": 252,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L252"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L252"
 						}
 					],
 					"type": {
@@ -8554,7 +8656,7 @@
 					}
 				},
 				{
-					"id": 304,
+					"id": 310,
 					"name": "right",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8564,7 +8666,7 @@
 							"fileName": "src/types.ts",
 							"line": 254,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L254"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L254"
 						}
 					],
 					"type": {
@@ -8573,7 +8675,7 @@
 					}
 				},
 				{
-					"id": 305,
+					"id": 311,
 					"name": "top",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8583,7 +8685,7 @@
 							"fileName": "src/types.ts",
 							"line": 255,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L255"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L255"
 						}
 					],
 					"type": {
@@ -8596,11 +8698,11 @@
 				{
 					"title": "Properties",
 					"children": [
-						301,
-						303,
-						302,
-						304,
-						305
+						307,
+						309,
+						308,
+						310,
+						311
 					]
 				}
 			],
@@ -8609,12 +8711,12 @@
 					"fileName": "src/types.ts",
 					"line": 250,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L250"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L250"
 				}
 			]
 		},
 		{
-			"id": 309,
+			"id": 315,
 			"name": "SanityImageFitResult",
 			"variant": "declaration",
 			"kind": 256,
@@ -8623,7 +8725,7 @@
 			},
 			"children": [
 				{
-					"id": 311,
+					"id": 317,
 					"name": "height",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8635,7 +8737,7 @@
 							"fileName": "src/types.ts",
 							"line": 354,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L354"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L354"
 						}
 					],
 					"type": {
@@ -8644,7 +8746,7 @@
 					}
 				},
 				{
-					"id": 312,
+					"id": 318,
 					"name": "rect",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8654,7 +8756,7 @@
 							"fileName": "src/types.ts",
 							"line": 355,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L355"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L355"
 						}
 					],
 					"type": {
@@ -8665,7 +8767,7 @@
 					}
 				},
 				{
-					"id": 310,
+					"id": 316,
 					"name": "width",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8677,7 +8779,7 @@
 							"fileName": "src/types.ts",
 							"line": 353,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L353"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L353"
 						}
 					],
 					"type": {
@@ -8690,9 +8792,9 @@
 				{
 					"title": "Properties",
 					"children": [
-						311,
-						312,
-						310
+						317,
+						318,
+						316
 					]
 				}
 			],
@@ -8701,12 +8803,12 @@
 					"fileName": "src/types.ts",
 					"line": 352,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L352"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L352"
 				}
 			]
 		},
 		{
-			"id": 313,
+			"id": 319,
 			"name": "SanityImageHotspot",
 			"variant": "declaration",
 			"kind": 256,
@@ -8715,7 +8817,7 @@
 			},
 			"children": [
 				{
-					"id": 314,
+					"id": 320,
 					"name": "_type",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8727,7 +8829,7 @@
 							"fileName": "src/types.ts",
 							"line": 262,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L262"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L262"
 						}
 					],
 					"type": {
@@ -8736,7 +8838,7 @@
 					}
 				},
 				{
-					"id": 316,
+					"id": 322,
 					"name": "height",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8746,7 +8848,7 @@
 							"fileName": "src/types.ts",
 							"line": 264,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L264"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L264"
 						}
 					],
 					"type": {
@@ -8755,7 +8857,7 @@
 					}
 				},
 				{
-					"id": 315,
+					"id": 321,
 					"name": "width",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8765,7 +8867,7 @@
 							"fileName": "src/types.ts",
 							"line": 263,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L263"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L263"
 						}
 					],
 					"type": {
@@ -8774,7 +8876,7 @@
 					}
 				},
 				{
-					"id": 317,
+					"id": 323,
 					"name": "x",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8784,7 +8886,7 @@
 							"fileName": "src/types.ts",
 							"line": 265,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L265"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L265"
 						}
 					],
 					"type": {
@@ -8793,7 +8895,7 @@
 					}
 				},
 				{
-					"id": 318,
+					"id": 324,
 					"name": "y",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8803,7 +8905,7 @@
 							"fileName": "src/types.ts",
 							"line": 266,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L266"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L266"
 						}
 					],
 					"type": {
@@ -8816,11 +8918,11 @@
 				{
 					"title": "Properties",
 					"children": [
-						314,
-						316,
-						315,
-						317,
-						318
+						320,
+						322,
+						321,
+						323,
+						324
 					]
 				}
 			],
@@ -8829,12 +8931,12 @@
 					"fileName": "src/types.ts",
 					"line": 261,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L261"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L261"
 				}
 			]
 		},
 		{
-			"id": 319,
+			"id": 325,
 			"name": "SanityImageMetadata",
 			"variant": "declaration",
 			"kind": 256,
@@ -8843,7 +8945,7 @@
 			},
 			"children": [
 				{
-					"id": 322,
+					"id": 328,
 					"name": "blurHash",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8855,7 +8957,7 @@
 							"fileName": "src/types.ts",
 							"line": 227,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L227"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L227"
 						}
 					],
 					"type": {
@@ -8864,7 +8966,7 @@
 					}
 				},
 				{
-					"id": 320,
+					"id": 326,
 					"name": "dimensions",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8874,18 +8976,18 @@
 							"fileName": "src/types.ts",
 							"line": 225,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L225"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L225"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 306,
+						"target": 312,
 						"name": "SanityImageDimensions",
 						"package": "@sanity/asset-utils"
 					}
 				},
 				{
-					"id": 321,
+					"id": 327,
 					"name": "lqip",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8897,7 +8999,7 @@
 							"fileName": "src/types.ts",
 							"line": 226,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L226"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L226"
 						}
 					],
 					"type": {
@@ -8906,7 +9008,7 @@
 					}
 				},
 				{
-					"id": 323,
+					"id": 329,
 					"name": "palette",
 					"variant": "declaration",
 					"kind": 1024,
@@ -8918,12 +9020,12 @@
 							"fileName": "src/types.ts",
 							"line": 228,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L228"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L228"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 333,
+						"target": 339,
 						"name": "SanityImagePalette",
 						"package": "@sanity/asset-utils"
 					}
@@ -8933,10 +9035,10 @@
 				{
 					"title": "Properties",
 					"children": [
-						322,
-						320,
-						321,
-						323
+						328,
+						326,
+						327,
+						329
 					]
 				}
 			],
@@ -8945,12 +9047,12 @@
 					"fileName": "src/types.ts",
 					"line": 224,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L224"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L224"
 				}
 			],
 			"indexSignatures": [
 				{
-					"id": 324,
+					"id": 330,
 					"name": "__index",
 					"variant": "signature",
 					"kind": 8192,
@@ -8960,12 +9062,12 @@
 							"fileName": "src/types.ts",
 							"line": 229,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L229"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L229"
 						}
 					],
 					"parameters": [
 						{
-							"id": 325,
+							"id": 331,
 							"name": "key",
 							"variant": "param",
 							"kind": 32768,
@@ -8984,7 +9086,7 @@
 			]
 		},
 		{
-			"id": 326,
+			"id": 332,
 			"name": "SanityImageObjectStub",
 			"variant": "declaration",
 			"kind": 256,
@@ -8993,7 +9095,7 @@
 			},
 			"children": [
 				{
-					"id": 327,
+					"id": 333,
 					"name": "_type",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9005,7 +9107,7 @@
 							"fileName": "src/types.ts",
 							"line": 287,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L287"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L287"
 						}
 					],
 					"type": {
@@ -9014,7 +9116,7 @@
 					}
 				},
 				{
-					"id": 328,
+					"id": 334,
 					"name": "asset",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9024,7 +9126,7 @@
 							"fileName": "src/types.ts",
 							"line": 288,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L288"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L288"
 						}
 					],
 					"type": {
@@ -9032,31 +9134,31 @@
 						"types": [
 							{
 								"type": "reference",
-								"target": 365,
+								"target": 371,
 								"name": "SanityReference",
 								"package": "@sanity/asset-utils"
 							},
 							{
 								"type": "reference",
-								"target": 257,
+								"target": 263,
 								"name": "SanityAssetIdStub",
 								"package": "@sanity/asset-utils"
 							},
 							{
 								"type": "reference",
-								"target": 264,
+								"target": 270,
 								"name": "SanityAssetUrlStub",
 								"package": "@sanity/asset-utils"
 							},
 							{
 								"type": "reference",
-								"target": 260,
+								"target": 266,
 								"name": "SanityAssetPathStub",
 								"package": "@sanity/asset-utils"
 							},
 							{
 								"type": "reference",
-								"target": 290,
+								"target": 296,
 								"name": "SanityImageAsset",
 								"package": "@sanity/asset-utils"
 							}
@@ -9064,7 +9166,7 @@
 					}
 				},
 				{
-					"id": 329,
+					"id": 335,
 					"name": "crop",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9076,18 +9178,18 @@
 							"fileName": "src/types.ts",
 							"line": 294,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L294"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L294"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 300,
+						"target": 306,
 						"name": "SanityImageCrop",
 						"package": "@sanity/asset-utils"
 					}
 				},
 				{
-					"id": 330,
+					"id": 336,
 					"name": "hotspot",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9099,12 +9201,12 @@
 							"fileName": "src/types.ts",
 							"line": 295,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L295"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L295"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 313,
+						"target": 319,
 						"name": "SanityImageHotspot",
 						"package": "@sanity/asset-utils"
 					}
@@ -9114,10 +9216,10 @@
 				{
 					"title": "Properties",
 					"children": [
-						327,
-						328,
-						329,
-						330
+						333,
+						334,
+						335,
+						336
 					]
 				}
 			],
@@ -9126,12 +9228,12 @@
 					"fileName": "src/types.ts",
 					"line": 286,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L286"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L286"
 				}
 			],
 			"indexSignatures": [
 				{
-					"id": 331,
+					"id": 337,
 					"name": "__index",
 					"variant": "signature",
 					"kind": 8192,
@@ -9141,12 +9243,12 @@
 							"fileName": "src/types.ts",
 							"line": 296,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L296"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L296"
 						}
 					],
 					"parameters": [
 						{
-							"id": 332,
+							"id": 338,
 							"name": "key",
 							"variant": "param",
 							"kind": 32768,
@@ -9165,7 +9267,7 @@
 			]
 		},
 		{
-			"id": 333,
+			"id": 339,
 			"name": "SanityImagePalette",
 			"variant": "declaration",
 			"kind": 256,
@@ -9174,7 +9276,7 @@
 			},
 			"children": [
 				{
-					"id": 334,
+					"id": 340,
 					"name": "_type",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9186,7 +9288,7 @@
 							"fileName": "src/types.ts",
 							"line": 328,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L328"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L328"
 						}
 					],
 					"type": {
@@ -9195,7 +9297,7 @@
 					}
 				},
 				{
-					"id": 335,
+					"id": 341,
 					"name": "darkMuted",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9207,18 +9309,18 @@
 							"fileName": "src/types.ts",
 							"line": 329,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L329"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L329"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 348,
+						"target": 354,
 						"name": "SanityImageSwatch",
 						"package": "@sanity/asset-utils"
 					}
 				},
 				{
-					"id": 336,
+					"id": 342,
 					"name": "darkVibrant",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9230,18 +9332,18 @@
 							"fileName": "src/types.ts",
 							"line": 330,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L330"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L330"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 348,
+						"target": 354,
 						"name": "SanityImageSwatch",
 						"package": "@sanity/asset-utils"
 					}
 				},
 				{
-					"id": 337,
+					"id": 343,
 					"name": "dominant",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9253,18 +9355,18 @@
 							"fileName": "src/types.ts",
 							"line": 331,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L331"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L331"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 348,
+						"target": 354,
 						"name": "SanityImageSwatch",
 						"package": "@sanity/asset-utils"
 					}
 				},
 				{
-					"id": 338,
+					"id": 344,
 					"name": "lightMuted",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9276,18 +9378,18 @@
 							"fileName": "src/types.ts",
 							"line": 332,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L332"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L332"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 348,
+						"target": 354,
 						"name": "SanityImageSwatch",
 						"package": "@sanity/asset-utils"
 					}
 				},
 				{
-					"id": 339,
+					"id": 345,
 					"name": "lightVibrant",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9299,18 +9401,18 @@
 							"fileName": "src/types.ts",
 							"line": 333,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L333"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L333"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 348,
+						"target": 354,
 						"name": "SanityImageSwatch",
 						"package": "@sanity/asset-utils"
 					}
 				},
 				{
-					"id": 340,
+					"id": 346,
 					"name": "muted",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9322,18 +9424,18 @@
 							"fileName": "src/types.ts",
 							"line": 334,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L334"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L334"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 348,
+						"target": 354,
 						"name": "SanityImageSwatch",
 						"package": "@sanity/asset-utils"
 					}
 				},
 				{
-					"id": 341,
+					"id": 347,
 					"name": "vibrant",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9345,12 +9447,12 @@
 							"fileName": "src/types.ts",
 							"line": 335,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L335"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L335"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 348,
+						"target": 354,
 						"name": "SanityImageSwatch",
 						"package": "@sanity/asset-utils"
 					}
@@ -9360,14 +9462,14 @@
 				{
 					"title": "Properties",
 					"children": [
-						334,
-						335,
-						336,
-						337,
-						338,
-						339,
 						340,
-						341
+						341,
+						342,
+						343,
+						344,
+						345,
+						346,
+						347
 					]
 				}
 			],
@@ -9376,12 +9478,12 @@
 					"fileName": "src/types.ts",
 					"line": 327,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L327"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L327"
 				}
 			],
 			"indexSignatures": [
 				{
-					"id": 342,
+					"id": 348,
 					"name": "__index",
 					"variant": "signature",
 					"kind": 8192,
@@ -9391,12 +9493,12 @@
 							"fileName": "src/types.ts",
 							"line": 336,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L336"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L336"
 						}
 					],
 					"parameters": [
 						{
-							"id": 343,
+							"id": 349,
 							"name": "key",
 							"variant": "param",
 							"kind": 32768,
@@ -9415,7 +9517,7 @@
 			]
 		},
 		{
-			"id": 344,
+			"id": 350,
 			"name": "SanityImageSize",
 			"variant": "declaration",
 			"kind": 256,
@@ -9424,7 +9526,7 @@
 			},
 			"children": [
 				{
-					"id": 345,
+					"id": 351,
 					"name": "height",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9434,7 +9536,7 @@
 							"fileName": "src/types.ts",
 							"line": 236,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L236"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L236"
 						}
 					],
 					"type": {
@@ -9443,7 +9545,7 @@
 					}
 				},
 				{
-					"id": 346,
+					"id": 352,
 					"name": "width",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9453,7 +9555,7 @@
 							"fileName": "src/types.ts",
 							"line": 237,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L237"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L237"
 						}
 					],
 					"type": {
@@ -9466,8 +9568,8 @@
 				{
 					"title": "Properties",
 					"children": [
-						345,
-						346
+						351,
+						352
 					]
 				}
 			],
@@ -9476,12 +9578,12 @@
 					"fileName": "src/types.ts",
 					"line": 235,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L235"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L235"
 				}
 			]
 		},
 		{
-			"id": 348,
+			"id": 354,
 			"name": "SanityImageSwatch",
 			"variant": "declaration",
 			"kind": 256,
@@ -9490,7 +9592,7 @@
 			},
 			"children": [
 				{
-					"id": 349,
+					"id": 355,
 					"name": "background",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9500,7 +9602,7 @@
 							"fileName": "src/types.ts",
 							"line": 343,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L343"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L343"
 						}
 					],
 					"type": {
@@ -9509,7 +9611,7 @@
 					}
 				},
 				{
-					"id": 350,
+					"id": 356,
 					"name": "foreground",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9519,7 +9621,7 @@
 							"fileName": "src/types.ts",
 							"line": 344,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L344"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L344"
 						}
 					],
 					"type": {
@@ -9528,7 +9630,7 @@
 					}
 				},
 				{
-					"id": 351,
+					"id": 357,
 					"name": "population",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9538,7 +9640,7 @@
 							"fileName": "src/types.ts",
 							"line": 345,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L345"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L345"
 						}
 					],
 					"type": {
@@ -9547,7 +9649,7 @@
 					}
 				},
 				{
-					"id": 352,
+					"id": 358,
 					"name": "title",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9559,7 +9661,7 @@
 							"fileName": "src/types.ts",
 							"line": 346,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L346"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L346"
 						}
 					],
 					"type": {
@@ -9572,10 +9674,10 @@
 				{
 					"title": "Properties",
 					"children": [
-						349,
-						350,
-						351,
-						352
+						355,
+						356,
+						357,
+						358
 					]
 				}
 			],
@@ -9584,12 +9686,12 @@
 					"fileName": "src/types.ts",
 					"line": 342,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L342"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L342"
 				}
 			]
 		},
 		{
-			"id": 353,
+			"id": 359,
 			"name": "SanityImageUrlParts",
 			"variant": "declaration",
 			"kind": 256,
@@ -9598,7 +9700,7 @@
 			},
 			"children": [
 				{
-					"id": 358,
+					"id": 364,
 					"name": "assetId",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9610,7 +9712,7 @@
 							"fileName": "src/types.ts",
 							"line": 31,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L31"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L31"
 						}
 					],
 					"type": {
@@ -9619,12 +9721,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"target": 296,
+						"target": 302,
 						"name": "SanityImageAssetIdParts.assetId"
 					}
 				},
 				{
-					"id": 356,
+					"id": 362,
 					"name": "dataset",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9636,7 +9738,7 @@
 							"fileName": "src/types.ts",
 							"line": 6,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L6"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L6"
 						}
 					],
 					"type": {
@@ -9645,12 +9747,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"target": 364,
+						"target": 370,
 						"name": "SanityProjectDetails.dataset"
 					}
 				},
 				{
-					"id": 359,
+					"id": 365,
 					"name": "extension",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9662,7 +9764,7 @@
 							"fileName": "src/types.ts",
 							"line": 32,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L32"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L32"
 						}
 					],
 					"type": {
@@ -9671,12 +9773,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"target": 297,
+						"target": 303,
 						"name": "SanityImageAssetIdParts.extension"
 					}
 				},
 				{
-					"id": 361,
+					"id": 367,
 					"name": "height",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9688,7 +9790,7 @@
 							"fileName": "src/types.ts",
 							"line": 34,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L34"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L34"
 						}
 					],
 					"type": {
@@ -9697,12 +9799,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"target": 299,
+						"target": 305,
 						"name": "SanityImageAssetIdParts.height"
 					}
 				},
 				{
-					"id": 355,
+					"id": 361,
 					"name": "projectId",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9714,7 +9816,7 @@
 							"fileName": "src/types.ts",
 							"line": 5,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L5"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L5"
 						}
 					],
 					"type": {
@@ -9723,12 +9825,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"target": 363,
+						"target": 369,
 						"name": "SanityProjectDetails.projectId"
 					}
 				},
 				{
-					"id": 357,
+					"id": 363,
 					"name": "type",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9740,7 +9842,7 @@
 							"fileName": "src/types.ts",
 							"line": 30,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L30"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L30"
 						}
 					],
 					"type": {
@@ -9749,12 +9851,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"target": 295,
+						"target": 301,
 						"name": "SanityImageAssetIdParts.type"
 					}
 				},
 				{
-					"id": 354,
+					"id": 360,
 					"name": "vanityFilename",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9766,7 +9868,7 @@
 							"fileName": "src/types.ts",
 							"line": 41,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L41"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L41"
 						}
 					],
 					"type": {
@@ -9775,7 +9877,7 @@
 					}
 				},
 				{
-					"id": 360,
+					"id": 366,
 					"name": "width",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9787,7 +9889,7 @@
 							"fileName": "src/types.ts",
 							"line": 33,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L33"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L33"
 						}
 					],
 					"type": {
@@ -9796,7 +9898,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"target": 298,
+						"target": 304,
 						"name": "SanityImageAssetIdParts.width"
 					}
 				}
@@ -9805,14 +9907,14 @@
 				{
 					"title": "Properties",
 					"children": [
-						358,
-						356,
-						359,
+						364,
+						362,
+						365,
+						367,
 						361,
-						355,
-						357,
-						354,
-						360
+						363,
+						360,
+						366
 					]
 				}
 			],
@@ -9821,26 +9923,26 @@
 					"fileName": "src/types.ts",
 					"line": 40,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L40"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L40"
 				}
 			],
 			"extendedTypes": [
 				{
 					"type": "reference",
-					"target": 362,
+					"target": 368,
 					"name": "SanityProjectDetails",
 					"package": "@sanity/asset-utils"
 				},
 				{
 					"type": "reference",
-					"target": 294,
+					"target": 300,
 					"name": "SanityImageAssetIdParts",
 					"package": "@sanity/asset-utils"
 				}
 			]
 		},
 		{
-			"id": 362,
+			"id": 368,
 			"name": "SanityProjectDetails",
 			"variant": "declaration",
 			"kind": 256,
@@ -9849,7 +9951,7 @@
 			},
 			"children": [
 				{
-					"id": 364,
+					"id": 370,
 					"name": "dataset",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9859,7 +9961,7 @@
 							"fileName": "src/types.ts",
 							"line": 6,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L6"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L6"
 						}
 					],
 					"type": {
@@ -9868,7 +9970,7 @@
 					}
 				},
 				{
-					"id": 363,
+					"id": 369,
 					"name": "projectId",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9878,7 +9980,7 @@
 							"fileName": "src/types.ts",
 							"line": 5,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L5"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L5"
 						}
 					],
 					"type": {
@@ -9891,8 +9993,8 @@
 				{
 					"title": "Properties",
 					"children": [
-						364,
-						363
+						370,
+						369
 					]
 				}
 			],
@@ -9901,24 +10003,24 @@
 					"fileName": "src/types.ts",
 					"line": 4,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L4"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L4"
 				}
 			],
 			"extendedBy": [
 				{
 					"type": "reference",
-					"target": 283,
+					"target": 289,
 					"name": "SanityFileUrlParts"
 				},
 				{
 					"type": "reference",
-					"target": 353,
+					"target": 359,
 					"name": "SanityImageUrlParts"
 				}
 			]
 		},
 		{
-			"id": 365,
+			"id": 371,
 			"name": "SanityReference",
 			"variant": "declaration",
 			"kind": 256,
@@ -9927,7 +10029,7 @@
 			},
 			"children": [
 				{
-					"id": 366,
+					"id": 372,
 					"name": "_ref",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9937,7 +10039,7 @@
 							"fileName": "src/types.ts",
 							"line": 167,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L167"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L167"
 						}
 					],
 					"type": {
@@ -9946,7 +10048,7 @@
 					}
 				},
 				{
-					"id": 367,
+					"id": 373,
 					"name": "_weak",
 					"variant": "declaration",
 					"kind": 1024,
@@ -9958,7 +10060,7 @@
 							"fileName": "src/types.ts",
 							"line": 168,
 							"character": 2,
-							"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L168"
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L168"
 						}
 					],
 					"type": {
@@ -9971,8 +10073,8 @@
 				{
 					"title": "Properties",
 					"children": [
-						366,
-						367
+						372,
+						373
 					]
 				}
 			],
@@ -9981,12 +10083,129 @@
 					"fileName": "src/types.ts",
 					"line": 166,
 					"character": 17,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L166"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L166"
 				}
 			]
 		},
 		{
-			"id": 256,
+			"id": 248,
+			"name": "SafeFunction",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {
+				"isPublic": true
+			},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "A \"safe function\" is a wrapped function that would normally throw an UnresolvableError,\nbut will instead return "
+					},
+					{
+						"kind": "code",
+						"text": "`undefined`"
+					},
+					{
+						"kind": "text",
+						"text": ". Other errors are still thrown."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/types.ts",
+					"line": 364,
+					"character": 12,
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L364"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 252,
+					"name": "Args",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "unknown"
+						}
+					}
+				},
+				{
+					"id": 253,
+					"name": "Return",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {}
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 249,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/types.ts",
+							"line": 364,
+							"character": 59,
+							"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L364"
+						}
+					],
+					"signatures": [
+						{
+							"id": 250,
+							"name": "__type",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"parameters": [
+								{
+									"id": 251,
+									"name": "args",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isRest": true
+									},
+									"type": {
+										"type": "reference",
+										"target": 252,
+										"name": "Args",
+										"package": "@sanity/asset-utils",
+										"refersToTypeParameter": true
+									}
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"target": 253,
+										"name": "Return",
+										"package": "@sanity/asset-utils",
+										"refersToTypeParameter": true
+									},
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 262,
 			"name": "SanityAssetIdParts",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -9998,7 +10217,7 @@
 					"fileName": "src/types.ts",
 					"line": 19,
 					"character": 12,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L19"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L19"
 				}
 			],
 			"type": {
@@ -10006,13 +10225,13 @@
 				"types": [
 					{
 						"type": "reference",
-						"target": 273,
+						"target": 279,
 						"name": "SanityFileAssetIdParts",
 						"package": "@sanity/asset-utils"
 					},
 					{
 						"type": "reference",
-						"target": 294,
+						"target": 300,
 						"name": "SanityImageAssetIdParts",
 						"package": "@sanity/asset-utils"
 					}
@@ -10020,7 +10239,7 @@
 			}
 		},
 		{
-			"id": 259,
+			"id": 265,
 			"name": "SanityAssetObjectStub",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -10032,7 +10251,7 @@
 					"fileName": "src/types.ts",
 					"line": 322,
 					"character": 12,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L322"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L322"
 				}
 			],
 			"type": {
@@ -10040,13 +10259,13 @@
 				"types": [
 					{
 						"type": "reference",
-						"target": 277,
+						"target": 283,
 						"name": "SanityFileObjectStub",
 						"package": "@sanity/asset-utils"
 					},
 					{
 						"type": "reference",
-						"target": 326,
+						"target": 332,
 						"name": "SanityImageObjectStub",
 						"package": "@sanity/asset-utils"
 					}
@@ -10054,7 +10273,7 @@
 			}
 		},
 		{
-			"id": 262,
+			"id": 268,
 			"name": "SanityAssetSource",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -10066,7 +10285,7 @@
 					"fileName": "src/types.ts",
 					"line": 105,
 					"character": 12,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L105"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L105"
 				}
 			],
 			"type": {
@@ -10074,13 +10293,13 @@
 				"types": [
 					{
 						"type": "reference",
-						"target": 282,
+						"target": 288,
 						"name": "SanityFileSource",
 						"package": "@sanity/asset-utils"
 					},
 					{
 						"type": "reference",
-						"target": 347,
+						"target": 353,
 						"name": "SanityImageSource",
 						"package": "@sanity/asset-utils"
 					}
@@ -10088,7 +10307,7 @@
 			}
 		},
 		{
-			"id": 263,
+			"id": 269,
 			"name": "SanityAssetUrlParts",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -10100,7 +10319,7 @@
 					"fileName": "src/types.ts",
 					"line": 24,
 					"character": 12,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L24"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L24"
 				}
 			],
 			"type": {
@@ -10108,13 +10327,13 @@
 				"types": [
 					{
 						"type": "reference",
-						"target": 283,
+						"target": 289,
 						"name": "SanityFileUrlParts",
 						"package": "@sanity/asset-utils"
 					},
 					{
 						"type": "reference",
-						"target": 353,
+						"target": 359,
 						"name": "SanityImageUrlParts",
 						"package": "@sanity/asset-utils"
 					}
@@ -10122,7 +10341,7 @@
 			}
 		},
 		{
-			"id": 266,
+			"id": 272,
 			"name": "SanityFileAsset",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -10134,7 +10353,7 @@
 					"fileName": "src/types.ts",
 					"line": 216,
 					"character": 12,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L216"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L216"
 				}
 			],
 			"type": {
@@ -10142,21 +10361,21 @@
 				"types": [
 					{
 						"type": "reference",
-						"target": 248,
+						"target": 254,
 						"name": "SanityAsset",
 						"package": "@sanity/asset-utils"
 					},
 					{
 						"type": "reflection",
 						"declaration": {
-							"id": 267,
+							"id": 273,
 							"name": "__type",
 							"variant": "declaration",
 							"kind": 65536,
 							"flags": {},
 							"children": [
 								{
-									"id": 268,
+									"id": 274,
 									"name": "_type",
 									"variant": "declaration",
 									"kind": 1024,
@@ -10166,7 +10385,7 @@
 											"fileName": "src/types.ts",
 											"line": 217,
 											"character": 2,
-											"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L217"
+											"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L217"
 										}
 									],
 									"type": {
@@ -10175,7 +10394,7 @@
 									}
 								},
 								{
-									"id": 269,
+									"id": 275,
 									"name": "metadata",
 									"variant": "declaration",
 									"kind": 1024,
@@ -10185,13 +10404,13 @@
 											"fileName": "src/types.ts",
 											"line": 218,
 											"character": 2,
-											"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L218"
+											"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L218"
 										}
 									],
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 270,
+											"id": 276,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
@@ -10201,12 +10420,12 @@
 													"fileName": "src/types.ts",
 													"line": 218,
 													"character": 12,
-													"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L218"
+													"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L218"
 												}
 											],
 											"indexSignatures": [
 												{
-													"id": 271,
+													"id": 277,
 													"name": "__index",
 													"variant": "signature",
 													"kind": 8192,
@@ -10216,12 +10435,12 @@
 															"fileName": "src/types.ts",
 															"line": 218,
 															"character": 13,
-															"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L218"
+															"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L218"
 														}
 													],
 													"parameters": [
 														{
-															"id": 272,
+															"id": 278,
 															"name": "key",
 															"variant": "param",
 															"kind": 32768,
@@ -10246,8 +10465,8 @@
 								{
 									"title": "Properties",
 									"children": [
-										268,
-										269
+										274,
+										275
 									]
 								}
 							],
@@ -10256,7 +10475,7 @@
 									"fileName": "src/types.ts",
 									"line": 216,
 									"character": 44,
-									"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L216"
+									"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L216"
 								}
 							]
 						}
@@ -10265,7 +10484,7 @@
 			}
 		},
 		{
-			"id": 282,
+			"id": 288,
 			"name": "SanityFileSource",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -10277,7 +10496,7 @@
 					"fileName": "src/types.ts",
 					"line": 110,
 					"character": 12,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L110"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L110"
 				}
 			],
 			"type": {
@@ -10289,37 +10508,37 @@
 					},
 					{
 						"type": "reference",
-						"target": 365,
+						"target": 371,
 						"name": "SanityReference",
 						"package": "@sanity/asset-utils"
 					},
 					{
 						"type": "reference",
-						"target": 266,
+						"target": 272,
 						"name": "SanityFileAsset",
 						"package": "@sanity/asset-utils"
 					},
 					{
 						"type": "reference",
-						"target": 257,
+						"target": 263,
 						"name": "SanityAssetIdStub",
 						"package": "@sanity/asset-utils"
 					},
 					{
 						"type": "reference",
-						"target": 264,
+						"target": 270,
 						"name": "SanityAssetUrlStub",
 						"package": "@sanity/asset-utils"
 					},
 					{
 						"type": "reference",
-						"target": 260,
+						"target": 266,
 						"name": "SanityAssetPathStub",
 						"package": "@sanity/asset-utils"
 					},
 					{
 						"type": "reference",
-						"target": 277,
+						"target": 283,
 						"name": "SanityFileObjectStub",
 						"package": "@sanity/asset-utils"
 					}
@@ -10327,7 +10546,7 @@
 			}
 		},
 		{
-			"id": 290,
+			"id": 296,
 			"name": "SanityImageAsset",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -10339,7 +10558,7 @@
 					"fileName": "src/types.ts",
 					"line": 208,
 					"character": 12,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L208"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L208"
 				}
 			],
 			"type": {
@@ -10347,21 +10566,21 @@
 				"types": [
 					{
 						"type": "reference",
-						"target": 248,
+						"target": 254,
 						"name": "SanityAsset",
 						"package": "@sanity/asset-utils"
 					},
 					{
 						"type": "reflection",
 						"declaration": {
-							"id": 291,
+							"id": 297,
 							"name": "__type",
 							"variant": "declaration",
 							"kind": 65536,
 							"flags": {},
 							"children": [
 								{
-									"id": 292,
+									"id": 298,
 									"name": "_type",
 									"variant": "declaration",
 									"kind": 1024,
@@ -10371,7 +10590,7 @@
 											"fileName": "src/types.ts",
 											"line": 209,
 											"character": 2,
-											"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L209"
+											"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L209"
 										}
 									],
 									"type": {
@@ -10380,7 +10599,7 @@
 									}
 								},
 								{
-									"id": 293,
+									"id": 299,
 									"name": "metadata",
 									"variant": "declaration",
 									"kind": 1024,
@@ -10390,12 +10609,12 @@
 											"fileName": "src/types.ts",
 											"line": 210,
 											"character": 2,
-											"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L210"
+											"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L210"
 										}
 									],
 									"type": {
 										"type": "reference",
-										"target": 319,
+										"target": 325,
 										"name": "SanityImageMetadata",
 										"package": "@sanity/asset-utils"
 									}
@@ -10405,8 +10624,8 @@
 								{
 									"title": "Properties",
 									"children": [
-										292,
-										293
+										298,
+										299
 									]
 								}
 							],
@@ -10415,7 +10634,7 @@
 									"fileName": "src/types.ts",
 									"line": 208,
 									"character": 45,
-									"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L208"
+									"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L208"
 								}
 							]
 						}
@@ -10424,7 +10643,7 @@
 			}
 		},
 		{
-			"id": 306,
+			"id": 312,
 			"name": "SanityImageDimensions",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -10436,7 +10655,7 @@
 					"fileName": "src/types.ts",
 					"line": 243,
 					"character": 12,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L243"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L243"
 				}
 			],
 			"type": {
@@ -10444,21 +10663,21 @@
 				"types": [
 					{
 						"type": "reference",
-						"target": 344,
+						"target": 350,
 						"name": "SanityImageSize",
 						"package": "@sanity/asset-utils"
 					},
 					{
 						"type": "reflection",
 						"declaration": {
-							"id": 307,
+							"id": 313,
 							"name": "__type",
 							"variant": "declaration",
 							"kind": 65536,
 							"flags": {},
 							"children": [
 								{
-									"id": 308,
+									"id": 314,
 									"name": "aspectRatio",
 									"variant": "declaration",
 									"kind": 1024,
@@ -10468,7 +10687,7 @@
 											"fileName": "src/types.ts",
 											"line": 244,
 											"character": 2,
-											"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L244"
+											"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L244"
 										}
 									],
 									"type": {
@@ -10481,7 +10700,7 @@
 								{
 									"title": "Properties",
 									"children": [
-										308
+										314
 									]
 								}
 							],
@@ -10490,7 +10709,7 @@
 									"fileName": "src/types.ts",
 									"line": 243,
 									"character": 54,
-									"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L243"
+									"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L243"
 								}
 							]
 						}
@@ -10499,7 +10718,7 @@
 			}
 		},
 		{
-			"id": 347,
+			"id": 353,
 			"name": "SanityImageSource",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -10511,7 +10730,7 @@
 					"fileName": "src/types.ts",
 					"line": 122,
 					"character": 12,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L122"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L122"
 				}
 			],
 			"type": {
@@ -10523,37 +10742,37 @@
 					},
 					{
 						"type": "reference",
-						"target": 365,
+						"target": 371,
 						"name": "SanityReference",
 						"package": "@sanity/asset-utils"
 					},
 					{
 						"type": "reference",
-						"target": 290,
+						"target": 296,
 						"name": "SanityImageAsset",
 						"package": "@sanity/asset-utils"
 					},
 					{
 						"type": "reference",
-						"target": 257,
+						"target": 263,
 						"name": "SanityAssetIdStub",
 						"package": "@sanity/asset-utils"
 					},
 					{
 						"type": "reference",
-						"target": 264,
+						"target": 270,
 						"name": "SanityAssetUrlStub",
 						"package": "@sanity/asset-utils"
 					},
 					{
 						"type": "reference",
-						"target": 260,
+						"target": 266,
 						"name": "SanityAssetPathStub",
 						"package": "@sanity/asset-utils"
 					},
 					{
 						"type": "reference",
-						"target": 326,
+						"target": 332,
 						"name": "SanityImageObjectStub",
 						"package": "@sanity/asset-utils"
 					}
@@ -10561,7 +10780,7 @@
 			}
 		},
 		{
-			"id": 368,
+			"id": 374,
 			"name": "SanitySwatchName",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -10573,7 +10792,7 @@
 					"fileName": "src/types.ts",
 					"line": 134,
 					"character": 12,
-					"url": "https://github.com/sanity-io/asset-utils/blob/b7417e1ab5d49318bc9ade51750e636bdfb7f0bd/src/types.ts#L134"
+					"url": "https://github.com/sanity-io/asset-utils/blob/d1d9c07e9244bedf0c0157397b1ee887c0c2caab/src/types.ts#L134"
 				}
 			],
 			"type": {
@@ -10649,11 +10868,11 @@
 				19,
 				172,
 				22,
-				369,
-				25,
-				372,
-				28,
 				375,
+				25,
+				378,
+				28,
+				381,
 				31,
 				117,
 				69,
@@ -10693,40 +10912,41 @@
 				231,
 				236,
 				241,
-				248,
-				257,
-				260,
-				264,
-				273,
-				277,
+				254,
+				263,
+				266,
+				270,
+				279,
 				283,
-				294,
+				289,
 				300,
-				309,
-				313,
+				306,
+				315,
 				319,
-				326,
-				333,
-				344,
-				348,
-				353,
-				362,
-				365
+				325,
+				332,
+				339,
+				350,
+				354,
+				359,
+				368,
+				371
 			]
 		},
 		{
 			"title": "Type Aliases",
 			"children": [
-				256,
-				259,
+				248,
 				262,
-				263,
-				266,
-				282,
-				290,
-				306,
-				347,
-				368
+				265,
+				268,
+				269,
+				272,
+				288,
+				296,
+				312,
+				353,
+				374
 			]
 		},
 		{
@@ -11258,11 +11478,11 @@
 			"qualifiedName": "tryGetUrlFilename"
 		},
 		"124": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "tryGetUrlFilename"
 		},
 		"125": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "args"
 		},
 		"126": {
@@ -11270,11 +11490,11 @@
 			"qualifiedName": "tryGetUrlPath"
 		},
 		"127": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "tryGetUrlPath"
 		},
 		"128": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "args"
 		},
 		"129": {
@@ -11466,11 +11686,11 @@
 			"qualifiedName": "tryGetAssetDocumentId"
 		},
 		"176": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "tryGetAssetDocumentId"
 		},
 		"177": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "args"
 		},
 		"178": {
@@ -11478,11 +11698,11 @@
 			"qualifiedName": "tryGetExtension"
 		},
 		"179": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "tryGetExtension"
 		},
 		"180": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "args"
 		},
 		"181": {
@@ -11490,11 +11710,11 @@
 			"qualifiedName": "tryGetFile"
 		},
 		"182": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "tryGetFile"
 		},
 		"183": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "args"
 		},
 		"184": {
@@ -11502,11 +11722,11 @@
 			"qualifiedName": "tryGetFileAsset"
 		},
 		"185": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "tryGetFileAsset"
 		},
 		"186": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "args"
 		},
 		"187": {
@@ -11514,11 +11734,11 @@
 			"qualifiedName": "tryGetIdFromString"
 		},
 		"188": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "tryGetIdFromString"
 		},
 		"189": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "args"
 		},
 		"190": {
@@ -11526,11 +11746,11 @@
 			"qualifiedName": "tryGetImage"
 		},
 		"191": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "tryGetImage"
 		},
 		"192": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "args"
 		},
 		"193": {
@@ -11538,11 +11758,11 @@
 			"qualifiedName": "tryGetImageAsset"
 		},
 		"194": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "tryGetImageAsset"
 		},
 		"195": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "args"
 		},
 		"196": {
@@ -11550,11 +11770,11 @@
 			"qualifiedName": "tryGetImageDimensions"
 		},
 		"197": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "tryGetImageDimensions"
 		},
 		"198": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "args"
 		},
 		"199": {
@@ -11562,11 +11782,11 @@
 			"qualifiedName": "tryGetProject"
 		},
 		"200": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "tryGetProject"
 		},
 		"201": {
-			"sourceFileName": "src/utils.ts",
+			"sourceFileName": "src/types.ts",
 			"qualifiedName": "args"
 		},
 		"202": {
@@ -11747,501 +11967,525 @@
 		},
 		"248": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityAsset"
+			"qualifiedName": "SafeFunction"
 		},
 		"249": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityAsset._id"
+			"qualifiedName": "__type"
 		},
 		"250": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityAsset._type"
+			"qualifiedName": "__type"
 		},
 		"251": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityAsset.url"
+			"qualifiedName": "args"
 		},
 		"252": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityAsset.path"
+			"qualifiedName": "Args"
 		},
 		"253": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityAsset.assetId"
+			"qualifiedName": "Return"
 		},
 		"254": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityAsset.extension"
+			"qualifiedName": "SanityAsset"
 		},
 		"255": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityAsset.originalFilename"
+			"qualifiedName": "SanityAsset._id"
 		},
 		"256": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityAssetIdParts"
+			"qualifiedName": "SanityAsset._type"
 		},
 		"257": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityAssetIdStub"
+			"qualifiedName": "SanityAsset.url"
 		},
 		"258": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityAssetIdStub._id"
+			"qualifiedName": "SanityAsset.path"
 		},
 		"259": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityAssetObjectStub"
+			"qualifiedName": "SanityAsset.assetId"
 		},
 		"260": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityAssetPathStub"
+			"qualifiedName": "SanityAsset.extension"
 		},
 		"261": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityAssetPathStub.path"
+			"qualifiedName": "SanityAsset.originalFilename"
 		},
 		"262": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityAssetSource"
+			"qualifiedName": "SanityAssetIdParts"
 		},
 		"263": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityAssetUrlParts"
+			"qualifiedName": "SanityAssetIdStub"
 		},
 		"264": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityAssetUrlStub"
+			"qualifiedName": "SanityAssetIdStub._id"
 		},
 		"265": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityAssetUrlStub.url"
+			"qualifiedName": "SanityAssetObjectStub"
 		},
 		"266": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityFileAsset"
+			"qualifiedName": "SanityAssetPathStub"
 		},
 		"267": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "SanityAssetPathStub.path"
 		},
 		"268": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "__type._type"
+			"qualifiedName": "SanityAssetSource"
 		},
 		"269": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "__type.metadata"
+			"qualifiedName": "SanityAssetUrlParts"
 		},
 		"270": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "SanityAssetUrlStub"
 		},
 		"271": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "__type.__index"
+			"qualifiedName": "SanityAssetUrlStub.url"
+		},
+		"272": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "SanityFileAsset"
 		},
 		"273": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityFileAssetIdParts"
+			"qualifiedName": "__type"
 		},
 		"274": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityFileAssetIdParts.type"
+			"qualifiedName": "__type._type"
 		},
 		"275": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityFileAssetIdParts.assetId"
+			"qualifiedName": "__type.metadata"
 		},
 		"276": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityFileAssetIdParts.extension"
+			"qualifiedName": "__type"
 		},
 		"277": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityFileObjectStub"
-		},
-		"278": {
-			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityFileObjectStub._type"
+			"qualifiedName": "__type.__index"
 		},
 		"279": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityFileObjectStub.asset"
+			"qualifiedName": "SanityFileAssetIdParts"
 		},
 		"280": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityFileObjectStub.__index"
-		},
-		"282": {
-			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityFileSource"
-		},
-		"283": {
-			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityFileUrlParts"
-		},
-		"284": {
-			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityFileUrlParts.vanityFilename"
-		},
-		"285": {
-			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityProjectDetails.projectId"
-		},
-		"286": {
-			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityProjectDetails.dataset"
-		},
-		"287": {
-			"sourceFileName": "src/types.ts",
 			"qualifiedName": "SanityFileAssetIdParts.type"
 		},
-		"288": {
+		"281": {
 			"sourceFileName": "src/types.ts",
 			"qualifiedName": "SanityFileAssetIdParts.assetId"
 		},
-		"289": {
+		"282": {
 			"sourceFileName": "src/types.ts",
 			"qualifiedName": "SanityFileAssetIdParts.extension"
 		},
+		"283": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "SanityFileObjectStub"
+		},
+		"284": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "SanityFileObjectStub._type"
+		},
+		"285": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "SanityFileObjectStub.asset"
+		},
+		"286": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "SanityFileObjectStub.__index"
+		},
+		"288": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "SanityFileSource"
+		},
+		"289": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "SanityFileUrlParts"
+		},
 		"290": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageAsset"
+			"qualifiedName": "SanityFileUrlParts.vanityFilename"
 		},
 		"291": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "SanityProjectDetails.projectId"
 		},
 		"292": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "__type._type"
+			"qualifiedName": "SanityProjectDetails.dataset"
 		},
 		"293": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "__type.metadata"
+			"qualifiedName": "SanityFileAssetIdParts.type"
 		},
 		"294": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageAssetIdParts"
+			"qualifiedName": "SanityFileAssetIdParts.assetId"
 		},
 		"295": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageAssetIdParts.type"
+			"qualifiedName": "SanityFileAssetIdParts.extension"
 		},
 		"296": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageAssetIdParts.assetId"
+			"qualifiedName": "SanityImageAsset"
 		},
 		"297": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageAssetIdParts.extension"
+			"qualifiedName": "__type"
 		},
 		"298": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageAssetIdParts.width"
+			"qualifiedName": "__type._type"
 		},
 		"299": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageAssetIdParts.height"
+			"qualifiedName": "__type.metadata"
 		},
 		"300": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageCrop"
+			"qualifiedName": "SanityImageAssetIdParts"
 		},
 		"301": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageCrop._type"
+			"qualifiedName": "SanityImageAssetIdParts.type"
 		},
 		"302": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageCrop.left"
+			"qualifiedName": "SanityImageAssetIdParts.assetId"
 		},
 		"303": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageCrop.bottom"
+			"qualifiedName": "SanityImageAssetIdParts.extension"
 		},
 		"304": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageCrop.right"
+			"qualifiedName": "SanityImageAssetIdParts.width"
 		},
 		"305": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageCrop.top"
+			"qualifiedName": "SanityImageAssetIdParts.height"
 		},
 		"306": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageDimensions"
+			"qualifiedName": "SanityImageCrop"
 		},
 		"307": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "SanityImageCrop._type"
 		},
 		"308": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "__type.aspectRatio"
+			"qualifiedName": "SanityImageCrop.left"
 		},
 		"309": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageFitResult"
+			"qualifiedName": "SanityImageCrop.bottom"
 		},
 		"310": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageFitResult.width"
+			"qualifiedName": "SanityImageCrop.right"
 		},
 		"311": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageFitResult.height"
+			"qualifiedName": "SanityImageCrop.top"
 		},
 		"312": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageFitResult.rect"
+			"qualifiedName": "SanityImageDimensions"
 		},
 		"313": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageHotspot"
+			"qualifiedName": "__type"
 		},
 		"314": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageHotspot._type"
+			"qualifiedName": "__type.aspectRatio"
 		},
 		"315": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageHotspot.width"
+			"qualifiedName": "SanityImageFitResult"
 		},
 		"316": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageHotspot.height"
+			"qualifiedName": "SanityImageFitResult.width"
 		},
 		"317": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageHotspot.x"
+			"qualifiedName": "SanityImageFitResult.height"
 		},
 		"318": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageHotspot.y"
+			"qualifiedName": "SanityImageFitResult.rect"
 		},
 		"319": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageMetadata"
+			"qualifiedName": "SanityImageHotspot"
 		},
 		"320": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageMetadata.dimensions"
+			"qualifiedName": "SanityImageHotspot._type"
 		},
 		"321": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageMetadata.lqip"
+			"qualifiedName": "SanityImageHotspot.width"
 		},
 		"322": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageMetadata.blurHash"
+			"qualifiedName": "SanityImageHotspot.height"
 		},
 		"323": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageMetadata.palette"
+			"qualifiedName": "SanityImageHotspot.x"
 		},
 		"324": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageMetadata.__index"
+			"qualifiedName": "SanityImageHotspot.y"
+		},
+		"325": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "SanityImageMetadata"
 		},
 		"326": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageObjectStub"
+			"qualifiedName": "SanityImageMetadata.dimensions"
 		},
 		"327": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageObjectStub._type"
+			"qualifiedName": "SanityImageMetadata.lqip"
 		},
 		"328": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageObjectStub.asset"
+			"qualifiedName": "SanityImageMetadata.blurHash"
 		},
 		"329": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageObjectStub.crop"
+			"qualifiedName": "SanityImageMetadata.palette"
 		},
 		"330": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageObjectStub.hotspot"
+			"qualifiedName": "SanityImageMetadata.__index"
 		},
-		"331": {
+		"332": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageObjectStub.__index"
+			"qualifiedName": "SanityImageObjectStub"
 		},
 		"333": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImagePalette"
+			"qualifiedName": "SanityImageObjectStub._type"
 		},
 		"334": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImagePalette._type"
+			"qualifiedName": "SanityImageObjectStub.asset"
 		},
 		"335": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImagePalette.darkMuted"
+			"qualifiedName": "SanityImageObjectStub.crop"
 		},
 		"336": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImagePalette.darkVibrant"
+			"qualifiedName": "SanityImageObjectStub.hotspot"
 		},
 		"337": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImagePalette.dominant"
-		},
-		"338": {
-			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImagePalette.lightMuted"
+			"qualifiedName": "SanityImageObjectStub.__index"
 		},
 		"339": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImagePalette.lightVibrant"
+			"qualifiedName": "SanityImagePalette"
 		},
 		"340": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImagePalette.muted"
+			"qualifiedName": "SanityImagePalette._type"
 		},
 		"341": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImagePalette.vibrant"
+			"qualifiedName": "SanityImagePalette.darkMuted"
 		},
 		"342": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImagePalette.__index"
+			"qualifiedName": "SanityImagePalette.darkVibrant"
+		},
+		"343": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "SanityImagePalette.dominant"
 		},
 		"344": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageSize"
+			"qualifiedName": "SanityImagePalette.lightMuted"
 		},
 		"345": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageSize.height"
+			"qualifiedName": "SanityImagePalette.lightVibrant"
 		},
 		"346": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageSize.width"
+			"qualifiedName": "SanityImagePalette.muted"
 		},
 		"347": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageSource"
+			"qualifiedName": "SanityImagePalette.vibrant"
 		},
 		"348": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageSwatch"
-		},
-		"349": {
-			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageSwatch.background"
+			"qualifiedName": "SanityImagePalette.__index"
 		},
 		"350": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageSwatch.foreground"
+			"qualifiedName": "SanityImageSize"
 		},
 		"351": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageSwatch.population"
+			"qualifiedName": "SanityImageSize.height"
 		},
 		"352": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageSwatch.title"
+			"qualifiedName": "SanityImageSize.width"
 		},
 		"353": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageUrlParts"
+			"qualifiedName": "SanityImageSource"
 		},
 		"354": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageUrlParts.vanityFilename"
+			"qualifiedName": "SanityImageSwatch"
 		},
 		"355": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityProjectDetails.projectId"
+			"qualifiedName": "SanityImageSwatch.background"
 		},
 		"356": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityProjectDetails.dataset"
+			"qualifiedName": "SanityImageSwatch.foreground"
 		},
 		"357": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageAssetIdParts.type"
+			"qualifiedName": "SanityImageSwatch.population"
 		},
 		"358": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageAssetIdParts.assetId"
+			"qualifiedName": "SanityImageSwatch.title"
 		},
 		"359": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageAssetIdParts.extension"
+			"qualifiedName": "SanityImageUrlParts"
 		},
 		"360": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageAssetIdParts.width"
+			"qualifiedName": "SanityImageUrlParts.vanityFilename"
 		},
 		"361": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityImageAssetIdParts.height"
+			"qualifiedName": "SanityProjectDetails.projectId"
 		},
 		"362": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityProjectDetails"
+			"qualifiedName": "SanityProjectDetails.dataset"
 		},
 		"363": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityProjectDetails.projectId"
+			"qualifiedName": "SanityImageAssetIdParts.type"
 		},
 		"364": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityProjectDetails.dataset"
+			"qualifiedName": "SanityImageAssetIdParts.assetId"
 		},
 		"365": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityReference"
+			"qualifiedName": "SanityImageAssetIdParts.extension"
 		},
 		"366": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityReference._ref"
+			"qualifiedName": "SanityImageAssetIdParts.width"
 		},
 		"367": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanityReference._weak"
+			"qualifiedName": "SanityImageAssetIdParts.height"
 		},
 		"368": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "SanitySwatchName"
+			"qualifiedName": "SanityProjectDetails"
 		},
 		"369": {
-			"sourceFileName": "src/urls.ts",
-			"qualifiedName": "isSanityAssetUrl"
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "SanityProjectDetails.projectId"
 		},
 		"370": {
-			"sourceFileName": "src/urls.ts",
-			"qualifiedName": "isSanityAssetUrl"
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "SanityProjectDetails.dataset"
 		},
 		"371": {
-			"sourceFileName": "src/urls.ts",
-			"qualifiedName": "url"
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "SanityReference"
 		},
 		"372": {
-			"sourceFileName": "src/urls.ts",
-			"qualifiedName": "isSanityFileUrl"
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "SanityReference._ref"
 		},
 		"373": {
-			"sourceFileName": "src/urls.ts",
-			"qualifiedName": "isSanityFileUrl"
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "SanityReference._weak"
 		},
 		"374": {
-			"sourceFileName": "src/urls.ts",
-			"qualifiedName": "url"
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "SanitySwatchName"
 		},
 		"375": {
 			"sourceFileName": "src/urls.ts",
-			"qualifiedName": "isSanityImageUrl"
+			"qualifiedName": "isSanityAssetUrl"
 		},
 		"376": {
 			"sourceFileName": "src/urls.ts",
-			"qualifiedName": "isSanityImageUrl"
+			"qualifiedName": "isSanityAssetUrl"
 		},
 		"377": {
+			"sourceFileName": "src/urls.ts",
+			"qualifiedName": "url"
+		},
+		"378": {
+			"sourceFileName": "src/urls.ts",
+			"qualifiedName": "isSanityFileUrl"
+		},
+		"379": {
+			"sourceFileName": "src/urls.ts",
+			"qualifiedName": "isSanityFileUrl"
+		},
+		"380": {
+			"sourceFileName": "src/urls.ts",
+			"qualifiedName": "url"
+		},
+		"381": {
+			"sourceFileName": "src/urls.ts",
+			"qualifiedName": "isSanityImageUrl"
+		},
+		"382": {
+			"sourceFileName": "src/urls.ts",
+			"qualifiedName": "isSanityImageUrl"
+		},
+		"383": {
 			"sourceFileName": "src/urls.ts",
 			"qualifiedName": "url"
 		}
