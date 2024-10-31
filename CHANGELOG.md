@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.7](https://github.com/sanity-io/asset-utils/compare/v2.0.6...v2.0.7) (2024-10-31)
+
+
+### Bug Fixes
+
+* correct return values for `try*` functions ([1cca70d](https://github.com/sanity-io/asset-utils/commit/1cca70d2bfebc9345ba17807aafeb52d807c82b2))
+
 ## [2.0.6](https://github.com/sanity-io/asset-utils/compare/v2.0.5...v2.0.6) (2024-10-03)
 
 
