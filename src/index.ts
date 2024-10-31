@@ -75,6 +75,7 @@ export type {
   Rectangle,
   ResolvedSanityFile,
   ResolvedSanityImage,
+  SafeFunction,
   SanityAsset,
   SanityAssetIdParts,
   SanityAssetIdStub,

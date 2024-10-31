@@ -1,15 +1,5 @@
-/* eslint-disable @typescript-eslint/ban-types */
 import {isUnresolvableError} from './errors'
-
-/**
- * @internal
- */
-export type MethodReturnType<T> = T extends (...args: unknown[]) => infer R ? R : any // eslint-disable-line @typescript-eslint/no-explicit-any
-
-/**
- * @internal
- */
-export type ArgumentTypes<F extends Function> = F extends (...args: infer A) => unknown ? A : never
+import type {SafeFunction} from './types'
 
 /**
  * Returns a getter which returns `undefined` instead of throwing,
@@ -19,8 +9,10 @@ export type ArgumentTypes<F extends Function> = F extends (...args: infer A) => 
  * @returns Function that returns `undefined` if passed resolver throws UnresolvableError
  * @internal
  */
-export function getForgivingResolver<T extends Function>(method: T) {
-  return function (...args: ArgumentTypes<T>): MethodReturnType<T> | undefined {
+export function getForgivingResolver<Args extends unknown[], Return>(
+  method: (...args: Args) => Return,
+): SafeFunction<Args, Return> {
+  return (...args: Args): Return | undefined => {
     try {
       return method(...args)
     } catch (err) {

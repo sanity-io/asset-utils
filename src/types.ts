@@ -354,3 +354,11 @@ export interface SanityImageFitResult {
   height?: number
   rect: Rectangle
 }
+
+/**
+ * A "safe function" is a wrapped function that would normally throw an UnresolvableError,
+ * but will instead return `undefined`. Other errors are still thrown.
+ *
+ * @public
+ */
+export type SafeFunction<Args extends unknown[], Return> = (...args: Args) => Return | undefined
