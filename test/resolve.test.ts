@@ -19,7 +19,15 @@ import {
   tryGetImageDimensions,
 } from '../src/resolve.js'
 import {SanityFileSource, SanityImageSource} from '../src/types.js'
-import {customCrop, customHotspot, expectedAsset, expectedImage, testProject} from './fixtures.js'
+import {
+  customCrop,
+  customHotspot,
+  expectedAsset,
+  expectedImage,
+  expectedImageWithCustomBaseUrl,
+  testProject,
+  testProjectWithCustomBaseUrl,
+} from './fixtures.js'
 
 const imgId = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
 const imgPath = 'images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
@@ -208,6 +216,14 @@ test('buildImageUrl(): builds image urls correctly', () => {
   )
 })
 
+test('buildImageUrl(): uses custom baseUrl if specified', () => {
+  const input =
+    'https://cdn.sanity.io/images/abc123/foo/f00baaf00baaf00baaf00baaf00baaf00baaf00b-500x300.png/vanity.png'
+  const output = buildImageUrl(parseImageAssetUrl(input), {baseUrl: 'https://cdn.mycompany.com'})
+
+  expect(output).toEqual(input.replace('https://cdn.sanity.io', 'https://cdn.mycompany.com'))
+})
+
 // buildFilePath()
 test('buildFilePath(): throws if no project id or dataset given', () => {
   expect(() =>
@@ -303,6 +319,14 @@ test('buildFileUrl(): builds file urls correctly with parsed asset url', () => {
   const output = buildFileUrl(parseFileAssetUrl(input))
 
   expect(input).toEqual(output)
+})
+
+test('buildFileUrl(): uses custom baseUrl if specified', () => {
+  const input =
+    'https://cdn.sanity.io/files/abc123/foo/f00baaf00baaf00baaf00baaf00baaf00baaf00b.mov/vanity.mov'
+  const output = buildFileUrl(parseFileAssetUrl(input), {baseUrl: 'https://cdn.mycompany.com'})
+
+  expect(output).toEqual(input.replace('https://cdn.sanity.io', 'https://cdn.mycompany.com'))
 })
 
 test('buildFileUrl(): builds file urls correctly', () => {
@@ -956,6 +980,11 @@ test('getImage(): from ID', () => {
   expect(getImage(id, testProject)).toEqual(expectedImage)
 })
 
+test('getImage(): from ID, with custom base url', () => {
+  const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
+  expect(getImage(id, testProjectWithCustomBaseUrl)).toEqual(expectedImageWithCustomBaseUrl)
+})
+
 test('getImage(): from URL', () => {
   const url =
     'https://cdn.sanity.io/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
@@ -966,6 +995,12 @@ test('getImage(): from URL, staging', () => {
   const url =
     'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
   expect(getImage(url, testProject)).toEqual(expectedImage)
+})
+
+test('getImage(): from URL, override base url', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  expect(getImage(url, testProjectWithCustomBaseUrl)).toEqual(expectedImageWithCustomBaseUrl)
 })
 
 test('getImage(): from URL with prettier filename', () => {
@@ -980,6 +1015,12 @@ test('getImage(): from URL with prettier filename, staging', () => {
   expect(getImage(url, testProject)).toEqual(expectedImage)
 })
 
+test('getImage(): from URL with prettier filename, staging, custom base url', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png'
+  expect(getImage(url, testProjectWithCustomBaseUrl)).toEqual(expectedImageWithCustomBaseUrl)
+})
+
 test('getImage(): from URL with query', () => {
   const url =
     'https://cdn.sanity.io/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
@@ -992,6 +1033,12 @@ test('getImage(): from URL with query, staging', () => {
   expect(getImage(url, testProject)).toEqual(expectedImage)
 })
 
+test('getImage(): from URL with query, staging, with custom base url', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
+  expect(getImage(url, testProjectWithCustomBaseUrl)).toEqual(expectedImageWithCustomBaseUrl)
+})
+
 test('getImage(): from URL with query + prettier filename', () => {
   const url =
     'https://cdn.sanity.io/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png?w=120&h=120'
@@ -1002,6 +1049,12 @@ test('getImage(): from URL with query + prettier filename, staging', () => {
   const url =
     'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png?w=120&h=120'
   expect(getImage(url, testProject)).toEqual(expectedImage)
+})
+
+test('getImage(): from URL with query + prettier filename, staging, with custom base url', () => {
+  const url =
+    'https://cdn.sanity.staging/images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png/prettier.png?w=120&h=120'
+  expect(getImage(url, testProjectWithCustomBaseUrl)).toEqual(expectedImageWithCustomBaseUrl)
 })
 
 test('getImage(): from URL, inferred project', () => {
@@ -1040,6 +1093,12 @@ test('getImage(): from URL with query, inferred project, staging', () => {
   expect(getImage(url)).toEqual(expectedImage)
 })
 
+test('getImage(): from URL with query, override project/dataset', () => {
+  const url =
+    'https://cdn.sanity.io/images/c/d/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png?w=120&h=120'
+  expect(getImage(url, {projectId: 'a', dataset: 'b'})).toEqual(expectedImage)
+})
+
 test('getImage(): from path', () => {
   const path = 'images/foo/bar/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
   expect(getImage(path, testProject)).toEqual(expectedImage)
@@ -1048,6 +1107,11 @@ test('getImage(): from path', () => {
 test('getImage(): from path, inferred project', () => {
   const path = 'images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
   expect(getImage(path)).toEqual(expectedImage)
+})
+
+test('getImage(): from path, override project ID/dataset', () => {
+  const path = 'images/c/d/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png'
+  expect(getImage(path, {projectId: 'a', dataset: 'b'})).toEqual(expectedImage)
 })
 
 test('getImage(): from filename', () => {
