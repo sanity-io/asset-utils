@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/sanity-io/asset-utils/compare/v2.0.7...v2.1.0) (2024-11-04)
+
+
+### Features
+
+* allow specifying custom baseUrl in image/file URL builders ([#41](https://github.com/sanity-io/asset-utils/issues/41)) ([146bc23](https://github.com/sanity-io/asset-utils/commit/146bc237e1e6ba9580db862ad54998fb1827c157))
+
 ## [2.0.7](https://github.com/sanity-io/asset-utils/compare/v2.0.6...v2.0.7) (2024-10-31)
 
 
