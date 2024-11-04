@@ -50,14 +50,15 @@ export function buildImagePath(
  *
  * @param asset - An asset-like shape defining ID, dimensions and extension
  * @param options - Project ID and dataset the image belongs to
- * @returns The URL to the image
+ * @returns The URL to the image, as a string
  * @public
  */
 export function buildImageUrl(
   asset: ImageUrlBuilderOptions | SanityImageUrlParts,
   options?: PathBuilderOptions,
 ): string {
-  return `${cdnUrl}/${buildImagePath(asset, options)}`
+  const baseUrl = options?.baseUrl || cdnUrl
+  return `${baseUrl}/${buildImagePath(asset, options)}`
 }
 
 /**
@@ -89,12 +90,13 @@ export function buildFilePath(
  * Builds the base file URL from the minimal set of parts required to assemble it
  *
  * @param asset - An asset-like shape defining ID and extension
- * @param project - Project ID and dataset the file belongs to, along with other options
- * @returns The URL to the file
+ * @param options - Project ID and dataset the file belongs to, along with other options
+ * @returns The URL to the file, as a string
  * @public
  */
-export function buildFileUrl(asset: FileUrlBuilderOptions, project?: PathBuilderOptions): string {
-  return `${cdnUrl}/${buildFilePath(asset, project)}`
+export function buildFileUrl(asset: FileUrlBuilderOptions, options?: PathBuilderOptions): string {
+  const baseUrl = options?.baseUrl || cdnUrl
+  return `${baseUrl}/${buildFilePath(asset, options)}`
 }
 
 /**

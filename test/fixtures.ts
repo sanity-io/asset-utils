@@ -22,6 +22,8 @@ export const urlWithCustomFilename =
 export const urlWithCustomFilenameAndQuery =
   'https://cdn.sanity.io/images/abc123/blog/734d6889e614ff0c6788105c88cfe071aa3146e5-4240x2832.jpg/kokos.jpg?w=320&h=240'
 
+export const customBaseUrl = 'https://cdn.mycompany.com'
+
 export const crop = {
   _type: 'sanity.imageCrop',
   bottom: 0.03748125937031466,
@@ -162,8 +164,19 @@ export const expectedAsset = {
   },
 }
 
+export const expectedAssetWithCustomBaseUrl = {
+  ...expectedAsset,
+  url: `${customBaseUrl}/images/a/b/f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240.png`,
+}
+
 export const expectedImage = {
   asset: expectedAsset,
+  crop: DEFAULT_CROP,
+  hotspot: DEFAULT_HOTSPOT,
+}
+
+export const expectedImageWithCustomBaseUrl = {
+  asset: expectedAssetWithCustomBaseUrl,
   crop: DEFAULT_CROP,
   hotspot: DEFAULT_HOTSPOT,
 }
@@ -187,4 +200,9 @@ export const customCrop = {
 export const testProject = {
   projectId: 'a',
   dataset: 'b',
+}
+
+export const testProjectWithCustomBaseUrl = {
+  ...testProject,
+  baseUrl: customBaseUrl,
 }
