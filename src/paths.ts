@@ -158,7 +158,7 @@ export function getUrlPath(url: string): string {
     return url
   }
 
-  if (!(cdnUrlPattern.test(url) || customCdnUrlPattern.test(url))) {
+  if (!cdnUrlPattern.test(url) && !customCdnUrlPattern.test(url)) {
     throw new UnresolvableError(`Failed to resolve path from URL "${url}"`)
   }
 
