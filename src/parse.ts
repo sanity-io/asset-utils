@@ -1,5 +1,6 @@
 import {
   cdnUrlPattern,
+  customCdnUrlPattern,
   fileAssetIdPattern,
   imageAssetFilenamePattern,
   imageAssetIdPattern,
@@ -116,7 +117,7 @@ export function parseAssetFilename(filename: string): SanityAssetIdParts {
  * @throws If URL is invalid or not a Sanity asset URL
  */
 export function parseAssetUrl(url: string): SanityAssetUrlParts {
-  if (!cdnUrlPattern.test(url)) {
+  if (!cdnUrlPattern.test(url) && !customCdnUrlPattern.test(url)) {
     throw new Error(`URL is not a valid Sanity asset URL: ${url}`)
   }
 

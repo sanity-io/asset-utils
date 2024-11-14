@@ -36,6 +36,8 @@ const imgPathPretty = `${imgPath}/pretty.png`
 const imgUrlPretty = `${imgUrl}/pretty.png`
 const stagingImgUrl = `https://cdn.sanity.staging/${imgPath}`
 const stagingImgUrlPretty = `${stagingImgUrl}/pretty.png`
+const customCdnImgUrl = `https://cdn.autofoos.com/${imgPath}`
+const customCdnImgUrlPretty = `${customCdnImgUrl}/pretty.png`
 const validImgSources: [string, SanityImageSource][] = [
   ['asset id', imgId],
   ['reference', {_ref: imgId}],
@@ -47,12 +49,14 @@ const validImgSources: [string, SanityImageSource][] = [
   ['object path stub', {asset: {path: imgPath}}],
   ['object url stub', {asset: {url: imgUrl}}],
   ['staging object url stub', {asset: {url: stagingImgUrl}}],
+  ['custom cdn object url stub', {asset: {url: customCdnImgUrl}}],
   ['path stub (pretty filename)', {path: imgPathPretty}],
   ['url stub (pretty filename)', {url: imgUrlPretty}],
   ['staging url stub (pretty filename)', {url: stagingImgUrlPretty}],
   ['object path stub (pretty filename)', {asset: {path: imgPathPretty}}],
   ['object url stub (pretty filename)', {asset: {url: imgUrlPretty}}],
   ['staging object url stub (pretty filename)', {asset: {url: stagingImgUrlPretty}}],
+  ['custom cdn object url stub (pretty filename)', {asset: {url: customCdnImgUrlPretty}}],
 ]
 
 const imgLegacyId = 'image-LA5zSofUOP0i_iQwi4B2dEbzHQseitcuORm4n-600x578-png'
@@ -62,6 +66,8 @@ const imgLegacyPathPretty = `${imgLegacyPath}/pretty.png`
 const imgLegacyUrlPretty = `${imgLegacyUrl}/pretty.png`
 const stagingImgLegacyUrl = `https://cdn.sanity.io/${imgLegacyPath}`
 const stagingImgLegacyUrlPretty = `${stagingImgLegacyUrl}/pretty.png`
+const customCdnImgLegacyUrl = `https://cdn.autofoos.com/${imgLegacyPath}`
+const customCdnImgLegacyUrlPretty = `${customCdnImgLegacyUrl}/pretty.png`
 const validLegacyImgSources: [string, SanityImageSource][] = [
   ['asset id', imgLegacyId],
   ['reference', {_ref: imgLegacyId}],
@@ -73,12 +79,14 @@ const validLegacyImgSources: [string, SanityImageSource][] = [
   ['object path stub', {asset: {path: imgLegacyPath}}],
   ['object url stub', {asset: {url: imgLegacyUrl}}],
   ['staging object url stub', {asset: {url: stagingImgLegacyUrl}}],
+  ['custom cdn object url stub', {asset: {url: customCdnImgLegacyUrl}}],
   ['path stub (pretty filename)', {path: imgLegacyPathPretty}],
   ['url stub (pretty filename)', {url: imgLegacyUrlPretty}],
   ['staging url stub (pretty filename)', {url: stagingImgLegacyUrlPretty}],
   ['object path stub (pretty filename)', {asset: {path: imgLegacyPathPretty}}],
   ['object url stub (pretty filename)', {asset: {url: imgLegacyUrlPretty}}],
   ['staging object url stub (pretty filename)', {asset: {url: stagingImgLegacyUrlPretty}}],
+  ['custom cdn object url stub (pretty filename)', {asset: {url: customCdnImgLegacyUrlPretty}}],
 ]
 
 const fileId = 'file-def987abc12345678909877654321abcdef98765-pdf'
@@ -88,6 +96,8 @@ const filePathPretty = `${filePath}/pretty.pdf`
 const fileUrlPretty = `${fileUrl}/pretty.pdf`
 const stagingFileUrl = `https://cdn.sanity.staging/${filePath}`
 const stagingFileUrlPretty = `${stagingFileUrl}/pretty.pdf`
+const customCdnFileUrl = `https://cdn.autofoos.com/${filePath}`
+const customCdnFileUrlPretty = `${customCdnFileUrl}/pretty.pdf`
 const validFileSources: [string, SanityFileSource][] = [
   ['asset id', fileId],
   ['reference', {_ref: fileId}],
@@ -99,12 +109,14 @@ const validFileSources: [string, SanityFileSource][] = [
   ['object path stub', {asset: {path: filePath}}],
   ['object url stub', {asset: {url: fileUrl}}],
   ['staging object url stub', {asset: {url: stagingFileUrl}}],
+  ['custom cdn object url stub', {asset: {url: customCdnFileUrl}}],
   ['path stub (pretty filename)', {path: filePathPretty}],
   ['url stub (pretty filename)', {url: fileUrlPretty}],
   ['staging url stub (pretty filename)', {url: stagingFileUrlPretty}],
   ['object path stub (pretty filename)', {asset: {path: filePathPretty}}],
   ['object url stub (pretty filename)', {asset: {url: fileUrlPretty}}],
   ['staging object url stub (pretty filename)', {asset: {url: stagingFileUrlPretty}}],
+  ['custom cdn object url stub (pretty filename)', {asset: {url: customCdnFileUrlPretty}}],
 ]
 
 // buildImagePath()
