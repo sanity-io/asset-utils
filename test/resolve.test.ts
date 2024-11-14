@@ -86,7 +86,7 @@ const validLegacyImgSources: [string, SanityImageSource][] = [
   ['object path stub (pretty filename)', {asset: {path: imgLegacyPathPretty}}],
   ['object url stub (pretty filename)', {asset: {url: imgLegacyUrlPretty}}],
   ['staging object url stub (pretty filename)', {asset: {url: stagingImgLegacyUrlPretty}}],
-  ['cusom cdn object url stub (pretty filename)', {asset: {url: customCdnImgLegacyUrlPretty}}],
+  ['custom cdn object url stub (pretty filename)', {asset: {url: customCdnImgLegacyUrlPretty}}],
 ]
 
 const fileId = 'file-def987abc12345678909877654321abcdef98765-pdf'
