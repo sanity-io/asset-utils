@@ -8,6 +8,13 @@ export const cdnUrl = 'https://cdn.sanity.io'
  */
 export const cdnUrlPattern = /^https:\/\/cdn\.sanity\./
 
+
+/**
+ * @internal
+ */
+export const customCdnUrlPattern = /^https:\/\/cdn\.[^/]+\/(images|files)\/[^/]+\/.*?[a-zA-Z0-9_]{24,40}.*$/
+
+
 /**
  * @internal
  */

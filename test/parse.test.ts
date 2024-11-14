@@ -112,6 +112,7 @@ test('parseAssetFilename(): returns object of named image properties if legacy f
 test.each([
   'https://cdn.sanity.io/images/espenhov/diary/756e4bd9c0a04ada3d3cc396cf81f1c433b07870-5760x3840.jpg/vanity-filename.jpg',
   'https://cdn.sanity.staging/images/espenhov/diary/756e4bd9c0a04ada3d3cc396cf81f1c433b07870-5760x3840.jpg/vanity-filename.jpg',
+  'https://cdn.autofoos.com/images/espenhov/diary/756e4bd9c0a04ada3d3cc396cf81f1c433b07870-5760x3840.jpg/vanity-filename.jpg',
 ])(
   'parseAssetUrl(): returns object of named image properties on modern filename with vanity filename',
   (url) => {
@@ -131,6 +132,7 @@ test.each([
 test.each([
   'https://cdn.sanity.io/images/espenhov/diary/756e4bd9c0a04ada3d3cc396cf81f1c433b07870-5760x3840.jpg',
   'https://cdn.sanity.staging/images/espenhov/diary/756e4bd9c0a04ada3d3cc396cf81f1c433b07870-5760x3840.jpg',
+  'https://cdn.autofoos.com/images/espenhov/diary/756e4bd9c0a04ada3d3cc396cf81f1c433b07870-5760x3840.jpg',
 ])('parseAssetUrl(): returns object of named image properties on modern filename', (url) => {
   expect(parseAssetUrl(url)).toMatchObject({
     assetId: '756e4bd9c0a04ada3d3cc396cf81f1c433b07870',
@@ -147,6 +149,7 @@ test.each([
 test.each([
   'https://cdn.sanity.io/images/espenhov/diary/LA5zSofUOP0i_iQwi4B2dEbzHQseitcuORm4n-600x578.png',
   'https://cdn.sanity.staging/images/espenhov/diary/LA5zSofUOP0i_iQwi4B2dEbzHQseitcuORm4n-600x578.png',
+  'https://cdn.autofoos.com/images/espenhov/diary/LA5zSofUOP0i_iQwi4B2dEbzHQseitcuORm4n-600x578.png',
 ])('parseAssetUrl(): returns object of named image properties on legacy filename', (url) => {
   expect(parseAssetUrl(url)).toMatchObject({
     assetId: 'LA5zSofUOP0i_iQwi4B2dEbzHQseitcuORm4n',
@@ -163,6 +166,7 @@ test.each([
 test.each([
   'https://cdn.sanity.io/files/espenhov/diary/ae0ef9f916843d32fef3faffb9a675d4cce046f0.pdf/oslo-guide.pdf',
   'https://cdn.sanity.staging/files/espenhov/diary/ae0ef9f916843d32fef3faffb9a675d4cce046f0.pdf/oslo-guide.pdf',
+  'https://cdn.autofoos.com/files/espenhov/diary/ae0ef9f916843d32fef3faffb9a675d4cce046f0.pdf/oslo-guide.pdf',
 ])(
   'parseAssetUrl(): returns object of named file properties on modern filename with vanity filename',
   (url) => {
@@ -180,6 +184,7 @@ test.each([
 test.each([
   'https://cdn.sanity.io/files/espenhov/diary/ae0ef9f916843d32fef3faffb9a675d4cce046f0.pdf',
   'https://cdn.sanity.staging/files/espenhov/diary/ae0ef9f916843d32fef3faffb9a675d4cce046f0.pdf',
+  'https://cdn.autofoos.com/files/espenhov/diary/ae0ef9f916843d32fef3faffb9a675d4cce046f0.pdf',
 ])('parseAssetUrl(): returns object of named file properties on modern filename', (url) => {
   expect(parseAssetUrl(url)).toMatchObject({
     assetId: 'ae0ef9f916843d32fef3faffb9a675d4cce046f0',
@@ -194,6 +199,7 @@ test.each([
 test.each([
   'https://cdn.sanity.io/files/espenhov/diary/LA5zSofUOP0i_iQwi4B2dEbzHQseitcuORm4n.pdf',
   'https://cdn.sanity.staging/files/espenhov/diary/LA5zSofUOP0i_iQwi4B2dEbzHQseitcuORm4n.pdf',
+  'https://cdn.autofoos.com/files/espenhov/diary/LA5zSofUOP0i_iQwi4B2dEbzHQseitcuORm4n.pdf',
 ])('parseAssetUrl(): returns object of named file properties on legacy filename', (url) => {
   expect(parseAssetUrl(url)).toMatchObject({
     assetId: 'LA5zSofUOP0i_iQwi4B2dEbzHQseitcuORm4n',
