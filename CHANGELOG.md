@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/sanity-io/asset-utils/compare/v2.1.0...v2.2.0) (2024-11-14)
+
+
+### Features
+
+* add regex pattern for custom cdn urls ([#43](https://github.com/sanity-io/asset-utils/issues/43)) ([211f387](https://github.com/sanity-io/asset-utils/commit/211f38794fcb7dca38387f89c36d21e32254e6c3))
+
 ## [2.1.0](https://github.com/sanity-io/asset-utils/compare/v2.0.7...v2.1.0) (2024-11-04)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@sanity/asset-utils",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "author": "Sanity.io <hello@sanity.io>",
   "license": "MIT",
   "type": "module",
