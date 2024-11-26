@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/sanity-io/asset-utils/compare/v2.2.0...v2.2.1) (2024-11-26)
+
+
+### Bug Fixes
+
+* support custom CDNs in `getIdFromString` ([#45](https://github.com/sanity-io/asset-utils/issues/45)) ([8e88a60](https://github.com/sanity-io/asset-utils/commit/8e88a602600bdb4c57a231f2d15f58374dc7751e))
+
 ## [2.2.0](https://github.com/sanity-io/asset-utils/compare/v2.1.0...v2.2.0) (2024-11-14)
 
 
