@@ -1,8 +1,12 @@
-import {isAssetObjectStub, isAssetPathStub, isAssetUrlStub, isReference} from './asserters.js'
+import {
+  isAssetObjectStub,
+  isAssetPathStub,
+  isAssetUrlStub,
+  isCdnUrl,
+  isReference,
+} from './asserters.js'
 import {
   cdnUrl,
-  cdnUrlPattern,
-  customCdnUrlPattern,
   fileAssetFilenamePattern,
   imageAssetFilenamePattern,
   pathPattern,
@@ -158,7 +162,7 @@ export function getUrlPath(url: string): string {
     return url
   }
 
-  if (!cdnUrlPattern.test(url) && !customCdnUrlPattern.test(url)) {
+  if (!isCdnUrl(url)) {
     throw new UnresolvableError(`Failed to resolve path from URL "${url}"`)
   }
 

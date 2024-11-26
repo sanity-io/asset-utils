@@ -465,6 +465,13 @@ test('getAssetDocumentId(): from URL (staging)', () => {
   expect(getAssetDocumentId(url)).toBe(id)
 })
 
+test('getAssetDocumentId(): from URL (custom cdn)', () => {
+  const id = 'image-9d884e501c64d640a321ca5700d32ac4250064ca-600x400-jpg'
+  const url =
+    'https://cdn.content.mydomain.com/images/foo/bar/9d884e501c64d640a321ca5700d32ac4250064ca-600x400.jpg'
+  expect(getAssetDocumentId(url)).toBe(id)
+})
+
 test('getAssetDocumentId(): from URL with pretty filename', () => {
   const id = 'image-f00baaf00baaf00baaf00baaf00baaf00baaf00b-320x240-png'
   const url =
