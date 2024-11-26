@@ -1,4 +1,9 @@
-import {fileAssetIdPattern, imageAssetIdPattern} from './constants.js'
+import {
+  cdnUrlPattern,
+  customCdnUrlPattern,
+  fileAssetIdPattern,
+  imageAssetIdPattern,
+} from './constants.js'
 import type {
   SanityAssetIdStub,
   SanityAssetObjectStub,
@@ -125,4 +130,16 @@ export function isAssetId(documentId: string): boolean {
 export function isAssetObjectStub(stub: unknown): stub is SanityAssetObjectStub {
   const item = stub as SanityAssetObjectStub
   return isObject(item) && item.asset && typeof item.asset === 'object'
+}
+
+/**
+ * Checks whether or not the given URL is a valid Sanity CDN URL or what appears to be a valid
+ * custom CDN URL (has to be prefixed with `cdn.`, and follow the same path pattern as Sanity CDN )
+ *
+ * @param url - URL to check
+ * @returns True if Sanity CDN URL/Custom CDN URL, false otherwise
+ * @internal
+ */
+export function isCdnUrl(url: string): boolean {
+  return cdnUrlPattern.test(url) || customCdnUrlPattern.test(url)
 }

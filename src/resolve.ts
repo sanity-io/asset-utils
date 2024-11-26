@@ -3,13 +3,13 @@ import {
   isAssetObjectStub,
   isAssetPathStub,
   isAssetUrlStub,
+  isCdnUrl,
   isReference,
   isSanityFileAsset,
   isSanityImageAsset,
 } from './asserters.js'
 import {
   cdnUrl,
-  cdnUrlPattern,
   dummyProject,
   fileAssetFilenamePattern,
   idPattern,
@@ -309,7 +309,7 @@ export function getIdFromString(str: string): string {
     return str
   }
 
-  const isAbsoluteUrl = cdnUrlPattern.test(str)
+  const isAbsoluteUrl = isCdnUrl(str)
   const path = isAbsoluteUrl ? new URL(str).pathname : str
 
   if (path.indexOf('/images') === 0 || path.indexOf('/files') === 0) {
