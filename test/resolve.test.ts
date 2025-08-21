@@ -1584,7 +1584,7 @@ test('tryGetAssetDocumentId(): works for completed uploads with both asset and u
 // getImageDimensions tests for in-progress uploads
 test('getImageDimensions(): returns placeholder dimensions for in-progress uploads', () => {
   const result = getImageDimensions(inProgressImageUpload)
-  expect(result).toEqual({width: 1, height: 1, aspectRatio: 1})
+  expect(result).toEqual({width: 0, height: 0, aspectRatio: 0})
 })
 
 test('getImageDimensions(): works for valid image sources', () => {
