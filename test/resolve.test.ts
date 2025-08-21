@@ -1,10 +1,18 @@
 import {expect, test} from 'vitest'
 
+import {
+  fileAssetType,
+  imageAssetType,
+  inProgressAssetAssetId,
+  inProgressAssetExtension,
+  inProgressAssetId,
+} from '../src/constants.js'
 import {parseFileAssetUrl, parseImageAssetUrl} from '../src/parse.js'
 import {buildFilePath, buildFileUrl, buildImagePath, buildImageUrl} from '../src/paths.js'
 import {
   getAssetDocumentId,
   getExtension,
+  getFile,
   getIdFromString,
   getImage,
   getImageAsset,
@@ -1495,4 +1503,112 @@ test('isAssetFilename(): returns true for file filenames', () => {
 
 test('isAssetFilename(): returns false for invalid filenames', () => {
   expect(isAssetFilename('foobar-lol.rottifnatti')).toBe(false)
+})
+
+// In-progress upload tests
+const inProgressImageUpload = {_upload: {progress: 50}}
+const inProgressFileUpload = {_upload: {progress: 75}}
+const completedImageWithUpload = {asset: {_ref: imgId}, _upload: {progress: 100}}
+
+test('getAssetDocumentId(): works for valid sources', () => {
+  expect(getAssetDocumentId(imgId)).toBe(imgId)
+  expect(getAssetDocumentId({_ref: imgId})).toBe(imgId)
+  expect(getAssetDocumentId({asset: {_ref: imgId}})).toBe(imgId)
+})
+
+// getImage tests for in-progress uploads
+test('getImage(): returns placeholder for in-progress image uploads', () => {
+  const result = getImage(inProgressImageUpload)
+
+  expect(result.asset._id).toBe(inProgressAssetId)
+  expect(result.asset._type).toBe(imageAssetType)
+  expect(result.asset.assetId).toBe(inProgressAssetAssetId)
+  expect(result.asset.extension).toBe(inProgressAssetExtension)
+  expect(result.asset.url).toBe('')
+  expect(result.asset.path).toBe('')
+  expect(result.asset.metadata.dimensions).toEqual({width: 1, height: 1, aspectRatio: 1})
+  expect(result.crop).toEqual({left: 0, top: 0, right: 0, bottom: 0})
+  expect(result.hotspot).toEqual({x: 0.5, y: 0.5, width: 1, height: 1})
+})
+
+test('getImage(): works for valid image sources', () => {
+  const result = getImage(imgId, testProject)
+  expect(result.asset._id).toBe(imgId)
+  expect(result.asset._type).toBe('sanity.imageAsset')
+})
+
+test('getImage(): works for completed uploads with both asset and upload', () => {
+  const result = getImage(completedImageWithUpload, testProject)
+  expect(result.asset._id).toBe(imgId)
+})
+
+// getFile tests for in-progress uploads
+test('getFile(): returns placeholder for in-progress file uploads', () => {
+  const result = getFile(inProgressFileUpload)
+
+  expect(result.asset._id).toBe(inProgressAssetId)
+  expect(result.asset._type).toBe(fileAssetType)
+  expect(result.asset.assetId).toBe(inProgressAssetAssetId)
+  expect(result.asset.extension).toBe(inProgressAssetExtension)
+  expect(result.asset.url).toBe('')
+  expect(result.asset.path).toBe('')
+  expect(result.asset.metadata).toEqual({})
+})
+
+test('getFile(): works for valid file sources', () => {
+  const result = getFile(fileId, testProject)
+  expect(result.asset._id).toBe(fileId)
+  expect(result.asset._type).toBe('sanity.fileAsset')
+})
+
+// getAssetDocumentId tests for in-progress uploads
+test('getAssetDocumentId(): returns placeholder for in-progress uploads', () => {
+  expect(getAssetDocumentId(inProgressImageUpload)).toBe(inProgressAssetId)
+  expect(getAssetDocumentId(inProgressFileUpload)).toBe(inProgressAssetId)
+})
+
+test('getAssetDocumentId(): works for completed uploads with both asset and upload', () => {
+  expect(getAssetDocumentId(completedImageWithUpload)).toBe(imgId)
+})
+
+// tryGetAssetDocumentId tests for in-progress uploads
+test('tryGetAssetDocumentId(): returns placeholder for in-progress uploads', () => {
+  expect(tryGetAssetDocumentId(inProgressImageUpload)).toBe(inProgressAssetId)
+  expect(tryGetAssetDocumentId(inProgressFileUpload)).toBe(inProgressAssetId)
+})
+
+test('tryGetAssetDocumentId(): works for completed uploads with both asset and upload', () => {
+  expect(tryGetAssetDocumentId(completedImageWithUpload)).toBe(imgId)
+})
+
+// getImageDimensions tests for in-progress uploads
+test('getImageDimensions(): returns placeholder dimensions for in-progress uploads', () => {
+  const result = getImageDimensions(inProgressImageUpload)
+  expect(result).toEqual({width: 1, height: 1, aspectRatio: 1})
+})
+
+test('getImageDimensions(): works for valid image sources', () => {
+  const result = getImageDimensions(imgId)
+  expect(result).toEqual({width: 320, height: 240, aspectRatio: 320 / 240})
+})
+
+// getExtension tests for in-progress uploads
+test('getExtension(): returns placeholder extension for in-progress image uploads', () => {
+  const result = getExtension(inProgressImageUpload)
+  expect(result).toBe(inProgressAssetExtension)
+})
+
+test('getExtension(): returns placeholder extension for in-progress file uploads', () => {
+  const result = getExtension(inProgressFileUpload)
+  expect(result).toBe(inProgressAssetExtension)
+})
+
+test('getExtension(): works for valid image sources', () => {
+  const result = getExtension(imgId)
+  expect(result).toBe('png')
+})
+
+test('getExtension(): works for valid file sources', () => {
+  const result = getExtension(fileId)
+  expect(result).toBe('pdf')
 })

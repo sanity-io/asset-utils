@@ -41,6 +41,7 @@ test('index: provides all exports', () => {
       'isImageAssetFilename',
       'isImageAssetId',
       'isImageSource',
+      'isInProgressUpload',
       'isReference',
       'isSanityAssetUrl',
       'isSanityFileAsset',
