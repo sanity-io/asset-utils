@@ -4,6 +4,7 @@ import {
   isAssetPathStub,
   isAssetUrlStub,
   isCdnUrl,
+  isInProgressUpload,
   isReference,
   isSanityFileAsset,
   isSanityImageAsset,
@@ -12,8 +13,13 @@ import {
   cdnUrl,
   dummyProject,
   fileAssetFilenamePattern,
+  fileAssetType,
   idPattern,
   imageAssetFilenamePattern,
+  imageAssetType,
+  inProgressAssetAssetId,
+  inProgressAssetExtension,
+  inProgressAssetId,
   pathPattern,
 } from './constants.js'
 import {UnresolvableError} from './errors.js'
@@ -55,6 +61,12 @@ import {getForgivingResolver} from './utils.js'
  * @public
  */
 export function getImageDimensions(src: SanityImageSource): SanityImageDimensions {
+  // Check if this is an in-progress upload
+  if (isInProgressUpload(src)) {
+    // Return placeholder dimensions for in-progress uploads
+    return {width: 0, height: 0, aspectRatio: 0}
+  }
+
   const imageId = getAssetDocumentId(src)
   const {width, height} = parseImageAssetId(imageId)
   const aspectRatio = width / height
@@ -79,6 +91,12 @@ export const tryGetImageDimensions = getForgivingResolver(getImageDimensions)
  * @public
  */
 export function getExtension(src: SanityAssetSource): string {
+  // Check if this is an in-progress upload
+  if (isInProgressUpload(src)) {
+    // Return placeholder extension for in-progress uploads
+    return inProgressAssetExtension
+  }
+
   return isFileSource(src)
     ? getFile(src, dummyProject).asset.extension
     : getImage(src, dummyProject).asset.extension
@@ -107,6 +125,26 @@ export function getImage(
   src: SanityImageSource,
   project?: SanityProjectDetails,
 ): ResolvedSanityImage {
+  // Check if this is an in-progress upload
+  if (isInProgressUpload(src)) {
+    // Return a placeholder image object that allows rendering to continue
+    return {
+      asset: {
+        _id: inProgressAssetId,
+        _type: imageAssetType,
+        assetId: inProgressAssetAssetId,
+        extension: inProgressAssetExtension,
+        url: '',
+        path: '',
+        metadata: {
+          dimensions: {width: 1, height: 1, aspectRatio: 1},
+        },
+      },
+      crop: getDefaultCrop(),
+      hotspot: getDefaultHotspot(),
+    }
+  }
+
   const projectDetails = project || tryGetProject(src)
   const asset = getImageAsset(src, projectDetails)
 
@@ -193,6 +231,22 @@ export const tryGetImageAsset = getForgivingResolver(getImageAsset)
  * @public
  */
 export function getFile(src: SanityFileSource, project?: SanityProjectDetails): ResolvedSanityFile {
+  // Check if this is an in-progress upload
+  if (isInProgressUpload(src)) {
+    // Return a placeholder file object that allows rendering to continue
+    return {
+      asset: {
+        _id: inProgressAssetId,
+        _type: fileAssetType,
+        assetId: inProgressAssetAssetId,
+        extension: inProgressAssetExtension,
+        url: '',
+        path: '',
+        metadata: {},
+      },
+    }
+  }
+
   const projectDetails = project || tryGetProject(src)
   const asset = getFileAsset(src, projectDetails)
   return {asset}
@@ -218,6 +272,19 @@ export const tryGetFile = getForgivingResolver(getFile)
  * @public
  */
 export function getFileAsset(src: SanityFileSource, options?: PathBuilderOptions): SanityFileAsset {
+  // Check if this is an in-progress upload
+  if (isInProgressUpload(src)) {
+    // Return a placeholder file object that allows rendering to continue
+    return {
+      assetId: inProgressAssetAssetId,
+      _id: inProgressAssetId,
+      _type: fileAssetType,
+      extension: inProgressAssetExtension,
+      metadata: {},
+      url: '',
+      path: '',
+    }
+  }
   const projectDetails: PathBuilderOptions = {...(options || getProject(src)), useVanityName: false}
 
   const _id = getAssetDocumentId(src)
@@ -262,6 +329,13 @@ export const tryGetFileAsset = getForgivingResolver(getFileAsset)
  * @public
  */
 export function getAssetDocumentId(src: unknown): string {
+  // Check if this is an in-progress upload (has upload but no asset)
+  if (isInProgressUpload(src)) {
+    // Return a placeholder ID that indicates in-progress state
+    // This allows the render cycle to continue until asset is available
+    return inProgressAssetId
+  }
+
   const source = isAssetObjectStub(src) ? src.asset : src
 
   let id = ''

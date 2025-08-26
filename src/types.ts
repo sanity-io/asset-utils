@@ -116,6 +116,7 @@ export type SanityFileSource =
   | SanityAssetUrlStub
   | SanityAssetPathStub
   | SanityFileObjectStub
+  | SanityFileUploadStub
 
 /**
  * @public
@@ -128,6 +129,7 @@ export type SanityImageSource =
   | SanityAssetUrlStub
   | SanityAssetPathStub
   | SanityImageObjectStub
+  | SanityImageUploadStub
 
 /**
  * @public
@@ -278,6 +280,7 @@ export interface SanityFileObjectStub {
     | SanityAssetIdStub
     | SanityAssetPathStub
     | SanityAssetUrlStub
+  _upload?: unknown // For in-progress uploads
   [key: string]: unknown
 }
 
@@ -294,6 +297,28 @@ export interface SanityImageObjectStub {
     | SanityAssetUrlStub
   crop?: SanityImageCrop
   hotspot?: SanityImageHotspot
+  [key: string]: unknown
+}
+
+/**
+ * Represents an in-progress image upload (has upload property but no asset yet)
+ * @public
+ */
+export interface SanityImageUploadStub {
+  _type?: string
+  _upload?: unknown
+  asset?: SanityImageAsset
+  [key: string]: unknown
+}
+
+/**
+ * Represents an in-progress file upload (has upload property but no asset yet)
+ * @public
+ */
+export interface SanityFileUploadStub {
+  _type?: string
+  _upload?: unknown
+  asset?: SanityFileAsset
   [key: string]: unknown
 }
 

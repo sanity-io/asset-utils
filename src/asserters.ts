@@ -10,7 +10,9 @@ import type {
   SanityAssetPathStub,
   SanityAssetUrlStub,
   SanityFileAsset,
+  SanityFileUploadStub,
   SanityImageAsset,
+  SanityImageUploadStub,
   SanityReference,
 } from './types.js'
 import {isObject} from './utils.js'
@@ -129,7 +131,22 @@ export function isAssetId(documentId: string): boolean {
  */
 export function isAssetObjectStub(stub: unknown): stub is SanityAssetObjectStub {
   const item = stub as SanityAssetObjectStub
-  return isObject(item) && item.asset && typeof item.asset === 'object'
+  return isObject(item) && Boolean(item.asset) && typeof item.asset === 'object'
+}
+
+/**
+ * Checks whether or not the given source is an in-progress upload
+ * (has upload property but no asset property)
+ *
+ * @param stub - Possible in-progress upload
+ * @returns Whether or not the passed object is an in-progress upload
+ * @public
+ */
+export function isInProgressUpload(
+  stub: unknown,
+): stub is SanityImageUploadStub | SanityFileUploadStub {
+  const item = stub as SanityImageUploadStub | SanityFileUploadStub
+  return isObject(item) && Boolean(item._upload) && !('asset' in item)
 }
 
 /**

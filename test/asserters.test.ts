@@ -2,8 +2,10 @@ import {expect, test} from 'vitest'
 
 import {
   isAssetId,
+  isAssetObjectStub,
   isFileAssetId,
   isImageAssetId,
+  isInProgressUpload,
   isSanityAssetUrl,
   isSanityFileUrl,
   isSanityImageUrl,
@@ -118,6 +120,55 @@ test('isSanityImageUrl(): returns false for file urls (staging)', () => {
 
 test('isSanityImageUrl(): returns false for invalid urls', () => {
   expect(isSanityImageUrl('https://cdn.not.sanity/rottifnatti/lol.jpg')).toBe(false)
+})
+
+// isAssetObjectStub tests
+test('isAssetObjectStub(): returns true for valid asset object stubs', () => {
+  expect(isAssetObjectStub({asset: {_ref: 'image-123'}})).toBe(true)
+  expect(isAssetObjectStub({asset: {_id: 'image-123'}})).toBe(true)
+  expect(isAssetObjectStub({asset: {path: 'images/test.jpg'}})).toBe(true)
+  expect(isAssetObjectStub({asset: {url: 'https://cdn.sanity.io/images/test.jpg'}})).toBe(true)
+})
+
+test('isAssetObjectStub(): returns false for objects without asset property', () => {
+  expect(isAssetObjectStub({})).toBe(false)
+  expect(isAssetObjectStub({_upload: {}})).toBe(false)
+  expect(isAssetObjectStub({asset: null})).toBe(false)
+  expect(isAssetObjectStub({asset: undefined})).toBe(false)
+})
+
+test('isAssetObjectStub(): returns false for non-objects', () => {
+  expect(isAssetObjectStub(null)).toBe(false)
+  expect(isAssetObjectStub(undefined)).toBe(false)
+  expect(isAssetObjectStub('string')).toBe(false)
+  expect(isAssetObjectStub(123)).toBe(false)
+})
+
+// isInProgressUpload tests
+test('isInProgressUpload(): returns true for in-progress uploads', () => {
+  expect(isInProgressUpload({_upload: {}})).toBe(true)
+  expect(isInProgressUpload({_upload: {progress: 50}})).toBe(true)
+  expect(isInProgressUpload({_upload: {}})).toBe(true)
+})
+
+test('isInProgressUpload(): returns false for completed uploads with asset', () => {
+  expect(isInProgressUpload({asset: {_ref: 'image-123'}, _upload: {}})).toBe(false)
+  expect(isInProgressUpload({asset: {_id: 'image-123'}, _upload: {}})).toBe(false)
+  expect(isInProgressUpload({asset: {path: 'images/test.jpg'}, _upload: {}})).toBe(false)
+})
+
+test('isInProgressUpload(): returns false for objects without upload', () => {
+  expect(isInProgressUpload({})).toBe(false)
+  expect(isInProgressUpload({asset: {_ref: 'image-123'}})).toBe(false)
+  expect(isInProgressUpload({_upload: null})).toBe(false)
+  expect(isInProgressUpload({_upload: undefined})).toBe(false)
+})
+
+test('isInProgressUpload(): returns false for non-objects', () => {
+  expect(isInProgressUpload(null)).toBe(false)
+  expect(isInProgressUpload(undefined)).toBe(false)
+  expect(isInProgressUpload('string')).toBe(false)
+  expect(isInProgressUpload(123)).toBe(false)
 })
 
 // isImageAssetId()
