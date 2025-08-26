@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/sanity-io/asset-utils/compare/v2.2.1...v2.3.0) (2025-08-26)
+
+
+### Features
+
+* add placeholder object for when object is being uploaded ([#48](https://github.com/sanity-io/asset-utils/issues/48)) ([a73f78d](https://github.com/sanity-io/asset-utils/commit/a73f78dc1467aeb784b049de1aa1758143b7aa00))
+
 ## [2.2.1](https://github.com/sanity-io/asset-utils/compare/v2.2.0...v2.2.1) (2024-11-26)
 
 
