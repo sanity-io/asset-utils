@@ -62,6 +62,7 @@ An [HTML version](https://sanity-io.github.io/asset-utils/) is also available, w
 - [isImageAssetFilename](#isimageassetfilename)
 - [isImageAssetId](#isimageassetid)
 - [isImageSource](#isimagesource)
+- [isInProgressUpload](#isinprogressupload)
 - [isReference](#isreference)
 - [isSanityAssetUrl](#issanityasseturl)
 - [isSanityFileAsset](#issanityfileasset)
@@ -103,7 +104,7 @@ Builds the base file path from the minimal set of parts required to assemble it
 
 **Returns:** _string_
 
-_Defined in [src/paths.ts:77](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/paths.ts#L77)_
+_Defined in [src/paths.ts:77](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/paths.ts#L77)_
 
 ### buildFileUrl
 
@@ -118,7 +119,7 @@ Builds the base file URL from the minimal set of parts required to assemble it
 
 **Returns:** _string_
 
-_Defined in [src/paths.ts:102](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/paths.ts#L102)_
+_Defined in [src/paths.ts:102](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/paths.ts#L102)_
 
 ### buildImagePath
 
@@ -133,7 +134,7 @@ Builds the base image path from the minimal set of parts required to assemble it
 
 **Returns:** _string_
 
-_Defined in [src/paths.ts:33](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/paths.ts#L33)_
+_Defined in [src/paths.ts:33](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/paths.ts#L33)_
 
 ### buildImageUrl
 
@@ -148,7 +149,7 @@ Builds the base image URL from the minimal set of parts required to assemble it
 
 **Returns:** _string_
 
-_Defined in [src/paths.ts:61](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/paths.ts#L61)_
+_Defined in [src/paths.ts:61](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/paths.ts#L61)_
 
 ### getAssetDocumentId
 
@@ -162,7 +163,7 @@ Tries to resolve the asset document ID from any inferrable structure
 
 **Returns:** _string_
 
-_Defined in [src/resolve.ts:264](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L264)_
+_Defined in [src/resolve.ts:331](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L331)_
 
 ### getAssetUrlType
 
@@ -176,7 +177,7 @@ Validates that a given URL is a Sanity asset URL, and returns the asset type if 
 
 **Returns:** _"image" | "file" | false_
 
-_Defined in [src/parse.ts:183](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/parse.ts#L183)_
+_Defined in [src/parse.ts:183](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/parse.ts#L183)_
 
 ### getDefaultCrop
 
@@ -186,7 +187,7 @@ Returns cloned version of the default crop (prevents accidental mutations)
 
 **Returns:** _[SanityImageCrop](https://sanity-io.github.io/asset-utils/interfaces/SanityImageCrop.html)_
 
-_Defined in [src/hotspotCrop.ts:33](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/hotspotCrop.ts#L33)_
+_Defined in [src/hotspotCrop.ts:33](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/hotspotCrop.ts#L33)_
 
 ### getDefaultHotspot
 
@@ -196,7 +197,7 @@ Returns cloned version of the default hotspot (prevents accidental mutations)
 
 **Returns:** _[SanityImageHotspot](https://sanity-io.github.io/asset-utils/interfaces/SanityImageHotspot.html)_
 
-_Defined in [src/hotspotCrop.ts:41](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/hotspotCrop.ts#L41)_
+_Defined in [src/hotspotCrop.ts:41](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/hotspotCrop.ts#L41)_
 
 ### getExtension
 
@@ -210,7 +211,7 @@ Returns the file extension for a given asset
 
 **Returns:** _string_
 
-_Defined in [src/resolve.ts:81](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L81)_
+_Defined in [src/resolve.ts:93](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L93)_
 
 ### getFile
 
@@ -225,7 +226,7 @@ Tries to resolve an file object with as much information as possible, from any i
 
 **Returns:** _[ResolvedSanityFile](https://sanity-io.github.io/asset-utils/interfaces/ResolvedSanityFile.html)_
 
-_Defined in [src/resolve.ts:195](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L195)_
+_Defined in [src/resolve.ts:233](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L233)_
 
 ### getFileAsset
 
@@ -240,7 +241,7 @@ Tries to resolve a (partial) file asset document with as much information as pos
 
 **Returns:** _[SanityFileAsset](https://sanity-io.github.io/asset-utils/types/SanityFileAsset.html)_
 
-_Defined in [src/resolve.ts:220](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L220)_
+_Defined in [src/resolve.ts:274](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L274)_
 
 ### getIdFromString
 
@@ -254,7 +255,7 @@ Tries to cooerce a string (ID, URL or path) to an image asset ID
 
 **Returns:** _string_
 
-_Defined in [src/resolve.ts:306](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L306)_
+_Defined in [src/resolve.ts:380](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L380)_
 
 ### getImage
 
@@ -269,7 +270,7 @@ Tries to resolve an image object with as much information as possible, from any 
 
 **Returns:** _[ResolvedSanityImage](https://sanity-io.github.io/asset-utils/interfaces/ResolvedSanityImage.html)_
 
-_Defined in [src/resolve.ts:106](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L106)_
+_Defined in [src/resolve.ts:124](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L124)_
 
 ### getImageAsset
 
@@ -284,7 +285,7 @@ Tries to resolve a (partial) image asset document with as much information as po
 
 **Returns:** _[SanityImageAsset](https://sanity-io.github.io/asset-utils/types/SanityImageAsset.html)_
 
-_Defined in [src/resolve.ts:140](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L140)_
+_Defined in [src/resolve.ts:178](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L178)_
 
 ### getImageDimensions
 
@@ -298,7 +299,7 @@ Returns the width, height and aspect ratio of a passed image asset, from any inf
 
 **Returns:** _[SanityImageDimensions](https://sanity-io.github.io/asset-utils/types/SanityImageDimensions.html)_
 
-_Defined in [src/resolve.ts:57](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L57)_
+_Defined in [src/resolve.ts:63](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L63)_
 
 ### getProject
 
@@ -312,7 +313,7 @@ Resolves project ID and dataset the image belongs to, based on full URL or path
 
 **Returns:** _[SanityProjectDetails](https://sanity-io.github.io/asset-utils/interfaces/SanityProjectDetails.html)_
 
-_Defined in [src/resolve.ts:368](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L368)_
+_Defined in [src/resolve.ts:442](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L442)_
 
 ### getUrlFilename
 
@@ -326,7 +327,7 @@ Strips the CDN URL, path and query params from a URL, eg: `https://cdn.sanity.io
 
 **Returns:** _string_
 
-_Defined in [src/paths.ts:189](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/paths.ts#L189)_
+_Defined in [src/paths.ts:189](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/paths.ts#L189)_
 
 ### getUrlPath
 
@@ -340,7 +341,7 @@ Strips the CDN URL and query params from a URL, eg: `https://cdn.sanity.io/image
 
 **Returns:** _string_
 
-_Defined in [src/paths.ts:159](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/paths.ts#L159)_
+_Defined in [src/paths.ts:159](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/paths.ts#L159)_
 
 ### getVanityStub
 
@@ -356,7 +357,7 @@ Get the "path stub" at the end of the path, if the user hasn't explicitly opted 
 
 **Returns:** _string_
 
-_Defined in [src/paths.ts:226](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/paths.ts#L226)_
+_Defined in [src/paths.ts:226](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/paths.ts#L226)_
 
 ### isAssetFilename
 
@@ -370,7 +371,7 @@ Returns whether or not the passed filename is a valid file or image asset filena
 
 **Returns:** _boolean_
 
-_Defined in [src/resolve.ts:418](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L418)_
+_Defined in [src/resolve.ts:492](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L492)_
 
 ### isAssetId
 
@@ -384,7 +385,7 @@ Checks whether or not the given document ID is a valid Sanity asset document ID 
 
 **Returns:** _boolean_
 
-_Defined in [src/asserters.ts:119](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/asserters.ts#L119)_
+_Defined in [src/asserters.ts:121](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/asserters.ts#L121)_
 
 ### isAssetIdStub
 
@@ -398,7 +399,7 @@ Checks whether or not the given source is an asset ID stub (an object containing
 
 **Returns:** _stub is [SanityAssetIdStub](https://sanity-io.github.io/asset-utils/interfaces/SanityAssetIdStub.html)_
 
-_Defined in [src/asserters.ts:38](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/asserters.ts#L38)_
+_Defined in [src/asserters.ts:40](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/asserters.ts#L40)_
 
 ### isAssetObjectStub
 
@@ -412,7 +413,7 @@ Checks whether or not the given source is an asset object stub
 
 **Returns:** _stub is [SanityAssetObjectStub](https://sanity-io.github.io/asset-utils/types/SanityAssetObjectStub.html)_
 
-_Defined in [src/asserters.ts:130](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/asserters.ts#L130)_
+_Defined in [src/asserters.ts:132](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/asserters.ts#L132)_
 
 ### isAssetPathStub
 
@@ -426,7 +427,7 @@ Checks whether or not the given source is an asset path stub (an object containi
 
 **Returns:** _stub is [SanityAssetPathStub](https://sanity-io.github.io/asset-utils/interfaces/SanityAssetPathStub.html)_
 
-_Defined in [src/asserters.ts:50](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/asserters.ts#L50)_
+_Defined in [src/asserters.ts:52](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/asserters.ts#L52)_
 
 ### isAssetUrlStub
 
@@ -440,7 +441,7 @@ Checks whether or not the given source is an asset URL stub (an object containin
 
 **Returns:** _stub is [SanityAssetUrlStub](https://sanity-io.github.io/asset-utils/interfaces/SanityAssetUrlStub.html)_
 
-_Defined in [src/asserters.ts:62](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/asserters.ts#L62)_
+_Defined in [src/asserters.ts:64](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/asserters.ts#L64)_
 
 ### isDefaultCrop
 
@@ -454,7 +455,7 @@ Returns whether or not the passed crop has the default values for a crop region
 
 **Returns:** _boolean_
 
-_Defined in [src/hotspotCrop.ts:50](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/hotspotCrop.ts#L50)_
+_Defined in [src/hotspotCrop.ts:50](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/hotspotCrop.ts#L50)_
 
 ### isDefaultHotspot
 
@@ -468,7 +469,7 @@ Returns whether or not the passed hotspot has the default values for a hotspot r
 
 **Returns:** _boolean_
 
-_Defined in [src/hotspotCrop.ts:71](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/hotspotCrop.ts#L71)_
+_Defined in [src/hotspotCrop.ts:71](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/hotspotCrop.ts#L71)_
 
 ### isFileAssetFilename
 
@@ -482,7 +483,7 @@ Returns whether or not the passed filename is a valid file asset filename
 
 **Returns:** _boolean_
 
-_Defined in [src/resolve.ts:407](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L407)_
+_Defined in [src/resolve.ts:481](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L481)_
 
 ### isFileAssetId
 
@@ -496,7 +497,7 @@ Checks whether or not the given document ID is a valid Sanity file asset documen
 
 **Returns:** _boolean_
 
-_Defined in [src/asserters.ts:108](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/asserters.ts#L108)_
+_Defined in [src/asserters.ts:110](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/asserters.ts#L110)_
 
 ### isFileSource
 
@@ -510,7 +511,7 @@ Return whether or not the passed source is a file source
 
 **Returns:** _src is [SanityFileSource](https://sanity-io.github.io/asset-utils/types/SanityFileSource.html)_
 
-_Defined in [src/resolve.ts:429](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L429)_
+_Defined in [src/resolve.ts:503](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L503)_
 
 ### isImageAssetFilename
 
@@ -524,7 +525,7 @@ Returns whether or not the passed filename is a valid image asset filename
 
 **Returns:** _boolean_
 
-_Defined in [src/resolve.ts:396](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L396)_
+_Defined in [src/resolve.ts:470](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L470)_
 
 ### isImageAssetId
 
@@ -538,7 +539,7 @@ Checks whether or not the given document ID is a valid Sanity image asset docume
 
 **Returns:** _boolean_
 
-_Defined in [src/asserters.ts:97](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/asserters.ts#L97)_
+_Defined in [src/asserters.ts:99](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/asserters.ts#L99)_
 
 ### isImageSource
 
@@ -552,7 +553,21 @@ Return whether or not the passed source is an image source
 
 **Returns:** _src is [SanityImageSource](https://sanity-io.github.io/asset-utils/types/SanityImageSource.html)_
 
-_Defined in [src/resolve.ts:441](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L441)_
+_Defined in [src/resolve.ts:515](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L515)_
+
+### isInProgressUpload
+
+▸ **isInProgressUpload**(`stub`: unknown): _stub is [SanityFileUploadStub](https://sanity-io.github.io/asset-utils/interfaces/SanityFileUploadStub.html) | [SanityImageUploadStub](https://sanity-io.github.io/asset-utils/interfaces/SanityImageUploadStub.html)_
+
+Checks whether or not the given source is an in-progress upload (has upload property but no asset property)
+
+| Name   | Type    | Description                 |
+| ------ | ------- | --------------------------- |
+| `stub` | unknown | Possible in-progress upload |
+
+**Returns:** _stub is [SanityFileUploadStub](https://sanity-io.github.io/asset-utils/interfaces/SanityFileUploadStub.html) | [SanityImageUploadStub](https://sanity-io.github.io/asset-utils/interfaces/SanityImageUploadStub.html)_
+
+_Defined in [src/asserters.ts:145](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/asserters.ts#L145)_
 
 ### isReference
 
@@ -566,7 +581,7 @@ Checks whether or not the given source is a Sanity reference (an object containi
 
 **Returns:** _ref is [SanityReference](https://sanity-io.github.io/asset-utils/interfaces/SanityReference.html)_
 
-_Defined in [src/asserters.ts:26](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/asserters.ts#L26)_
+_Defined in [src/asserters.ts:28](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/asserters.ts#L28)_
 
 ### isSanityAssetUrl
 
@@ -580,7 +595,7 @@ Checks whether or not a given URL is a valid Sanity asset URL
 
 **Returns:** _boolean_
 
-_Defined in [src/urls.ts:10](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/urls.ts#L10)_
+_Defined in [src/urls.ts:10](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/urls.ts#L10)_
 
 ### isSanityFileAsset
 
@@ -594,7 +609,7 @@ Checks whether or not the given source is a (partial) sanity file asset document
 
 **Returns:** _src is [SanityFileAsset](https://sanity-io.github.io/asset-utils/types/SanityFileAsset.html)_
 
-_Defined in [src/asserters.ts:74](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/asserters.ts#L74)_
+_Defined in [src/asserters.ts:76](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/asserters.ts#L76)_
 
 ### isSanityFileUrl
 
@@ -608,7 +623,7 @@ Checks whether or not a given URL is a valid Sanity file asset URL
 
 **Returns:** _boolean_
 
-_Defined in [src/urls.ts:32](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/urls.ts#L32)_
+_Defined in [src/urls.ts:32](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/urls.ts#L32)_
 
 ### isSanityImageAsset
 
@@ -622,7 +637,7 @@ Checks whether or not the given source is a (partial) sanity image asset documen
 
 **Returns:** _src is [SanityImageAsset](https://sanity-io.github.io/asset-utils/types/SanityImageAsset.html)_
 
-_Defined in [src/asserters.ts:86](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/asserters.ts#L86)_
+_Defined in [src/asserters.ts:88](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/asserters.ts#L88)_
 
 ### isSanityImageUrl
 
@@ -636,7 +651,7 @@ Checks whether or not a given URL is a valid Sanity image asset URL
 
 **Returns:** _boolean_
 
-_Defined in [src/urls.ts:21](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/urls.ts#L21)_
+_Defined in [src/urls.ts:21](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/urls.ts#L21)_
 
 ### isUnresolvableError
 
@@ -650,7 +665,7 @@ Checks whether or not an error instance is of type UnresolvableError
 
 **Returns:** _err is [UnresolvableError](https://sanity-io.github.io/asset-utils/classes/UnresolvableError.html)_
 
-_Defined in [src/errors.ts:29](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/errors.ts#L29)_
+_Defined in [src/errors.ts:29](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/errors.ts#L29)_
 
 ### isValidFilename
 
@@ -664,7 +679,7 @@ Checks whether or not a given filename matches the expected Sanity asset filenam
 
 **Returns:** _boolean_
 
-_Defined in [src/paths.ts:213](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/paths.ts#L213)_
+_Defined in [src/paths.ts:213](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/paths.ts#L213)_
 
 ### parseAssetFilename
 
@@ -678,7 +693,7 @@ Parses a Sanity asset filename into individual parts (type, id, extension, width
 
 **Returns:** _[SanityAssetIdParts](https://sanity-io.github.io/asset-utils/types/SanityAssetIdParts.html)_
 
-_Defined in [src/parse.ts:94](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/parse.ts#L94)_
+_Defined in [src/parse.ts:94](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/parse.ts#L94)_
 
 ### parseAssetId
 
@@ -692,7 +707,7 @@ Parses a Sanity asset document ID into individual parts (type, id, extension, wi
 
 **Returns:** _[SanityAssetIdParts](https://sanity-io.github.io/asset-utils/types/SanityAssetIdParts.html)_
 
-_Defined in [src/parse.ts:36](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/parse.ts#L36)_
+_Defined in [src/parse.ts:36](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/parse.ts#L36)_
 
 ### parseAssetUrl
 
@@ -706,7 +721,7 @@ Parses a full Sanity asset URL into individual parts (type, project ID, dataset,
 
 **Returns:** _[SanityAssetUrlParts](https://sanity-io.github.io/asset-utils/types/SanityAssetUrlParts.html)_
 
-_Defined in [src/parse.ts:118](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/parse.ts#L118)_
+_Defined in [src/parse.ts:118](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/parse.ts#L118)_
 
 ### parseFileAssetId
 
@@ -720,7 +735,7 @@ Parses a Sanity file asset document ID into individual parts (type, id, extensio
 
 **Returns:** _[SanityFileAssetIdParts](https://sanity-io.github.io/asset-utils/interfaces/SanityFileAssetIdParts.html)_
 
-_Defined in [src/parse.ts:56](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/parse.ts#L56)_
+_Defined in [src/parse.ts:56](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/parse.ts#L56)_
 
 ### parseFileAssetUrl
 
@@ -734,7 +749,7 @@ Parses a full Sanity file asset URL into individual parts (type, project ID, dat
 
 **Returns:** _[SanityFileUrlParts](https://sanity-io.github.io/asset-utils/interfaces/SanityFileUrlParts.html)_
 
-_Defined in [src/parse.ts:167](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/parse.ts#L167)_
+_Defined in [src/parse.ts:167](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/parse.ts#L167)_
 
 ### parseImageAssetId
 
@@ -748,7 +763,7 @@ Parses a Sanity image asset document ID into individual parts (type, id, extensi
 
 **Returns:** _[SanityImageAssetIdParts](https://sanity-io.github.io/asset-utils/interfaces/SanityImageAssetIdParts.html)_
 
-_Defined in [src/parse.ts:75](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/parse.ts#L75)_
+_Defined in [src/parse.ts:75](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/parse.ts#L75)_
 
 ### parseImageAssetUrl
 
@@ -762,7 +777,7 @@ Parses a full Sanity image asset URL into individual parts (type, project ID, da
 
 **Returns:** _[SanityImageUrlParts](https://sanity-io.github.io/asset-utils/interfaces/SanityImageUrlParts.html)_
 
-_Defined in [src/parse.ts:149](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/parse.ts#L149)_
+_Defined in [src/parse.ts:149](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/parse.ts#L149)_
 
 ### tryGetAssetDocumentId
 
@@ -776,7 +791,7 @@ Tries to resolve the asset document ID from any inferrable structure
 
 **Returns:** _string | undefined_
 
-_Defined in [src/resolve.ts:293](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L293)_
+_Defined in [src/resolve.ts:367](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L367)_
 
 ### tryGetAssetPath
 
@@ -790,7 +805,7 @@ Tries to get the asset path from a given asset source
 
 **Returns:** _string | undefined_
 
-_Defined in [src/paths.ts:125](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/paths.ts#L125)_
+_Defined in [src/paths.ts:125](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/paths.ts#L125)_
 
 ### tryGetExtension
 
@@ -804,7 +819,7 @@ Returns the file extension for a given asset
 
 **Returns:** _string | undefined_
 
-_Defined in [src/resolve.ts:92](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L92)_
+_Defined in [src/resolve.ts:110](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L110)_
 
 ### tryGetFile
 
@@ -819,7 +834,7 @@ Tries to resolve an file object with as much information as possible, from any i
 
 **Returns:** _[ResolvedSanityFile](https://sanity-io.github.io/asset-utils/interfaces/ResolvedSanityFile.html) | undefined_
 
-_Defined in [src/resolve.ts:206](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L206)_
+_Defined in [src/resolve.ts:260](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L260)_
 
 ### tryGetFileAsset
 
@@ -834,7 +849,7 @@ Tries to resolve a (partial) file asset document with as much information as pos
 
 **Returns:** _[SanityFileAsset](https://sanity-io.github.io/asset-utils/types/SanityFileAsset.html) | undefined_
 
-_Defined in [src/resolve.ts:252](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L252)_
+_Defined in [src/resolve.ts:319](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L319)_
 
 ### tryGetIdFromString
 
@@ -848,7 +863,7 @@ Tries to cooerce a string (ID, URL or path) to an image asset ID
 
 **Returns:** _string | undefined_
 
-_Defined in [src/resolve.ts:343](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L343)_
+_Defined in [src/resolve.ts:417](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L417)_
 
 ### tryGetImage
 
@@ -863,7 +878,7 @@ Tries to resolve an image object with as much information as possible, from any 
 
 **Returns:** _[ResolvedSanityImage](https://sanity-io.github.io/asset-utils/interfaces/ResolvedSanityImage.html) | undefined_
 
-_Defined in [src/resolve.ts:126](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L126)_
+_Defined in [src/resolve.ts:164](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L164)_
 
 ### tryGetImageAsset
 
@@ -878,7 +893,7 @@ Tries to resolve a (partial) image asset document with as much information as po
 
 **Returns:** _[SanityImageAsset](https://sanity-io.github.io/asset-utils/types/SanityImageAsset.html) | undefined_
 
-_Defined in [src/resolve.ts:181](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L181)_
+_Defined in [src/resolve.ts:219](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L219)_
 
 ### tryGetImageDimensions
 
@@ -892,7 +907,7 @@ Returns the width, height and aspect ratio of a passed image asset, from any inf
 
 **Returns:** _[SanityImageDimensions](https://sanity-io.github.io/asset-utils/types/SanityImageDimensions.html) | undefined_
 
-_Defined in [src/resolve.ts:69](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L69)_
+_Defined in [src/resolve.ts:81](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L81)_
 
 ### tryGetProject
 
@@ -906,7 +921,7 @@ Resolves project ID and dataset the image belongs to, based on full URL or path
 
 **Returns:** _[SanityProjectDetails](https://sanity-io.github.io/asset-utils/interfaces/SanityProjectDetails.html) | undefined_
 
-_Defined in [src/resolve.ts:387](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/resolve.ts#L387)_
+_Defined in [src/resolve.ts:461](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/resolve.ts#L461)_
 
 ### tryGetUrlFilename
 
@@ -920,7 +935,7 @@ Strips the CDN URL, path and query params from a URL, eg: `https://cdn.sanity.io
 
 **Returns:** _string | undefined_
 
-_Defined in [src/paths.ts:204](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/paths.ts#L204)_
+_Defined in [src/paths.ts:204](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/paths.ts#L204)_
 
 ### tryGetUrlPath
 
@@ -934,7 +949,7 @@ Strips the CDN URL and query params from a URL, eg: `https://cdn.sanity.io/image
 
 **Returns:** _string | undefined_
 
-_Defined in [src/paths.ts:177](https://github.com/sanity-io/asset-utils/blob/v2.2.1/src/paths.ts#L177)_
+_Defined in [src/paths.ts:177](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/paths.ts#L177)_
 
 ## License
 
