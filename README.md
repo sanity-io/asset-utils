@@ -951,6 +951,11 @@ Strips the CDN URL and query params from a URL, eg: `https://cdn.sanity.io/image
 
 _Defined in [src/paths.ts:177](https://github.com/sanity-io/asset-utils/blob/v2.3.0/src/paths.ts#L177)_
 
+## Publish a new package
+There is an automated action that creates a PR with a specific version name based on the changes in main.
+Example: chore(main): [release 2.3.0 ](https://github.com/sanity-io/asset-utils/pull/49)
+
+The only thing you need to do is approve it and that should publish the plugin.
 ## License
 
 MIT-licensed. See LICENSE.
