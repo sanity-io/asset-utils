@@ -22,6 +22,12 @@ export const fileAssetFilenamePattern = /^([a-zA-Z0-9_]{24,40}|[a-f0-9]{40})+\.[
 /**
  * @internal
  */
+export const filePreviewImageFilenamePattern =
+  /^([a-zA-Z0-9_]{24,40}|[a-f0-9]{40})-\d+x\d+-[a-z0-9]+\.([a-z0-9]+)$/
+
+/**
+ * @internal
+ */
 export const fileAssetIdPattern = /^file-([a-zA-Z0-9_]{24,40}|[a-f0-9]{40})+-[a-z0-9]+$/
 
 /**
@@ -33,6 +39,12 @@ export const imageAssetFilenamePattern = /^([a-zA-Z0-9_]{24,40}|[a-f0-9]{40})-\d
  * @internal
  */
 export const imageAssetIdPattern = /^image-([a-zA-Z0-9_]{24,40}|[a-f0-9]{40})+-\d+x\d+-[a-z0-9]+$/
+
+/**
+ * @internal
+ */
+export const filePreviewImageIdPattern =
+  /^image-([a-zA-Z0-9_]{24,40}|[a-f0-9]{40})+-\d+x\d+-[a-z0-9]+-[a-z0-9]+$/
 
 /**
  * @internal

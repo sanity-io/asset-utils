@@ -1,6 +1,8 @@
 import {isCdnUrl} from './asserters.js'
 import {
   fileAssetIdPattern,
+  filePreviewImageFilenamePattern,
+  filePreviewImageIdPattern,
   imageAssetFilenamePattern,
   imageAssetIdPattern,
   pathPattern,
@@ -26,6 +28,12 @@ const exampleFileId = 'file-027401f31c3ac1e6d78c5d539ccd1beff72b9b11-pdf'
 const exampleImageId = 'image-027401f31c3ac1e6d78c5d539ccd1beff72b9b11-2000x3000-jpg'
 
 /**
+ * @internal
+ */
+const exampleFilePreviewImageId =
+  'image-027401f31c3ac1e6d78c5d539ccd1beff72b9b11-2000x3000-pdf-webp'
+
+/**
  * Parses a Sanity asset document ID into individual parts (type, id, extension, width/height etc)
  *
  * @param documentId - Document ID to parse into named parts
@@ -36,6 +44,9 @@ const exampleImageId = 'image-027401f31c3ac1e6d78c5d539ccd1beff72b9b11-2000x3000
 export function parseAssetId(documentId: string): SanityAssetIdParts {
   if (imageAssetIdPattern.test(documentId)) {
     return parseImageAssetId(documentId)
+  }
+  if (filePreviewImageIdPattern.test(documentId)) {
+    return parseFilePreviewImageAssetId(documentId)
   }
 
   if (fileAssetIdPattern.test(documentId)) {
@@ -84,6 +95,36 @@ export function parseImageAssetId(documentId: string): SanityImageAssetIdParts {
 }
 
 /**
+ * Parses a Sanity file preview image asset document ID into individual parts (type, id, extension, width, height, fileAssetExtension)
+ *
+ * @param documentId - Image asset document ID to parse into named parts
+ * @returns Object of named properties
+ * @public
+ * @throws If document ID invalid
+ */
+export function parseFilePreviewImageAssetId(
+  documentId: string,
+): SanityImageAssetIdParts & {fileAssetExtension: string} {
+  const [, assetId, dimensionString, fileAssetExtension, extension] = documentId.split('-')
+  const [width, height] = (dimensionString || '').split('x').map(Number)
+
+  if (
+    !assetId ||
+    !dimensionString ||
+    !extension ||
+    !fileAssetExtension ||
+    !(width > 0) ||
+    !(height > 0)
+  ) {
+    throw new Error(
+      `Malformed asset ID '${documentId}'. Expected an id like "${exampleFilePreviewImageId}".`,
+    )
+  }
+
+  return {type: 'image', assetId, width, height, extension, fileAssetExtension}
+}
+
+/**
  * Parses a Sanity asset filename into individual parts (type, id, extension, width, height)
  *
  * @param filename - Filename to parse into named parts
@@ -96,9 +137,11 @@ export function parseAssetFilename(filename: string): SanityAssetIdParts {
   if (!isValidFilename(file)) {
     throw new Error(`Invalid image/file asset filename: ${filename}`)
   }
+  const isImageType =
+    imageAssetFilenamePattern.test(file) || filePreviewImageFilenamePattern.test(file)
 
   try {
-    const type = imageAssetFilenamePattern.test(file) ? 'image' : 'file'
+    const type = isImageType ? 'image' : 'file'
     const assetId = file.replace(/\.([a-z0-9+]+)$/i, '-$1')
     return parseAssetId(`${type}-${assetId}`)
   } catch (err) {

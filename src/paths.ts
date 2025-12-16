@@ -8,6 +8,7 @@ import {
 import {
   cdnUrl,
   fileAssetFilenamePattern,
+  filePreviewImageFilenamePattern,
   imageAssetFilenamePattern,
   pathPattern,
 } from './constants.js'
@@ -211,7 +212,11 @@ export const tryGetUrlFilename = getForgivingResolver(getUrlFilename)
  * @public
  */
 export function isValidFilename(filename: string): boolean {
-  return fileAssetFilenamePattern.test(filename) || imageAssetFilenamePattern.test(filename)
+  return (
+    fileAssetFilenamePattern.test(filename) ||
+    imageAssetFilenamePattern.test(filename) ||
+    filePreviewImageFilenamePattern.test(filename)
+  )
 }
 
 /**

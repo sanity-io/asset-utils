@@ -109,6 +109,20 @@ test('parseAssetFilename(): returns object of named image properties if legacy f
   `)
 })
 
+test('parseAssetFilename(): returns object of named image properties if file preview image', () => {
+  expect(parseAssetFilename('90ffd2359008d82298821d16b21778c5c39aec36-1024x1024-pdf.webp'))
+    .toMatchInlineSnapshot(`
+    {
+      "assetId": "90ffd2359008d82298821d16b21778c5c39aec36",
+      "extension": "webp",
+      "fileAssetExtension": "pdf",
+      "height": 1024,
+      "type": "image",
+      "width": 1024,
+    }
+  `)
+})
+
 test.each([
   'https://cdn.sanity.io/images/espenhov/diary/756e4bd9c0a04ada3d3cc396cf81f1c433b07870-5760x3840.jpg/vanity-filename.jpg',
   'https://cdn.sanity.staging/images/espenhov/diary/756e4bd9c0a04ada3d3cc396cf81f1c433b07870-5760x3840.jpg/vanity-filename.jpg',
