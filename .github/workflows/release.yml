@@ -44,7 +44,7 @@ jobs:
           release-type: node
           token: ${{ steps.app-token.outputs.token }}
       # Publish to NPM on new releases
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         if: ${{ steps.release.outputs.release_created || github.event.inputs.publish == 'true' }}
         with:
           token: ${{ steps.app-token.outputs.token }}
