@@ -34,7 +34,7 @@
   },
   "browserslist": "extends @sanity/browserslist-config",
   "devDependencies": {
-    "@sanity/pkg-utils": "^6.11.8",
+    "@sanity/pkg-utils": "^7.11.9",
     "@types/node": "^20.16.10",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
